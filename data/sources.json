@@ -502,5 +502,11 @@
     "title": "Haminan Energia: Googlen datakeskuksen lämpöä kaukolämpöverkkoon",
     "url": "https://haminanenergia.fi/googlen-datakeskuksen-lampoa-alkaa-virrata-haminan-kaukolampoverkossa-vuoden-2025-aikana/",
     "verification": "5 MW lämpöpumppulaitoksen noin 40 GWh/v tuotantopotentiaali ja 80 % paikallisen kaukolämmön volyymista tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S085",
+    "title": "Outokumpu 2026: Kemi–Tornio-ekosysteemin energiankulutus",
+    "url": "https://www.outokumpu.com/en/expertise/industrial-evolution-insights/2026/circular-ecosystem-powering-industrial-side-streams",
+    "verification": "Outokumpu ilmoittaa Tornion tehdasalueen kokonaisenergiankulutukseksi noin 4 TWh vuodessa. Tarkistettu 22.9.2026; luku ei ole Ferrochrome-segmentin erillinen kulutus."
   }
 ]
