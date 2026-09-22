@@ -430,5 +430,17 @@
     "title": "Google Workspace: Google Group Subprocessors, 2.3.2026",
     "url": "https://workspace.google.com/terms/subprocessors-20260302/",
     "verification": "Google listaa Tuike Finland Oy:n Google Group Subprocessor -toimijaksi, tehtävänä Data Center Operations Suomessa. Sivun mukaan listattujen Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. Tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S073",
+    "title": "Tilastokeskus: henkilötyövuosi",
+    "url": "https://stat.fi/meta/kas/henkilotyovuosi.html",
+    "verification": "Käsitemääritelmä luettu 22.9.2026 termiselitystä varten; ei uusi kohdekohtainen henkilöstöhavainto."
+  },
+  {
+    "id": "S074",
+    "title": "Tilastokeskus: arvonlisäys",
+    "url": "https://stat.fi/meta/kas/arvonlisays.html",
+    "verification": "Käsitemääritelmä luettu 22.9.2026 termiselitystä varten; ei uusi kohdekohtainen arvonlisälaskelma."
   }
 ]

@@ -44,15 +44,17 @@ Tämän vuoksi Google-konserni, Tuike Finland Oy, Haminan fyysinen kampus ja Suo
 
 Tuiken vuoden 2025 yritystiedoissa henkilöstömäärä on 120. Haminan kaupunki ilmoitti kesäkuussa 2026 kampuksella työskentelevän noin 500 henkilöä. Nämä eivät ole kaksi arviota samasta luvusta, vaan kaksi eri laskentarajaa eri ajankohdilta. **500 − 120 ei siis ole varmennettu alihankkijamäärä.** [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/).
 
-Sama näkyy taloudessa. Tuike Finland Oy:n vuoden 2025 liikevaihdoksi ilmoitetaan 574,374 M€. Se kertoo suuresta suomalaisen oikeushenkilön läpi kulkevasta liiketoiminnan volyymista, mutta **574 miljoonaa euroa ei ole sama asia kuin Suomeen jäävä yhteiskunnallinen hyöty**. Siihen tarvitaan erikseen tietoa palkoista, kotimaisista ostoista, veroista, pääoma- ja omistajatuloista, konsernin sisäisistä liiketoimista sekä julkisista kustannuksista. [Talousvaikutukset](/analyysit/datakeskukset/vaikutukset/#talous-574-miljoonaa-euroa-on-lahtopiste-ei-hyotyluku).
+Sama näkyy taloudessa. **Liikevaihto** tarkoittaa tavaroiden ja palvelujen myyntiä ilman arvonlisäveroa ja myönnettyjä alennuksia, ennen kulujen vähentämistä. Tuike Finland Oy:n vuoden 2025 liikevaihdoksi ilmoitetaan 574,374 M€ eli miljoonaa euroa. Se kertoo suuresta suomalaisen oikeushenkilön läpi kulkevasta liiketoiminnan volyymista, mutta **574 miljoonaa euroa ei ole sama asia kuin Suomeen jäävä yhteiskunnallinen hyöty**. Siihen tarvitaan erikseen tietoa palkoista, kotimaisista ostoista, veroista, pääoma- ja omistajatuloista, konsernin sisäisistä liiketoimista eli saman yritysryhmän yhtiöiden välisistä kaupoista sekä julkisista kustannuksista. [Talousvaikutukset](/analyysit/datakeskukset/vaikutukset/#talous-574-miljoonaa-euroa-on-lahtopiste-ei-hyotyluku).
 
 ## Mitä aineistosta voidaan jo sanoa?
 
 ### Työstä on näyttöä, mutta työpaikkaluku riippuu rajasta
 
-Haminan aineisto osoittaa sekä Tuiken oman henkilöstön että kampuksen laajemman työjoukon. Kemin biotuotetehdas ja Outokummun Ferrochrome-segmentti antavat vertailuun omat henkilöstöhavaintonsa. Yhteismitallinen vertailu vaatii kuitenkin saman vuoden FTE-luvut samalla työnantaja- ja toimipaikkarajalla. Rakennusvaiheen työ ja pysyvä operointi on pidettävä erillään.
+Haminan aineisto osoittaa sekä Tuiken oman henkilöstön että kampuksen laajemman työjoukon. Kemin biotuotetehdas ja Outokummun Ferrochrome-segmentti antavat vertailuun omat henkilöstöhavaintonsa. Yhteismitallinen vertailu vaatii kuitenkin saman vuoden **FTE-luvut** eli kokoaikaisiksi muunnetut henkilöstöluvut samalla työnantaja- ja toimipaikkarajalla. Kaksi puolipäiväistä vastaa yhtä FTE:tä. Koko vuoden työpanosta kuvaa **henkilötyövuosi**: yhden henkilön kokoaikainen työ vuoden ajan. Vuoden lopun FTE-luku ei yksin kerro tätä vuosityöpanosta. Rakennusvaiheen työ ja pysyvä operointi on pidettävä erillään.
 
 ### Liikevaihto, arvonlisä ja nettohyöty eivät ole sama asia
+
+**Arvonlisä** on tuotannossa syntyvä uusi arvo: tuotannon arvosta vähennetään siinä käytettyjen, muilta hankittujen tavaroiden ja palvelujen arvo. Se sisältää esimerkiksi palkkoja, joten se ei ole sama kuin yrityksen voitto. **Nettohyöty** edellyttää lisäksi hyötyjen ja kustannusten vertaamista siihen, mitä ilman hanketta olisi tapahtunut. [Termit lyhyesti](/analyysit/datakeskukset/lahteet/#termit-lyhyesti).
 
 Yrityksen myynti voi olla suuri ilman, että koko summa jää Suomeen. Toisaalta Suomeen voi syntyä palkkoja, veroja, kotimaisia ostoja ja muita vaikutuksia, joita pelkkä tuloslaskelman viimeinen rivi ei kuvaa. Näitä eriä ei myöskään voi vain laskea yhteen, koska osa niistä sisältyy jo toisiinsa.
 
@@ -74,7 +76,7 @@ Valmistavan teollisuuden verrokkeja ei tuotu mukaan todistamaan, että datakesku
 
 **Kemi** näyttää, että energiankäyttöä ei voi verrata ilman omaa tuotantoa, verkosta ottoa ja verkkoon vientiä.
 
-**Outokumpu** näyttää, että konsernin segmenttiluku ei ole sama asia kuin yhden tehtaan tai ulkoisen myynnin luku. Ferrochrome-segmentin vuoden 2025 myynnistä osa on konsernin sisäistä, mikä tekee siitä hyvän vertailuparin Tuiken konsernirajaongelmalle. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
+**Outokumpu** näyttää, että konsernin segmenttiluku ei ole sama asia kuin yhden tehtaan tai ulkoisen myynnin luku. **Ulkoinen myynti** tarkoittaa myyntiä konsernin ulkopuolisille asiakkaille, ei ulkomaille myyntiä. Ferrochrome-segmentin vuoden 2025 myynnistä osa on konsernin sisäistä, mikä tekee siitä hyvän vertailuparin Tuiken konsernirajaongelmalle. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
 
 **Hepokorpi** puolestaan näyttää, ettei tulevaa datakeskusta voi käsitellä samoin kuin jo toimivaa laitosta: suunnitelma, lupa, rakennettu kapasiteetti ja toteutunut käyttö on erotettava.
 

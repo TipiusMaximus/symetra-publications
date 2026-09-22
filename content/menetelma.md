@@ -21,11 +21,11 @@ Pelkkä lähdeviite ei vielä tee tekstistä ymmärrettävää. Ennen tunnusluvu
 
 Esimerkiksi Google, Tuike Finland Oy ja Haminan kampus kuuluvat samaan toiminnalliseen kokonaisuuteen, mutta niiden luvut eivät ole keskenään vaihdettavia. Sama koskee Microsoftin kampusta ja yksittäistä HEL16-lupakohdetta sekä Outokummun konsernia, Ferrochrome-segmenttiä ja yksittäisiä tuotantolaitoksia.
 
-Tämä on myös toimituksellinen sääntö: lukijaa ei viedä suoraan liikevaihtoon, FTE-lukuun, MW-arvoon tai lupaehtoon ennen kuin luvun laskentaraja on avattu tavallisella kielellä.
+Tämä on myös toimituksellinen sääntö: lukijaa ei viedä suoraan tunnuslukuun ennen kuin sen merkitys ja laskentaraja on avattu tavallisella kielellä. **Liikevaihto** tarkoittaa tavaroiden ja palvelujen myyntiä ilman arvonlisäveroa ja myönnettyjä alennuksia, ennen kulujen vähentämistä. **FTE** tarkoittaa kokoaikaisiksi muunnettua henkilöstöä: kaksi puolipäiväistä vastaa yhtä FTE:tä. Lyhenne ja lyhyt selitys annetaan ensimmäisen esiintymän yhteydessä kullakin sivulla, jotta lukemisen voi aloittaa myös keskeltä julkaisua. [Termit lyhyesti](/analyysit/datakeskukset/lahteet/#termit-lyhyesti).
 
 ## Yhteinen mittari vaatii yhteisen rajauksen
 
-Vertailussa kirjataan kohde, vuosi, yksikkö, toiminnan vaihe ja laskentaraja. Yritys, kampus, kunta, segmentti ja kansantalous eivät ole vaihdettavia rajauksia. Henkilöluku ei ole automaattisesti henkilötyövuosi, MW ei MWh ja lupa-arvo ei toteuma.
+Vertailussa kirjataan kohde, vuosi, yksikkö, toiminnan vaihe ja laskentaraja. Yritys, kampus, kunta, segmentti ja kansantalous eivät ole vaihdettavia rajauksia. Henkilöluku ei ole automaattisesti henkilötyövuosi, MW ei MWh ja lupa-arvo ei toteuma. **Henkilötyövuosi** on yhden kokoaikaisen työntekijän vuoden työpanos. Vuoden lopun FTE kuvaa yhtä ajankohtaa, joten sitä ei nimetä koko vuoden henkilötyövuosiksi ilman tietoa vuoden aikaisesta työpanoksesta.
 
 Hyötyjä ja haittoja arvioidaan samalla näyttökynnyksellä. Puuttuva tieto ei saa nollan arvoa. Epävarmuus esitetään sanallisesti silloin, kun aineisto ei tue määrällistä vaihteluväliä. Näennäisen tarkkaa lukua ei tuoteta oletetuilla lähtötiedoilla.
 

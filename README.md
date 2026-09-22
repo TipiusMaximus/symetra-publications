@@ -27,7 +27,7 @@ npm run check
 
 - `content/*.md`: sivujen ensisijainen sisältö.
 - `content/questions/A01.md`–`A11.md`: tutkimuskysymykset ja koneluettavat metatiedot.
-- `data/sources.json`: 71 verkkolähdettä ja niiden alkuperäketju.
+- `data/sources.json`: 74 verkkolähdettä ja niiden alkuperäketju.
 - `data/documents.json`: HEL16:n kymmenen asiakirjan metadata; ei alkuperäisiä PDF:iä tai henkilökohtaisia polkuja.
 - `scripts/calculations.mjs`: toistettava laskenta.
 - `assets/`: CSS, pieni tulostus-JavaScript ja 1200 × 630 PNG-jakokuva.

@@ -21,6 +21,8 @@ Etusivu toimii nyt itsenäisenä tutkimusyhteenvetona: se kertoo ydinvastauksen,
 
 Vertailuun on lisätty mittariherkkyys: Kemin 2,0 TWh/v sähköntuotannosta ja 250 % sähköomavaraisuudesta johdettu 0,8 TWh/v oma kulutus sekä +1,2 TWh/v tuotannon ja johdetun kulutuksen erotus näytetään nimenomaan johdettuna havainnollistuksena, ei mitattuna verkkotaseena. Samalla Tuiken ja Outokummun Ferrochrome-segmentin myynti- ja käyttökatelukuja suhteutetaan omaan henkilöstöön rakenteellisena vertailuna, ei tuottavuus- tai yhteiskuntahyötymittarina.
 
+Liiketalouden termit avataan nyt ensimmäisten esiintymien yhteydessä, ja laskentasivulla on yhteinen ”Termit lyhyesti” -taulukko. Käyttökateprosentti ja käyttökatteen sekä liiketuloksen erotus selitetään sanallisesti. Vuoden lopun FTE erotetaan koko vuoden henkilötyövuosista; Ferrochromen 454 FTE:n nimitys on korjattu tämän mukaiseksi. Sisäisen myynnin osuutta kuvaava ”lähes puolet” on täsmennetty muotoon ”hieman yli puolet” (53 %). Laskennan lähtöluvut, evidenssirajat ja päätelmät säilyvät.
+
 ## 1.0.0 — 22.9.2026
 
 Ensimmäinen toimitettu HTML-versio. Pääkehys on datakeskusten taloudellisten ja yhteiskunnallisten vaikutusten kohdevertailu valmistavaan teollisuuteen. Kansalaisaloitteen A01–A11-kohdat säilyvät tutkimuskysymyksinä ja niiden alkuperä on näkyvissä.

@@ -21,6 +21,8 @@ Yksinkertaistettu toimintaketju on:
 
 Google julkaisee myös markkinahintoja pilvilaskennan resursseille, mikä havainnollistaa sitä, että laskentakapasiteetilla on palvelumarkkinassa rahallinen arvo. Tämä ei kuitenkaan osoita, että Haminan kapasiteetti myytäisiin juuri näillä tuotteilla tai että loppuasiakkaan maksama hinta kirjautuisi Tuike Finland Oy:n liikevaihdoksi. [Google Cloud](https://cloud.google.com/products/compute/pricing).
 
+**Liikevaihto** tarkoittaa yrityksen tavaroiden ja palvelujen myyntiä euroina ilman arvonlisäveroa ja myönnettyjä alennuksia. Se ei ole voittoa, sillä toiminnan kuluja ei ole vielä vähennetty.
+
 Taloudellisen vaikutuksen kannalta ketjussa on siksi kaksi eri kysymystä:
 
 1. **Minkä arvoista digitaalista palvelua fyysisen datakeskuksen avulla tuotetaan?**
@@ -28,13 +30,15 @@ Taloudellisen vaikutuksen kannalta ketjussa on siksi kaksi eri kysymystä:
 
 Tämä auditointi pystyy tällä hetkellä vastaamaan jälkimmäiseen vain osittain. Julkisista lähteistä nähdään suomalaisen Tuike Finland Oy:n tunnuslukuja, Haminan kampusta koskevia tietoja sekä joitakin paikallisia vero- ja investointivirtoja. Sen sijaan käytössä ei ole sellaista konsernin sisäisten liiketoimien erittelyä, jolla Haminassa tuotettu laskentakapasiteetti voitaisiin luotettavasti yhdistää Googlen loppuasiakasmyyntiin.
 
+**Konserni** on saman omistuksen ja määräysvallan alla toimiva yritysryhmä. **Konsernin sisäinen myynti** tapahtuu sen omien yhtiöiden tai liiketoiminta-alueiden välillä; **ulkoinen myynti** suuntautuu konsernin ulkopuolisille asiakkaille. Ulkoinen ei tarkoita ulkomaille myyntiä. Sisäinen myynti poistetaan konsernin yhteenlasketusta myynnistä, jotta sama myynti ei tule lasketuksi kahdesti. Tuiken myynnin jakautumista näihin ryhmiin ei tässä aineistossa tunneta.
+
 ### Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
 
 Tuike Finland Oy:n vuoden 2025 liikevaihto on julkisissa yritystietopalveluissa 574,374 M€. Se on tärkeä havainto, koska se kertoo suomalaisen oikeushenkilön läpi kulkevasta suuresta liiketoiminnan volyymista. Mutta ennen yhteiskunnallisen hyödyn arviointia pitäisi tietää ainakin:
 
 - mistä Tuiken liikevaihto koostuu ja kuinka suuri osa liiketoimista on konsernin sisäisiä;
 - kuinka paljon toimintaan liittyy Suomessa ostettuja tavaroita ja palveluja;
-- paljonko Suomessa syntyy palkkoja ja muuta arvonlisää;
+- paljonko Suomessa syntyy palkkoja ja muuta **arvonlisää** eli tuotannon arvoa sen jälkeen, kun siinä käytetyt muilta hankitut tavarat ja palvelut on vähennetty;
 - mitä veroja syntyy millekin julkisen talouden tasolle;
 - mitä pääoma- ja omistajatuloja siirtyy Suomen ulkopuolelle tai Suomeen;
 - mitä resursseja ja julkisia investointeja toiminta samalla sitoo.
@@ -66,7 +70,9 @@ Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä
 
 **Mitä lähteet osoittavat:** Google nimeää Tuike Finland Oy:n Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. Yritystietopalvelut ilmoittavat Tuiken vuoden 2025 liikevaihdoksi 574,374 M€, käyttökatteeksi 60,0 % ja henkilöstöksi 120. Haminan kaupunki puolestaan ilmoittaa kampuksella työskentelevän noin 500 henkilöä.
 
-**Mitä ne eivät osoita:** Tuiken liikevaihto ei ole sama asia kuin Suomessa syntyvä yhteiskunnallinen nettohyöty eikä kampuksen noin 500 henkilöä ole Tuiken henkilötyövuosien määrä. Yritystietopalvelut ovat toissijaisia lähteitä, joiden riippumattomuutta toisistaan ei ole varmistettu. Julkisesta aineistosta ei tässä vaiheessa myöskään rakenneta oletusta siitä, miten Google-konsernin sisäinen laskutus jakaa laskentapalvelujen tuotot eri oikeushenkilöille.
+**Käyttökate (EBITDA)** on liiketoiminnan tulos ennen poistoja, rahoituseriä ja tuloveroja. Poistoissa esimerkiksi palvelimen hankintahinta jaetaan kuluksi käyttövuosille. Käyttökateprosentti 60,0 % tarkoittaa noin 60 euroa käyttökatetta 100 euron liikevaihdosta; se ei tarkoita 60 euroa vapaasti käytettävää rahaa. **Liiketuloksessa (EBIT)** poistot ja omaisuuden arvonalentumiset on jo huomioitu. **Tilikauden tulos** on lopullinen kirjattu voitto tai tappio myös rahoitus-, vero- ja muiden tulokseen kuuluvien erien jälkeen. [Termit ja laskuesimerkki](/analyysit/datakeskukset/lahteet/#termit-lyhyesti).
+
+**Mitä ne eivät osoita:** Tuiken liikevaihto ei ole sama asia kuin Suomessa syntyvä yhteiskunnallinen nettohyöty eikä kampuksen noin 500 henkilöä ole Tuiken henkilötyövuosien määrä. **Henkilötyövuosi** tarkoittaa yhden kokoaikaisen työntekijän vuoden työpanosta; esimerkiksi kaksi puoli vuotta kokoaikaisesti työskentelevää vastaa yhtä henkilötyövuotta. Yritystietopalvelut ovat toissijaisia lähteitä, joiden riippumattomuutta toisistaan ei ole varmistettu. Julkisesta aineistosta ei tässä vaiheessa myöskään rakenneta oletusta siitä, miten Google-konsernin sisäinen laskutus jakaa laskentapalvelujen tuotot eri oikeushenkilöille.
 
 **Vertailukelpoisuus:** yrityksen henkilöstölukua verrataan saman rajauksen henkilöstölukuun. Vuoden 2025 ja kesäkuun 2026 lukujen erotusta ei tulkita alihankkijoiden määräksi. Yhtiön talous, kampuksen toiminta ja konsernin asiakasmyynti käsitellään eri tasoina.
 
@@ -116,7 +122,7 @@ Tuiken ja Outokummun Ferrochrome-segmentin julkisista luvuista voidaan tehdä yk
 
 Tuiken vuoden 2025 luvut ovat liikevaihto 574,374 M€, noin 344,6 M€:n johdettu käyttökate ja henkilöstö 120. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717).
 
-Outokummun Ferrochrome-segmentin vuoden 2025 myynti oli 462 M€, käyttökate 137 M€ ja vuoden lopun henkilöstö 454 FTE. Myynnistä 217 M€ oli ulkoista ja 245 M€ konsernin sisäistä. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b).
+Outokummun Ferrochrome-segmentin vuoden 2025 myynti oli 462 M€, käyttökate 137 M€ ja vuoden lopun henkilöstö 454 **FTE** eli kokoaikaisiksi työntekijöiksi muunnettuna. Esimerkiksi kaksi puolipäiväistä vastaa yhtä FTE:tä. Tässä kyse on vuoden lopun tilanteesta, ei koko vuoden henkilötyövuosista. Myynnistä 217 M€ oli ulkoista ja 245 M€ konsernin sisäistä. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b).
 
 | Rakenneluku | Tuike Finland Oy | Outokumpu Ferrochrome |
 |---|---:|---:|
@@ -185,9 +191,9 @@ Tässä julkaisussa tätä epävarmuutta ei piiloteta yhteen yhdistelmäpistemä
 
 Outokumpu tuli mukaan, kun auditissa haluttiin verrata datakeskuksen taloudellista rakennetta perinteiseen, energiaintensiiviseen teollisuuteen. Samalla vastaan tuli tuttu ongelma: **mikä organisaatiotaso oikeastaan tuottaa tarkasteltavan luvun?**
 
-Outokummun vuoden 2025 vuosikertomuksessa Ferrochrome-segmentin myynti oli 462 M€, josta ulkoista myyntiä 217 M€ ja konsernin sisäistä 245 M€. Käyttökate oli 137 M€ ja vuoden lopun henkilöstö 454 henkilötyövuotta. Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
+Outokummun vuoden 2025 vuosikertomuksessa Ferrochrome-segmentin myynti oli 462 M€, josta ulkoista myyntiä 217 M€ ja konsernin sisäistä 245 M€. Käyttökate oli 137 M€ ja vuoden lopun henkilöstö 454 FTE eli kokoaikaisiksi työntekijöiksi muunnettuna. Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
 
-Tässä 462 M€ ei siis ole sama asia kuin ulkopuolisilta asiakkailta saatu 462 M€:n myynti. Lähes puolet ilmoitetusta myynnistä on segmentin sisäistä myyntiä muille konsernin osille. Tämä on vertailulle arvokas havainto juuri siksi, että myös Tuiken kohdalla konsernin sisäisten liiketoimien merkitys on avoin.
+Tässä 462 M€ ei siis ole sama asia kuin ulkopuolisilta asiakkailta saatu 462 M€:n myynti. Hieman yli puolet (245 / 462 ≈ 53 %) ilmoitetusta myynnistä on konsernin sisäistä myyntiä muille konsernin osille. Tämä on vertailulle arvokas havainto juuri siksi, että myös Tuiken kohdalla konsernin sisäisten liiketoimien merkitys on avoin.
 
 Outokumpu näyttää samalla, miksi **oikeushenkilö, tehdas, liiketoimintasegmentti ja konserni** on pidettävä erillään. Ferrochrome-segmentti ei kata kaikkea Tornion ruostumattoman teräksen tuotantoa, eikä vuoden lopun FTE ole suoraan sama asia kuin vuoden keskimääräinen henkilöstömäärä.
 

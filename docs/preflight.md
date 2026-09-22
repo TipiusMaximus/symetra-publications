@@ -7,19 +7,25 @@
 - 8 suunnitelman mukaista pääsivua, lisäksi pitkä raportti ja 404: yhteensä 10 HTML-sivua.
 - Kaikki A01–A11-kysymykset, niiden alkuperä, kuvaileva arvio, lähteet ja avoimet tiedot mukana.
 - Kohdevertailu ja kuusi vaikutusaluetta noudattavat kuusiosaista havaintomallia. Ei yhteispisteitä, voittajaa tai politiikkasuositusta.
-- 71 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin ja Outokummun alkuperäislähteet lisätty ja tarkistettu julkaisuvaiheessa.
+- 74 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin ja Outokummun alkuperäislähteet lisätty ja tarkistettu julkaisuvaiheessa.
 - Laskennassa kokonaislukuaritmetiikka; käyttökatteen pyöristys ja johdettujen lukujen rajat näkyvät.
 - Alkuperäistä keskusteluarkistoa, käyttäjän paikallisia polkuja ja PDF-kokotekstejä ei sisällytetä julkaisurepoon tai buildiin.
 - Ei väitettä koko valmistavan teollisuuden kattavasta auditoinnista; verrokkien suppeampi tutkimussyvyys näkyy.
 
 ## Automaattiset tarkistukset
 
-- `npm run preflight`: 5 testiä hyväksytty; 10 HTML-sivua; 381 sisäistä linkki-, resurssi- ja ankkuriviittausta; yksi H1 sivua kohti; ei otsikkotasojen hyppyjä tai päällekkäisiä tunnisteita.
+- `npm run preflight`: 7 testiä hyväksytty; 10 HTML-sivua; 290 sisäistä linkki-, resurssi- ja ankkuriviittausta; yksi H1 sivua kohti; ei otsikkotasojen hyppyjä tai päällekkäisiä tunnisteita.
 - Kanonisten Markdown-sisältöjen tekstivastaavuus HTML:ään tarkistettu, mukaan lukien jokaisen tutkimuskysymyksen koko teksti.
 - Sekä `/symetra-publications/`-alihakemisto että tyhjä juuripolku rakennettu ja tarkistettu.
 - Puhtaassa tilapäishakemistossa tehty `npm ci --ignore-scripts`, preflight ja juuripolun tarkistus hyväksytysti (paikallinen Node 23.11.0). GitHub Actions varmentaa erikseen Node 22:n.
-- 71 yksilöllistä ulkoista lähdeosoitetta tarkistettu: 69 vastasi onnistuneesti; Stora Enson vuoden 2010 tilinpäätös ja IMF:n taustalähde palauttivat HTTP 403. Ei HTTP 404 -lähteitä. Käyttörajaukset näkyvät lähdesivulla. HTTP-tulos ei ole sisällön varmennus.
+- 74 yksilöllistä ulkoista lähdeosoitetta tarkistettu: 72 vastasi onnistuneesti; Stora Enson vuoden 2010 tilinpäätös ja IMF:n taustalähde palauttivat HTTP 403. Ei HTTP 404 -lähteitä. Käyttörajaukset näkyvät lähdesivulla. HTTP-tulos ei ole sisällön varmennus.
 - Asennuksen riippuvuusauditointi: ei havaittuja haavoittuvuuksia. Yksi riippuvuuden vanhentumisilmoitus (`whatwg-encoding`); ei estä buildia, vaihto jätetään riippuvuuden ylläpitäjälle.
+
+### Termiselitysten tarkistus — 22.9.2026
+
+Liikevaihto, EBITDA/käyttökate, EBIT/liiketulos, tilikauden tulos, FTE, henkilötyövuosi, arvonlisä sekä sisäinen ja ulkoinen myynti on avattu lukijalle. Laskentasivun termitaulukon linkit ja ankkuri tarkistuvat myös pitkän raportin kautta. Tilastokeskuksen kaksi käsitelähdettä on lisätty rekisteriin ja saatavuustarkistukseen.
+
+Muokattujen neljän sisältösivun kaikki aiemmat suorat ulkoiset lähdelinkit sekä aiemmat lähderekisterin merkinnät on verrattu Git-versioon: ne säilyvät. Laskentakoodi, lähtöluvut ja HEL16-asiakirjarekisteri eivät muutu. Vuoden lopun FTE:n nimitys ja sisäisen myynnin 53 prosentin sanallinen kuvaus on täsmennetty. `git diff --check` hyväksytty. Tässä päivityksessä ei tehty uutta selaimen ulkoasu- tai saavutettavuusauditointia.
 
 ## Ulkoasu ja saavutettavuus
 

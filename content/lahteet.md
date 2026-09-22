@@ -22,17 +22,37 @@ Tällä sivulla julkaistaan vain laskelmia, joilla on analyysissä jokin tehtäv
 
 Johdettu tai skenaarioluku ei muutu mittaukseksi sillä, että laskutoimitus on täsmällinen. Laskennan tarkkuus ja lähtötiedon varmuus ovat eri asioita.
 
+### Termit lyhyesti
+
+Laskelmien lukeminen ei edellytä liiketalouden tuntemusta. M€ tarkoittaa miljoonaa euroa. Alla olevat tulosluvut kuvaavat eri vaiheita siinä, mitä yrityksen tuotoista jää jäljelle kulujen jälkeen.
+
+| Termi | Mitä se tarkoittaa tavallisella kielellä? |
+|---|---|
+| **Liikevaihto** | Yrityksen tavaroiden ja palvelujen myynti euroina, ilman arvonlisäveroa ja myönnettyjä alennuksia. Se ei ole voitto: kuluja ei ole vielä vähennetty. |
+| **EBITDA eli käyttökate** | Liiketoiminnan tulos ennen poistoja, rahoituseriä ja tuloveroja. Poistoissa esimerkiksi palvelimen hankintahinta jaetaan kuluksi sen käyttövuosille. Käyttökate ei ole kassaan jäävä rahamäärä. |
+| **EBIT eli liiketulos** | Liiketoiminnan voitto tai tappio, jossa poistot ja arvonalentumiset on jo huomioitu mutta rahoituseriä ja tuloveroja ei vielä ole. Arvonalentuminen tarkoittaa omaisuuden kirjanpitoarvon pienentämistä. |
+| **Tilikauden tulos** | Tilikaudelle, yleensä vuodelle, kirjattu lopullinen voitto tai tappio myös rahoitus-, vero- ja muiden tulokseen kuuluvien erien jälkeen. Sekään ei ole sama kuin tilikauden rahavirta. |
+| **FTE (full-time equivalent)** | Henkilöstö kokoaikaisiksi työntekijöiksi muunnettuna: esimerkiksi kaksi puolipäiväistä vastaa yhtä FTE:tä. Luvusta on tarkistettava, kuvaako se tiettyä hetkeä vai ajanjakson keskiarvoa. |
+| **Henkilötyövuosi** | Yhden kokoaikaisen työntekijän vuoden työpanos. Esimerkiksi kaksi puoli vuotta kokoaikaisesti työskentelevää tuottaa yhteensä yhden henkilötyövuoden. Vuoden lopun FTE-luku ei kerro koko vuoden henkilötyövuosia. |
+| **Arvonlisä** | Tuotannossa syntyvä uusi arvo: tuotannon arvosta vähennetään siinä käytettyjen, muilta hankittujen tavaroiden ja palvelujen arvo. Se sisältää esimerkiksi palkkoja, joten se ei ole sama kuin yrityksen voitto. |
+| **Konsernin sisäinen myynti** | Myyntiä saman yritysryhmän toiselle yhtiölle tai liiketoiminta-alueelle. Se voi näkyä myyvän yksikön luvuissa, mutta poistetaan konsernin yhteenlasketusta myynnistä, jotta sama myynti ei tule lasketuksi kahdesti. |
+| **Ulkoinen myynti** | Myyntiä konsernin ulkopuolisille asiakkaille. Ulkoinen ei tässä tarkoita ulkomaille suuntautuvaa myyntiä. |
+
+Määritelmien taustaksi: [Tilastokeskus: henkilötyövuosi](https://stat.fi/meta/kas/henkilotyovuosi.html) ja [Tilastokeskus: arvonlisäys](https://stat.fi/meta/kas/arvonlisays.html).
+
+Tunnuslukujen tarkka laskentatapa tarkistetaan aina käytetystä lähteestä. Esimerkiksi oikaistu käyttökate tarkoittaa lukua, josta raportoija on poistanut erikseen ilmoittamiaan eriä; sitä ei pidä sekoittaa oikaisemattomaan käyttökatteeseen. Kotimainen arvonlisä tarkoittaa Suomessa syntyvää arvoa. Sekään ei yksin kerro yhteiskunnallista nettohyötyä, jossa tarvitaan myös kustannukset ja vertailu siihen, mitä ilman hanketta tapahtuisi.
+
 ### Tuike Finland Oy: mitä 60 prosentin käyttökate tarkoittaa euroina?
 
 Tuiken vuoden 2025 yritystiedoissa liikevaihto on 574,374 M€, käyttökateprosentti 60,0 % ja liiketulos 30,305 M€. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717).
 
-Pyöristetystä käyttökateprosentista voidaan johtaa:
+Käyttökateprosentti kertoo käyttökatteen osuuden liikevaihdosta. Tässä 60,0 % tarkoittaa noin 60 euroa käyttökatetta jokaista 100 euron myyntiä kohti. Pyöristetystä prosentista voidaan johtaa:
 
 **574,374 M€ × 60,0 % ≈ 344,6 M€ käyttökate.**
 
 Tämä auttaa hahmottamaan yhtiön tulorakennetta, mutta sitä ei tulkita vapaaksi kassavirraksi, Suomen arvonlisäksi tai yhteiskunnalliseksi nettohyödyksi.
 
-Myös EBITDA–EBIT-erotus on laskennallisesti noin **314,3 M€**. Se on tutkimuksellisesti kiinnostava juuri siksi, että alkuperäistä tilinpäätöstä liitetietoineen ei ole vielä luettu: erotuksen sisältöä ei nimetä oletuksella poistoiksi tai muuksi yksittäiseksi eräksi.
+Myös **käyttökatteen ja liiketuloksen erotus (EBITDA − EBIT)** on laskennallisesti noin **314,3 M€**: noin 344,6 M€ − 30,305 M€. Se näyttää, kuinka paljon nämä kaksi tuloslukua eroavat toisistaan. Se on tutkimuksellisesti kiinnostava juuri siksi, että alkuperäistä tilinpäätöstä liitetietoineen ei ole vielä luettu: erotuksen sisältöä ei nimetä oletuksella poistoiksi tai muuksi yksittäiseksi eräksi.
 
 Sen sijaan liikevaihdon ja käyttökatteen erotusta ei nosteta päämittariksi. Se voidaan laskea aritmeettisesti, mutta ilman kulurakennetta se ei kerro esimerkiksi kotimaisten hankintojen määrää.
 
