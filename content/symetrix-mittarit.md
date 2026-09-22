@@ -161,7 +161,7 @@ Alla ei pisteytetä yrityksiä. Taulukko kertoo vain, **minkä tyyppistä käytt
 
 Tämä taulukko selittää, miksi Symetrix-matriisissa voi edelleen olla `?`, vaikka tausta-aineistossa on paljon tietoa. **Havainto voi olla olemassa ilman, että se sopii juuri kyseisen mittarin osoittajaan, nimittäjään, vuoteen tai systeemirajaan.**
 
-[Koneellinen coverage-yhteenveto](/downloads/evidence-coverage.json) ja [koko Evidence Ledger](/downloads/evidence-index.json) päivittyvät buildissa lähdeaineiston mukana.
+[Koneellinen coverage-yhteenveto](/downloads/evidence-coverage.json) ja [koko Evidence Ledger](/downloads/evidence-index.json) päivittyvät buildissa lähdeaineiston mukana. [Metric Registry](/downloads/metric-registry.json) kertoo erikseen, mitkä mittarit ovat jo pisteytettävissä ja mikä täsmällinen blocker estää muita.
 
 ## Mikä baseline on hyvä baseline?
 
