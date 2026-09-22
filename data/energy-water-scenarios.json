@@ -103,8 +103,8 @@
     },
     "kemi": {
       "water_design_value_m3_per_tonne_pulp": 10,
-      "pulp_nameplate_tonnes_per_year": 1500000,
-      "derived_design_proxy_m3_per_year": 15000000,
+      "pulp_nameplate_tonnes_per_year": 1320000,
+      "derived_design_proxy_m3_per_year": 13200000,
       "sourceRefs": [
         "S088",
         "S069"
@@ -113,8 +113,8 @@
       "note": "Metsä Fibre calls 10 m3/t a raw-water design value but also explains that the design value refers to total wastewater generated at planned output; retain as a water-use design proxy, not measured withdrawal."
     },
     "descriptive_ratio": {
-      "kemi_design_proxy_over_hamina_reported_withdrawal": 1321,
-      "hamina_seawater_permit_ceiling_over_kemi_design_proxy": 5.33,
+      "kemi_design_proxy_over_hamina_reported_withdrawal": 1162,
+      "hamina_seawater_permit_ceiling_over_kemi_design_proxy": 6.06,
       "interpretation": "Rabbit-hole indicators only. Different water concepts and statuses must remain visible: Hamina 2024 reported withdrawal, Hamina seawater permit ceiling, and Kemi design proxy are not interchangeable."
     },
     "next_required": {
