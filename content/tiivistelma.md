@@ -6,57 +6,125 @@ language: fi
 status: ready
 published: false
 updated: 2026-09-22
-description: Mitä datakeskusten vaikutuksista voidaan osoittaa ja millä ehdoilla niitä voidaan verrata valmistavaan teollisuuteen?
+description: Mitä Suomi saa datakeskuksesta vastineeksi sen käyttämistä resursseista – ja millä ehdoilla tätä voidaan verrata muuhun teolliseen toimintaan?
 layout: article
 ---
-## Mitä aineisto kertoo?
+## Ydinvastaus
 
-**Datakeskusten paikallisista työpaikoista ja verotuloista on näyttöä. Suomen kokonaisnettohyöty tai datakeskusten paremmuus suhteessa valmistavaan teollisuuteen ei ratkea tällä aineistolla.** Vertailu riippuu siitä, tarkastellaanko yritystä, toimipaikkaa, kuntaa vai kansantaloutta. Haminan luvut havainnollistavat rajojen merkitystä; Kemi ja Tornio tuovat mukaan erilaisen tuotanto- ja sähkötaseen. [Kohteet ja näyttö](/analyysit/datakeskukset/vertailu/).
+Datakeskus voi synnyttää Suomessa merkittävää liiketoimintaa, työtä, verotuloja ja muuta paikallista kysyntää. Samalla se käyttää sähköä, verkkokapasiteettia, maata, infrastruktuuria ja muita resursseja. **Nykyinen aineisto ei vielä riitä yhteen luotettavaan lukuun siitä, mikä datakeskuksen nettovaikutus Suomelle on tai miten se sijoittuu suhteessa valmistavaan teollisuuteen.**
 
-Julkaisu vastaa kysymykseen: **mitä datakeskusten taloudellisista ja yhteiskunnallisista vaikutuksista voidaan osoittaa, ja millä ehdoilla niitä voidaan verrata valmistavaan teollisuuteen?** Tarkastelu koskee nimettyjä kohteita ja 22.9.2026 mennessä koottua aineistoa. Se ei ole riippumaton tilintarkastus eikä koko toimialan kattava vaikutustutkimus.
+Syy ei ole se, ettei tietoa olisi lainkaan. Ongelma on, että eri lähteet mittaavat eri asioita: yhtiötä, kampusta, konsernia, lupaa, toteumaa, nimellistehoa, vuosienergiaa tai liiketoimintasegmenttiä. Kun nämä erotetaan, aineistosta alkaa kuitenkin muodostua varsin selkeä kuva siitä, **mitä voidaan jo osoittaa ja mitä pitäisi vielä mitata**.
 
-## Miten tutkimuskysymys laajeni?
+Tämän julkaisun ydinkysymys on:
 
-Auditointi ei lähtenyt valmiista mittaristosta. Se eteni havainto kerrallaan, ja jokainen rajausongelma synnytti seuraavan kysymyksen.
+> **Mitä Suomi saa datakeskuksesta vastineeksi sen käyttämistä resursseista – ja miten tätä voidaan verrata muihin teollisiin investointeihin samoilla laskentarajoilla?**
 
-Ensimmäinen konkreettinen kysymys oli **kuinka paljon Haminan datakeskus työllistää**. Julkisissa lähteissä tuli vastaan kaksi hyvin erilaista lukua: Tuike Finland Oy:n yritystason henkilöstö ja Haminan kampuksella työskentelevä laajempi henkilömäärä. Tämä pakotti erottamaan toisistaan Google-konsernin, suomalaisen oikeushenkilön ja fyysisen kampuksen.
+Tarkastelu perustuu 22.9.2026 mennessä koottuun julkiseen aineistoon. Se ei ole riippumaton tilintarkastus eikä koko toimialan kattava vaikutustutkimus.
 
-Seuraavaksi tarkasteluun tuli **talous**. Tuiken liikevaihto osoittautui suureksi suhteessa yhtiön omaan henkilöstöön, mutta samalla kävi ilmeiseksi, ettei liikevaihto vastaa Suomeen jäävää hyötyä. Siksi tutkimus laajeni palkkoihin, ostoihin, veroihin, arvonlisään ja konsernirajoihin.
+## Ensin on ymmärrettävä, mitä datakeskus tuottaa
 
-Tämän jälkeen kysymys muuttui muotoon **mitä saadaan suhteessa käytettyihin resursseihin**. Sähkö, verkkokapasiteetti, maa, vesi, varavoima ja hukkalämpö tulivat mukaan, eikä datakeskusta enää voinut tarkastella vain yrityksen tilinpäätöksenä.
+Datakeskus ei tuota ulos lähtevää fyysistä tavaraa. Sen fyysinen infrastruktuuri muuttaa sähkön, laitteiston, rakennukset, verkkoyhteydet ja työn **käyttökelpoiseksi laskenta-, tallennus- ja verkkokapasiteetiksi**, jota käytetään osana digitaalisia palveluja.
 
-Vasta tämän jälkeen Kemi ja Kemi–Tornio tulivat vertailuun. Niiden tehtävä ei ole toimia automaattisina vaihtoehtoina Haminalle, vaan testata, mitä tapahtuu, kun samoja työ-, talous- ja energiaindikaattoreita yritetään käyttää erilaisiin tuotantorakenteisiin. Tästä syntyi myös tarve käsitellä vaihtoehtoiskustannusta erikseen.
+Yksinkertaistettuna:
 
-Tämä etenemisjärjestys on samalla julkaisun lukutapa: **ensin ymmärretään kohde ja laskentaraja, sitten mitataan, ja vasta sen jälkeen verrataan.**
+**sähkö + verkko + maa ja rakennukset + palvelimet + työ → datakeskusoperaatio → laskenta- ja tallennuskapasiteetti → digitaaliset palvelut**
 
-## Neljä keskeistä havaintoa
+Tästä syntyy kaksi eri talouskysymystä:
 
-### Ensin on erotettava Google, Tuike ja Haminan kampus
+1. kuinka arvokasta digitaalista palvelua kapasiteetin avulla tuotetaan;
+2. kuinka suuri osa tämän arvoketjun tuloista, palkoista, ostoista ja veroista syntyy tai jää Suomeen.
 
-Haminan datakeskus tunnetaan Googlen toimintana, mutta suomalaiset yritystalouden luvut löytyvät Tuike Finland Oy:stä. Google itse nimeää Tuiken Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. Tuiken vuoden 2025 henkilöstöluku 120 ja Haminan kaupungin ilmoittama noin 500 kampuksella työskentelevää henkilöä kuvaavat siksi eri laskentarajoja, eivät kahta kilpailevaa arviota samasta asiasta. Niiden erotusta ei voida käyttää alihankkijoiden määränä. [Google/Tuike S072](/analyysit/datakeskukset/lahteet/#S072), [S001–S003](/analyysit/datakeskukset/lahteet/#S001), [Haminan case](/analyysit/datakeskukset/vertailu/#hamina-ensin-on-ymmarrettava-mika-tuike-finland-oy-on).
+Ensimmäiseen ei tämän auditin aineistolla voida vastata Haminan osalta luotettavasti. Jälkimmäiseen voidaan vastata osittain suomalaisen yhtiön, kampuksen ja paikallisten rahavirtojen kautta. [Toimintamalli ja vertailu](/analyysit/datakeskukset/vertailu/).
 
-### Sähkön käyttöä ja tuotantoa on verrattava erikseen
+## Hamina näyttää, miksi laskentaraja ratkaisee
 
-Kemin biotuotetehdas ilmoittaa tuottavansa sähköä yli oman tarpeensa. Datakeskuksen verkkosähkön otto ja tehtaan koko energiankäyttö ovat eri mittareita. Fingridin noin 40 prosentin kulutuskasvu puolestaan on ehdollinen hankkeiden toteutumiselle. Avoinna ovat kohteiden saman vuoden mitatut energiavirrat ja hankkeiden toteutuminen. [Kemin lähde S068](/analyysit/datakeskukset/lahteet/#S068), [Fingrid S048–S049](/analyysit/datakeskukset/lahteet/#S048).
+Haminan datakeskus tunnetaan Googlen toimintana, mutta suomalaiset yritystalouden luvut löytyvät **Tuike Finland Oy:stä**. Google nimeää Tuiken Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. [S072](/analyysit/datakeskukset/lahteet/#S072).
 
-### Lupa, suunnitelma ja toteuma ovat eri näyttöä
+Tämän vuoksi Google-konserni, Tuike Finland Oy, Haminan fyysinen kampus ja Suomessa syntyvä yhteiskunnallinen vaikutus on erotettava toisistaan.
 
-HEL16:n ympäristölupa kertoo toiminnan ehdoista. Hakemuksen noin 3 000 m³:n vuosittainen vedenkäyttö on suunnitteluarvio. Kumpikaan ei vielä osoita toteutunutta vesitasetta tai ehtojen noudattamista. Hukkalämmön hyödyntämisestä on Suomessa sääntelyä, mutta velvoite ja kohteessa saavutettu nettohyöty arvioidaan erikseen. [Päätös D08, s. 15 ja 50–55](/analyysit/datakeskukset/lahteet/#D08), [A03](/analyysit/datakeskukset/vaiteet/#A03).
+Tuiken vuoden 2025 yritystiedoissa henkilöstömäärä on 120. Haminan kaupunki ilmoitti kesäkuussa 2026 kampuksella työskentelevän noin 500 henkilöä. Nämä eivät ole kaksi arviota samasta luvusta, vaan kaksi eri laskentarajaa eri ajankohdilta. **500 − 120 ei siis ole varmennettu alihankkijamäärä.** [S001–S003](/analyysit/datakeskukset/lahteet/#S001).
 
-### Liikevaihto ei ole yhteiskunnan nettohyöty
+Sama näkyy taloudessa. Tuike Finland Oy:n vuoden 2025 liikevaihdoksi ilmoitetaan 574,374 M€. Se kertoo suuresta suomalaisen oikeushenkilön läpi kulkevasta liiketoiminnan volyymista, mutta **574 miljoonaa euroa ei ole sama asia kuin Suomeen jäävä yhteiskunnallinen hyöty**. Siihen tarvitaan erikseen tietoa palkoista, kotimaisista ostoista, veroista, pääoma- ja omistajatuloista, konsernin sisäisistä liiketoimista sekä julkisista kustannuksista. [Talousvaikutukset](/analyysit/datakeskukset/vaikutukset/#talous-574-miljoonaa-euroa-on-lahtopiste-ei-hyotyluku).
 
-Yrityksen myynti, palkat, ostot, verot ja arvonlisä sisältävät keskenään päällekkäisiä eriä. Haminan kiinteistövero on kaupungin tuloa, mutta kuntatalouden nettohyöty edellyttää myös menojen ja vaihtoehdon arviointia. Koko verkon investointisummaa ei voi kohdistaa yhdelle datakeskukselle. Avoinna ovat kustannusten kohdistus, kotimaiset arvonlisäosuudet ja realistinen vaihtoehtotilanne. [Talous ja verkko](/analyysit/datakeskukset/vaikutukset/).
+## Mitä aineistosta voidaan jo sanoa?
 
-## Miten tämä julkaisu on syntynyt?
+### Työstä on näyttöä, mutta työpaikkaluku riippuu rajasta
 
-Kansalaisaloite 17997 on yksi tutkimuskysymysten lähteistä. Sen taloutta, sähköä, ympäristöä ja maksua koskevat perustelut käsitellään avoimesti [tutkimuskysymyksissä A01–A11](/analyysit/datakeskukset/vaiteet/). Kysymykset on muotoiltu neutraalisti; alkuperäisen väitteen yhteys ja sen arvio säilyvät nähtävissä. Kansalaisaloite ei ole todiste omien väitteidensä paikkansapitävyydestä.
+Haminan aineisto osoittaa sekä Tuiken oman henkilöstön että kampuksen laajemman työjoukon. Kemin biotuotetehdas ja Outokummun Ferrochrome-segmentti antavat vertailuun omat henkilöstöhavaintonsa. Yhteismitallinen vertailu vaatii kuitenkin saman vuoden FTE-luvut samalla työnantaja- ja toimipaikkarajalla. Rakennusvaiheen työ ja pysyvä operointi on pidettävä erillään.
 
-Valmistavan teollisuuden tarkastelu on datakeskuskohteita suppeampi: se sisältää varmennettuja lähdehavaintoja ja vertailurajojen arvioinnin. Kohteista ei muodosteta kokonaispistemäärää tai paremmuusjärjestystä. Myöskään uuden maksun kannattavuutta ei ratkaista puuttuvilla oletuksilla.
+### Liikevaihto, arvonlisä ja nettohyöty eivät ole sama asia
+
+Yrityksen myynti voi olla suuri ilman, että koko summa jää Suomeen. Toisaalta Suomeen voi syntyä palkkoja, veroja, kotimaisia ostoja ja muita vaikutuksia, joita pelkkä tuloslaskelman viimeinen rivi ei kuvaa. Näitä eriä ei myöskään voi vain laskea yhteen, koska osa niistä sisältyy jo toisiinsa.
+
+### MW, MWh ja sähköntase on erotettava
+
+Liittymisteho tai nimellisteho ei ole sama asia kuin vuoden energiankulutus. Fingridin noin 40 prosentin kulutuskasvukuva on ehdollinen hankkeiden toteutumiselle, eikä se koske vain datakeskuksia. Kemin biotuotetehdas puolestaan ilmoittaa tuottavansa sähköä yli oman tarpeensa, joten sen energiatalous on rakenteeltaan erilainen kuin verkosta sähköä ottavan datakeskuksen. [S048–S049](/analyysit/datakeskukset/lahteet/#S048), [S068](/analyysit/datakeskukset/lahteet/#S068).
+
+### Verkkoinvestointia ei voi automaattisesti kohdistaa yhdelle käyttäjälle
+
+Hepokorven aineisto osoittaa, että sama sähköverkon vahvistus voi palvella useita toimijoita ja yleistä verkkoa. Siksi koko sähköaseman, kaapelin tai verkkohankkeen kustannusta ei kirjata automaattisesti yhden datakeskuksen aiheuttamaksi kustannukseksi. Tarvitaan tieto siitä, mitä olisi rakennettu ilman hanketta ja miten kustannukset jakautuvat.
+
+### Lupa, suunnitelma ja toteuma ovat eri näyttötasoja
+
+HEL16:n lupa kertoo toiminnan sallituista rajoista ja velvoitteista. Se ei vielä kerro toteutunutta vedenkäyttöä, energiankulutusta, melua tai hukkalämmön toimitusta. Lupatieto on vahvaa näyttöä siitä, **mitä saa tehdä ja mitä pitää seurata**, ei siitä mitä käytössä lopulta tapahtuu. [D08](/analyysit/datakeskukset/lahteet/#D08).
+
+## Miksi mukana ovat Kemi ja Outokumpu?
+
+Valmistavan teollisuuden verrokkeja ei tuotu mukaan todistamaan, että datakeskus olisi parempi tai huonompi.
+
+**Kemi** näyttää, että energiankäyttöä ei voi verrata ilman omaa tuotantoa, verkosta ottoa ja verkkoon vientiä.
+
+**Outokumpu** näyttää, että konsernin segmenttiluku ei ole sama asia kuin yhden tehtaan tai ulkoisen myynnin luku. Ferrochrome-segmentin vuoden 2025 myynnistä osa on konsernin sisäistä, mikä tekee siitä hyvän vertailuparin Tuiken konsernirajaongelmalle. [S070–S071](/analyysit/datakeskukset/lahteet/#S070).
+
+**Hepokorpi** puolestaan näyttää, ettei tulevaa datakeskusta voi käsitellä samoin kuin jo toimivaa laitosta: suunnitelma, lupa, rakennettu kapasiteetti ja toteutunut käyttö on erotettava.
+
+Näiden verrokkien tärkein tehtävä on siis testata **mittaustapaa**, ei tuottaa toimialojen paremmuusjärjestystä.
+
+## Vaikein kysymys on vaihtoehto
+
+Yhteiskunnallinen vaikutus ei ratkea vain vertaamalla kahta toimivaa laitosta toisiinsa. Pitää myös kysyä, **mitä samoilla resursseilla olisi realistisesti tapahtunut ilman tarkasteltavaa hanketta**.
+
+Haminassa paperitehtaan sulkeminen vuonna 2008 tapahtui ennen Googlen kiinteistökauppaa vuonna 2009 ja datakeskuksen avaamista vuonna 2011. Tämä aikajärjestys ei tue tulkintaa, että Google olisi syrjäyttänyt samanaikaisesti toimivan paperitehtaan. Samalla se ei todista vaihtoehtoiskustannusta nollaksi. [S028–S029](/analyysit/datakeskukset/lahteet/#S028).
+
+Todellinen vaihtoehto tarvitsee sijainnin, ajan, kysynnän, rahoituksen, verkkotarpeen ja toteuttamiskelpoisuuden. Kemi tai Tornio eivät ole automaattisesti vaihtoehtoja Haminan tontille. [Vaihtoehtoiskustannus](/analyysit/datakeskukset/vaikutukset/#vaihtoehtoiskustannus-mita-olisi-oikeasti-tapahtunut-ilman-datakeskusta).
+
+## Mitä tästä voidaan päätellä nyt?
+
+Nykyinen aineisto tukee viittä varovaista päätelmää:
+
+1. **Datakeskukset synnyttävät Suomessa todellista taloudellista toimintaa**, mutta sen kotimainen arvonlisä ja nettovaikutus eivät selviä liikevaihdosta yksin.
+2. **Työllisyys on todellinen vaikutus**, mutta yhtiön henkilöstö, kampuksen työjoukko, alihankinta ja rakennusvaihe on erotettava.
+3. **Sähkö ja verkko ovat keskeisiä resursseja**, mutta teho, energia, verkkokapasiteetti ja kustannusten kohdistus vaativat eri mittarit.
+4. **Lupa- ja suunnitteluaineisto ei korvaa käyttövaiheen mittauksia.**
+5. **Vertailu valmistavaan teollisuuteen on mahdollinen vain yhteisillä laskentarajoilla ja realistisella vaihtoehtotilanteella.**
+
+Aineisto ei tällä hetkellä ratkaise yhtä “hyöty euroa per MW” -lukua, koko Suomen nettovaikutusta tai toimialojen paremmuutta. Se kertoo sen sijaan jo varsin tarkasti, **mitä tietoja tällaisen vertailun tekemiseen vielä tarvitaan**.
+
+## Miten tutkimus eteni?
+
+Auditointi ei lähtenyt valmiista mittaristosta.
+
+Ensimmäinen kysymys oli Haminan työllisyys. 120 ja noin 500 henkilön luvut pakottivat erottamaan yhtiön kampuksesta. Se johti talouskysymykseen ja Tuiken suureen liikevaihtoon. Siitä tutkimus laajeni kysymykseen siitä, mitä rahaa todella jää Suomeen.
+
+Seuraavaksi mukaan tulivat sähkö, verkko, maa, vesi, varavoima ja hukkalämpö. Kun eri resurssit oli erotettu, vasta sitten oli mielekästä tuoda mukaan valmistavan teollisuuden verrokkeja. Niiden kautta löytyi uusia rajausongelmia, kuten oma sähköntuotanto ja konsernin sisäinen myynti.
+
+Viimeiseksi nousi vaihtoehtoiskustannus: pelkkä kohteiden rinnastaminen ei vielä kerro, mikä investoinnin kausaalinen vaikutus on.
+
+Tästä syntyi julkaisun periaate:
+
+> **Ensin ymmärretään kohde ja laskentaraja. Sitten mitataan. Vasta sen jälkeen verrataan.**
+
+## Julkaisun rajat ja tausta
+
+Kansalaisaloite 17997 oli yksi tutkimuskysymysten lähteistä, mutta se ei määritä koko analyysin kehystä. Aloitteen väitteet A01–A11 on säilytetty erillisenä [lähdeauditointina](/analyysit/datakeskukset/vaiteet/). Aloite ei ole todiste omien väitteidensä paikkansapitävyydestä.
+
+Valmistavan teollisuuden tarkastelu on datakeskuskohteita suppeampi, eikä kohteista muodosteta yhteispistemäärää tai paremmuusjärjestystä. Julkaisu ei ratkaise myöskään uuden maksun tai muun politiikkatoimen tarkoituksenmukaisuutta puuttuvilla oletuksilla.
 
 ## Valitse lukutapa
 
-- [Toimintamalli ja vertailu](/analyysit/datakeskukset/vertailu/) — mitä datakeskus taloudellisesti tekee, miten Google–Tuike–Hamina-rajat toimivat ja miten verrokit tuodaan mukaan.
-- [Vaikutukset](/analyysit/datakeskukset/vaikutukset/) — työ, talous, sähkö, verkko, ympäristö ja vaihtoehtoinen käyttö.
-- [Tutkimuskysymykset A01–A11](/analyysit/datakeskukset/vaiteet/) — havainnot, rajaukset ja avoin tieto.
+- [Toimintamalli ja vertailu](/analyysit/datakeskukset/vertailu/) — mitä datakeskus taloudellisesti tekee, miten Google–Tuike–Hamina-rajat toimivat ja mitä Hepokorpi, Kemi ja Outokumpu opettavat.
+- [Vaikutukset](/analyysit/datakeskukset/vaikutukset/) — tutkimusreitti työstä talouteen, sähköön, verkkoon, ympäristöön ja vaihtoehtoiskustannukseen.
+- [Menetelmä](/menetelma/) — miten kohde, aika, yksikkö, lähde ja laskentaraja pidetään erillään.
+- [Kansalaisaloitteen väitteiden lähdeauditointi](/analyysit/datakeskukset/vaiteet/) — A01–A11 pääanalyysin rinnalla.
 - [Pitkä raportti](/analyysit/datakeskukset/raportti/) — koko toimitettu analyysi yhdellä tulostettavalla sivulla.
 - [Lähteet ja laskelmat](/analyysit/datakeskukset/lahteet/) — alkuperäislähteet, laskentaketju ja aineiston kattavuus.
