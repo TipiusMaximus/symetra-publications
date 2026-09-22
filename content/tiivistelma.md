@@ -50,7 +50,7 @@ Sama näkyy taloudessa. **Liikevaihto** tarkoittaa tavaroiden ja palvelujen myyn
 
 ### Työstä on näyttöä, mutta työpaikkaluku riippuu rajasta
 
-Haminan aineisto osoittaa sekä Tuiken oman henkilöstön että kampuksen laajemman työjoukon. Kemin biotuotetehdas ja Outokummun Ferrochrome-segmentti antavat vertailuun omat henkilöstöhavaintonsa. Yhteismitallinen vertailu vaatii kuitenkin saman vuoden **FTE-luvut** eli kokoaikaisiksi muunnetut henkilöstöluvut samalla työnantaja- ja toimipaikkarajalla. Kaksi puolipäiväistä vastaa yhtä FTE:tä. Koko vuoden työpanosta kuvaa **henkilötyövuosi**: yhden henkilön kokoaikainen työ vuoden ajan. Vuoden lopun FTE-luku ei yksin kerro tätä vuosityöpanosta. Rakennusvaiheen työ ja pysyvä operointi on pidettävä erillään.
+Haminan aineisto osoittaa sekä Tuiken oman henkilöstön että kampuksen laajemman työjoukon. Mäntsälän Nebius DC Oy tuo rinnalle toisen toimivan datakeskusoperaattorin vuoden 2025 yhtiö- ja käyttövaiheen havaintoineen. Kemin biotuotetehdas ja Outokummun Ferrochrome-segmentti antavat vertailuun valmistavan teollisuuden henkilöstöhavaintoja. Yhteismitallinen vertailu vaatii kuitenkin saman vuoden **FTE-luvut** eli kokoaikaisiksi muunnetut henkilöstöluvut samalla työnantaja- ja toimipaikkarajalla. Kaksi puolipäiväistä vastaa yhtä FTE:tä. Koko vuoden työpanosta kuvaa **henkilötyövuosi**: yhden henkilön kokoaikainen työ vuoden ajan. Vuoden lopun FTE-luku ei yksin kerro tätä vuosityöpanosta. Rakennusvaiheen työ ja pysyvä operointi on pidettävä erillään.
 
 ### Liikevaihto, arvonlisä ja nettohyöty eivät ole sama asia
 
@@ -133,7 +133,7 @@ Valmistavan teollisuuden tarkastelu on datakeskuskohteita suppeampi, eikä kohte
 ## Valitse lukutapa
 
 - [Toimintamalli ja vertailu](/analyysit/datakeskukset/vertailu/) — mitä datakeskus taloudellisesti tekee, miten Google–Tuike–Hamina-rajat toimivat ja mitä Hepokorpi, Kemi ja Outokumpu opettavat.
-- [Symetrix Matrix v0.1](/analyysit/datakeskukset/symetrix/) — ensimmäiset oikeat Lens-pisteet, coverage ja rank-flip samalla lähdedatalla.
+- [Symetrix Matrix v0.2](/analyysit/datakeskukset/symetrix/) — baseline-ankkuroidut Lens-pisteet, auditin toimijat rinnakkain sekä coverage ja comparability erillään.
 - [Vaikutukset](/analyysit/datakeskukset/vaikutukset/) — tutkimusreitti työstä talouteen, sähköön, verkkoon, ympäristöön ja vaihtoehtoiskustannukseen.
 - [Menetelmä](/menetelma/) — miten kohde, aika, yksikkö, lähde ja laskentaraja pidetään erillään.
 - [Kansalaisaloitteen väitteiden lähdeauditointi](/analyysit/datakeskukset/vaiteet/) — A01–A11 pääanalyysin rinnalla.
