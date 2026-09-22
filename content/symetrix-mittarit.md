@@ -177,6 +177,40 @@ Kun vuoden 2024 raportoitu, meriveden poissulkeva nettokulutus yhdistetään 0,8
 
 Tätä **ei pisteytetä Nebiuksen WUE:ta vastaan**. Se sekoittaa vuoden 2024 veden, vuoden 2025 PUE:n ja vuoden 2026 ulkoisen sähköestimaatin, ja Googlen vesiluku sulkee meriveden kokonaan pois. Sen tehtävä on näyttää, että myös puuttuva WUE-solu voidaan korvata informatiivisella, eksplisiittisesti epävarmalla estimaatilla.
 
+## Vesi suhteessa liikevaihtoon
+
+Yksi käyttökelpoinen poikkitoimialainen näkökulma on normalisoida vesivirta taloudellisella myyntivolyymilla:
+
+**vedenottointensiteetti = vedenotto m³ / liikevaihto M€**  
+**kulutusintensiteetti = nettovedenkulutus m³ / liikevaihto M€**
+
+Mittarin suunta on lähtökohtaisesti **pienempi → resurssikevyempi suhteessa myyntivolyymiin**. Tätä ei kuitenkaan vielä pisteytetä, koska empiirinen baseline puuttuu ja Kemin site-tason liikevaihto ei ole julkinen.
+
+### Hamina 2024 — lähes sama raja ja sama vuosi
+
+Tuike Finland Oy:n vuoden 2024 liikevaihto oli **452,704 M€**. Google raportoi Haminan vuoden 2024 vesimittareiksi noin **11 356 m³ vedenottoa** ja **1 136 m³ nettokulutusta**, merivesi poissulkien.
+
+- vedenotto / liikevaihto = **~25,1 m³/M€**
+- nettokulutus / liikevaihto = **~2,5 m³/M€**
+
+Raja ei ole täydellinen: vesiluku on kampuskohtainen ja liikevaihto oikeushenkilön. Haminan tapauksessa ne ovat kuitenkin paljon lähempänä toisiaan kuin useimmat nykyiset teollisuusproxyt.
+
+### Kemi — tarkoituksellinen konservatiivinen alaraja
+
+Kemin vesikäytön design-proxy on noin **15 Mm³/v**. Tehtaan omaa liikevaihtoa ei ole julkisesti eroteltu Metsä Fibren liikevaihdosta. Metsä Fibren koko sellu- ja sahaliiketoiminnan vuoden 2024 liikevaihto oli **2 328,3 M€**.
+
+Jos Kemin 15 Mm³/v proxy jaetaan tarkoituksella **koko Metsä Fibren liikevaihdolla**, saadaan:
+
+**≥ ~6 440 m³/M€**
+
+Tämä on konservatiivinen **alaraja**, ei Kemin tehtaan varsinainen intensiteetti: nimittäjä sisältää neljä sellutehdasta, neljä sahaa ja muuta liiketoimintaa. Kemin tehtaan oma liikevaihto on tätä pienempi, joten samalla 15 Mm³ numeratorilla tehdaskohtainen suhde olisi suurempi.
+
+Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥6 440 m³/M€ antaa jo yli **250× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
+
+**Miksi tämä mittari on hyödyllinen?** Absoluuttinen vedenkäyttö kertoo ympäristökuorman mittakaavasta. `m³/M€` kertoo, kuinka vesaintensiivinen taloudellinen tuotantorakenne on. Kumpaakaan ei pidä käyttää yksin.
+
+Lähteet: [Tuike 2024 taloustiedot](https://www.asiakastieto.fi/yritykset/fi/tuike-finland-oy/22060717/taloustiedot), [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/), [Metsä Fibre water](https://www.metsagroup.com/metsafibre/news-and-publications/news-and-releases/stories/2025/every-drop-counts/), [Metsä Group Annual Review 2024](https://www.metsagroup.com/globalassets/metsa-group/documents/investors/financial-reporting/annual-reports/2024/metsa-group-annual-review-2024.pdf).
+
 ## Sähköomavaraisuus
 
 **Kaava:** oma sähköntuotanto / oma sähkönkulutus  
