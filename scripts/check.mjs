@@ -13,6 +13,23 @@ const normalize=s=>s.replace(/\s+/g,' ').trim();
 for(const file of files){if(!file.endsWith('.html'))continue;const html=await readFile(file,'utf8');assert(!/\/Users\/|\/Volumes\/|chatgpt-content-reference|keskustelu-raaka|gho_[A-Za-z0-9]/.test(html),`Private data in ${file}`);const $=load(html);assert.equal($('html').attr('lang'),'fi');assert.equal($('h1').length,1);assert.equal($('main').length,1);assert.equal($('meta[property="og:image"]').attr('content'),meta.origin+meta.basePath+'/assets/og.png');const ids=new Set();$('[id]').each((_,el)=>{const id=$(el).attr('id');assert(!ids.has(id),`Duplicate ${id} in ${file}`);ids.add(id);});let previous=0;$('h1,h2,h3,h4,h5,h6').each((_,el)=>{const level=Number(el.tagName[1]);assert(level<=previous+1,`Heading jump ${previous}->${level}: ${$(el).text()} in ${file}`);previous=level;});htmls.set(file,{$,ids});}
 let checked=0;
 for(const [file,{$}] of htmls){for(const el of $('a[href],link[href],script[src],img[src]').toArray()){const href=$(el).attr('href')||$(el).attr('src');if(!href||/^(https?:|mailto:)/.test(href))continue;assert(!/^(javascript:|data:|file:|\/\/)/i.test(href),'Unsafe URL');const pagePath='/'+path.relative(dist,file).split(path.sep).join('/');const target=new URL(href,'https://local.test'+meta.basePath+pagePath);assert(!meta.basePath||target.pathname.startsWith(meta.basePath+'/'),`Missing base path: ${href}`);let relative=decodeURIComponent(target.pathname.slice(meta.basePath.length));if(relative.endsWith('/'))relative+='index.html';const full=path.join(dist,relative);assert(files.includes(full),`Missing file ${href} from ${pagePath}`);if(target.hash){assert(htmls.get(full)?.ids.has(decodeURIComponent(target.hash.slice(1))),`Missing anchor ${href} from ${pagePath}`);}checked++;}}
+// Public citations must point to original sources, not internal source-registry anchors or private working-paper paths.
+const publicMarkdownFiles=[
+  ...(await readdir(path.join(root,'content'))).filter(f=>f.endsWith('.md')).map(f=>path.join(root,'content',f)),
+  ...(await readdir(path.join(root,'content/questions'))).filter(f=>f.endsWith('.md')).map(f=>path.join(root,'content/questions',f))
+];
+for(const file of publicMarkdownFiles){
+  const text=await readFile(file,'utf8');
+  assert(!/\/analyysit\/datakeskukset\/lahteet\/#(?:S\d+|D\d+)/.test(text),`Internal source-registry citation in ${file}`);
+  assert(!/\]\(#(?:S\d+|D\d+)\)/.test(text),`Internal source anchor in ${file}`);
+  assert(!/datakeskusaudit-v\d|keskusteluarkisto/i.test(text),`Internal background-material reference in ${file}`);
+}
+const publicSources=JSON.parse(await readFile(path.join(root,'data/sources.json'),'utf8'));
+for(const source of publicSources){
+  assert(/^https?:\/\//.test(source.url),`Source ${source.id} must link to an original external URL`);
+  assert(!Object.hasOwn(source,'provenance'),`Public source ${source.id} must not expose internal provenance`);
+}
+
 // Canonical Markdown text must survive into the page, including all question bodies.
 for(const file of (await readdir(path.join(root,'content'))).filter(f=>f.endsWith('.md'))){const {meta:p,body}=frontmatter(await readFile(path.join(root,'content',file),'utf8'));const dest=path.join(dist,p.route,'index.html');const actual=normalize(htmls.get(dest).$('main').text());const expected=load(renderMarkdown(body,meta.basePath).html);expected('p,td,th,h2,h3,li').each((_,el)=>{assert(actual.includes(normalize(expected(el).text())),`Markdown mismatch ${file}: ${expected(el).text().slice(0,80)}`);});}
 for(let i=1;i<=11;i++){const id='A'+String(i).padStart(2,'0');const {body}=frontmatter(await readFile(path.join(root,'content/questions',id+'.md'),'utf8'));const $=htmls.get(path.join(dist,'analyysit/datakeskukset/vaiteet/index.html')).$;assert.equal($('#'+id).length,1);const expected=load(renderMarkdown(body,meta.basePath).html);assert(normalize($('#'+id).text()).includes(normalize(expected.text())),`Question body mismatch ${id}`);}
