@@ -4,6 +4,7 @@ import {frontmatter,basePath,renderMarkdown} from '../scripts/lib.mjs';
 import {calculations} from '../scripts/calculations.mjs';
 import {symetrixMatrixV01} from '../scripts/symetrix.mjs';
 import {symetrixMatrixV02} from '../scripts/symetrix-v02.mjs';
+import {symetrixMatrixV03} from '../scripts/symetrix-v03.mjs';
 test('frontmatter preserves Finnish text, boolean and source arrays',()=>{const p=frontmatter('---\ntitle: Lähteet\npublished: false\nsourceRefs: ["S001","D08"]\n---\nSisältö');assert.equal(p.meta.published,false);assert.deepEqual(p.meta.sourceRefs,['S001','D08']);assert.equal(p.body,'Sisältö');});
 test('duplicate metadata and missing separator fail',()=>{assert.throws(()=>frontmatter('---\ntitle: a\ntitle: b\n---\nx'));assert.throws(()=>frontmatter('# Hello'));});
 test('root and GitHub project paths work without rewriting external or hash links',()=>{assert.equal(basePath('/repo/'),'/repo');assert.equal(basePath('/'),'');for(const invalid of ['/../secret','//evil','relative'])assert.throws(()=>basePath(invalid));const {html}=renderMarkdown('[local](/a/) [hash](#b) [web](https://example.org/)','/repo');assert(html.includes('href="/repo/a/"'));assert(html.includes('href="#b"'));assert(html.includes('href="https://example.org/"'));});
@@ -48,4 +49,22 @@ test('Symetrix v0.2 uses stable baselines and adds Nebius',()=>{
   assert.equal(s.metrics.electricitySelfSufficiency.scores.kemi,100);
   assert.equal(s.entities.hel16.stage,'pre-operational');
   assert.equal(s.referenceOnly.nebiusCapacityMW2026.value,75);
+});
+
+test('Symetrix v0.3 uses empirical baselines and explicit cell states',()=>{
+  const s=symetrixMatrixV03();
+  assert.equal(s.version,'0.3');
+  assert.equal(Number(s.baselines.turnoverPerWorkforce.value.toFixed(3)),0.386);
+  assert.equal(s.metrics.economicThroughput.scores.tuike,86.3);
+  assert.equal(s.metrics.economicThroughput.scores.nebius,59.8);
+  assert.equal(s.metrics.economicThroughput.scores.kemi,72.7);
+  assert.equal(s.metrics.economicThroughput.scores.ferrochrome,64);
+  assert.equal(s.metrics.employmentIntensity.scores.kemi,27.3);
+  assert.equal(s.metrics.dataCenterFacilityEfficiency.scores.tuike,74.3);
+  assert.equal(s.metrics.waterEfficiency.scores.nebius,96.4);
+  assert.equal(s.metrics.electricitySelfSufficiency.scores.kemi,63.2);
+  assert.equal(s.matrix.dataCenterFacilityEfficiency.kemi.state,'not-applicable');
+  assert.equal(s.matrix.waterEfficiency.tuike.state,'unknown');
+  assert.equal(s.matrix.economicThroughput.hel16.state,'pre-op');
+  assert.equal(s.matrix.economicThroughput.kemi.evidence,'proxy_business_level');
 });
