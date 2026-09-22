@@ -55,7 +55,7 @@ Valmistavan teollisuuden tarkastelu on datakeskuskohteita suppeampi: se sisält�
 
 ## Valitse lukutapa
 
-- [Kohdevertailu](/analyysit/datakeskukset/vertailu/) — Hamina, Hepokorpi, Kemi ja Tornio.
+- [Toimintamalli ja vertailu](/analyysit/datakeskukset/vertailu/) — mitä datakeskus taloudellisesti tekee, miten Google–Tuike–Hamina-rajat toimivat ja miten verrokit tuodaan mukaan.
 - [Vaikutukset](/analyysit/datakeskukset/vaikutukset/) — työ, talous, sähkö, verkko, ympäristö ja vaihtoehtoinen käyttö.
 - [Tutkimuskysymykset A01–A11](/analyysit/datakeskukset/vaiteet/) — havainnot, rajaukset ja avoin tieto.
 - [Pitkä raportti](/analyysit/datakeskukset/raportti/) — koko toimitettu analyysi yhdellä tulostettavalla sivulla.
