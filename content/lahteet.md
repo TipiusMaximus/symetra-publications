@@ -42,4 +42,8 @@ Hakemukset kertovat suunnitelmista, päätökset luvan ehdoista ja myöhempi tar
 
 ## Verkkolähteet
 
-S-tunnisteet ovat pysyviä. Kunkin linkin yhteydessä näkyvä tekninen tarkistus kertoo vain palvelimen vastauksen. Esimerkiksi käyttörajoitus ei todista lähdettä virheelliseksi; onnistunut HTTP-vastaus ei vahvista sisältöä.
+Jokaisen verkkolähteen otsikko linkittää suoraan alkuperäiseen lähdesivuun tai alkuperäiseen PDF-tiedostoon. S-tunniste on vain pysyvä tekninen tunniste lähderekisterissä, ei lukijalle tarkoitettu viittaustapa.
+
+HEL16:n viranomaisasiakirjoissa käytetty tiedosto yksilöidään nimellä, päivämäärällä, sivumäärällä ja SHA-256-tiivisteellä. Viranomaisen tietopalvelu tarjoaa tässä aineistossa pysyvän linkin asian sivulle; yksittäisille käytetyille PDF-tiedostoille ei ole kirjattu varmennettua pysyvää suoraa URL-osoitetta, joten sellaista ei ole keksitty.
+
+Kunkin linkin yhteydessä näkyvä tekninen tarkistus kertoo vain palvelimen vastauksen. Esimerkiksi käyttörajoitus ei todista lähdettä virheelliseksi; onnistunut HTTP-vastaus ei vahvista sisältöä.
