@@ -5,6 +5,7 @@ import {calculations} from '../scripts/calculations.mjs';
 import {symetrixMatrixV01} from '../scripts/symetrix.mjs';
 import {symetrixMatrixV02} from '../scripts/symetrix-v02.mjs';
 import {symetrixMatrixV03} from '../scripts/symetrix-v03.mjs';
+import {runDenominatorEngine} from '../scripts/denominator-engine.mjs';
 test('frontmatter preserves Finnish text, boolean and source arrays',()=>{const p=frontmatter('---\ntitle: Lähteet\npublished: false\nsourceRefs: ["S001","D08"]\n---\nSisältö');assert.equal(p.meta.published,false);assert.deepEqual(p.meta.sourceRefs,['S001','D08']);assert.equal(p.body,'Sisältö');});
 test('duplicate metadata and missing separator fail',()=>{assert.throws(()=>frontmatter('---\ntitle: a\ntitle: b\n---\nx'));assert.throws(()=>frontmatter('# Hello'));});
 test('root and GitHub project paths work without rewriting external or hash links',()=>{assert.equal(basePath('/repo/'),'/repo');assert.equal(basePath('/'),'');for(const invalid of ['/../secret','//evil','relative'])assert.throws(()=>basePath(invalid));const {html}=renderMarkdown('[local](/a/) [hash](#b) [web](https://example.org/)','/repo');assert(html.includes('href="/repo/a/"'));assert(html.includes('href="#b"'));assert(html.includes('href="https://example.org/"'));});
@@ -69,4 +70,27 @@ test('Symetrix v0.3 uses empirical baselines and explicit cell states',()=>{
   assert.equal(s.matrix.waterEfficiency.tuike.evidence,'estimate_non_seawater_mixed_period');
   assert.equal(s.matrix.economicThroughput.hel16.state,'pre-op');
   assert.equal(s.matrix.economicThroughput.kemi.evidence,'proxy_business_level');
+});
+
+
+test('Denominator Engine keeps boundaries and flags rabbit holes',()=>{
+  const evidence=[
+    {id:'A',value:500,unit:'persons',status:'observed_reported',boundary:'site',period:'2024'},
+    {id:'B',value:100,unit:'persons',status:'observed_reported',boundary:'legal entity',period:'2024'},
+    {id:'C',value:20,unit:'m3',status:'observed',boundary:'site',period:'2024'},
+    {id:'D',value:10,unit:'MEUR',status:'observed',boundary:'legal entity',period:'2024'}
+  ];
+  const registry={
+    principle:'explicit recipes only',
+    rabbitHoleHeuristics:{absolute_multiple:4,group_spread:4},
+    recipes:[
+      {id:'scope',label:'scope',question:'why',numerator:{evidence:'A',field:'value'},denominator:{evidence:'B',field:'value'},resultUnit:'x',boundaryPolicy:'cross_boundary',periodPolicy:'same',rabbitHole:{kind:'absolute_multiple',threshold:4}},
+      {id:'intensity',label:'intensity',question:'how much',numerator:{evidence:'C',field:'value'},denominator:{evidence:'D',field:'value'},resultUnit:'m3_per_MEUR',boundaryPolicy:'near_match',periodPolicy:'same'}
+    ]
+  };
+  const x=runDenominatorEngine(evidence,registry);
+  assert.equal(x.results.find(r=>r.id==='scope').value,5);
+  assert.equal(x.results.find(r=>r.id==='scope').quality,'qualified');
+  assert.equal(x.results.find(r=>r.id==='intensity').value,2);
+  assert(x.rabbitHoles.some(r=>r.id==='RH-scope'));
 });
