@@ -45,6 +45,8 @@ Kun kaksi tai useampi laskentatapa on uskottava, julkaisu näyttää mahdollisuu
 
 Jos suhdeluvun nimittäjä lähestyy nollaa, vaihtaa etumerkkiä tai muuten tekee mittarista epävakaan, tätä ei peitetä yhdistelmäpistemäärällä. Mittarin käyttöalueen rikkoutuminen on itsessään analyysin tulos.
 
+Laskelmissa käytetään neljää näkyvää statusta: **lähdehavainto**, **johdettu laskelma**, **herkkyysskenaario** ja **avoin**. Näin matemaattisesti tarkka johdettu arvo ei näyttäydy lukijalle mitattuna toteumana.
+
 ## Kuvailevat luokat
 
 | Luokka | Merkitys |
