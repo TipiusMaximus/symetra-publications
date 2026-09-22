@@ -15,6 +15,14 @@ Jokainen havainto esitetään kuutena osana: tutkimuskysymys; lähde ja havainto
 
 Viranomaispäätös osoittaa päätöksen sisällön. Yrityksen tiedote osoittaa sen, mitä yritys ilmoittaa. Mittaus kertoo määritellyn kohteen toteumasta. Mallin tulos on ehdollinen sen oletuksille. Keskustelussa esitetty luku tarvitsee alkuperäisen lähteen ennen kuin sitä käytetään näyttönä.
 
+## Selitä kohde ennen tunnuslukua
+
+Pelkkä lähdeviite ei vielä tee tekstistä ymmärrettävää. Ennen tunnusluvun esittämistä julkaisun pitää kertoa, **mikä toimija tai fyysinen kohde on kyseessä ja miksi juuri sitä mitataan**.
+
+Esimerkiksi Google, Tuike Finland Oy ja Haminan kampus kuuluvat samaan toiminnalliseen kokonaisuuteen, mutta niiden luvut eivät ole keskenään vaihdettavia. Sama koskee Microsoftin kampusta ja yksittäistä HEL16-lupakohdetta sekä Outokummun konsernia, Ferrochrome-segmenttiä ja yksittäisiä tuotantolaitoksia.
+
+Tämä on myös toimituksellinen sääntö: lukijaa ei viedä suoraan liikevaihtoon, FTE-lukuun, MW-arvoon tai lupaehtoon ennen kuin luvun laskentaraja on avattu tavallisella kielellä.
+
 ## Yhteinen mittari vaatii yhteisen rajauksen
 
 Vertailussa kirjataan kohde, vuosi, yksikkö, toiminnan vaihe ja laskentaraja. Yritys, kampus, kunta, segmentti ja kansantalous eivät ole vaihdettavia rajauksia. Henkilöluku ei ole automaattisesti henkilötyövuosi, MW ei MWh ja lupa-arvo ei toteuma.
