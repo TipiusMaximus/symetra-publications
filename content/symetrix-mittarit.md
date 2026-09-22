@@ -140,6 +140,29 @@ Kemi: [Metsä Group: Kemin biotuotetehtaan avajaiset](https://www.metsagroup.com
 
 Koneellisesti luettava havaintokerros löytyy [Evidence Ledgeristä](/downloads/evidence-index.json). Siellä lähdehavainto, johdettu arvo, proxy ja yhtiön oma vaikutusarvio ovat eri statuksia.
 
+## Evidenssin kattavuus
+
+Alla ei pisteytetä yrityksiä. Taulukko kertoo vain, **minkä tyyppistä käyttökelpoista aineistoa Ledgerissä jo on**.
+
+**D** = suora lähdehavainto · **J** = johdettu laskelma · **Q** = proxy, suunnitteluarvo tai yhtiön vaikutusarvio.
+
+| Aihe | Hamina / Tuike | Nebius | Kemi Bio | Outokumpu |
+|---|---:|---:|---:|---:|
+| Talous | 3 D | 3 D | 1 Q | 4 D + 1 J |
+| Työ | 2 D | 1 D | 3 D + 2 Q | 2 D + 1 Q |
+| Energia / tehokkuus | 1 D | — | 2 D + 2 J | 1 D* |
+| Vesi | 3 D | 1 D | — | — |
+| Lämpö | 2 Q | 1 D | — | — |
+| Maa | 1 D | — | — | 2 D |
+| Investointi | 1 D | — | 1 D | — |
+| Julkistalous | 2 D | — | — | — |
+
+\* Tornion energia-arvo koskee koko tehdasaluetta ja kokonaisenergiaa, ei Ferrochrome-segmentin nykyistä verkkosähköä.
+
+Tämä taulukko selittää, miksi Symetrix-matriisissa voi edelleen olla `?`, vaikka tausta-aineistossa on paljon tietoa. **Havainto voi olla olemassa ilman, että se sopii juuri kyseisen mittarin osoittajaan, nimittäjään, vuoteen tai systeemirajaan.**
+
+[Koneellinen coverage-yhteenveto](/downloads/evidence-coverage.json) ja [koko Evidence Ledger](/downloads/evidence-index.json) päivittyvät buildissa lähdeaineiston mukana. [Metric Registry](/downloads/metric-registry.json) kertoo erikseen, mitkä mittarit ovat jo pisteytettävissä ja mikä täsmällinen blocker estää muita.
+
 ## Mikä baseline on hyvä baseline?
 
 Symetrix suosii tässä järjestyksessä:

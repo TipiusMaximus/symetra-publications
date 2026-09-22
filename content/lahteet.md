@@ -119,6 +119,7 @@ Hakemukset kertovat suunnitelmista, päätökset luvan ehdoista ja myöhempi tar
 - [HEL16:n asiakirjarekisteri ja SHA-256-tiivisteet](/downloads/documents.json)
 - [Evidence Ledger JSONL-muodossa](/downloads/evidence-index.jsonl)
 - [Evidence Ledger JSON-muodossa](/downloads/evidence-index.json)
+- [Evidence coverage JSON-muodossa](/downloads/evidence-coverage.json)
 
 ## Verkkolähteet
 
