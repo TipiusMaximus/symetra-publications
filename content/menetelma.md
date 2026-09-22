@@ -29,6 +29,22 @@ Vertailussa kirjataan kohde, vuosi, yksikkö, toiminnan vaihe ja laskentaraja. Y
 
 Hyötyjä ja haittoja arvioidaan samalla näyttökynnyksellä. Puuttuva tieto ei saa nollan arvoa. Epävarmuus esitetään sanallisesti silloin, kun aineisto ei tue määrällistä vaihteluväliä. Näennäisen tarkkaa lukua ei tuoteta oletetuilla lähtötiedoilla.
 
+## Mittarin valinta on osa tutkimuskysymystä
+
+Sama kohde voi näyttää erilaiselta eri, sinänsä perustelluilla mittareilla. Siksi mittaria ei käsitellä neutraalina laskukoneena, joka automaattisesti tuottaa yhden oikean vastauksen.
+
+Esimerkiksi energiaintensiivistä laitosta voidaan arvioida ainakin kokonaiskulutetun sähkön, verkosta otetun sähkön tai nettosähkötaseen perusteella. Nämä vastaavat eri kysymyksiin ja voivat muuttaa kohteiden keskinäistä järjestystä.
+
+Kun kaksi tai useampi laskentatapa on uskottava, julkaisu näyttää mahdollisuuksien mukaan:
+
+1. käytetyn kaavan ja yksikön;
+2. lähteestä luetut lähtöarvot;
+3. johdetut arvot erikseen merkittyinä;
+4. mitä valittu mittari käytännössä korostaa;
+5. muuttuuko tulkinta olennaisesti vaihtoehtoisella laskentatavalla.
+
+Jos suhdeluvun nimittäjä lähestyy nollaa, vaihtaa etumerkkiä tai muuten tekee mittarista epävakaan, tätä ei peitetä yhdistelmäpistemäärällä. Mittarin käyttöalueen rikkoutuminen on itsessään analyysin tulos.
+
 ## Kuvailevat luokat
 
 | Luokka | Merkitys |
