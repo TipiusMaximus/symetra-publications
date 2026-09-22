@@ -266,10 +266,10 @@
           "period": "2024"
         },
         "kemi": {
-          "value": 5669.4,
+          "value": 12622.692,
           "unit": "m3_per_MEUR_at_least_approx",
           "status": "derived_cross_boundary_floor",
-          "note": "Conservative floor from 13.2 Mm3/y Kemi design proxy divided by whole Metsä Fibre 2024 revenue."
+          "note": "2025 actual Kemi withdrawal divided by all Metsä Fibre 2025 revenue; conservative floor."
         }
       }
     },
@@ -358,6 +358,68 @@
           "value": -150,
           "unit": "percent_of_own_consumption",
           "status": "derived_from_company_reported"
+        }
+      }
+    },
+    {
+      "id": "pulp_water_withdrawal_per_tonne",
+      "label": "Sellutehtaan vedenotto / tonni",
+      "formula": "annual water withdrawal m3 / annual chemical pulp tonnes",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "same_year_mill_water_withdrawal",
+        "same_year_pulp_output"
+      ],
+      "purpose": "Sellutehtaan toteutunut vedenottointensiteetti.",
+      "caveat": "Includes process/cooling water withdrawals under Metsä Group reporting; not comparable directly to data-center consumptive WUE.",
+      "current_examples": {
+        "kemi_2025": {
+          "value": 35.403,
+          "unit": "m3_per_tonne"
+        }
+      }
+    },
+    {
+      "id": "pulp_wastewater_per_tonne",
+      "label": "Sellutehtaan jätevesivirta / tonni",
+      "formula": "annual wastewater flow m3 / annual chemical pulp tonnes",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "same_year_mill_wastewater_flow",
+        "same_year_pulp_output"
+      ],
+      "purpose": "Kuvaa käsiteltävän/palautettavan jätevesivirran intensiteettiä.",
+      "caveat": "Wastewater flow is not net consumptive water use.",
+      "current_examples": {
+        "kemi_2025": {
+          "value": 15.028,
+          "unit": "m3_per_tonne"
+        }
+      }
+    },
+    {
+      "id": "pulp_actual_water_withdrawal_per_tonne",
+      "label": "Sellutehtaan toteutunut vedenotto / tonni",
+      "formula": "annual actual water withdrawal m3 / actual pulp production t",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "actual_site_water_withdrawal",
+        "actual_site_pulp_output_same_period"
+      ],
+      "purpose": "Separates actual operating water intensity from design values.",
+      "caveat": "2025 Kemi value reflects ramp-up/repair-shutdown year and includes total mill water withdrawal; do not equate directly with net consumption or data-center WUE.",
+      "current_examples": {
+        "kemi": {
+          "value": 35.403,
+          "unit": "m3_per_tonne",
+          "period": "2025",
+          "status": "derived_from_observed"
         }
       }
     }
