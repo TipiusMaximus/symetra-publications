@@ -140,7 +140,7 @@ Metsä Fibre ilmoittaa Kemin biotuotetehtaan suunnitteluarvoksi **10 m³ / tuote
 
 **10 m³/t × 1 500 000 t/v = 15 000 000 m³/v vesikäytön design-proxy.**
 
-Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin **1 136 m³ nettokulutusta**. Google kuvaa erikseen Haminan käyttävän Suomenlahden merivettä jäähdytykseen, joten raportoitua vedenottoa ei tulkita merivesijäähdytyksen kokonaiseksi läpivirtausmääräksi. Tuiken YVA:ssa merivedenoton **lupakatto on 80 miljoonaa m³/v** (tasaiseksi virraksi muutettuna noin 2,54 m³/s), ja YVA toteaa toteutuneiden määrien alittaneen lupakaton.
+Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin **1 136 m³ nettokulutusta**. Googlen metodologia **sulkee meriveden pois** näistä luvuista. Google kuvaa erikseen Haminan käyttävän Suomenlahden merivettä jäähdytykseen, joten raportoitua vedenottoa ei tulkita merivesijäähdytyksen kokonaiseksi läpivirtausmääräksi. Tuiken YVA:ssa merivedenoton **lupakatto on 80 miljoonaa m³/v** (tasaiseksi virraksi muutettuna noin 2,54 m³/s), ja YVA toteaa toteutuneiden määrien alittaneen lupakaton.
 
 | Havainto | Hamina | Kemi Bio | Status |
 |---|---:|---:|---|
@@ -153,6 +153,16 @@ Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 300×
 Tämä ero on silti erittäin arvokas kaninkolo. Seuraava tavoite on rakentaa poikkitoimialainen normalisointi, esimerkiksi **m³ vedenottoa / M€ kotimaista arvonlisää** ja rinnalle **m³ nettokulutusta / M€ kotimaista arvonlisää**.
 
 Lähteet: [Metsä Fibre: Every drop counts](https://www.metsagroup.com/metsafibre/news-and-publications/news-and-releases/stories/2025/every-drop-counts/), [Metsä Group: Kemin biotuotetehtaan avajaiset](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/), [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/), [Google Hamina](https://www.datacenters.google/locations/hamina-finland/).
+
+### Haminan ei-merivesi-intensiteetti estimaattina
+
+Kun vuoden 2024 raportoitu, meriveden poissulkeva nettokulutus yhdistetään 0,87 TWh/v sähköestimaattiin ja PUE 1,10:een, saadaan kuvaileva proxy:
+
+**~0,0014 L/kWh IT (E)**.
+
+0,87–2,0 TWh/v sähkön herkkyyshaarukalla sama proxy olisi noin **0,0006–0,0014 L/kWh IT**.
+
+Tätä **ei pisteytetä Nebiuksen WUE:ta vastaan**. Se sekoittaa vuoden 2024 veden, vuoden 2025 PUE:n ja vuoden 2026 ulkoisen sähköestimaatin, ja Googlen vesiluku sulkee meriveden kokonaan pois. Sen tehtävä on näyttää, että myös puuttuva WUE-solu voidaan korvata informatiivisella, eksplisiittisesti epävarmalla estimaatilla.
 
 ## Sähköomavaraisuus
 
