@@ -32,6 +32,21 @@ for(const source of publicSources){
   assert(/^https?:\/\//.test(source.url),`Source ${source.id} must link to an original external URL`);
   assert(!Object.hasOwn(source,'provenance'),`Public source ${source.id} must not expose internal provenance`);
 }
+const sourceIds=new Set(publicSources.map(s=>s.id));
+const evidenceRaw=await readFile(path.join(root,'data/evidence-index.jsonl'),'utf8');
+const evidence=evidenceRaw.trim().split(/\n+/).filter(Boolean).map((line,i)=>{
+  try{return JSON.parse(line);}catch(error){throw new Error(`Invalid evidence JSONL line ${i+1}: ${error.message}`);}
+});
+assert(evidence.length>=45,'Evidence ledger unexpectedly small');
+const evidenceIds=new Set();
+for(const item of evidence){
+  assert(item.id && !evidenceIds.has(item.id),`Duplicate or missing evidence id: ${item.id}`);
+  evidenceIds.add(item.id);
+  assert(item.entity && item.domain && item.metric && item.status && item.boundary,`Incomplete evidence item: ${item.id}`);
+  assert(Array.isArray(item.sourceRefs) && item.sourceRefs.length>0,`Evidence sourceRefs missing: ${item.id}`);
+  for(const ref of item.sourceRefs) assert(sourceIds.has(ref),`Evidence ${item.id} references missing source ${ref}`);
+  if(Object.hasOwn(item,'value')) assert(Number.isFinite(item.value),`Evidence value must be numeric: ${item.id}`);
+}
 
 // Canonical Markdown text must survive into the page, including all question bodies.
 for(const file of (await readdir(path.join(root,'content'))).filter(f=>f.endsWith('.md'))){const {meta:p,body}=frontmatter(await readFile(path.join(root,'content',file),'utf8'));const dest=path.join(dist,p.route,'index.html');const actual=normalize(htmls.get(dest).$('main').text());const expected=load(renderMarkdown(body,meta.basePath).html);expected('p,td,th,h2,h3,li').each((_,el)=>{assert(actual.includes(normalize(expected(el).text())),`Markdown mismatch ${file}: ${expected(el).text().slice(0,80)}`);});}
@@ -50,7 +65,7 @@ assert.equal(sx.strict.scoreableCrossIndustryLenses,0);
 const sxPage=htmls.get(path.join(dist,'analyysit/datakeskukset/symetrix/index.html')).$.text();
 for(const value of ['Symetrix Matrix v0.3','Taloudellinen volyymi / työpanos','Työllistävyys suhteessa volyymiin','73 P','27 P','74','61 P','96','63','Pre-op'])assert(sxPage.includes(value),`Displayed Symetrix mismatch: ${value}`);
 const sxDetails=htmls.get(path.join(dist,'analyysit/datakeskukset/symetrix-mittarit/index.html')).$.text();
-for(const value of ['Pisteytyksen perussääntö','0,386 M€/henkilötyövuosi','Metsä Fibre -liiketoiminnan proxy','PUE − 1','0,45 L/kWh','250 %'])assert(sxDetails.includes(value),`Displayed Symetrix details mismatch: ${value}`);
+for(const value of ['Pisteytyksen perussääntö','0,386 M€/henkilötyövuosi','Metsä Fibre -liiketoiminnan proxy','PUE − 1','0,45 L/kWh','250 %','Candidate metrics','2 500','600 ha','1,5 M€'])assert(sxDetails.includes(value),`Displayed Symetrix details mismatch: ${value}`);
 const sxDownload=JSON.parse(await readFile(path.join(dist,'downloads/symetrix-v0.1.json'),'utf8'));
 assert.equal(sxDownload.version,'0.1');
 const sx2=symetrixMatrixV02();
@@ -63,6 +78,16 @@ const sx3Download=JSON.parse(await readFile(path.join(dist,'downloads/symetrix-v
 assert.equal(sx3Download.version,'0.3');
 assert.equal(Number(sx3Download.baselines.turnoverPerWorkforce.value.toFixed(3)),0.386);
 assert(report.includes('Symetrix Matrix v0.3'),'Long report missing Symetrix v0.3 chapter');
+const evidenceJson=JSON.parse(await readFile(path.join(dist,'downloads/evidence-index.json'),'utf8'));
+assert.equal(evidenceJson.length,evidence.length,'Evidence JSON download mismatch');
+const evidenceJsonl=await readFile(path.join(dist,'downloads/evidence-index.jsonl'),'utf8');
+assert.equal(evidenceJsonl.trim().split(/\n+/).length,evidence.length,'Evidence JSONL download mismatch');
+assert(evidenceJson.some(x=>x.id==='EV-HAM-WATER-003'&&x.value===0.3));
+assert(evidenceJson.some(x=>x.id==='EV-FC-FIN-001'&&x.value===462));
+assert(evidenceJson.some(x=>x.id==='EV-KEMI-ENERGY-002'&&x.value===250));
+assert(evidenceJson.some(x=>x.id==='EV-KEMI-WORK-004'&&x.value===2500));
+assert(evidenceJson.some(x=>x.id==='EV-HAM-TAX-001'&&x.value===1.5));
+assert(evidenceJson.some(x=>x.id==='EV-TORNIO-LAND-001'&&x.value===600));
 assert(files.some(f=>f.endsWith('/assets/og.png')),'OG image missing');
 assert.equal(files.filter(f=>f.endsWith('.html')).length,12);
-console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; Symetrix v0.1/v0.2/v0.3; publication allowlist.`);
+console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; evidence ledger exports; Symetrix v0.1/v0.2/v0.3; publication allowlist.`);

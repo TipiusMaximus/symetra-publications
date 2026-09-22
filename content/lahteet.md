@@ -95,6 +95,12 @@ Tämä ei ole virhe, joka pitäisi peittää. Se kertoo, että **mittarin valint
 
 Laskelmat ja niiden oletukset ovat myös [ladattavassa JSON-aineistossa](/downloads/calculations.json). Siellä Tuiken yritystalouden laskut ja Kemin sähköesimerkki on erotettu omiksi objekteikseen. Kemin esimerkin status on koneellisesti merkitty **johdetuksi havainnollistukseksi, ei mitatuksi verkkotaseeksi**.
 
+## Evidence Ledger
+
+Evidence Ledger kokoaa lähteistä poimitut atomiset havainnot erilleen tulkinnoista ja pisteistä. Jokaisella rivillä on vähintään kohde, ajanjakso, aihealue, mittari, status, systeemiraja ja alkuperäisen lähderekisterin tunniste. Johdetut arvot sisältävät lisäksi kaavan tai varoituksen siitä, mitä arvo ei tarkoita.
+
+Ledger ei tee historiallisesta keskusteluaineistosta faktalähdettä. Keskustelu-MD:t toimivat löytöindeksinä; julkaistava EvidenceItem sidotaan alkuperäiseen verkkolähteeseen aina kun sellainen on käytössä.
+
 ## Aineiston kattavuus
 
 Lähdehakemisto sisältää julkaisussa käytetyt verkkolähteet ja erikseen yksilöidyt HEL16-asiakirjat. Mukana on myös lähteitä, joita käytetään rajauksen tai taustan varmistamiseen ilman erillistä johtopäätöstä. Lähteen sisällöllinen tarkistus ja tekninen saatavuustarkistus ovat eri asioita.
@@ -111,6 +117,8 @@ Hakemukset kertovat suunnitelmista, päätökset luvan ehdoista ja myöhempi tar
 - [Lähderekisteri CSV-muodossa](/downloads/sources.csv)
 - [Tutkimuskysymykset metatietoineen](/downloads/questions.json)
 - [HEL16:n asiakirjarekisteri ja SHA-256-tiivisteet](/downloads/documents.json)
+- [Evidence Ledger JSONL-muodossa](/downloads/evidence-index.jsonl)
+- [Evidence Ledger JSON-muodossa](/downloads/evidence-index.json)
 
 ## Verkkolähteet
 

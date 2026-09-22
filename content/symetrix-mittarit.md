@@ -122,18 +122,23 @@ Kemi: [Metsä Fibre: Kemin biotuotetehdas](https://www.metsagroup.com/metsafibre
 
 Tämä mittari ei ole sama asia kuin verkon nettokuorma. Kemin 250 % omavaraisuudesta voidaan johtaa noin 0,8 TWh omaa kulutusta ja +1,2 TWh tuotannon ja johdetun kulutuksen erotusta, mutta +1,2 TWh **ei ole tässä auditissa mitattu verkkoon vienti**.
 
-## Tietoa, jota ei vielä pisteytetä
+## Candidate metrics: data on jo olemassa, piste ei vielä
 
-Seuraavat havainnot ovat hyödyllisiä, mutta niille ei vielä ole yhteistä nimittäjää ja baselinea:
+Kaikkea hyvää evidenssiä ei pidä muuttaa pisteeksi. Alla oleva data on jo Evidence Ledgerissä, mutta yhteinen nimittäjä, baseline tai sama systeemiraja puuttuu.
 
-| Havainto | Arvo | Miksi ei vielä pisteytetä? |
-|---|---:|---|
-| Nebius Mäntsälä: hukkalämmön vienti 2025 | 19,5 GWh | Tarvitaan esim. /IT-MWh, /MW tai suhteessa paikalliseen lämpökuormaan |
-| Hamina: hukkalämpölaitoksen suunnittelupotentiaali | noin 40 GWh/v | Suunnitteluarvo ei ole sama kuin mitattu toteuma |
-| Hamina: vedenkulutus 2024 | 0,3 milj. US-gallonaa | Tarvitaan samaan rajaan kuuluva IT-energia |
-| Tornion tehdasalue: kokonaisenergia | noin 4 TWh/v | Koko tehdasalue ≠ Ferrochrome-segmentti |
+| Ehdokas | Nyt tunnettu havainto | Mitä tarvitaan ennen pisteytystä? |
+|---|---|---|
+| **Lämmön hyödyntäminen** | Nebius Mäntsälä 19,5 GWh mitattua vientiä 2025; Haminan 5 MW järjestelmän suunnittelupotentiaali ~40 GWh/v ja ~80 % Haminan kaukolämpövolyymista | Sama status (toteuma vs toteuma) sekä mielellään GWh / IT-MWh tai GWh / MW |
+| **Vedenkäyttö** | Hamina 2024: 0,3 milj. US-gallonaa kulutusta; Nebius Mäntsälä WUE 0,018 L/kWh IT | Haminan samaan vuoteen ja kampusrajaan kuuluva IT-energia → WUE |
+| **Kotimainen tulovaikutus** | Metsä Group arvioi Kemin biotuotetehtaan vuosittaisen positiivisen tulovaikutuksen Suomessa noin 0,5 mrd € | Vastaava määritelmä muille kohteille ja vaikutusarvion laskentamenetelmä |
+| **Arvoketjun työllisyys** | Kemi: ~2 500 henkilöä suorassa suomalaisessa arvoketjussa; Google: >600 suomalaista toimittajayritystä; Outokumpu Kemi–Tornio: >2 000 suoraa ja yhtiön arvio ~8 000 välillistä työpaikkaa | Sama työpaikkakäsite ja sama arvoketjuraja; yritysten määrä ei ole työpaikkojen määrä |
+| **Paikallinen julkistalous** | Hamina sai vuonna 2024 noin 1,5 M€ kiinteistöveroa Google/Tuike-kokonaisuudesta | Sama verolaji ja vuosi muille kohteille tai normalisointi esimerkiksi /MW, /ha tai /100 M€ |
+| **Fyysinen jalanjälki** | Tornion tehdasalue ~600 ha, rakennuksia ~56 ha; tuotanto 1,5 Mt terästä + 0,5 Mt ferrokromia/v | Vastaavat maa- ja tuotantorajat muille kohteille sekä päätös siitä, pisteytetäänkö pinta-alaa absoluuttisesti vai suhteessa tuotokseen |
+| **Energia / kotimainen arvo** | Kemi tuottaa 2,0 TWh/v sähköä ja ilmoittaa 250 % sähköomavaraisuuden; Tornion koko tehdasalue käyttää noin 4 TWh/v kokonaisenergiaa | Mitattu verkkosähkö samalla rajalla sekä kotimainen arvonlisä samalla ajanjaksolla |
 
-Nebius: [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly). Hamina lämpö: [Haminan Energia](https://haminanenergia.fi/googlen-datakeskuksen-lampoa-alkaa-virrata-haminan-kaukolampoverkossa-vuoden-2025-aikana/). Tornio: [Outokumpu](https://www.outokumpu.com/en/expertise/industrial-evolution-insights/2026/circular-ecosystem-powering-industrial-side-streams).
+Kemi: [Metsä Group: Kemin biotuotetehtaan avajaiset](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/). Nebius: [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly). Hamina lämpö: [Haminan Energia](https://haminanenergia.fi/googlen-datakeskuksen-lampoa-alkaa-virrata-haminan-kaukolampoverkossa-vuoden-2025-aikana/). Haminan kiinteistövero: [Yle 12.5.2025](https://yle.fi/a/74-20160358). Tornio: [Outokumpu](https://www.outokumpu.com/en/expertise/industrial-evolution-insights/2026/circular-ecosystem-powering-industrial-side-streams). Googlen toimittajaverkosto: [Google 9.9.2026](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/).
+
+Koneellisesti luettava havaintokerros löytyy [Evidence Ledgeristä](/downloads/evidence-index.json). Siellä lähdehavainto, johdettu arvo, proxy ja yhtiön oma vaikutusarvio ovat eri statuksia.
 
 ## Mikä baseline on hyvä baseline?
 
