@@ -1,7 +1,10 @@
 {
   "name": "Symetra",
-  "version": "1.0.0",
+  "version": "1.2.0-rc.1",
+  "author": "Symetra",
+  "publishedAt": "2026-09-22",
   "updated": "2026-09-22",
+  "dataCutoff": "2026-09-22",
   "origin": "https://tipiusmaximus.github.io",
   "basePath": "/symetra-publications",
   "description": "Taloudelliset ja yhteiskunnalliset vaikutukset näkyviksi lähteiden, mittareiden ja vertailujen avulla."

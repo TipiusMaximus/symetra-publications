@@ -6,15 +6,17 @@ import {symetrixMatrixV01} from '../scripts/symetrix.mjs';
 import {symetrixMatrixV02} from '../scripts/symetrix-v02.mjs';
 import {symetrixMatrixV03} from '../scripts/symetrix-v03.mjs';
 import {runDenominatorEngine} from '../scripts/denominator-engine.mjs';
+import {loadContent} from '../scripts/content.mjs';
+import {shouldReplaceLinkRegistry} from '../scripts/link-check-policy.mjs';
 test('frontmatter preserves Finnish text, boolean and source arrays',()=>{const p=frontmatter('---\ntitle: Lähteet\npublished: false\nsourceRefs: ["S001","D08"]\n---\nSisältö');assert.equal(p.meta.published,false);assert.deepEqual(p.meta.sourceRefs,['S001','D08']);assert.equal(p.body,'Sisältö');});
 test('duplicate metadata and missing separator fail',()=>{assert.throws(()=>frontmatter('---\ntitle: a\ntitle: b\n---\nx'));assert.throws(()=>frontmatter('# Hello'));});
 test('root and GitHub project paths work without rewriting external or hash links',()=>{assert.equal(basePath('/repo/'),'/repo');assert.equal(basePath('/'),'');for(const invalid of ['/../secret','//evil','relative'])assert.throws(()=>basePath(invalid));const {html}=renderMarkdown('[local](/a/) [hash](#b) [web](https://example.org/)','/repo');assert(html.includes('href="/repo/a/"'));assert(html.includes('href="#b"'));assert(html.includes('href="https://example.org/"'));});
 test('Finnish headings have unique stable anchors',()=>{const r=renderMarkdown('## Sähkö ja työ\n\n## Sähkö ja työ');assert.deepEqual(r.headings.map(h=>h.id),['sahko-ja-tyo','sahko-ja-tyo-2']);});
+test('shared chapters expand before rendering',async()=>{const content=await loadContent();const comparison=content.pages.find(p=>p.meta.slug==='vertailu');assert(comparison.body.includes('Hamina: ensin on ymmärrettävä'));assert(!/\{\{(?:chapter|cite):/.test(comparison.body));assert.equal(content.publication.reportSections.length,19);assert.deepEqual(content.publication.reportSections.slice(0,4).map(x=>x.id),['datakeskukset','esipuhe','tutkimuskysymys','lukutapa']);assert.equal(content.publication.reportSections.at(-2).id,'symetrix');});
 test('financial arithmetic keeps input precision and interpretation boundaries',()=>{assert.deepEqual(calculations().tuike.output,{ebitda:'344.6244',ebitdaMinusEbit:'314.3194',revenueMinusEbitda:'229.7496'});assert.equal(calculations().tuike.limitations.length,3);});
 test('Kemi sensitivity calculation stays explicitly derived, not measured',()=>{const k=calculations().kemiIllustration;assert.equal(k.status,'johdettu havainnollistus, ei mitattu verkkotase');assert.deepEqual(k.output,{impliedOwnConsumption:0.8,arithmeticProductionMinusConsumption:1.2});assert(k.assumptions.length>0);assert(k.interpretation.some(x=>x.includes('ei ole mitattu nettovienti')));});
 
 test('structural comparison keeps organizational limits explicit',()=>{const x=calculations().structuralComparison;assert.equal(x.status,'rakenteellinen vertailu, ei tuottavuus- tai yhteiskuntahyötymittari');assert.deepEqual(x.tuike,{boundary:'Tuike Finland Oy, henkilöstö 120',revenuePerOwnPersonnel:4.786,ebitdaPerOwnPersonnel:2.872});assert.deepEqual(x.outokumpuFerrochrome,{boundary:'Ferrochrome-segmentti, vuoden lopun FTE 454',salesPerFte:1.018,externalSalesPerFte:0.478,ebitdaPerFte:0.302,internalSalesSharePercent:53});assert.equal(x.limitations.length,3);});
-
 test('Symetrix v0.1 exposes the first real rank flip',()=>{
   const s=symetrixMatrixV01();
   assert.equal(s.version,'0.1');
@@ -94,3 +96,4 @@ test('Denominator Engine keeps boundaries and flags rabbit holes',()=>{
   assert.equal(x.results.find(r=>r.id==='intensity').value,2);
   assert(x.rabbitHoles.some(r=>r.id==='RH-scope'));
 });
+test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});

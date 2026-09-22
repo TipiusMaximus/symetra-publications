@@ -1,9 +1,11 @@
 {
   "name": "symetra-publications",
-  "version": "1.0.0",
+  "version": "1.2.0-rc.1",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs",
@@ -12,6 +14,10 @@
     "check:external": "node scripts/external-links.mjs",
     "preflight": "npm run build && npm test && npm run check"
   },
-  "dependencies": { "marked": "18.0.13" },
-  "devDependencies": { "cheerio": "1.1.2" }
+  "dependencies": {
+    "marked": "18.0.13"
+  },
+  "devDependencies": {
+    "cheerio": "1.1.2"
+  }
 }

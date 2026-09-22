@@ -11,13 +11,13 @@ layout: home
 ---
 Symetra tekee taloudelliset ja yhteiskunnalliset vaikutukset näkyviksi lähteiden, mittareiden ja vertailujen avulla.
 
-[Tutustu analyysiin](/analyysit/datakeskukset/)
+[Lue raportti](/analyysit/datakeskukset/)
 
 ## Datakeskusten taloudelliset ja yhteiskunnalliset vaikutukset
 
 Kohdevertailu Haminasta, Hepokorvesta sekä Kemin ja Tornion valmistavasta teollisuudesta.
 
-[Lue tiivistelmä](/analyysit/datakeskukset/)
+[Lue raportti](/analyysit/datakeskukset/)
 
 ### Lähteet
 
