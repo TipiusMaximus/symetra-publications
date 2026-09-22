@@ -52,7 +52,7 @@ export function symetrixMatrixV03(){
   const raw={
     tuike:{revenueM:574.374,workforce:120,pue2025:1.10,waterConsumptionMillionGallons2024:.3},
     nebius:{revenueM:28.083,workforce:37,portfolioPue2025:1.25,wue2025:.018,heatExportGWh2025:19.5},
-    kemi:{workforce:300,selfSufficiencyPct:250,electricityProductionTWh:2.0,derivedConsumptionTWh:.8},
+    kemi:{workforce:300,proxyBusinessRevenueM:2600,proxyBusinessWorkforce:1400,selfSufficiencyPct:250,electricityProductionTWh:2.0,derivedConsumptionTWh:.8},
     ferrochrome:{salesM:462,workforce:454,siteEnergyTWh:4},
     hel16:{}
   };
@@ -66,10 +66,11 @@ export function symetrixMatrixV03(){
       values:{
         tuike:574.374/120,
         nebius:28.083/37,
+        kemi:2600/1400,
         ferrochrome:462/454
       },
       scores:{},
-      evidence:{tuike:'observed',nebius:'observed',ferrochrome:'proxy_boundary'}
+      evidence:{tuike:'observed',nebius:'observed',kemi:'proxy_business_level',ferrochrome:'proxy_boundary'}
     },
     employmentIntensity:{
       label:'Työllistävyys suhteessa volyymiin',
@@ -80,10 +81,11 @@ export function symetrixMatrixV03(){
       values:{
         tuike:120/(574.374/100),
         nebius:37/(28.083/100),
+        kemi:1400/(2600/100),
         ferrochrome:454/(462/100)
       },
       scores:{},
-      evidence:{tuike:'observed',nebius:'observed',ferrochrome:'proxy_boundary'}
+      evidence:{tuike:'observed',nebius:'observed',kemi:'proxy_business_level',ferrochrome:'proxy_boundary'}
     },
     dataCenterFacilityEfficiency:{
       label:'Datakeskuksen energiatehokkuus',
