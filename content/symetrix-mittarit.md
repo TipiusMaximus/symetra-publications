@@ -151,7 +151,7 @@ Näin esimerkiksi Haminan **0,3 milj. gallonan ei-merivesi-nettokulutus** ja **8
 
 Veden kohdalla Symetrix erottaa vähintään kolme suuretta: **vedenotto (withdrawal)**, **nettokulutus (consumption)** ja **jäähdytysveden läpivirtaus**. Niitä ei pisteytetä yhtenä lukuna.
 
-Metsä Fibre ilmoittaa Kemin biotuotetehtaan suunnitteluarvoksi **10 m³ / tuotettu sellutonni** ja kutsuu sitä raakaveden design-arvoksi. Samassa lähteessä design-arvon kuvataan liittyvän suunnitellulla tuotannolla syntyvän jäteveden kokonaismäärään. Siksi käsittelemme sitä tässä **vesikäytön design-proxyna**, emme mitattuna vedenottona. Nimelliskapasiteetilla 1,5 miljoonaa tonnia vuodessa proxy on:
+Metsä Fibre ilmoittaa Kemin biotuotetehtaan suunnitteluarvoksi **10 m³ / tuotettu sellutonni** ja kutsuu sitä raakaveden design-arvoksi. Samassa lähteessä design-arvon kuvataan liittyvän suunnitellulla tuotannolla syntyvän jäteveden kokonaismäärään. Siksi käsittelemme sitä tässä **vesikäytön design-proxyna**, emme mitattuna vedenottona. Nimelliskapasiteetilla 1,32 miljoonaa tonnia vuodessa proxy on:
 
 **10 m³/t × 1 320 000 t/v = 13 200 000 m³/v vesikäytön design-proxy.**
 
@@ -163,7 +163,7 @@ Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin *
 | Nettokulutus | ~1 136 m³/v | ? | Ei vielä samaa Kemi-määritelmää |
 | Jäähdytysveden läpivirtaus | merivesijärjestelmä, määrä ei tässä mittarissa | suljettu jäähdytysvesikierto | eri fysikaalinen suure |
 
-Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 300×** mittakaavaeron, mutta tämä ei ole vielä withdrawal-score: käsitteet ja statukset eivät ole identtiset.
+Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 160×** mittakaavaeron, mutta tämä ei ole vielä withdrawal-score: käsitteet ja statukset eivät ole identtiset.
 
 Tämä ero on silti erittäin arvokas kaninkolo. Seuraava tavoite on rakentaa poikkitoimialainen normalisointi, esimerkiksi **m³ vedenottoa / M€ kotimaista arvonlisää** ja rinnalle **m³ nettokulutusta / M€ kotimaista arvonlisää**.
 
@@ -276,6 +276,25 @@ Nämä **eivät ole paremmuuspisteitä**. Suuri hyppy on signaali kysyä esimerk
 
 Juuri tällainen poikkeama on Symetrixissä **kaninkolo**, ei virhe. Harmonisoitu score kertoo yhden asian; scope jump kertoo, mistä kannattaa seuraavaksi kaivaa.
 
+
+## Denominator Engine v0.1: automaattiset kaninkolot
+
+Ensimmäinen reseptipohjainen denominator-moottori laskee suhdeluvut suoraan Evidence Ledgerin riveistä ja säilyttää mukana periodi- ja boundary-politiikan. Se ei päätä mikä tulos on hyvä tai huono.
+
+Tämänhetkiset automaattiset löydöt:
+
+| Rabbit hole | Suhde | Miksi tutkitaan? |
+|---|---:|---|
+| **Hamina site amplification** | **~4,17×** | Kampuksen säännöllinen työvoima on yli nelinkertainen Tuiken omaan henkilöstöön nähden |
+| **Kemi direct value-chain multiplier** | **10×** | Suoran kotimaisen arvoketjun työmäärä on yhtiön arvion mukaan noin kymmenkertainen omaan henkilöstöön nähden |
+| **Water / revenue spread** | **~226×** | Kemin konservatiivinen design-proxy/liikevaihto-alaraja ja Haminan 2024 ei-merivesi withdrawal/liikevaihto ovat erittäin kaukana toisistaan, mutta eivät harmonisoidulla boundarylla |
+
+Moottori laskee lisäksi ilman rabbit-hole-lippua esimerkiksi investointi/site-työntekijä -luvut (**Hamina ~7 M€/hlö, Kemi ~4 M€/hlö**), Haminan kiinteistöveron suhteessa vuoden 2024 liikevaihtoon (**~0,33 %**) ja sähköestimaatin suhteessa liikevaihtoon (**~1,92 GWh/M€**).
+
+Rabbit-hole-raja on tässä vaiheessa **4× löytöheuristiikka**. Sen tarkoitus on priorisoida jatkokysymyksiä, ei tuottaa arvojärjestystä.
+
+[Lataa Denominator Engine v0.1](/downloads/denominator-engine-v0.1.json).
+
 ## Candidate metrics: data on jo olemassa, piste ei vielä
 
 Kaikkea hyvää evidenssiä ei pidä muuttaa pisteeksi. Alla oleva data on jo Evidence Ledgerissä, mutta yhteinen nimittäjä, baseline tai sama systeemiraja puuttuu.
@@ -283,7 +302,7 @@ Kaikkea hyvää evidenssiä ei pidä muuttaa pisteeksi. Alla oleva data on jo Ev
 | Ehdokas | Nyt tunnettu havainto | Mitä tarvitaan ennen pisteytystä? |
 |---|---|---|
 | **Lämmön hyödyntäminen** | Nebius Mäntsälä 19,5 GWh mitattua vientiä 2025; Haminan 5 MW järjestelmän suunnittelupotentiaali ~40 GWh/v ja ~80 % Haminan kaukolämpövolyymista | Sama status (toteuma vs toteuma) sekä mielellään GWh / IT-MWh tai GWh / MW |
-| **Vedenkäyttö** | Hamina 2024: 0,3 milj. US-gallonaa kulutusta; Nebius Mäntsälä WUE 0,018 L/kWh IT | Haminan samaan vuoteen ja kampusrajaan kuuluva IT-energia → WUE |
+| **Vedenkäyttö** | Haminalle on nyt E-liputettu ~0,0014 L/kWh IT proxy; Nebius Mäntsälä WUE 0,018 L/kWh IT | Haminan mitattu, samaan vuoteen ja samaan scopeen kuuluva standardi-WUE |
 | **Kotimainen tulovaikutus** | Metsä Group arvioi Kemin biotuotetehtaan vuosittaisen positiivisen tulovaikutuksen Suomessa noin 0,5 mrd € | Vastaava määritelmä muille kohteille ja vaikutusarvion laskentamenetelmä |
 | **Arvoketjun työllisyys** | Kemi: ~2 500 henkilöä suorassa suomalaisessa arvoketjussa; Google: >600 suomalaista toimittajayritystä; Outokumpu Kemi–Tornio: >2 000 suoraa ja yhtiön arvio ~8 000 välillistä työpaikkaa | Sama työpaikkakäsite ja sama arvoketjuraja; yritysten määrä ei ole työpaikkojen määrä |
 | **Paikallinen julkistalous** | Hamina sai vuonna 2024 noin 1,5 M€ kiinteistöveroa Google/Tuike-kokonaisuudesta | Sama verolaji ja vuosi muille kohteille tai normalisointi esimerkiksi /MW, /ha tai /100 M€ |
