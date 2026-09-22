@@ -13,6 +13,15 @@ layout: sources
 
 Tällä sivulla julkaistaan vain laskelmia, joilla on analyysissä jokin tehtävä. Jokainen johdettu luku erotetaan lähteestä suoraan luetusta luvusta.
 
+| Status | Mitä se tarkoittaa? |
+|---|---|
+| **Lähdehavainto** | Luku on luettu nimetystä alkuperäislähteestä. |
+| **Johdettu laskelma** | Luku on laskettu näkyvällä kaavalla lähdehavainnoista. |
+| **Herkkyysskenaario** | Laskutapaa vaihdetaan tarkoituksella sen testaamiseksi, kuinka paljon tulkinta muuttuu. |
+| **Avoin** | Tarvittava lähtötieto puuttuu; arvoa ei täytetä oletuksella. |
+
+Johdettu tai skenaarioluku ei muutu mittaukseksi sillä, että laskutoimitus on täsmällinen. Laskennan tarkkuus ja lähtötiedon varmuus ovat eri asioita.
+
 ### Tuike Finland Oy: mitä 60 prosentin käyttökate tarkoittaa euroina?
 
 Tuiken vuoden 2025 yritystiedoissa liikevaihto on 574,374 M€, käyttökateprosentti 60,0 % ja liiketulos 30,305 M€. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717).
@@ -62,7 +71,7 @@ Tämä laskelma ei korvaa tehtaan todellista verkosta ottoa ja verkkoon syöttö
 
 Tämä ei ole virhe, joka pitäisi peittää. Se kertoo, että **mittarin valinta sisältää kysymyksen siitä, mitä vaikutusta pidetään olennaisena**. [Mittari muuttaa vastausta](/analyysit/datakeskukset/vertailu/#mittari-muuttaa-vastausta-kemin-sahkoesimerkki).
 
-### Laskelmien status
+### Koneellinen status ja ladattava aineisto
 
 Laskelmat ja niiden oletukset ovat myös [ladattavassa JSON-aineistossa](/downloads/calculations.json). Siellä Tuiken yritystalouden laskut ja Kemin sähköesimerkki on erotettu omiksi objekteikseen. Kemin esimerkin status on koneellisesti merkitty **johdetuksi havainnollistukseksi, ei mitatuksi verkkotaseeksi**.
 
