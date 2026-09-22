@@ -58,33 +58,37 @@ Datakeskukset siirtyivät Suomessa sähköveroluokkaan I 1.7.2026, joten vuoden 
 
 Avoimeksi jäävät erityisesti Tuiken alkuperäinen tilinpäätös, hankintojen kotimainen arvonlisä, omistaja- ja konsernivirrat, kunnan kohdistettavat menot sekä uskottava vaihtoehtotilanne. [Toistettava laskentaketju](/analyysit/datakeskukset/lahteet/#laskelmat).
 
-## Sähkö
+## Sähkö: teho, energia ja tuleva kulutus ovat eri asioita
 
-**Tutkimuskysymys:** mitä sähkönkulutuksesta, kasvusta ja joustosta voidaan päätellä?
+Kun talousluvut oli erotettu yhtiö- ja yhteiskuntatasolle, seuraava kysymys oli väistämättä resurssipuoli: **kuinka paljon sähköä datakeskukset käyttävät ja mitä sähköjärjestelmälle tapahtuu, jos hankkeet toteutuvat?**
 
-**Lähde ja jakso:** Fingridin tiedotteet 18.8. ja 3.9.2026; CSO:n Irlannin kulutustilasto 2025; Kemin yrityskuvaus. [S048–S051](/analyysit/datakeskukset/lahteet/#S048), [S068](/analyysit/datakeskukset/lahteet/#S068).
+Tässä tuli vastaan toinen helposti sekoittuva rajapari. **MW kertoo tehosta, MWh energiasta.** Liittymisteho tai suunniteltu kapasiteetti ei kerro suoraan toteutunutta vuosikulutusta, eikä esimerkiksi varavoimageneraattorien polttoaineteho ole datakeskuksen verkkosähkön ottoteho.
 
-**Osoittaa:** Fingridin noin 40 prosentin kasvukuva on ehdollinen sopimushankkeiden täysimääräiselle toteutumiselle. Kasvun ajureihin kuuluvat datakeskusten lisäksi sähkökattilat. Irlannissa datakeskusten osuus mitatusta kulutuksesta oli 23 % vuonna 2025.
+Fingridin elo–syyskuun 2026 aineistossa noin 40 prosentin kulutuskasvu on ehdollinen sopimushankkeiden täysimääräiselle toteutumiselle. Datakeskukset ovat yksi merkittävä ajuri, mutta lähteissä mainitaan myös sähkökattilat. [S048–S049](/analyysit/datakeskukset/lahteet/#S048).
 
-**Ei osoita:** allekirjoitettu liittymisteho ei ole nykyinen kulutus. Irlannin kulutusosuus ei ole kotimaisen sähköntuotannon osuus eikä sellaisenaan ennuste Suomelle.
+Irlannin vuoden 2025 tilasto puolestaan näyttää, että datakeskusten osuus mitatusta sähkönkulutuksesta oli 23 %. Se on hyödyllinen esimerkki siitä, että datakeskuksista voi muodostua suuri yksittäinen kulutusryhmä, mutta se ei ole Suomen ennuste eikä osuus Irlannin kotimaisesta sähköntuotannosta. [S050–S051](/analyysit/datakeskukset/lahteet/#S050).
 
-**Vertailukelpoisuus:** MW on teho, MWh energia. Itse tuotettu, verkosta ostettu ja verkkoon myyty energia eritellään. Aiemman keskustelun 100 MW on skenaario, ei Haminan mitattu keskiteho.
+Vertailussa tarvitaan siksi kohteittain ainakin **vuoden mitattu verkosta otettu energia, mahdollinen oma tuotanto, verkkoon syötetty energia ja kuormaprofiili**. Kemin biotuotetehdas esimerkiksi ilmoittaa tuottavansa sähköä yli oman tarpeensa, joten sen kokonaissähköntuotantoa ei voi rinnastaa datakeskuksen verkkosähkön ottoon. [S068](/analyysit/datakeskukset/lahteet/#S068).
 
-**Avoin tieto:** kampusten mitatut vuosikulutukset, kuormaprofiilit, toteutuva jousto ja kasvun kohdekohtainen osuus. [A04–A09](/analyysit/datakeskukset/vaiteet/#A04).
+Avoimeksi jäävät Haminan ja muiden kampusten mitatut vuosikulutukset, toteutuvat kuormaprofiilit, mahdollinen kysyntäjousto sekä se, kuinka suuri osa Fingridin kasvuskenaariosta lopulta toteutuu datakeskuksina. [A04–A09](/analyysit/datakeskukset/vaiteet/#A04).
 
-## Verkko
+## Verkko: suuri sähköntarve ei tarkoita, että kaikki verkkoinvestoinnit kuuluvat yhdelle keskukselle
 
-**Tutkimuskysymys:** mikä osa verkkoinvestoinneista ja rahoituksesta kuuluu tarkasteltavalle datakeskukselle?
+Sähkönkulutuksesta tutkimus eteni verkkokysymykseen: jos suuri kuluttaja tarvitsee uuden liittymän, sähköaseman tai vahvistuksia, **mikä osa investoinnista syntyy juuri datakeskuksen vuoksi ja kuka sen maksaa?**
 
-**Lähde ja jakso:** Fingridin joulukuun 2022 investointi- ja rahoitustiedotteet, Carunan Hepokorpi–Finnoo-kuvaus sekä Maanmittauslaitoksen toimitus 2025-756378. [S033–S037](/analyysit/datakeskukset/lahteet/#S033).
+Hepokorven aineisto osoittaa, miksi tähän ei voi vastata yhdellä investointisummalla. Carunan Hepokorpi–Finnoo-ratkaisu palvelee useita toimijoita, ja Fingrid on ilmoittanut Hepokorven sähköasemalle 13,72 M€ RRF-rahoitusta. Näistä tiedoista ei seuraa, että koko investointi olisi Microsoftin aiheuttama tai että rahoitus olisi yksinomaan Microsoftille annettua tukea. [S033–S035](/analyysit/datakeskukset/lahteet/#S033).
 
-**Osoittaa:** Hepokorven verkkoratkaisu palvelee useita toimijoita. Fingrid ilmoitti Hepokorven sähköasemalle myönnetystä 13,72 M€:n RRF-rahoituksesta. Tuiken Sydänmaa–Nurkka-yhteys on erillinen 110 kV:n johtohanke.
+Haminassa Tuiken Sydänmaa–Nurkka-yhteys on erillinen 110 kV:n voimajohtohanke. Johdon jännitetaso kertoo verkon teknisestä ratkaisusta, mutta siitä ei yksin voi päätellä datakeskuksen toteutunutta käyttötehoa tai vuosienergiaa. [S036–S037](/analyysit/datakeskukset/lahteet/#S036).
 
-**Ei osoita:** rahoitustiedote ei varmista maksettua avustusta tai Microsoftin saamaa yksinomaista tukea. Carunan koko Espoon verkon investointeja ei kohdisteta yhden keskuksen kustannukseksi. Johdon jännitteestä ei päätellä käyttötehoa.
+Verkkovaikutuksen luotettava kohdistaminen vaatii kolme asiaa:
 
-**Vertailukelpoisuus:** tarvitaan investoinnin aiheuttamisperuste, käyttäjät ja kohdistamissääntö. Julkinen rahoitus on rahoitusvirta; samaa resurssikustannusta ei lasketa toistamiseen sekä investointina että avustuksena.
+- mitä olisi pitänyt rakentaa ilman tarkasteltavaa datakeskusta;
+- mikä osa uudesta verkosta palvelee myös muita käyttäjiä tai yleistä toimitusvarmuutta;
+- mitkä kustannukset katetaan liittymismaksuilla, verkkotariffeilla, julkisella rahoituksella tai muulla tavalla.
 
-**Avoin tieto:** toteutuneet kustannukset, liittymismaksut ja investoinnit vertailutilanteessa ilman kohdetta. Verkkokapasiteetin niukkuus voi olla olennainen, vaikka sen euromäärä jää avoimeksi.
+Sama resurssia ei myöskään lasketa kahdesti: esimerkiksi julkinen avustus on rahoitusvirta, ei uusi erillinen fyysinen verkkokustannus sen investoinnin päälle, jota sillä rahoitetaan.
+
+Avoimeksi jäävät toteutuneet kokonaiskustannukset, liittymismaksut, kustannusten jakautuminen käyttäjille sekä uskottava verkon kehitys ilman kyseistä hanketta. Tämä on tärkeää myös vaihtoehtoiskustannuksessa: verkkokapasiteetti voi olla niukka resurssi, vaikka sen arvoa ei saataisikaan yhdellä euromäärällä.
 
 ## Ympäristö
 
