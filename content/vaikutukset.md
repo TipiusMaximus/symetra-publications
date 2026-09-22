@@ -9,6 +9,14 @@ updated: 2026-09-22
 description: Hyödyt, haitat ja avoin tieto tarkastellaan samalla näyttökynnyksellä. Jokaisella vaikutuksella on oma laskentarajansa.
 layout: article
 ---
+## Ennen vaikutuslukuja: mikä on tarkastelun kohde?
+
+Työ, raha, sähkö ja ympäristö eivät kaikki osu samaan organisaatiorajaan. Esimerkiksi Haminassa **Tuike Finland Oy** on yksi mitattava oikeushenkilö, **Haminan kampus** fyysinen toimipaikka ja **Suomeen syntyvä vaikutus** näitä laajempi kysymys. Sama periaate koskee myös muita kohteita.
+
+Siksi tällä sivulla jokaisen vaikutusalueen kohdalla kysytään ensin, **minkä toimijan, alueen, ajanjakson ja yksikön luku on kyseessä**. Yhtiön liikevaihtoa ei nimetä Suomen hyödyksi, kampuksen henkilömäärää yhtiön henkilöstöksi eikä liittymistehoa toteutuneeksi energiankulutukseksi.
+
+[Haminan Google–Tuike–kampus-rajaus avataan kohdevertailussa](/analyysit/datakeskukset/vertailu/#hamina-ensin-on-ymmarrettava-mika-tuike-finland-oy-on).
+
 ## Työ
 
 **Tutkimuskysymys:** kuinka paljon työtä kohde tuottaa, kenelle ja missä vaiheessa?
