@@ -73,66 +73,66 @@ Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä
 **Avoin tieto:** Tuiken alkuperäinen tilinpäätös liitetietoineen, konsernin sisäisten liiketoimien merkitys, kampuksen saman vuoden henkilötyövuodet, energia sekä hankintojen kotimaiset arvonlisäosuudet. [Laskelmat](/analyysit/datakeskukset/lahteet/#laskelmat).
 
 
-## Neljä kohdetta, eri lähtökohdat
+## Miksi juuri nämä verrokit?
 
-| Kohde | Tarkasteluraja | Keskeinen avoin tieto |
+Hepokorpi, Kemi ja Kemi–Tornio eivät ole kolme satunnaista rinnakkaista casea. Jokainen niistä ratkaisee yhden Haminassa esiin nousseen vertailuongelman:
+
+| Kohde | Miksi se on mukana? | Keskeinen avoin tieto |
 |---|---|---|
-| Google / Tuike, Hamina | Suomen oikeushenkilön talous 2025 ja erikseen kampuksen tiedot 2026 | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
-| Microsoft HEL16, Hepokorpi | HEL16:n hakemus ja ympäristölupa 302/2025 | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
-| Metsä Fibre, Kemi | Biotuotetehdas; yrityksen kohdekuvaus ja 2024 avaamistiedote | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
-| Outokumpu, Kemi–Tornio | Ferrochrome-liiketoiminta-alue 2025; kaivos ja ferrokromituotanto | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
+| Google / Tuike, Hamina | Toimiva datakeskus näyttää yhtiön, kampuksen ja paikallisen vaikutuksen rajat | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
+| Microsoft HEL16, Hepokorpi | Tuleva datakeskus näyttää eron suunnitelman, luvan ja toteuman välillä | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
+| Metsä Fibre, Kemi | Energiaintensiivinen tehdas testaa, miten oma sähköntuotanto muuttaa vertailua | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
+| Outokumpu, Kemi–Tornio | Segmenttiraportointi testaa, miten konsernin sisäiset virrat ja toimipaikkarajat vaikuttavat lukuihin | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
 
 Taulukon pohjana ovat [Tuike ja Hamina S001–S003](/analyysit/datakeskukset/lahteet/#S001), [HEL16 D08](/analyysit/datakeskukset/lahteet/#D08) sekä [teollisuuslähteet S068–S071](/analyysit/datakeskukset/lahteet/#S068).
 
-## Mitä vertailusta voidaan päätellä?
+## Hepokorpi: tuleva keskus ei ole vielä toteutunut keskus
 
-Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintojaksoja. Niiden luvut auttavat kuvaamaan kohteita, mutta eivät sellaisinaan muodosta yhteistä tehokkuusmittaria. Tämä on aineiston rakenteesta tehty menetelmäpäätelmä.
+Hamina antaa tietoa toiminnassa olevasta datakeskuksesta. Hepokorpi tuo mukaan toisen tilanteen: **mitä voidaan päätellä hankkeesta ennen kuin käyttö on vakiintunut?**
 
-> **Vertailun rajaus.** Tässä julkaisussa ei esitetä toimialojen paremmuusjärjestystä. Puuttuvat energia-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
+HEL16:n hakemus, täydennykset ja ympäristölupa kuvaavat suunniteltua toimintaa ja sen ehtoja. Lupapäätös sisältää muun muassa varavoimaa, polttoainevarastointia, vettä, melua, riskejä ja tarkkailua koskevia määräyksiä. Päätöksen hakemuskuvauksessa aloitusajaksi esitetään marraskuu 2026. [D01, D04, D08](/analyysit/datakeskukset/lahteet/#D01).
 
-## Hepokorpi: HEL16 ei ole koko kampus
+Näistä asiakirjoista ei kuitenkaan saada vielä käyttövuoden sähköä, vettä, melua tai henkilöstöä. Esimerkiksi varavoiman noin 161 MW on polttoainetehoa, ei datakeskuksen mitattu verkkosähkön ottoteho.
 
-**Tutkimuskysymys:** mitä HEL16:n toiminnasta ja sen ympäristöehdoista tiedetään ennen varmennettua käyttötoteumaa?
+Hepokorven tehtävä vertailussa on siksi näyttää, että **suunnitelma, luvan sallima raja, rakennettu kapasiteetti ja toteutunut käyttö ovat neljä eri näyttötasoa**. Käytössä olevan tehtaan vuosimittausta ei verrata suoraan datakeskuksen lupahakemuksen nimellisarvoon.
 
-**Lähde ja havaintojakso:** hakemus 9.12.2024, täydennys 27.1.2025 ja päätös 302/2025, 7.10.2025. [D01, D04 ja D08](/analyysit/datakeskukset/lahteet/#D01).
+Avoimeksi jäävät käyttöönotto, myöhemmät päätösmuutokset, toteutuneet energia- ja vesivirrat sekä tarkkailutulokset. [Ympäristövaikutukset](/analyysit/datakeskukset/vaikutukset/#ymparisto-lupa-kertoo-ehdoista-ei-toteutuneesta-vaikutuksesta).
 
-**Mitä lähde osoittaa:** lupa koskee HEL16:n varavoimaa ja polttoainevarastointia sekä sisältää melu-, vesi-, riski- ja tarkkailuehtoja. Päätöksen hakemuskuvauksessa aloitusajaksi esitetään marraskuu 2026 (s. 34). Varavoiman noin 161 MW on polttoainetehoa, ei verkkosähkön ottotehoa.
+## Kemi: oma sähköntuotanto muuttaa koko energiavertailun
 
-**Mitä se ei osoita:** todellista käyttöönottoa, kampuksen keskimääräistä sähkötehoa, kaikkien tulevien rakennusten toteutusta tai vuoden 2026 lainvoimaisuustilannetta.
+Kemin biotuotetehdas tuli mukaan, kun kävi selväksi, ettei energiaintensiivisiä laitoksia voi verrata pelkän “paljonko sähköä käytetään” -kysymyksen avulla.
 
-**Vertailukelpoisuus:** suunnittelu- ja lupatietoja verrataan vastaavan vaiheen tietoihin. Ne eivät ole samaa näyttöä kuin käytössä olevan tehtaan vuosimittaukset.
+Metsä Fibren nykyinen kohdekuvaus ilmoittaa henkilöstöksi 300, vuotuisen sähköntuotannon kuvaukseksi 2,0 TWh ja sähkön omavaraisuudeksi 250 %. Vuoden 2024 avaamistiedote ilmoitti tehtaalle noin 250 ja koko tehdasalueelle noin 500 henkilöä. [S068–S069](/analyysit/datakeskukset/lahteet/#S068).
 
-**Avoin tieto:** myöhemmät päätösmuutokset, käyttöönotto ja sen jälkeen syntyvät tarkkailutiedot. [Ympäristövaikutukset](/analyysit/datakeskukset/vaikutukset/#ymparisto).
+Tämä tekee näkyväksi yhden ratkaisevan eron: tehdas voi olla samaan aikaan suuri energiankäyttäjä ja sähkön nettotuottaja. Datakeskuksen verkkosähkön ottoa ei siksi voi verrata sellutehtaan kokonaissähköntuotantoon tai -kulutukseen yhdellä luvulla.
 
-## Kemi: sähköntuotanto kuuluu vertailuun
+Tarvitaan erikseen **oma tuotanto, oma kulutus, verkosta otto ja verkkoon vienti**. Vasta niiden jälkeen voidaan muodostaa yhteinen energiatase. Sama pätee työllisyyteen: tehtaan henkilöstö, koko tehdasalueen työjoukko ja koko arvoketjun työvaikutus eivät ole sama mittari.
 
-**Tutkimuskysymys:** miten biotuotetehtaan työ ja energiavirrat eroavat datakeskuksen vertailurajasta?
+Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia, työpanos ja tehdaskohtainen arvonlisä samoilla rajauksilla kuin datakeskuksissa.
 
-**Lähde ja havaintojakso:** Metsä Fibren kohdesivu, luettu 22.9.2026, sekä Metsä Groupin avaamistiedote 23.10.2024. [S068–S069](/analyysit/datakeskukset/lahteet/#S068).
+## Kemi–Tornio: konsernin segmentti opettaa saman ongelman kuin Tuike
 
-**Mitä lähde osoittaa:** nykyinen kohdesivu ilmoittaa henkilöstöksi 300 ja sähkön omavaraisuudeksi 250 %; vuotuisen tuotannon kuvaukseksi annetaan 2,0 TWh. Vuoden 2024 tiedote ilmoitti tehtaalle noin 250 ja koko tehdasalueelle noin 500 henkilöä.
+Outokumpu tuli mukaan, kun auditissa haluttiin verrata datakeskuksen taloudellista rakennetta perinteiseen, energiaintensiiviseen teollisuuteen. Samalla vastaan tuli tuttu ongelma: **mikä organisaatiotaso oikeastaan tuottaa tarkasteltavan luvun?**
 
-**Mitä se ei osoita:** kohdesivun luvut eivät ole tässä luettu tietyn kalenterivuoden mittaussarja. Eri ajankohtien henkilöstöluvut eivät yksin osoita uusien työpaikkojen nettomäärää. Yrityksen vaikutusarviot eivät ole riippumattomasti toistettuja kansantalouslaskelmia.
+Outokummun vuoden 2025 vuosikertomuksessa Ferrochrome-segmentin myynti oli 462 M€, josta ulkoista myyntiä 217 M€ ja konsernin sisäistä 245 M€. Käyttökate oli 137 M€ ja vuoden lopun henkilöstö 454 henkilötyövuotta. Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon. [S070–S071](/analyysit/datakeskukset/lahteet/#S070).
 
-**Vertailukelpoisuus:** oma sähköntuotanto, oma kulutus, verkkoon myynti ja verkosta otto tarvitaan erikseen. Nettotuottajan kokonaissähköä ei rinnasteta datakeskuksen verkkosähkön ottoon. Tämä tulkinta seuraa ilmoitetusta tuotantorakenteesta.
+Tässä 462 M€ ei siis ole sama asia kuin ulkopuolisilta asiakkailta saatu 462 M€:n myynti. Lähes puolet ilmoitetusta myynnistä on segmentin sisäistä myyntiä muille konsernin osille. Tämä on vertailulle arvokas havainto juuri siksi, että myös Tuiken kohdalla konsernin sisäisten liiketoimien merkitys on avoin.
 
-**Avoin tieto:** valitun vertailuvuoden mitattu energia, työpanos ja tehdaskohtainen arvonlisä. Koko arvoketjun työllisyys ei korvaa tehtaan henkilöstömittaria.
+Outokumpu näyttää samalla, miksi **oikeushenkilö, tehdas, liiketoimintasegmentti ja konserni** on pidettävä erillään. Ferrochrome-segmentti ei kata kaikkea Tornion ruostumattoman teräksen tuotantoa, eikä vuoden lopun FTE ole suoraan sama asia kuin vuoden keskimääräinen henkilöstömäärä.
 
-## Kemi–Tornio: segmentti ei ole yksittäinen tehdas
+Avoimeksi jäävät yhteinen kohde- ja vuosirajaus Tuiken kanssa, toimipaikkakohtainen sähkö ja arvonlisä sekä Suomen ja konsernin sisäisten rahavirtojen tarkempi erittely.
 
-**Tutkimuskysymys:** mitä Outokummun Ferrochrome-segmentin talousluvut kertovat valmistavan teollisuuden vertailusta?
+## Mitä vertailusta voidaan tässä vaiheessa päätellä?
 
-**Lähde ja havaintojakso:** Outokummun vuosikertomus 2025, painettu s. 170, sekä liiketoiminta-alueen kuvaus. [S070–S071](/analyysit/datakeskukset/lahteet/#S070).
+Neljän kohteen tärkein yhteinen havainto ei ole vielä se, kumpi toimiala “tuottaa enemmän”, vaan se, **kuinka helposti väärä laskentaraja tuottaa näennäisesti tarkan mutta väärän vertailun**.
 
-**Mitä lähde osoittaa:** segmentin vuoden 2025 myynti oli 462 M€, josta ulkoista 217 M€ ja sisäistä 245 M€. Käyttökate oli 137 M€; oikaistu käyttökate 138 M€ on eri tunnusluku. Vuoden lopun henkilöstö oli 454 henkilötyövuotta (FTE). Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon.
+Hamina opettaa erottamaan konsernin, yhtiön ja kampuksen. Hepokorpi erottaa suunnitelman toteumasta. Kemi erottaa energiankulutuksen nettotaseesta. Outokumpu erottaa segmentin ulkoisen myynnin konsernin sisäisestä myynnistä.
 
-**Mitä se ei osoita:** 462 M€ ei ole kokonaan konsernin ulkoista myyntiä eikä Suomen nettotulo. Segmentti ei kata kaikkea Tornion ruostumattoman teräksen tuotantoa.
+Siksi lähteiden nykyiset luvut auttavat kuvaamaan kohteita, mutta eivät vielä muodosta yhtä yhteistä tehokkuus- tai nettohyötymittaria.
 
-**Vertailukelpoisuus:** oikeushenkilö, tehdas, liiketoiminta-alue ja konserni erotetaan. Tilinpäätöksen vuoden lopun FTE ei ole suoraan sama mittari kuin vuoden keskimääräinen henkilöluku.
+> **Vertailun rajaus.** Tässä julkaisussa ei muodosteta toimialojen paremmuusjärjestystä. Puuttuvat energia-, arvonlisä-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei myöskään ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
 
-**Avoin tieto:** yhteinen kohde- ja vuosirajaus Tuiken kanssa sekä sähkö-, arvonlisä- ja omistajatulojen erittely. Omistuksen kansallisuus ei sellaisenaan ratkaise tulovirtojen kohdentumista.
-
-## Yhteismitallisen jatkovertailun tietotarve
+## Mitä yhteismitallinen jatkovertailu vielä tarvitsee?
 
 | Mittari | Yhteinen määritelmä | Miksi tarvitaan? |
 |---|---|---|
@@ -142,3 +142,5 @@ Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintoja
 | Julkistalous | Kohdistettavat tulot ja menot sekä investointien ajallinen käsittely | Verotulo ei yksin ole nettohyöty |
 | Ympäristö | Toteutuneet paikalliset vaikutukset ja yhteinen elinkaariraja | Lupa tai tekniikkakuvaus ei korvaa seurantaa |
 | Vaihtoehto | Toteuttamiskelpoinen vertailutilanne samalle resurssille | Teoreettinen hanke ei todista syrjäytettyä investointia |
+
+Tämä tietotarvelista on samalla Symetran seuraava mittarikerros: vasta kun yhteiset määritelmät ovat saatavissa, voidaan laskea esimerkiksi työ-, vero- tai arvonlisäintensiteettejä ilman että eri organisaatio- ja aikarajat sekoittuvat.
