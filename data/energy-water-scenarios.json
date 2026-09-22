@@ -156,5 +156,32 @@
       "hamina_over_kemi_floor": 5.593,
       "interpretation": "Discovery signal only. Because Kemi is a conservative floor, the actual site-level spread is smaller than this if the same 0.8 TWh numerator is retained and may reverse if site revenue is sufficiently low."
     }
+  },
+  "net_grid_dependence": {
+    "definition": "(annual net grid import - annual net grid export) / own electricity consumption × 100",
+    "interpretation": "0% = annual net self-sufficient; positive = net importer; negative = net exporter.",
+    "kemi": {
+      "value_percent": -150,
+      "status": "derived_from_company_reported",
+      "formula": "(0.8 - 2.0) / 0.8 × 100",
+      "evidence": [
+        "EV-KEMI-ENERGY-001",
+        "EV-KEMI-ENERGY-002",
+        "EV-KEMI-GRID-001",
+        "EV-KEMI-GRID-002"
+      ],
+      "note": "Company reports 2.0 TWh/y generation, 250% self-sufficiency and surplus delivered to national grid. Does not reveal gross hourly import/export."
+    },
+    "hamina": {
+      "value_percent": 100,
+      "status": "scenario_assumption",
+      "formula": "(0.87 - 0) / 0.87 × 100",
+      "evidence": [
+        "EV-HAM-POWER-001",
+        "EV-HAM-BACKUP-001"
+      ],
+      "assumption": "No material normal-operation onsite electricity generation; backup generators are excluded from normal generation.",
+      "note": "Scenario only until onsite generation and metered grid exchange are confirmed."
+    }
   }
 }
