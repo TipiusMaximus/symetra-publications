@@ -46,12 +46,13 @@ Tämä tekee pisteestä vakaan: uuden yrityksen lisääminen vertailuun ei muuta
 
 ## Kontekstirivit — ei pisteitä
 
-Nämä rivit lisäävät vertailuun informaatiota ilman näennäistä tarkkuutta. **E = estimate**, **J = johdettu**, **D = design**.
+Nämä rivit lisäävät vertailuun informaatiota ilman näennäistä tarkkuutta. **E = estimate**, **J = johdettu**, **D = design**, **S = scenario**.
 
 | Resurssi | Google / Hamina | Nebius Mäntsälä | Kemi Bio | Ferrochrome | HEL16 |
 |---|---:|---:|---:|---:|---:|
 | Vuotuinen sähkönkäyttö | **E ~0,87 TWh** [0,87–2,0] | ? | **J ~0,8 TWh** oma kulutus | ? | Pre-op |
 | Nettosähkötase | ~+0,87 TWh **E*** | ? | **J ~−1,2 TWh** | ? | Pre-op |
+| Nettoriippuvuus sähköverkosta | **S ~+100 %*** | ? | **J −150 %** | ? | Pre-op |
 | Vesi: raportoitu / design-proxy | **~11 356 m³/v** (2024 reported) | ? | **D ~15,0 Mm³/v** | ? | Pre-op |
 | Nettovedenkulutus | **~1 136 m³/v** (2024, seawater excluded) | WUE 0,018 L/kWh IT | ? | ? | Pre-op |
 | Ei-merivesi-intensiteetti | **E ~0,0014 L/kWh IT** | — | — | — | Pre-op |
@@ -59,7 +60,7 @@ Nämä rivit lisäävät vertailuun informaatiota ilman näennäistä tarkkuutta
 | Sähkö / liikevaihto | **E ~1,92 GWh/M€** | ? | **Q ≥0,344 GWh/M€** | ? | Pre-op |
 | Merivedenoton lupakatto | **80 Mm³/v** (ei toteuma) | — | — | — | Pre-op |
 
-\* Haminan nettosähkötase käyttää tässä sähkönkulutuksen estimaattia ja olettaa normaalikäytössä, ettei kampuksella ole merkittävää omaa sähköntuotantoa. Varavoimageneraattorit eivät ole normaalia perustuotantoa.
+\* Haminan nettosähkötase ja ~+100 % verkkoriippuvuus ovat skenaarioita, jotka käyttävät sähkönkulutuksen estimaattia ja olettavat normaalikäytössä, ettei kampuksella ole merkittävää omaa sähköntuotantoa. Varavoimageneraattorit eivät ole normaalia perustuotantoa. Kemin −150 % tarkoittaa, että vuositasolla johdettu nettovienti vastaa noin 1,5-kertaisesti tehtaan omaa sähkönkulutusta.
 
 [Katso estimaatin kaava, herkkyysskenaariot ja vesirajaukset](/analyysit/datakeskukset/symetrix-mittarit/#haminan-sahko-kysymysmerkista-lapinakyvaksi-estimaatiksi).
 
