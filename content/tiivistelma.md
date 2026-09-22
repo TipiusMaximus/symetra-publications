@@ -80,6 +80,14 @@ Valmistavan teollisuuden verrokkeja ei tuotu mukaan todistamaan, että datakesku
 
 Näiden verrokkien tärkein tehtävä on siis testata **mittaustapaa**, ei tuottaa toimialojen paremmuusjärjestystä.
 
+## Sama kohde voi näyttää erilaiselta eri mittarilla
+
+Kemin biotuotetehdas tekee tämän näkyväksi. Metsä Fibre ilmoittaa sähköntuotannoksi 2,0 TWh/v ja sähköomavaraisuudeksi 250 %. Näistä voidaan havainnollistavasti johtaa noin 0,8 TWh/v oma sähkönkulutus ja noin +1,2 TWh/v tuotannon ja johdetun kulutuksen erotus. Jälkimmäinen **ei ole mitattu nettovienti**. [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/).
+
+Jos mittari tarkastelee kokonaiskulutusta, Kemi näyttää suurelta energiankäyttäjältä. Jos mittari tarkastelee omaa tuotantoa suhteessa kulutukseen, sama tehdas näyttää erittäin vahvalta. Jos mittarina olisi arvonlisä suhteessa verkosta otettuun sähköön, tulos voisi muuttua vielä voimakkaammin — mutta sitä ei voida laskea luotettavasti ilman mitattua verkkotasetta.
+
+**Mittarin mukana muuttuva tulos ei ole tässä häiriö, vaan olennainen havainto.** Siksi julkaisu näyttää vaihtoehtoisia laskentatapoja ja niiden oletuksia sen sijaan, että ne piilotettaisiin yhteen kokonaispisteeseen. [Mittariherkkyys](/analyysit/datakeskukset/vertailu/#mittari-muuttaa-vastausta-kemin-sahkoesimerkki).
+
 ## Vaikein kysymys on vaihtoehto
 
 Yhteiskunnallinen vaikutus ei ratkea vain vertaamalla kahta toimivaa laitosta toisiinsa. Pitää myös kysyä, **mitä samoilla resursseilla olisi realistisesti tapahtunut ilman tarkasteltavaa hanketta**.
