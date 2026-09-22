@@ -4,7 +4,7 @@ slug: symetrix-mittarit
 route: /analyysit/datakeskukset/symetrix-mittarit/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Mitä kukin Symetrix-mittari mittaa, mikä on sen baseline, mitä suurempi tai pienempi piste tarkoittaa ja millä rajauksilla yritysten luvut on laskettu.
 layout: article

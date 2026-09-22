@@ -1,12 +1,12 @@
 # Julkaisun preflight — 22.9.2026
 
-**Tila: v1.2.0-rc.1 on teknisesti valmis tarkasteltavaksi; julkinen julkaisu sekä selain- ja PDF-hyväksyntä odottavat.** GitHub Pagesin julkaisu on lukittu muuttujalla `PUBLISH_APPROVED`.
+**Tila: v1.2.0 on julkaistu teknisesti hyväksytyn preflightin jälkeen.** Selain- ja PDF-tarkistus jatkuu julkaisun jälkeisenä QA-tehtävänä käyttäjän hyväksynnän mukaisesti.
 
 ## Sisältö ja aineisto
 
-- 8 suunnitelman mukaista pääsivua, lisäksi `/raportti/`-yhteensopivuussivu ja 404: yhteensä 10 HTML-sivua.
+- 10 sisältösivua, lisäksi kanoninen raportti, `/raportti/`-yhteensopivuussivu ja 404: yhteensä 12 HTML-sivua.
 - `/analyysit/datakeskukset/` sisältää orientaation, esipuheen, tutkimuskysymyksen, lukutavan, varsinaisen analyysin, A01–A11-väiteauditoinnin, johtopäätökset ja menetelmän tässä järjestyksessä.
-- Tekijä on Symetra organisaationa. Versio, julkaisu- ja päivityspäivä, aineiston katkaisupäivä sekä julkaisukandidaatin tila näkyvät raportissa.
+- Tekijä on Symetra organisaationa. Versio, julkaisu- ja päivityspäivä, aineiston katkaisupäivä sekä julkaistu tila näkyvät raportissa.
 - Kaikki A01–A11-kysymykset, niiden alkuperä, kuvaileva arvio, lähteet ja avoimet tiedot mukana.
 - Kohdevertailu ja kuusi vaikutusaluetta noudattavat kuusiosaista havaintomallia. Ei yhteispisteitä, voittajaa tai politiikkasuositusta.
 - 92 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin vuoden 2025 toteumatietoja ja Symetrix-mittariaineistoa säilytetään lähderekisterissä ja latauksissa.
@@ -52,4 +52,4 @@ Varmennettava polku: etusivu → Lue raportti → sisällysluettelon luku → A0
 
 ## Julkaisupäätös
 
-Selain- ja PDF-kokeet siirretään käyttäjän hyväksynnällä julkaisemisen jälkeiseen QA:han. Muut aineistopuutteet ovat analyysin näkyviä tuloksia; niitä ei piiloteta julkaisumuotoa vaihtamalla.
+Versio 1.2.0 julkaistaan käyttäjän nimenomaisella päätöksellä ennen selain- ja PDF-kokeita. Nämä kokeet kirjataan julkaisemisen jälkeiseksi QA:ksi. Muut aineistopuutteet ovat analyysin näkyviä tuloksia; niitä ei piiloteta julkaisumuotoa vaihtamalla.

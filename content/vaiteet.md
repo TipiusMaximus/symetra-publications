@@ -4,7 +4,7 @@ slug: vaiteet
 route: /analyysit/datakeskukset/vaiteet/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Kansalaisaloitteesta johdetut A01–A11-kysymykset säilyvät erillisenä lähdeauditointina pääanalyysin rinnalla.
 layout: questions

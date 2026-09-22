@@ -4,7 +4,7 @@ slug: symetrix
 route: /analyysit/datakeskukset/symetrix/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Yksi matriisi näyttää, miten auditin kohteet sijoittuvat näkyviin baselineihin eri mittareilla.
 layout: article

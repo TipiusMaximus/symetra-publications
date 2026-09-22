@@ -3,8 +3,8 @@ title: Mitä datakeskus tekee ja miten sitä verrataan?
 slug: vertailu
 route: /analyysit/datakeskukset/vertailu/
 language: fi
-status: draft
-published: false
+status: ready
+published: true
 updated: 2026-09-22
 description: Ensin avataan datakeskuksen taloudellinen toimintamalli ja Haminan laskentarajat. Vasta sen jälkeen verrataan muita kohteita.
 layout: article
@@ -23,7 +23,7 @@ Tämä auditointi pystyy tällä hetkellä vastaamaan jälkimmäiseen vain ositt
 
 **Konserni** on saman omistuksen ja määräysvallan alla toimiva yritysryhmä. **Konsernin sisäinen myynti** tapahtuu sen omien yhtiöiden tai liiketoiminta-alueiden välillä; **ulkoinen myynti** suuntautuu konsernin ulkopuolisille asiakkaille. Ulkoinen ei tarkoita ulkomaille myyntiä. Sisäinen myynti poistetaan konsernin yhteenlasketusta myynnistä, jotta sama myynti ei tule lasketuksi kahdesti. Tuiken myynnin jakautumista näihin ryhmiin ei tässä aineistossa tunneta.
 
-### Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
+## Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
 
 Tuike Finland Oy:n vuoden 2025 liikevaihto on julkisissa yritystietopalveluissa 574,374 M€. Se on tärkeä havainto, koska se kertoo suomalaisen oikeushenkilön läpi kulkevasta suuresta liiketoiminnan volyymista. Mutta ennen yhteiskunnallisen hyödyn arviointia pitäisi tietää ainakin:
 

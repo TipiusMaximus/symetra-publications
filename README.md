@@ -39,7 +39,7 @@ npm run check
 
 Kanoninen raportti on osoitteessa `/analyysit/datakeskukset/`. Yhteensopivuusreitti `/analyysit/datakeskukset/raportti/`, Markdown-lataus ja tulostusversio generoidaan samasta manifestista; niiden runkosisältöä ei muokata erikseen. Tulosteessa ja Markdown-latauksessa on täydellinen lähdeliite. Sivusto toimii ilman JavaScriptiä; silloin selaimen oma tulostustoiminto on käytettävissä.
 
-Frontmatter tukee yhtä skalaaria per rivi sekä JSON-muotoisia listoja (kelvollista YAMLia). Monirivisiä YAML-rakenteita ei tueta. Pakolliset sivukentät: `title`, `slug`, `route`, `language`, `status`, `published`, `updated`, `description`, `layout`. `published: false` ilmaisee, ettei verkkoversiota ole vielä julkaistu; valmis paikallinen sisältö voi olla `status: ready`. Julkaisubuild sisältää toimitetut sivut myös esikatselua varten, joten varsinainen julkaisulukko on GitHub Actionsin `PUBLISH_APPROVED`-muuttuja.
+Frontmatter tukee yhtä skalaaria per rivi sekä JSON-muotoisia listoja (kelvollista YAMLia). Monirivisiä YAML-rakenteita ei tueta. Pakolliset sivukentät: `title`, `slug`, `route`, `language`, `status`, `published`, `updated`, `description`, `layout`. `published: false` ilmaisee, ettei verkkoversiota ole vielä julkaistu; valmis sisältö merkitään `status: ready`.
 
 Kysymyksillä lisäksi `id`, `question`, `classification`, `original`, `rationale`, `sourceRefs` ja `openData`. Luokat ovat kuvailevia, eivät pisteitä. Markdowniin saa lisätä vain repossa toimitettua luotettua sisältöä; build ei ole julkisen käyttäjäsyötteen HTML-puhdistin.
 
@@ -51,14 +51,14 @@ Linkkien tarkistus tarvitsee verkkoyhteyden. HTTP 403 merkitään estyneeksi; si
 
 ## GitHub Pages
 
-Työnkulku rakentaa PR:t ja main-haaran, tarkistaa sekä projektipolun että juuripolun ja tuottaa Pages-artefaktin. **Julkaisu on lukittu**, kunnes repositorion Actions-muuttuja `PUBLISH_APPROVED` on `true`.
+Työnkulku rakentaa PR:t ja main-haaran, tarkistaa sekä projektipolun että juuripolun ja tuottaa Pages-artefaktin. Main-haaran onnistunut build julkaisee Pages-artefaktin.
 
-Ennen lukon avaamista:
+Julkaisun yhteydessä:
 
 1. Varmista dokumentoidut sisältö-, linkki- ja Git-tarkistukset.
 2. Varmenna työpöytä, mobiili (myös 320 px), näppäimistö, tulostus/PDF ja jakokuvan esikatselu oikeassa selaimessa.
 3. Päivitä metatietojen `published`-tila ja `docs/preflight.md` todellisten tulosten perusteella.
-4. Ota repossa Pagesin lähteeksi GitHub Actions, varmista julkisen julkaisemisen edellytykset ja aseta `PUBLISH_APPROVED=true`.
+4. Ota repossa Pagesin lähteeksi GitHub Actions ja varmista julkisen julkaisemisen edellytykset.
 5. Käynnistä työnkulku ja tarkista julkinen sivusto sekä tuntemattoman polun 404-vastaus.
 
 Toteutus noudattaa [GitHubin Pages-työnkulkuohjetta](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).

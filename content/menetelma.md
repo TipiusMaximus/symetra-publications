@@ -4,7 +4,7 @@ slug: menetelma
 route: /menetelma/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Näyttö, mittarit, vertailurajat ja epävarmuus muodostavat analyysin. Lukija voi seurata päätelmän takaisin lähteeseen.
 layout: standalone

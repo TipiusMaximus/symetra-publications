@@ -3,8 +3,8 @@ title: Työstä ympäristöön: kuusi vaikutusaluetta
 slug: vaikutukset
 route: /analyysit/datakeskukset/vaikutukset/
 language: fi
-status: draft
-published: false
+status: ready
+published: true
 updated: 2026-09-22
 description: Hyödyt, haitat ja avoin tieto tarkastellaan samalla näyttökynnyksellä. Jokaisella vaikutuksella on oma laskentarajansa.
 layout: article

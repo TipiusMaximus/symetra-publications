@@ -4,7 +4,7 @@ slug: home
 route: /
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Symetra tekee taloudelliset ja yhteiskunnalliset vaikutukset näkyviksi lähteiden, mittareiden ja vertailujen avulla.
 layout: home

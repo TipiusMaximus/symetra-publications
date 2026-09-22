@@ -3,8 +3,8 @@ title: Lähteet, laskelmat ja aineistorajaukset
 slug: lahteet
 route: /analyysit/datakeskukset/lahteet/
 language: fi
-status: draft
-published: false
+status: ready
+published: true
 updated: 2026-09-22
 description: Seuraa päätelmä takaisin alkuperäiseen lähteeseen. Lähteen havaintojakso, lukemisen laajuus ja saatavuus erotetaan toisistaan.
 layout: sources
