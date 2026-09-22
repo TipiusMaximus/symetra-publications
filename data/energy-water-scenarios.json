@@ -72,21 +72,32 @@
       "cooling_note": "Google separately describes seawater cooling at Hamina. Reported withdrawal/consumption must not be treated as total seawater cooling throughput.",
       "coolingSourceRefs": [
         "S029"
-      ]
+      ],
+      "seawater_cooling": {
+        "permit_ceiling_m3_per_year": 80000000,
+        "permit_ceiling_average_flow_m3_s": 2.54,
+        "sourceRefs": [
+          "S013"
+        ],
+        "classification": "permit_ceiling_not_actual",
+        "note": "YVA states actual withdrawals have remained below the permitted ceiling."
+      }
     },
     "kemi": {
-      "raw_water_design_intensity_m3_per_tonne_pulp": 10,
+      "water_design_value_m3_per_tonne_pulp": 10,
       "pulp_nameplate_tonnes_per_year": 1500000,
-      "derived_design_withdrawal_m3_per_year": 15000000,
+      "derived_design_proxy_m3_per_year": 15000000,
       "sourceRefs": [
         "S088",
         "S069"
       ],
-      "classification": "design_at_nameplate_not_measured_actual"
+      "classification": "design_proxy_not_measured_actual",
+      "note": "Metsä Fibre calls 10 m3/t a raw-water design value but also explains that the design value refers to total wastewater generated at planned output; retain as a water-use design proxy, not measured withdrawal."
     },
     "descriptive_ratio": {
-      "kemi_design_withdrawal_over_hamina_reported_withdrawal": 1321,
-      "interpretation": "Rabbit-hole indicator only. Kemi is a design value at nameplate output; Hamina is a reported 2024 withdrawal. Cooling-water systems and product functions differ materially."
+      "kemi_design_proxy_over_hamina_reported_withdrawal": 1321,
+      "hamina_seawater_permit_ceiling_over_kemi_design_proxy": 5.33,
+      "interpretation": "Rabbit-hole indicators only. Different water concepts and statuses must remain visible: Hamina 2024 reported withdrawal, Hamina seawater permit ceiling, and Kemi design proxy are not interchangeable."
     },
     "next_required": {
       "cross_sector_score": [
