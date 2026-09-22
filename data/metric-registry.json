@@ -196,6 +196,38 @@
       "purpose": "Etsiä kohtia, joissa juridinen oma henkilöstö kuvaa vain pientä osaa toimipaikan tai arvoketjun työstä.",
       "caveat": "Suurta suhdetta ei tulkita automaattisesti hyväksi, huonoksi tai tehokkaaksi. Mixed-boundary-suhteet merkitään exploratory.",
       "boundary_registry": "/downloads/employment-boundaries.json"
+    },
+    {
+      "id": "estimated_annual_grid_energy",
+      "label": "Arvioitu vuotuinen verkkosähkön käyttö",
+      "formula": "estimated annual electricity demand",
+      "direction": "descriptive",
+      "baseline_status": "not_applicable",
+      "readiness": "estimated_ready_partial",
+      "required": [
+        "transparent_anchor",
+        "explicit_uncertainty_band",
+        "system_boundary"
+      ],
+      "purpose": "Korvaa tarpeettoman kysymysmerkin silloin, kun mitattua lukua ei ole mutta lähteistetty estimaatti ja herkkyyshaarukka voidaan esittää.",
+      "caveat": "Estimate must never render as observed. Backup-generator capacity may only be used as a sanity check, not annual-energy estimator.",
+      "scenario_registry": "/downloads/energy-water-scenarios.json"
+    },
+    {
+      "id": "freshwater_withdrawal_scope_jump",
+      "label": "Makean/raakavedenoton scope jump",
+      "formula": "annual withdrawal volume; optional ratio between explicitly named boundaries",
+      "direction": "descriptive",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_mixed_status",
+      "required": [
+        "explicit_water_definition",
+        "period",
+        "actual_or_design_status"
+      ],
+      "purpose": "Tunnistaa vedenkäytön mittakaavaeroja ennen yhteisen poikkitoimialaisen normalisoinnin valintaa.",
+      "caveat": "Withdrawal, consumption and cooling-water throughput are different quantities. Design-at-nameplate and measured actual must be labelled separately.",
+      "scenario_registry": "/downloads/energy-water-scenarios.json"
     }
   ]
 }

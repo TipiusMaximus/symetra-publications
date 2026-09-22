@@ -42,6 +42,21 @@ Kun pienempi on parempi, asteikon suunta käännetään.
 
 Tämä tekee pisteestä vakaan: uuden yrityksen lisääminen vertailuun ei muuta vanhojen pisteitä.
 
+## Kontekstirivit — ei pisteitä
+
+Nämä rivit lisäävät vertailuun informaatiota ilman näennäistä tarkkuutta. **E = estimate**, **J = johdettu**, **D = design**.
+
+| Resurssi | Google / Hamina | Nebius Mäntsälä | Kemi Bio | Ferrochrome | HEL16 |
+|---|---:|---:|---:|---:|---:|
+| Vuotuinen sähkönkäyttö | **E ~0,87 TWh** [0,87–2,0] | ? | **J ~0,8 TWh** oma kulutus | ? | Pre-op |
+| Nettosähkötase | ~+0,87 TWh **E*** | ? | **J ~−1,2 TWh** | ? | Pre-op |
+| Vedenotto | **~11 356 m³/v** (2024) | ? | **D ~15,0 Mm³/v** | ? | Pre-op |
+| Nettovedenkulutus | **~1 136 m³/v** (2024) | WUE 0,018 L/kWh IT | ? | ? | Pre-op |
+
+\* Haminan nettosähkötase käyttää tässä sähkönkulutuksen estimaattia ja olettaa normaalikäytössä, ettei kampuksella ole merkittävää omaa sähköntuotantoa. Varavoimageneraattorit eivät ole normaalia perustuotantoa.
+
+[Katso estimaatin kaava, herkkyysskenaariot ja vesirajaukset](/analyysit/datakeskukset/symetrix-mittarit/#haminan-sahko-kysymysmerkista-lapinakyvaksi-estimaatiksi).
+
 ## Mitä tästä näkee yhdellä silmäyksellä?
 
 Tuike saa korkean pistemäärän taloudellisessa volyymissa suhteessa omaan henkilöstöön, mutta saman suhteen käänteinen työllistävyysmittari painuu matalaksi. Nebius ja Ferrochrome osuvat näissä mittareissa lähemmäs Tilastokeskuksesta johdettua poikkitoimialaista baselinea. Kemi käyttää näissä kahdessa rivissä **Metsä Fibre -liiketoiminnan 2025 proxy-lukuja**, ei Kemin tehtaan omaa talous- tai henkilöstörajaa, joten pisteen perässä on P.

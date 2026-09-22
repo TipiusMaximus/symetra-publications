@@ -23,6 +23,8 @@ Merkinnät:
 
 - **Observed** = lähteen raportoima samaan kohteeseen kuuluva luku
 - **P / Proxy** = luku on käyttökelpoinen suuntaa-antavana vertailuna, mutta organisaatio- tai vuosiraja ei vastaa täysin saraketta
+- **E / Estimate** = lähteistetty estimaatti tai johdettu suuruusluokka, ei mitattu toteuma
+- **S / Scenario** = tarkoituksellinen herkkyysarvo; ei väite toteutuneesta arvosta
 - **?** = mittari sopii kohteelle, mutta tarvittava havainto puuttuu
 - **—** = mittari ei sovellu kohteelle
 - **Pre-op** = kohde ei ole vielä käyttövaiheessa
@@ -67,6 +69,33 @@ Tämä käyttää samoja lähteitä kuin taloudellinen volyymi / työpanos.
 
 **Miksi sama data antaa päinvastaisen kuvan?** Edellinen mittari palkitsee paljon myyntiä suhteessa henkilöstöön. Tämä mittari palkitsee paljon henkilöstöä suhteessa myyntiin. Symetrix tekee tämän arvovalinnan näkyväksi sen sijaan, että piilottaisi sen yhteen “tehokkuuslukuun”.
 
+## Haminan sähkö: kysymysmerkistä läpinäkyväksi estimaatiksi
+
+Haminan tarkkaa mitattua vuotuista sähkönkulutusta ei ole julkisesti saatavilla. Se ei silti tarkoita, että solun pitäisi jäädä täysin tyhjäksi.
+
+Vuonna 2026 julkaistu Hannu Jaakkolan tutkimus arvioi Haminan Googlen vuosikulutukseksi epäsuoralla laskennalla noin **870 GWh/v** ja korostaa samalla, ettei operaattorin varsinaista teknistä kulutuslukua ole julkisesti saatavilla. Siksi Symetrix luokittelee arvon **E = Estimate**, ei havainnoksi.
+
+| Skenaario | Vuotuinen energia | Keskimääräinen kokonaiskuorma | PUE 1,10:llä johdettu keskimääräinen IT-kuorma | Status |
+|---|---:|---:|---:|---|
+| **A** | **0,87 TWh/v** | **~99 MW** | **~90 MW** | E · ulkoiseen arvioon ankkuroitu |
+| **B** | **1,50 TWh/v** | **~171 MW** | **~156 MW** | S · herkkyystesti |
+| **C** | **2,00 TWh/v** | **~228 MW** | **~208 MW** | S · herkkyystesti |
+
+Kaavat ovat `energia / 8 760 h` ja IT-kuormalle lisäksi `kokonaisenergia / PUE`. PUE 1,10 on Haminan vuoden 2025 kampuskohtainen arvo.
+
+### Varavoima sanity checkinä, ei kulutusmittarina
+
+Tuiken vuoden 2024 YVA:ssa todetaan, että palvelinkeskuksella on **100 % varavoima kriittiselle laitteistolle** ja kaikkien olemassa olevien sekä suunniteltujen palvelinkeskusten varavoimageneraattoreiden yhteenlaskettu **polttoaineteho ylittää 300 MW**. Tämä on kiinnostava mittakaava-ankkuri, mutta sitä ei saa muuttaa suoraan vuosikulutukseksi:
+
+- polttoaineteho ≠ sähköteho;
+- YVA-raja sisältää myös suunnitellut laajennukset;
+- varavoima mitoitetaan kriittiselle kuormalle;
+- generaattorit eivät normaalisti käy 8 760 tuntia vuodessa.
+
+Valmistajan teknisessä taustassa suuren dieselgeneraattorin kokonaisketjun hyötysuhde on suuruusluokaltaan noin 40 % moottorille ja noin 90 % AC-generaattorille. Tätä voidaan käyttää vain siihen, että varavoiman ja 99–228 MW:n kuormaskenaarioiden mittakaavat eivät ole ilmiselvästi ristiriidassa — **ei** Haminan sähkönkulutuksen laskemiseen.
+
+Lähteet: [Jaakkola 2026](https://journals.sagepub.com/doi/full/10.3233/FAIA251716), [Google PUE](https://www.datacenters.google/efficiency/), [Tuike YVA](https://www.ymparisto.fi/sites/default/files/documents/Tuike%20Finland%20Oy%20-%20YVA%20selostus%20-%201%20versio%20-%2020240320.pdf), [Caterpillar: generator efficiency background](https://www.cat.com/en_MX/by-industry/electric-power/Articles/White-papers/answers-for-the-telecom-industry.html).
+
 ## Datakeskuksen energiatehokkuus
 
 **Kaava:** PUE − 1  
@@ -102,6 +131,28 @@ Hamina: [Google Data Centers: PUE](https://www.datacenters.google/efficiency/). 
 | Ferrochrome | — | — | WUE ei ole sama mittari metallituotannolle |
 
 Nebius: [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly). Google raportoi Haminan vuoden 2024 vedenkulutukseksi 0,3 miljoonaa US-gallonaa, mutta ilman samaan rajaan kuuluvaa IT-kWh-lukua siitä ei rakenneta WUE-pistettä. [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/).
+
+## Vesi: sama resurssi, kolme eri suuretta
+
+Veden kohdalla Symetrix erottaa vähintään kolme suuretta: **vedenotto (withdrawal)**, **nettokulutus (consumption)** ja **jäähdytysveden läpivirtaus**. Niitä ei pisteytetä yhtenä lukuna.
+
+Kemin biotuotetehtaan raakaveden suunnitteluarvo on **10 m³ / tuotettu sellutonni**. Nimelliskapasiteetilla 1,5 miljoonaa tonnia sellua vuodessa tämä tarkoittaa noin:
+
+**10 m³/t × 1 500 000 t/v = 15 000 000 m³/v raakavedenottoa.**
+
+Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin **1 136 m³ nettokulutusta**. Google kuvaa erikseen Haminan käyttävän Suomenlahden merivettä jäähdytykseen, joten raportoitua vedenottoa ei tulkita merivesijäähdytyksen kokonaiseksi läpivirtausmääräksi.
+
+| Havainto | Hamina | Kemi Bio | Status |
+|---|---:|---:|---|
+| Raportoitu / suunniteltu vedenotto | ~11 356 m³/v | ~15 000 000 m³/v | Hamina actual 2024 · Kemi design @ nameplate |
+| Nettokulutus | ~1 136 m³/v | ? | Ei vielä samaa Kemi-määritelmää |
+| Jäähdytysveden läpivirtaus | merivesijärjestelmä, määrä ei tässä mittarissa | suljettu jäähdytysvesikierto | eri fysikaalinen suure |
+
+Pelkkä withdrawal-scope-jump on noin **1 300×**, mutta sitä ei vielä muuteta paremmuuspisteeksi: Kemi on suunnitteluarvo nimellistuotannolla ja Hamina toteutunut vuoden 2024 luku, ja toimialojen veden tehtävä prosessissa on täysin erilainen.
+
+Tämä ero on silti erittäin arvokas kaninkolo. Seuraava tavoite on rakentaa poikkitoimialainen normalisointi, esimerkiksi **m³ vedenottoa / M€ kotimaista arvonlisää** ja rinnalle **m³ nettokulutusta / M€ kotimaista arvonlisää**.
+
+Lähteet: [Metsä Fibre: Every drop counts](https://www.metsagroup.com/metsafibre/news-and-publications/news-and-releases/stories/2025/every-drop-counts/), [Metsä Group: Kemin biotuotetehtaan avajaiset](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/), [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/), [Google Hamina](https://www.datacenters.google/locations/hamina-finland/).
 
 ## Sähköomavaraisuus
 

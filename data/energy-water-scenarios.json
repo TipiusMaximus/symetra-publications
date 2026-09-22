@@ -1,0 +1,105 @@
+{
+  "version": "0.1",
+  "principle": "Estimated values are allowed when the anchor, formula, uncertainty band, system boundary and non-observed status are explicit.",
+  "hamina_electricity": {
+    "status": "estimated_with_sensitivity",
+    "anchor": {
+      "annual_GWh": 870,
+      "sourceRefs": [
+        "S087"
+      ],
+      "classification": "independent_indirect_estimate",
+      "note": "External 2026 study; not operator-reported metered consumption."
+    },
+    "derived": {
+      "average_total_load_MW": 99.3,
+      "average_IT_load_MW_at_PUE_1_10": 90.3,
+      "pue": 1.1,
+      "pueSourceRefs": [
+        "S082"
+      ]
+    },
+    "sensitivity": [
+      {
+        "label": "A",
+        "annual_TWh": 0.87,
+        "average_load_MW": 99.3,
+        "average_IT_load_MW": 90.3,
+        "classification": "anchored_estimate"
+      },
+      {
+        "label": "B",
+        "annual_TWh": 1.5,
+        "average_load_MW": 171.2,
+        "average_IT_load_MW": 155.7,
+        "classification": "audit_sensitivity_scenario"
+      },
+      {
+        "label": "C",
+        "annual_TWh": 2,
+        "average_load_MW": 228.3,
+        "average_IT_load_MW": 207.6,
+        "classification": "audit_sensitivity_scenario"
+      }
+    ],
+    "backup_power_crosscheck": {
+      "aggregate_fuel_power_threshold_MW": 300,
+      "relation": ">",
+      "sourceRefs": [
+        "S013"
+      ],
+      "boundary": "existing + planned data centers in 2024 YVA full-build scope; 100% backup for critical equipment",
+      "manufacturer_efficiency_context": {
+        "diesel_engine_approx_percent": 40,
+        "AC_generator_approx_percent": 90,
+        "sourceRefs": [
+          "S089"
+        ]
+      },
+      "interpretation": "Useful only as an order-of-magnitude consistency check. Fuel power is not electrical output, the YVA scope includes planned expansion, and backup covers critical equipment rather than defining annual average load.",
+      "forbidden_use": "Do not multiply backup MW by 8760 h to estimate annual electricity consumption."
+    }
+  },
+  "water_scope_jump": {
+    "status": "descriptive_mixed_actual_design",
+    "hamina": {
+      "period": "2024",
+      "reported_withdrawal_m3": 11356,
+      "reported_consumption_m3": 1136,
+      "sourceRefs": [
+        "S083"
+      ],
+      "cooling_note": "Google separately describes seawater cooling at Hamina. Reported withdrawal/consumption must not be treated as total seawater cooling throughput.",
+      "coolingSourceRefs": [
+        "S029"
+      ]
+    },
+    "kemi": {
+      "raw_water_design_intensity_m3_per_tonne_pulp": 10,
+      "pulp_nameplate_tonnes_per_year": 1500000,
+      "derived_design_withdrawal_m3_per_year": 15000000,
+      "sourceRefs": [
+        "S088",
+        "S069"
+      ],
+      "classification": "design_at_nameplate_not_measured_actual"
+    },
+    "descriptive_ratio": {
+      "kemi_design_withdrawal_over_hamina_reported_withdrawal": 1321,
+      "interpretation": "Rabbit-hole indicator only. Kemi is a design value at nameplate output; Hamina is a reported 2024 withdrawal. Cooling-water systems and product functions differ materially."
+    },
+    "next_required": {
+      "cross_sector_score": [
+        "same water concept: withdrawal or consumption",
+        "same status: measured actual or design scenario",
+        "normalization denominator representing comparable resource/value output"
+      ],
+      "preferred_candidates": [
+        "freshwater withdrawal / domestic value added",
+        "water consumption / domestic value added",
+        "water withdrawal / annual operating value",
+        "absolute freshwater withdrawal as descriptive burden"
+      ]
+    }
+  }
+}
