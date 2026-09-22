@@ -17,9 +17,9 @@ Julkaisu vastaa kysymykseen: **mitä datakeskusten taloudellisista ja yhteiskunn
 
 ## Neljä keskeistä havaintoa
 
-### Työpaikkojen laskentaraja ratkaisee
+### Ensin on erotettava Google, Tuike ja Haminan kampus
 
-Tuike Finland Oy:n vuoden 2025 henkilöstöluku on yritystietopalvelussa 120. Haminan kaupungin kesäkuun 2026 tiedote puhuu noin 500 henkilöstä kampuksella. Eri ajankohtien ja rajausten erotus ei osoita alihankkijoiden määrää tai työpanosta. Avoinna ovat yhteisen vuoden henkilötyövuodet ja työntekijöiden kotikunnat. [Lähteet S001–S003](/analyysit/datakeskukset/lahteet/#S001), [työllisyyshavainto](/analyysit/datakeskukset/vaikutukset/#tyo).
+Haminan datakeskus tunnetaan Googlen toimintana, mutta suomalaiset yritystalouden luvut löytyvät Tuike Finland Oy:stä. Google itse nimeää Tuiken Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. Tuiken vuoden 2025 henkilöstöluku 120 ja Haminan kaupungin ilmoittama noin 500 kampuksella työskentelevää henkilöä kuvaavat siksi eri laskentarajoja, eivät kahta kilpailevaa arviota samasta asiasta. Niiden erotusta ei voida käyttää alihankkijoiden määränä. [Google/Tuike S072](/analyysit/datakeskukset/lahteet/#S072), [S001–S003](/analyysit/datakeskukset/lahteet/#S001), [Haminan case](/analyysit/datakeskukset/vertailu/#hamina-ensin-on-ymmarrettava-mika-tuike-finland-oy-on).
 
 ### Sähkön käyttöä ja tuotantoa on verrattava erikseen
 
