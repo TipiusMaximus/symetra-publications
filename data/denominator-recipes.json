@@ -137,7 +137,7 @@
       },
       "resultUnit": "m3_per_MEUR_at_least",
       "boundaryPolicy": "cross_boundary",
-      "periodPolicy": "same",
+      "periodPolicy": "mixed_explicit",
       "comparisonGroup": "water_per_revenue"
     },
     {
@@ -175,7 +175,7 @@
       },
       "resultUnit": "MEUR_per_person",
       "boundaryPolicy": "near_match",
-      "periodPolicy": "same",
+      "periodPolicy": "mixed_explicit",
       "comparisonGroup": "investment_per_site_worker"
     },
     {
