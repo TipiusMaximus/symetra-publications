@@ -53,6 +53,7 @@ Nämä rivit lisäävät vertailuun informaatiota ilman näennäistä tarkkuutta
 | Vesi: raportoitu / design-proxy | **~11 356 m³/v** (2024 reported) | ? | **D ~15,0 Mm³/v** | ? | Pre-op |
 | Nettovedenkulutus | **~1 136 m³/v** (2024, seawater excluded) | WUE 0,018 L/kWh IT | ? | ? | Pre-op |
 | Ei-merivesi-intensiteetti | **E ~0,0014 L/kWh IT** | — | — | — | Pre-op |
+| Vedenotto / liikevaihto | **~25,1 m³/M€** | ? | **≥6 440 m³/M€ Q** | ? | Pre-op |
 | Merivedenoton lupakatto | **80 Mm³/v** (ei toteuma) | — | — | — | Pre-op |
 
 \* Haminan nettosähkötase käyttää tässä sähkönkulutuksen estimaattia ja olettaa normaalikäytössä, ettei kampuksella ole merkittävää omaa sähköntuotantoa. Varavoimageneraattorit eivät ole normaalia perustuotantoa.
