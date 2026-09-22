@@ -61,10 +61,12 @@ test('Symetrix v0.3 uses empirical baselines and explicit cell states',()=>{
   assert.equal(s.metrics.economicThroughput.scores.ferrochrome,64);
   assert.equal(s.metrics.employmentIntensity.scores.kemi,27.3);
   assert.equal(s.metrics.dataCenterFacilityEfficiency.scores.tuike,74.3);
+  assert.equal(s.metrics.waterEfficiency.scores.tuike,100);
   assert.equal(s.metrics.waterEfficiency.scores.nebius,96.4);
   assert.equal(s.metrics.electricitySelfSufficiency.scores.kemi,63.2);
   assert.equal(s.matrix.dataCenterFacilityEfficiency.kemi.state,'not-applicable');
-  assert.equal(s.matrix.waterEfficiency.tuike.state,'unknown');
+  assert.equal(s.matrix.waterEfficiency.tuike.state,'score');
+  assert.equal(s.matrix.waterEfficiency.tuike.evidence,'estimate_non_seawater_mixed_period');
   assert.equal(s.matrix.economicThroughput.hel16.state,'pre-op');
   assert.equal(s.matrix.economicThroughput.kemi.evidence,'proxy_business_level');
 });

@@ -49,16 +49,16 @@
       "formula": "water consumption litres / IT kWh",
       "direction": "lower",
       "baseline_status": "ready_external",
-      "readiness": "blocked_for_hamina",
+      "readiness": "scoreable_with_estimate_flag",
       "required": [
-        "site_water_consumption",
-        "same_period_site_IT_energy"
+        "site_water_consumption_or_explicit_estimate",
+        "site_IT_energy_or_explicit_estimate"
       ],
-      "blocker": "Hamina water consumption exists, but same-period site IT kWh denominator is not yet available.",
       "candidate_evidence": [
-        "EV-HAM-WATER-003",
+        "EV-HAM-WATER-006",
         "EV-NEB-WATER-001"
-      ]
+      ],
+      "caveat": "Hamina uses an E-flagged mixed-period estimate: 2024 non-seawater consumption / estimated IT energy derived from 0.87 TWh/y and PUE 1.10. Nebius is site-reported 2025 WUE. The Hamina score must never render as observed."
     },
     {
       "id": "electricity_self_sufficiency",
@@ -234,14 +234,14 @@
       "label": "Raportoidun muun kuin meriveden kulutusintensiteetti",
       "formula": "reported non-seawater water consumption / estimated IT kWh",
       "direction": "lower",
-      "baseline_status": "not_set",
-      "readiness": "estimate_ready_not_scoreable",
+      "baseline_status": "uses_wue_external_baseline_with_caveat",
+      "readiness": "estimate_scoreable_with_flag",
       "required": [
         "non_seawater_consumption",
         "IT_energy_same_period_and_boundary"
       ],
       "purpose": "Täyttää informaatiovaje läpinäkyvällä estimaatilla ilman että se naamioidaan standardiksi WUE:ksi.",
-      "caveat": "Current Hamina value mixes 2024 water, 2025 PUE and a 2026 external electricity estimate and excludes seawater. Keep outside harmonized WUE score until scopes are aligned.",
+      "caveat": "Current Hamina value mixes 2024 water, 2025 PUE and a 2026 external electricity estimate and excludes seawater. It may appear in the WUE row only with an E flag and explicit caveat; it is not a measured standard WUE.",
       "scenario_registry": "/downloads/energy-water-scenarios.json"
     },
     {

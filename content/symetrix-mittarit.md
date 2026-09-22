@@ -125,12 +125,14 @@ Hamina: [Google Data Centers: PUE](https://www.datacenters.google/efficiency/). 
 
 | Kohde | WUE | Piste | Rajaus |
 |---|---:|---:|---|
-| Google / Hamina | ? | ? | Haminan vuoden 2024 vedenkulutus tunnetaan, mutta kampuskohtainen WUE ei |
+| Google / Hamina | **~0,0014 L/kWh E*** | **100 E*** | Ei-merivesi-nettokulutus 2024 / arvioitu IT-energia; eri vuosia yhdistävä estimaatti |
 | Nebius Mäntsälä | 0,018 L/kWh | **96** | Suomen toimipaikka, 2025 |
 | Kemi Bio | — | — | WUE ei ole sama mittari prosessiteollisuudelle |
 | Ferrochrome | — | — | WUE ei ole sama mittari metallituotannolle |
 
-Nebius: [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly). Google raportoi Haminan vuoden 2024 vedenkulutukseksi 0,3 miljoonaa US-gallonaa, mutta ilman samaan rajaan kuuluvaa IT-kWh-lukua siitä ei rakenneta WUE-pistettä. [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/).
+**100 E*** ei tarkoita, että Hamina olisi todistetusti täydellinen tai että sen kokonaisvesivaikutus olisi Nebiusta pienempi. Se tarkoittaa vain, että nykyinen ei-merivesi-estimaatti on nykyisen WUE-baselinen näkökulmasta asteikon katon yli.
+
+Nebius: [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly). Google raportoi Haminan vuoden 2024 vedenkulutukseksi 0,3 miljoonaa US-gallonaa ja sulkee meriveden pois vesimittareistaan. Kun tämä yhdistetään 0,87 TWh/v sähköestimaattiin ja PUE 1,10:een, saadaan **~0,0014 L/kWh IT**. Nykyisellä 0,45 L/kWh baselinella kaava antaa pisteasteikon katon, **100**. Se merkitään `E*`, koska kyse ei ole mitatusta standardi-WUE:sta vaan eri vuosia yhdistävästä ei-merivesi-estimaatista. [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/).
 
 ## Resurssivirran neljä ulottuvuutta
 
