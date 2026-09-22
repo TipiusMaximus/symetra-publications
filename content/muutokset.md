@@ -19,6 +19,8 @@ Vaikutukset-sivu etenee tutkimusreittinä työstä talouteen, sähköön, verkko
 
 Etusivu toimii nyt itsenäisenä tutkimusyhteenvetona: se kertoo ydinvastauksen, keskeiset havainnot, avoimet tiedot, verrokkien tarkoituksen ja sen, mitä nykyisestä aineistosta voidaan ja ei voida päätellä.
 
+Vertailuun on lisätty mittariherkkyys: Kemin 2,0 TWh/v sähköntuotannosta ja 250 % sähköomavaraisuudesta johdettu 0,8 TWh/v oma kulutus sekä +1,2 TWh/v tuotannon ja johdetun kulutuksen erotus näytetään nimenomaan johdettuna havainnollistuksena, ei mitattuna verkkotaseena. Samalla Tuiken ja Outokummun Ferrochrome-segmentin myynti- ja käyttökatelukuja suhteutetaan omaan henkilöstöön rakenteellisena vertailuna, ei tuottavuus- tai yhteiskuntahyötymittarina.
+
 ## 1.0.0 — 22.9.2026
 
 Ensimmäinen toimitettu HTML-versio. Pääkehys on datakeskusten taloudellisten ja yhteiskunnallisten vaikutusten kohdevertailu valmistavaan teollisuuteen. Kansalaisaloitteen A01–A11-kohdat säilyvät tutkimuskysymyksinä ja niiden alkuperä on näkyvissä.
