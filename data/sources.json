@@ -3,504 +3,432 @@
     "id": "S001",
     "title": "Proff",
     "url": "https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG",
-    "provenance": "datakeskusaudit-v0.3.33-taloussynteesi.md:23 — 1. Tarkistetut luvut ja niiden rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S002",
     "title": "Profinder",
     "url": "https://b2b.profinder.fi/haku/tuike-finland-oy/22060717",
-    "provenance": "datakeskusaudit-v0.3.33-taloussynteesi.md:23 — 1. Tarkistetut luvut ja niiden rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S003",
     "title": "Haminan kaupunki 22.6.2026",
     "url": "https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/",
-    "provenance": "datakeskusaudit-v0.3.33-taloussynteesi.md:23 — 1. Tarkistetut luvut ja niiden rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S004",
     "title": "Yle",
     "url": "https://yle.fi/a/74-20160358",
-    "provenance": "datakeskusaudit-v0.3.33-taloussynteesi.md:23 — 1. Tarkistetut luvut ja niiden rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S005",
     "title": "Vainun sivun",
     "url": "https://haku.vainu.com/company/tuike-finland-oy-taloustiedot-ja-liikevaihto/FI22060717/yritystiedot",
-    "provenance": "datakeskusaudit-v0.3.33-taloussynteesi.md:45 — 3. Havaittu vuosiristiriidan riski",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S006",
     "title": "Haminan kaupungin tiedote 14.9.2026 / Haminan kaupunki, maakauppa 14.9.2026 / Haminan kaupunki 14.9.2026: maakauppa",
     "url": "https://www.hamina.fi/google-ja-haminan-kaupunki-ovat-allekirjoittaneet-merkittavan-maakaupan/",
-    "provenance": "datakeskusaudit-v0.3.33-taloussynteesi.md:55 — 4. Työllisyys ja paikallinen rahavirta | datakeskusaudit-v0.5.1-vaihtoehdot.md:77 — Lähteet | datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:65 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S007",
     "title": "Haminan Energia: vastuullisuus",
     "url": "https://haminanenergia.fi/vastuullisuus/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:71 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S008",
     "title": "Haminan Energia: lämmöntalteenottojärjestelmän hankinta",
     "url": "https://haminanenergia.fi/haminan-kaukolampo-hankkii-lammontalteenottojarjestelman-nohewalta/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:72 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S009",
     "title": "Fortum 6.5.2026: laitosten käynnistyminen",
     "url": "https://www.fortum.com/fi/media/2026/05/fortum-kaynnistanyt-lammontuotannon-datakeskusalueilla-espoossa-ja-kirkkonummella",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:73 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S010",
     "title": "Nivos: kaukolämmön alkuperä",
     "url": "https://nivos.fi/kaukolampo/kaukolammon-alkupera/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:74 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S011",
     "title": "Nivos 31.3.2026: Nebiuksen laajennus",
     "url": "https://nivos.fi/ajankohtaista/nebiuksen-datakeskus-laajeni-vauhdilla-nivos-vastasi-ketterasti-sahkonsiirron-tarpeisiin/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:75 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S012",
     "title": "Nivos: sähköä ja hukkalämpöä datakeskushankkeissa",
     "url": "https://nivos.fi/ajankohtaista/sahkoa-riittaa-mantsalan-datakeskushankkeiden-valmistuttuakin/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:76 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S013",
     "title": "Tuiken YVA-selostus 20.3.2024",
     "url": "https://www.ymparisto.fi/sites/default/files/documents/Tuike%20Finland%20Oy%20-%20YVA%20selostus%20-%201%20versio%20-%2020240320.pdf",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:77 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S014",
     "title": "Haminan YVA-hankesivu",
     "url": "https://www.ymparisto.fi/fi/osallistu-ja-vaikuta/ymparistovaikutusten-arviointi/tuike-finland-oy-palvelinkeskus-hamina",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:78 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S015",
     "title": "Microsoft: Suomen datakeskusten toiminta",
     "url": "https://local.microsoft.com/blog/understanding-microsoft-datacenters-in-finland/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:79 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S016",
     "title": "Fortum 7/2025: Hepokorven kaukolämpöyhteys",
     "url": "https://www.fortum.com/fi/media/2025/07/uusi-kaukolampoyhteys-espoon-kylanporttiin-tyomaalla-vaikutuksia-kevyeen-liikenteeseen",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:80 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S017",
     "title": "Hamina, perusteltu päätelmä 20.6.2024",
     "url": "https://www.ymparisto.fi/sites/default/files/documents/Perusteltu%20p%C3%A4%C3%A4telm%C3%A4_Tuike_Finland.pdf",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:81 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S018",
     "title": "Espoo, perusteltu päätelmä 4.6.2024",
     "url": "https://www.ymparisto.fi/sites/default/files/documents/Espoon%20datakeskus_Perusteltu%20p%C3%A4%C3%A4telm%C3%A4_040624.pdf",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:82 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S019",
     "title": "Espoon YVA-hankesivu",
     "url": "https://www.ymparisto.fi/fi/osallistu-ja-vaikuta/ymparistovaikutusten-arviointi/espoon-datakeskusalue-espoo",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:83 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S020",
     "title": "Haminan kaupunki: lupavaliokunnan päätökset 27.1.2026",
     "url": "https://www.hamina.fi/en/haminan-lupavaliokunnan-paatokset-27-1-2026-vanha-kaupungintalo-sai-purkuluvan-teollisuuden-suurhankkeille-ymparistoluvat/",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:84 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S021",
     "title": "Tuiken YVA-ohjelma 2023",
     "url": "https://www.ymparisto.fi/sites/default/files/documents/Tuike_Finland_Oy__YVAohjelma__1_julkaisuversio__20230112__teksti.pdf",
-    "provenance": "datakeskusaudit-v0.4.1-ymparisto.md:85 — Lähderekisteri",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S022",
     "title": "Hamina, lupavaliokunta 16.6.2026 §44, Hamina/238/2026 / Hamina, lupavaliokunta 16.6.2026 §44",
     "url": "https://hamina-julkaisu.triplancloud.fi/ktwebscr/fileshow?doctype=7&docid=337290",
-    "provenance": "datakeskusaudit-v0.4.2-luvat-ja-tarkkailu.md:57 — Lähteet ja lukutapa | datakeskusaudit-v0.4.4-ymparistosynteesi.md:72 — Lähteet ja tarkistus | datakeskusaudit-v0.5.1-vaihtoehdot.md:76 — Lähteet",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S023",
     "title": "Haminan tiedote 27.1.2026 kokouksesta",
     "url": "https://www.hamina.fi/haminan-lupavaliokunnan-paatokset-27-1-2026-vanha-kaupungintalo-sai-purkuluvan-teollisuuden-suurhankkeille-ymparistoluvat/",
-    "provenance": "datakeskusaudit-v0.4.2-luvat-ja-tarkkailu.md:58 — Lähteet ja lukutapa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S024",
     "title": "WSP, meluselvitys 7.10.2024",
     "url": "https://admin.espoo.fi/sites/default/files/2025-05/Meluselvitys%20%207.10.2024.pdf",
-    "provenance": "datakeskusaudit-v0.4.2-luvat-ja-tarkkailu.md:59 — Lähteet ja lukutapa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S025",
     "title": "WSP, HEL16–17 ympäristömelumittaus, raportti 22.4.2025",
     "url": "https://admin.espoo.fi/sites/default/files/2025-05/Liite%208%20Ymp%C3%A4rist%C3%B6melumittaus%20Matalaj%C3%A4rvi%20ja%20Bodominj%C3%A4rvi.pdf",
-    "provenance": "datakeskusaudit-v0.4.2-luvat-ja-tarkkailu.md:60 — Lähteet ja lukutapa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S026",
     "title": "LVV, asia 3032711: Espoon datakeskuksen ympäristölupa",
     "url": "https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711",
-    "provenance": "datakeskusaudit-v0.4.2-luvat-ja-tarkkailu.md:61 — Lähteet ja lukutapa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S027",
     "title": "Espoo, ympäristö- ja rakennuslautakunta 30.10.2025 §141",
     "url": "https://espoo.oncloudos.com/cgi/DREQUEST.PHP?id=20251535-5&page=meetingitem",
-    "provenance": "datakeskusaudit-v0.4.2-luvat-ja-tarkkailu.md:62 — Lähteet ja lukutapa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S028",
     "title": "Stora Enso Oyj, emoyhtiön tilinpäätös 2010",
     "url": "https://www.storaenso.com/-/media/documents/download-center/documents/annual-reports/2010/stora_enso_eng_parent_company_financial_statements_2010",
-    "provenance": "datakeskusaudit-v0.5.1-vaihtoehdot.md:74 — Lähteet",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S029",
     "title": "Google, Haminan datakeskuksen aikajana",
     "url": "https://datacenters.google/locations/hamina-finland/",
-    "provenance": "datakeskusaudit-v0.5.1-vaihtoehdot.md:75 — Lähteet",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S030",
     "title": "Fingrid, liittymissopimushakemus",
     "url": "https://www.fingrid.fi/liittymissopimus_hakemus",
-    "provenance": "datakeskusaudit-v0.5.1-vaihtoehdot.md:79 — Lähteet",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S031",
     "title": "Fingrid, puolivuosikatsaus 1.1.–30.6.2026",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/fingrid-konsernin-puolivuosikatsaus-1.1.30.62.2026/",
-    "provenance": "datakeskusaudit-v0.5.1-vaihtoehdot.md:80 — Lähteet",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S032",
     "title": "Espoon ympäristö- ja rakennuslautakunta 11.6.2026 §86",
     "url": "https://espoo-sv.oncloudos.com/cgi/DREQUEST.PHP?id=20261687-10&page=meetingitem",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:59 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S033",
     "title": "Fingrid 9.12.2022: pääkaupunkiseudun sähköasemainvestoinnit",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2022/fingridin-investoinnit-turvaavat-paakaupunkiseudun-luotettavaa-sahkonsaantia-ja-edistavat-merkittavia-investointeja-suomeen/",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:60 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S034",
     "title": "Caruna: Hepokorpi–Finnoo-maakaapelointihanke",
     "url": "https://caruna.fi/tuotteet-ja-palvelut/sahkoverkko/tyomaat/hepokorpi-finnoo",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:61 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S035",
     "title": "Fingrid 21.12.2022: RRF-rahoitus",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2022/puhdasta-energiaa-edistaville-kantaverkkohankkeille-25-miljoonaa-euroa-rahoitusta/",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:62 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S036",
     "title": "Maanmittauslaitos: Sydänmaa–Nurkka, toimitus 2025-756378",
     "url": "https://www.maanmittauslaitos.fi/toimitus/TN2025-756378",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:63 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S037",
     "title": "Maanmittauslaitos: alkukokousaineisto 28.5.2025",
     "url": "https://www.maanmittauslaitos.fi/sites/maanmittauslaitos.fi/files/Voimajohtolunastus_toimituskalvot_Tuike%20alkukokous.pdf",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:64 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S038",
     "title": "Yle 14.9.2026: Googlen lisämaakauppa",
     "url": "https://yle.fi/a/74-20246144",
-    "provenance": "datakeskusaudit-v0.5.2-hankkeet-ja-verkkokustannukset.md:66 — 5. Lähteet ja lukemisen rajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S039",
     "title": "aloitteen 17997",
     "url": "https://www.kansalaisaloite.fi/fi/aloite/17997",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:17 — Aloitetekstin täsmäytys",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S040",
     "title": "EK:n tiedote",
     "url": "https://ek.fi/ajankohtaista/tiedotteet/ekn-dataikkuna-energiamurros-ja-datakeskukset-kasvattavat-investointilukuja-5-miljardin-hankkeet-valmistumassa-2026/",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:26 — A01: hankemäärille ei vielä yhteistä laskentapohjaa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S041",
     "title": "TEM:n luonnos, s. 12",
     "url": "https://api.hankeikkuna.fi/asiakirjat/9b06f18b-f0c2-41ad-88df-ee18d32760eb/aa4b9c70-e6fd-4271-bb78-3dd45e5d9edc/KIRJE_20260903134202.PDF",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:26 — A01: hankemäärille ei vielä yhteistä laskentapohjaa",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S042",
     "title": "TEM:n tiedote",
     "url": "https://valtioneuvosto.fi/-/1410877/luonnos-datakeskusrekisterilaista-lausuntokierrokselle",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:32 — A02: keskitetty tilannekuva ja valvontatoimivalta",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S043",
     "title": "Hankesivu TEM040:00/2026",
     "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM040:00/2026",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:34 — A02: keskitetty tilannekuva ja valvontatoimivalta",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S044",
     "title": "Energiatehokkuuslaki / Laki 1429/2014",
     "url": "https://www.finlex.fi/fi/lainsaadanto/2014/1429",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:36 — A02: keskitetty tilannekuva ja valvontatoimivalta | datakeskusaudit-v0.6.1-suomen-vaitteet.md:40 — A03: hukkalämpövelvoite ja sen määräajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S045",
     "title": "muutoslain alkuperäinen PDF, s. 14–15 ja 17",
     "url": "https://www.finlex.fi/api/media/statute/898542/mainPdf/main.pdf?timestamp=2025-12-29T07%3A54%3A55.090Z",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:40 — A03: hukkalämpövelvoite ja sen määräajat",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S046",
     "title": "Energiaviraston analyysiohje",
     "url": "https://energiavirasto.fi/kustannus-hyotyanalyysi",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:44 — A03: hukkalämpövelvoite ja sen määräajat",
     "verification": "Asiaankuuluvat velvoite-, määräaika- tai veroluokkakohdat tarkistettu uudelleen 22.9.2026."
   },
   {
     "id": "S047",
     "title": "Energiaviraston datakeskusohje",
     "url": "https://energiavirasto.fi/datakeskukset",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:46 — A03: hukkalämpövelvoite ja sen määräajat",
     "verification": "Asiaankuuluvat velvoite-, määräaika- tai veroluokkakohdat tarkistettu uudelleen 22.9.2026."
   },
   {
     "id": "S048",
     "title": "Elokuun tiedote",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun--rinnalle-tarvitaan-lisaa-saatovoimaa/",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:54 — A04–A05: kasvu on ehdollinen ja ajureita on useita",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S049",
     "title": "Syyskuun tiedote",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/fingridin-selvitys-teollisuuskulutuksen-sijoittuminen-lahelle-sahkontuotantoa-lisaa-kantaverkon-liitettavyytta-merkittavasti/",
-    "provenance": "datakeskusaudit-v0.6.1-suomen-vaitteet.md:56 — A04–A05: kasvu on ehdollinen ja ajureita on useita",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S050",
     "title": "CSO, Key Findings, taulukko 1",
     "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:16 — A06: mitä 23 prosenttia mittaa?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S051",
     "title": "CSO, Background Notes",
     "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/backgroundnotes/",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:18 — A06: mitä 23 prosenttia mittaa?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S052",
     "title": "EirGrid, Constrained Area Overview, PDF s. 9–12",
     "url": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Constrained-Area-Overview-May-2026.pdf",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:24 — A07: verkkorajoite ja hintavaikutus erikseen",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S053",
     "title": "Tutkimus, PDF s. 10–15",
     "url": "https://www.friendsoftheearth.ie/assets/files/pdf/the_cost_of_data_centres_-_modelling_the_household_electricity_costs_of_irelands_data_centre_sectordocxpdf.pdf",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:26 — A07: verkkorajoite ja hintavaikutus erikseen",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S054",
     "title": "CRU:n hintakatsauksen yhteenveto",
     "url": "https://www.cru.ie/about-us/news/cru-publishes-interim-review-on-competition-assessment-and-retail-price-drivers-in-the-energy-markets/",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:30 — A07: verkkorajoite ja hintavaikutus erikseen",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S055",
     "title": "CRU:n päätös, painetut s. 89–91 / CRU:n päätös, painettu s. 51 / CRU:n päätös, painetut s. 59–60 ja 104–105",
     "url": "https://cruie-live-96ca64acab2247eca8a850a7e54b-5b34f62.divio-media.com/documents/CRU2025236_Large_Energy_User_connection_policy_decision_paper.pdf",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:34 — A08: tehon kattaminen, vuosienergia ja omistus | datakeskusaudit-v0.6.2-irlannin-vaitteet.md:44 — A08: tehon kattaminen, vuosienergia ja omistus | datakeskusaudit-v0.6.2-irlannin-vaitteet.md:54 — A09: kolme erilaista ohjausperustetta",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S056",
     "title": "EirGrid DCCOPP v3, 20.5.2026, PDF s. 9–12 / EirGridin toukokuun ohjeessa, PDF s. 12",
     "url": "https://cms.eirgrid.ie/sites/default/files/publications/Data-Centre-Connection-Offer-Process-and-Policy-V3-May-2026.pdf",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:42 — A08: tehon kattaminen, vuosienergia ja omistus | datakeskusaudit-v0.6.2-irlannin-vaitteet.md:54 — A09: kolme erilaista ohjausperustetta",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S057",
     "title": "CRU:n päätöstiedote",
     "url": "https://www.cru.ie/about-us/news/the-cru-publishes-its-decision-on-new-electricity-connection-policy-for-data-centres/",
-    "provenance": "datakeskusaudit-v0.6.2-irlannin-vaitteet.md:46 — A08: tehon kattaminen, vuosienergia ja omistus",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S058",
     "title": "Verohallinto, Sähkövero / Verohallinto, Sähkövero, Veroluokat I ja II",
     "url": "https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/valmisteverotus/sahkovero/",
-    "provenance": "datakeskusaudit-v0.6.3-paikallishaitat-ja-maksu.md:30 — A11: mitä uusi maksu oikeastaan tekisi? | datakeskusaudit-2026-09-21-laskentavero.md:12 — Tarkistetut havainnot",
     "verification": "Asiaankuuluvat velvoite-, määräaika- tai veroluokkakohdat tarkistettu uudelleen 22.9.2026."
   },
   {
     "id": "S059",
     "title": "Opas 11.2",
     "url": "https://lainkirjoittaja.finlex.fi/11-verot-ja-maksut/11-2/",
-    "provenance": "datakeskusaudit-v0.6.3-paikallishaitat-ja-maksu.md:32 — A11: mitä uusi maksu oikeastaan tekisi?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S060",
     "title": "opas 11.1",
     "url": "https://lainkirjoittaja.finlex.fi/11-verot-ja-maksut/11-1/",
-    "provenance": "datakeskusaudit-v0.6.3-paikallishaitat-ja-maksu.md:32 — A11: mitä uusi maksu oikeastaan tekisi?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S061",
     "title": "WRI, Powering Progress",
     "url": "https://www.wri.org/technical-perspectives/community-benefits-agreements-data-centers",
-    "provenance": "datakeskusaudit-v0.6.3-paikallishaitat-ja-maksu.md:34 — A11: mitä uusi maksu oikeastaan tekisi?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S062",
     "title": "Syke, Ekologinen kompensaatio, päivitetty 29.8.2025",
     "url": "https://www.ymparisto.fi/fi/luonto-vesistot-ja-meri/luonnon-monimuotoisuus/suojelu-ennallistaminen-ja-luonnonhoito/ekologinen-kompensaatio",
-    "provenance": "datakeskusaudit-v0.6.3-paikallishaitat-ja-maksu.md:36 — A11: mitä uusi maksu oikeastaan tekisi?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S063",
     "title": "Verohallinto, verotaulukko 2",
     "url": "https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/valmisteverotus/sahkovero/verotaulukot/",
-    "provenance": "datakeskusaudit-2026-09-21-laskentavero.md:13 — Tarkistetut havainnot",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S064",
     "title": "Googlen tiedote",
     "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-ai-commitment-to-finland/",
-    "provenance": "datakeskusaudit-2026-09-21-laskentavero.md:14 — Tarkistetut havainnot",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S065",
     "title": "Asiakastieto, yhteenveto tunnusluvuista",
     "url": "https://www.asiakastieto.fi/yritykset/fi/tuike-finland-oy/22060717/taloustiedot/",
-    "provenance": "datakeskusaudit-2026-09-21-laskentavero.md:15 — Tarkistetut havainnot",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S066",
     "title": "Google Cloud, Pricing overview ja Instance uptime",
     "url": "https://cloud.google.com/products/compute/pricing",
-    "provenance": "datakeskusaudit-2026-09-21-laskentavero.md:16 — Tarkistetut havainnot",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S067",
     "title": "IMF:n yritysverotuksen katsaus",
     "url": "https://www.elibrary.imf.org/view/journals/007/2019/007/article-A001-en.xml",
-    "provenance": "datakeskusaudit-2026-09-21-laskentavero.md:43 — Mitä laskentaverolla mitattaisiin?",
-    "verification": "Aiemman auditoinnin lähdekierros 21.–22.9.2026. Kokoaminen lähdehakemistoon ei ole uusi sisällöntarkistus."
+    "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S068",
     "title": "Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus",
     "url": "https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/",
-    "provenance": "Henkilöstö 300, sähköntuotannon kuvaus 2,0 TWh/v ja omavaraisuus 250 %. Yrityksen ilmoitus, ei päivätty vuosimittaus.",
     "verification": "Sisältö tarkistettu verkkolähteestä 22.9.2026."
   },
   {
     "id": "S069",
     "title": "Metsä Group: Kemin biotuotetehtaan avajaiset, 23.10.2024",
     "url": "https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/",
-    "provenance": "Henkilöstön 2024 rajaukset: tehdas noin 250, alue noin 500. Yrityksen tiedote.",
     "verification": "Sisältö tarkistettu verkkolähteestä 22.9.2026."
   },
   {
     "id": "S070",
     "title": "Outokumpu: Annual Report 2025, s. 170",
     "url": "https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b",
-    "provenance": "Ferrochrome-segmentin myynti, EBITDA ja vuoden lopun FTE. Ei kaikkien Suomen tehtaiden erillistilinpäätös.",
     "verification": "Sisältö tarkistettu verkkolähteestä 22.9.2026."
   },
   {
     "id": "S071",
     "title": "Outokumpu: Ferrochrome-liiketoiminta-alue",
     "url": "https://www.outokumpu.com/fi-fi/about/organization/ferrochrome",
-    "provenance": "Kemin kaivoksen ja Tornion ferrokromitoiminnan yhteys. Myynnin sisäinen/ulkoinen jako luetaan vuosikertomuksesta.",
     "verification": "Sisältö tarkistettu verkkolähteestä 22.9.2026."
   },
   {
     "id": "S072",
     "title": "Google Workspace: Google Group Subprocessors, 2.3.2026",
     "url": "https://workspace.google.com/terms/subprocessors-20260302/",
-    "provenance": "Julkaisun v1.1 rakenneuudistus: Tuike Finland Oy:n rooli Google-konsernin Suomen datakeskusoperaatiossa.",
     "verification": "Google listaa Tuike Finland Oy:n Google Group Subprocessor -toimijaksi, tehtävänä Data Center Operations Suomessa. Sivun mukaan listattujen Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. Tarkistettu 22.9.2026."
   }
 ]
