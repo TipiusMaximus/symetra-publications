@@ -9,7 +9,7 @@ updated: 2026-09-22
 description: Ensin avataan datakeskuksen taloudellinen toimintamalli ja Haminan laskentarajat. Vasta sen jälkeen verrataan muita kohteita.
 layout: article
 ---
-Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan Hepokorpi, Kemi ja Kemi–Tornio.
+Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan toinen toimiva datakeskus Mäntsälästä sekä Hepokorpi, Kemi ja Kemi–Tornio.
 
 ## Mitä datakeskus taloudellisesti tekee?
 
@@ -81,16 +81,27 @@ Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä
 
 ## Miksi juuri nämä verrokit?
 
-Hepokorpi, Kemi ja Kemi–Tornio eivät ole kolme satunnaista rinnakkaista casea. Jokainen niistä ratkaisee yhden Haminassa esiin nousseen vertailuongelman:
+Nebius Mäntsälä, Hepokorpi, Kemi ja Kemi–Tornio eivät ole satunnaisia rinnakkaisia caseja. Jokainen niistä ratkaisee yhden Haminassa esiin nousseen vertailuongelman:
 
 | Kohde | Miksi se on mukana? | Keskeinen avoin tieto |
 |---|---|---|
 | Google / Tuike, Hamina | Toimiva datakeskus näyttää yhtiön, kampuksen ja paikallisen vaikutuksen rajat | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
+| Nebius DC Oy / Mäntsälä | Toinen toimiva datakeskus tuo rinnalle vuoden 2025 yhtiö- ja käyttövaiheen havaintoja, kuten WUE:n ja hukkalämmön viennin | Vuoden 2025 mitattu verkkosähkö, saman vuoden kapasiteettiraja ja kotimainen arvonlisä |
 | Microsoft HEL16, Hepokorpi | Tuleva datakeskus näyttää eron suunnitelman, luvan ja toteuman välillä | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
 | Metsä Fibre, Kemi | Energiaintensiivinen tehdas testaa, miten oma sähköntuotanto muuttaa vertailua | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
 | Outokumpu, Kemi–Tornio | Segmenttiraportointi testaa, miten konsernin sisäiset virrat ja toimipaikkarajat vaikuttavat lukuihin | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
 
 Taulukon pohjana ovat [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/), [HEL16](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711) sekä [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Metsä Group: Kemin biotuotetehtaan avajaiset, 23.10.2024](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/), [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
+
+## Mäntsälä: toinen toimiva datakeskus
+
+Haminan rinnalle tarvitaan vähintään yksi käytössä oleva datakeskus, jotta datakeskusvertailu ei tarkoita vain Googlen yhtiörakenteen vertaamista tehtaisiin. **Nebius DC Oy operoi Mäntsälän datakeskusta**, ja vuoden 2025 yritystiedoista saadaan liikevaihto 28,083 M€, henkilöstö 37, käyttökateprosentti 47,5 % ja liiketulos 2,361 M€. [Proff: Nebius DC Oy](https://www.proff.fi/yrityksen/nebius-dc-oy/m%C3%A4nts%C3%A4l%C3%A4/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2541661-9I0ZDG), [Tekova 16.2.2025](https://view.news.eu.nasdaq.com/view?id=b7983bb492ccbae643124cda643d85133&lang=fi&src=micro).
+
+Nebius raportoi Mäntsälän vuoden 2025 WUE-luvuksi 0,018 L/kWh IT ja hukkalämmön vienniksi 19,5 GWh. Nämä ovat arvokkaita käyttövaiheen havaintoja, joita HEL16:sta ei vielä ole. [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly).
+
+Samalla Mäntsälä havainnollistaa uuden aikarajan: Nebius kertoo 75 MW kapasiteettilaajennuksen valmistuneen vasta alkuvuonna 2026. Siksi **75 MW ei ole vuoden 2025 talous- tai käyttölukujen automaattinen nimittäjä**. [Nebius 31.3.2026](https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland).
+
+Nebius tekee datakeskusten sisäisen vertailun ensimmäistä kertaa mahdolliseksi: Tuike ja Nebius ovat molemmat suomalaisia datakeskusoperaatioihin kytkeytyviä oikeushenkilöitä, mutta niiden liikevaihto-, henkilöstö- ja tulorakenne eroavat voimakkaasti. Tämä kertoo jo ennen yhteiskunnallista tulkintaa, ettei yhtä datakeskusyhtiötä pidä käyttää koko toimialan oletusmallina.
 
 ## Hepokorpi: tuleva keskus ei ole vielä toteutunut keskus
 

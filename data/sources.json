@@ -442,5 +442,35 @@
     "title": "Tilastokeskus: arvonlisäys",
     "url": "https://stat.fi/meta/kas/arvonlisays.html",
     "verification": "Käsitemääritelmä luettu 22.9.2026 termiselitystä varten; ei uusi kohdekohtainen arvonlisälaskelma."
+  },
+  {
+    "id": "S075",
+    "title": "Proff: Nebius DC Oy",
+    "url": "https://www.proff.fi/yrityksen/nebius-dc-oy/m%C3%A4nts%C3%A4l%C3%A4/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2541661-9I0ZDG",
+    "verification": "Vuoden 2025 liikevaihto, henkilöstö, EBITDA-% ja liiketulos tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S076",
+    "title": "Nebius: 2025 Sustainability Report -julkaisutiedote",
+    "url": "https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly",
+    "verification": "Mäntsälän vuoden 2025 hukkalämmön vienti 19,5 GWh ja WUE-viittaus tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S077",
+    "title": "Nebius 31.3.2026: Mäntsälän kapasiteettilaajennus valmistui 75 MW:iin",
+    "url": "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland",
+    "verification": "Nebius kertoo Mäntsälän laajennuksen 75 MW:iin valmistuneen alkuvuonna 2026. Tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S078",
+    "title": "Tekova 16.2.2025: Nebius DC Oy operoi Mäntsälän datakeskusta",
+    "url": "https://view.news.eu.nasdaq.com/view?id=b7983bb492ccbae643124cda643d85133&lang=fi&src=micro",
+    "verification": "Yhtiötiedote nimeää Nebius DC Oy:n Nebius Group N.V.:n suomalaiseksi tytäryhtiöksi, joka operoi Mäntsälän datakeskusta. Tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S079",
+    "title": "Lawrence Berkeley National Laboratory: 2024 United States Data Center Energy Usage Report",
+    "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf",
+    "verification": "Raportin WUE-vertailualue 0,45–0,48 L/kWh vuoden 2023 jälkeisissä skenaarioissa tarkistettu 22.9.2026."
   }
 ]
