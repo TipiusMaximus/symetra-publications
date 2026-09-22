@@ -197,6 +197,26 @@ Kun vuoden 2024 raportoitu, meriveden poissulkeva nettokulutus yhdistetään 0,8
 
 Tätä **ei pisteytetä Nebiuksen WUE:ta vastaan**. Se sekoittaa vuoden 2024 veden, vuoden 2025 PUE:n ja vuoden 2026 ulkoisen sähköestimaatin, ja Googlen vesiluku sulkee meriveden kokonaan pois. Sen tehtävä on näyttää, että myös puuttuva WUE-solu voidaan korvata informatiivisella, eksplisiittisesti epävarmalla estimaatilla.
 
+
+## Kemin toteutunut vedenkäyttö 2025
+
+Metsä Groupin vuoden 2025 vuosiraportin tehdaskohtainen Metsä Fibre -taulukko antaa nyt Kemin biotuotetehtaalle toteutuneet vuosiarvot:
+
+- **selluntuotanto 927 kt**
+- **vedenotto 32,819 milj. m³**
+- **jätevesivirta 13,931 milj. m³**
+
+Näistä voidaan johtaa:
+
+- **vedenotto ~35,4 m³ / tuotettu sellutonni**
+- **jätevesivirta ~15,0 m³ / tuotettu sellutonni**
+
+Nämä ovat paljon käyttökelpoisempia auditissa kuin pelkkä 10 m³/t design-arvo, mutta niitä pitää tulkita oikein. Vuosi 2025 ei ollut täydellinen steady-state-vuosi: Kemin tehtaalla oli korjausseisokkeja, ja tuotanto jäi selvästi 1,50 Mt/v nimelliskapasiteetista. Siksi actual-intensiteetti voi olla nimellistilaa korkeampi.
+
+Lisäksi **vedenotto, jätevesivirta ja nettovedenkulutus eivät ole sama asia**. Metsä Group raportoi konsernitasolla vedenkulutuksen erikseen, mutta tästä tehdaskohtaisesta taulukosta ei saada suoraan Kemin haihtuvaa/sitoutuvaa nettokulutusta. Sitä ei johdeta automaattisesti vedenoton ja jätevesivirran erotuksena.
+
+Tämä havainto sulkee yhden audit-aukon: Kemin actual withdrawal ja wastewater ovat nyt tiedossa. Avoimeksi jää site-kohtainen **consumptive water use** sekä myöhempi täyden kapasiteetin steady-state-vuosi.
+
 ## Vesi suhteessa liikevaihtoon
 
 Poikkitoimialainen näkökulma normalisoi vedenoton taloudellisella myyntivolyymilla:
