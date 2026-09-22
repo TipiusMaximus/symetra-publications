@@ -1,10 +1,10 @@
 const round=(x,n=3)=>{const p=10**n;return Math.round(x*p)/p;};
 
 const statusClass=status=>{
-  if(/^observed|^company_reported/.test(status)) return 'direct';
-  if(status.includes('estimate')) return 'estimate';
   if(status.includes('design')||status.includes('proxy')||status.includes('impact')) return 'qualified';
+  if(status.includes('estimate')) return 'estimate';
   if(status.includes('derived')) return 'derived';
+  if(/^observed|^company_reported/.test(status)) return 'direct';
   return 'qualified';
 };
 
@@ -32,6 +32,9 @@ export function runDenominatorEngine(evidence,registry){
     const n=byId.get(recipe.numerator.evidence);
     const d=byId.get(recipe.denominator.evidence);
     if(!n||!d) throw new Error(`Missing evidence for recipe ${recipe.id}`);
+    if(!['strict','near_match','cross_boundary'].includes(recipe.boundaryPolicy)) throw new Error(`Invalid boundary policy in ${recipe.id}`);
+    if(!['same','near_period','mixed_explicit'].includes(recipe.periodPolicy)) throw new Error(`Invalid period policy in ${recipe.id}`);
+    if(recipe.periodPolicy==='same' && n.period!==d.period) throw new Error(`Same-period recipe ${recipe.id} mixes ${n.period} and ${d.period}`);
     const numerator=getField(n,recipe.numerator.field)*(recipe.numerator.scale??1);
     const denominator=getField(d,recipe.denominator.field)*(recipe.denominator.scale??1);
     if(denominator===0) throw new Error(`Zero denominator in recipe ${recipe.id}`);
