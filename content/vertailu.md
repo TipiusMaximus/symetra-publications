@@ -9,22 +9,7 @@ updated: 2026-09-22
 description: Sama tunnusluku ei vielä tarkoita samaa mittaria. Vertailu alkaa kohteesta, ajanjaksosta ja laskentarajasta.
 layout: article
 ---
-## Neljä kohdetta, eri lähtökohdat
-
-| Kohde | Tarkasteluraja | Keskeinen avoin tieto |
-|---|---|---|
-| Google / Tuike, Hamina | Suomen oikeushenkilön talous 2025 ja erikseen kampuksen tiedot 2026 | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
-| Microsoft HEL16, Hepokorpi | HEL16:n hakemus ja ympäristölupa 302/2025 | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
-| Metsä Fibre, Kemi | Biotuotetehdas; yrityksen kohdekuvaus ja 2024 avaamistiedote | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
-| Outokumpu, Kemi–Tornio | Ferrochrome-liiketoiminta-alue 2025; kaivos ja ferrokromituotanto | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
-
-Taulukon pohjana ovat [Tuike ja Hamina S001–S003](/analyysit/datakeskukset/lahteet/#S001), [HEL16 D08](/analyysit/datakeskukset/lahteet/#D08) sekä [teollisuuslähteet S068–S071](/analyysit/datakeskukset/lahteet/#S068).
-
-## Mitä vertailusta voidaan päätellä?
-
-Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintojaksoja. Niiden luvut auttavat kuvaamaan kohteita, mutta eivät sellaisinaan muodosta yhteistä tehokkuusmittaria. Tämä on aineiston rakenteesta tehty menetelmäpäätelmä.
-
-> **Vertailun rajaus.** Tässä julkaisussa ei esitetä toimialojen paremmuusjärjestystä. Puuttuvat energia-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
+Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan Hepokorpi, Kemi ja Kemi–Tornio.
 
 ## Hamina: ensin on ymmärrettävä, mikä Tuike Finland Oy on
 
@@ -56,6 +41,24 @@ Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä
 **Vertailukelpoisuus:** yrityksen henkilöstölukua verrataan saman rajauksen henkilöstölukuun. Vuoden 2025 ja kesäkuun 2026 lukujen erotusta ei tulkita alihankkijoiden määräksi. Yhtiön talous, kampuksen toiminta ja konsernin asiakasmyynti käsitellään eri tasoina.
 
 **Avoin tieto:** Tuiken alkuperäinen tilinpäätös liitetietoineen, konsernin sisäisten liiketoimien merkitys, kampuksen saman vuoden henkilötyövuodet, energia sekä hankintojen kotimaiset arvonlisäosuudet. [Laskelmat](/analyysit/datakeskukset/lahteet/#laskelmat).
+
+
+## Neljä kohdetta, eri lähtökohdat
+
+| Kohde | Tarkasteluraja | Keskeinen avoin tieto |
+|---|---|---|
+| Google / Tuike, Hamina | Suomen oikeushenkilön talous 2025 ja erikseen kampuksen tiedot 2026 | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
+| Microsoft HEL16, Hepokorpi | HEL16:n hakemus ja ympäristölupa 302/2025 | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
+| Metsä Fibre, Kemi | Biotuotetehdas; yrityksen kohdekuvaus ja 2024 avaamistiedote | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
+| Outokumpu, Kemi–Tornio | Ferrochrome-liiketoiminta-alue 2025; kaivos ja ferrokromituotanto | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
+
+Taulukon pohjana ovat [Tuike ja Hamina S001–S003](/analyysit/datakeskukset/lahteet/#S001), [HEL16 D08](/analyysit/datakeskukset/lahteet/#D08) sekä [teollisuuslähteet S068–S071](/analyysit/datakeskukset/lahteet/#S068).
+
+## Mitä vertailusta voidaan päätellä?
+
+Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintojaksoja. Niiden luvut auttavat kuvaamaan kohteita, mutta eivät sellaisinaan muodosta yhteistä tehokkuusmittaria. Tämä on aineiston rakenteesta tehty menetelmäpäätelmä.
+
+> **Vertailun rajaus.** Tässä julkaisussa ei esitetä toimialojen paremmuusjärjestystä. Puuttuvat energia-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
 
 ## Hepokorpi: HEL16 ei ole koko kampus
 
