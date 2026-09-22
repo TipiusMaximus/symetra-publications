@@ -400,6 +400,28 @@
           "unit": "m3_per_tonne"
         }
       }
+    },
+    {
+      "id": "pulp_actual_water_withdrawal_per_tonne",
+      "label": "Sellutehtaan toteutunut vedenotto / tonni",
+      "formula": "annual actual water withdrawal m3 / actual pulp production t",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "actual_site_water_withdrawal",
+        "actual_site_pulp_output_same_period"
+      ],
+      "purpose": "Separates actual operating water intensity from design values.",
+      "caveat": "2025 Kemi value reflects ramp-up/repair-shutdown year and includes total mill water withdrawal; do not equate directly with net consumption or data-center WUE.",
+      "current_examples": {
+        "kemi": {
+          "value": 35.403,
+          "unit": "m3_per_tonne",
+          "period": "2025",
+          "status": "derived_from_observed"
+        }
+      }
     }
   ]
 }
