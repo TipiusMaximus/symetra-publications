@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {frontmatter,basePath,renderMarkdown} from '../scripts/lib.mjs';
 import {calculations} from '../scripts/calculations.mjs';
 import {symetrixMatrixV01} from '../scripts/symetrix.mjs';
+import {symetrixMatrixV02} from '../scripts/symetrix-v02.mjs';
 test('frontmatter preserves Finnish text, boolean and source arrays',()=>{const p=frontmatter('---\ntitle: Lähteet\npublished: false\nsourceRefs: ["S001","D08"]\n---\nSisältö');assert.equal(p.meta.published,false);assert.deepEqual(p.meta.sourceRefs,['S001','D08']);assert.equal(p.body,'Sisältö');});
 test('duplicate metadata and missing separator fail',()=>{assert.throws(()=>frontmatter('---\ntitle: a\ntitle: b\n---\nx'));assert.throws(()=>frontmatter('# Hello'));});
 test('root and GitHub project paths work without rewriting external or hash links',()=>{assert.equal(basePath('/repo/'),'/repo');assert.equal(basePath('/'),'');for(const invalid of ['/../secret','//evil','relative'])assert.throws(()=>basePath(invalid));const {html}=renderMarkdown('[local](/a/) [hash](#b) [web](https://example.org/)','/repo');assert(html.includes('href="/repo/a/"'));assert(html.includes('href="#b"'));assert(html.includes('href="https://example.org/"'));});
@@ -29,4 +30,22 @@ test('Symetrix v0.1 exposes the first real rank flip',()=>{
   assert.equal(s.lenses.gridIndependence.entities.kemi.score,100);
   assert.equal(s.lenses.gridIndependence.rankable,false);
   assert.equal(s.lenses.capitalThroughput.entities.kemi.coveragePct,0);
+});
+
+test('Symetrix v0.2 uses stable baselines and adds Nebius',()=>{
+  const s=symetrixMatrixV02();
+  assert.equal(s.version,'0.2');
+  assert.equal(s.status,'exploratory-baseline');
+  assert.equal(s.metrics.revenuePerWorkforce.scores.tuike,83.9);
+  assert.equal(s.metrics.revenuePerWorkforce.scores.nebius,44);
+  assert.equal(s.metrics.revenuePerWorkforce.scores.ferrochrome,50.4);
+  assert.equal(s.metrics.workforcePer100mRevenue.scores.tuike,16.1);
+  assert.equal(s.metrics.workforcePer100mRevenue.scores.nebius,56);
+  assert.equal(s.lenses.capitalThroughput.entities.tuike.score,91.4);
+  assert.equal(s.lenses.capitalThroughput.entities.nebius.score,49);
+  assert.equal(s.lenses.employmentIntensity.entities.nebius.score,51);
+  assert.equal(s.metrics.waterUsageEffectiveness.scores.nebius,100);
+  assert.equal(s.metrics.electricitySelfSufficiency.scores.kemi,100);
+  assert.equal(s.entities.hel16.stage,'pre-operational');
+  assert.equal(s.referenceOnly.nebiusCapacityMW2026.value,75);
 });
