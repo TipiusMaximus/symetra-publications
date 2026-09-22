@@ -151,13 +151,13 @@ Veden kohdalla Symetrix erottaa vähintään kolme suuretta: **vedenotto (withdr
 
 Metsä Fibre ilmoittaa Kemin biotuotetehtaan suunnitteluarvoksi **10 m³ / tuotettu sellutonni** ja kutsuu sitä raakaveden design-arvoksi. Samassa lähteessä design-arvon kuvataan liittyvän suunnitellulla tuotannolla syntyvän jäteveden kokonaismäärään. Siksi käsittelemme sitä tässä **vesikäytön design-proxyna**, emme mitattuna vedenottona. Nimelliskapasiteetilla 1,5 miljoonaa tonnia vuodessa proxy on:
 
-**10 m³/t × 1 500 000 t/v = 15 000 000 m³/v vesikäytön design-proxy.**
+**10 m³/t × 1 320 000 t/v = 13 200 000 m³/v vesikäytön design-proxy.**
 
 Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin **1 136 m³ nettokulutusta**. Googlen metodologia **sulkee meriveden pois** näistä luvuista. Google kuvaa erikseen Haminan käyttävän Suomenlahden merivettä jäähdytykseen, joten raportoitua vedenottoa ei tulkita merivesijäähdytyksen kokonaiseksi läpivirtausmääräksi. Tuiken YVA:ssa merivedenoton **lupakatto on 80 miljoonaa m³/v** (tasaiseksi virraksi muutettuna noin 2,54 m³/s), ja YVA toteaa toteutuneiden määrien alittaneen lupakaton.
 
 | Havainto | Hamina | Kemi Bio | Status |
 |---|---:|---:|---|
-| Raportoitu vedenotto / design-proxy | ~11 356 m³/v | ~15 000 000 m³/v | Hamina actual 2024 · Kemi design-proxy @ nameplate |
+| Raportoitu vedenotto / design-proxy | ~11 356 m³/v | ~13 200 000 m³/v | Hamina actual 2024 · Kemi design-proxy @ nameplate |
 | Nettokulutus | ~1 136 m³/v | ? | Ei vielä samaa Kemi-määritelmää |
 | Jäähdytysveden läpivirtaus | merivesijärjestelmä, määrä ei tässä mittarissa | suljettu jäähdytysvesikierto | eri fysikaalinen suure |
 
@@ -197,15 +197,15 @@ Raja ei ole täydellinen: vesiluku on kampuskohtainen ja liikevaihto oikeushenki
 
 ### Kemi — tarkoituksellinen konservatiivinen alaraja
 
-Kemin vesikäytön design-proxy on noin **15 Mm³/v**. Tehtaan omaa liikevaihtoa ei ole julkisesti eroteltu Metsä Fibren liikevaihdosta. Metsä Fibren koko sellu- ja sahaliiketoiminnan vuoden 2024 liikevaihto oli **2 328,3 M€**.
+Kemin vesikäytön design-proxy on noin **13,2 Mm³/v**. Tehtaan omaa liikevaihtoa ei ole julkisesti eroteltu Metsä Fibren liikevaihdosta. Metsä Fibren koko sellu- ja sahaliiketoiminnan vuoden 2024 liikevaihto oli **2 328,3 M€**.
 
-Jos Kemin 15 Mm³/v proxy jaetaan tarkoituksella **koko Metsä Fibren liikevaihdolla**, saadaan:
+Jos Kemin 13,2 Mm³/v proxy jaetaan tarkoituksella **koko Metsä Fibren liikevaihdolla**, saadaan:
 
-**≥ ~6 440 m³/M€**
+**≥ ~5 670 m³/M€**
 
-Tämä on konservatiivinen **alaraja**, ei Kemin tehtaan varsinainen intensiteetti: nimittäjä sisältää neljä sellutehdasta, neljä sahaa ja muuta liiketoimintaa. Kemin tehtaan oma liikevaihto on tätä pienempi, joten samalla 15 Mm³ numeratorilla tehdaskohtainen suhde olisi suurempi.
+Tämä on konservatiivinen **alaraja**, ei Kemin tehtaan varsinainen intensiteetti: nimittäjä sisältää neljä sellutehdasta, neljä sahaa ja muuta liiketoimintaa. Kemin tehtaan oma liikevaihto on tätä pienempi, joten samalla 13,2 Mm³ numeratorilla tehdaskohtainen suhde olisi suurempi.
 
-Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥6 440 m³/M€ antaa jo yli **250× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
+Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥6 440 m³/M€ antaa jo yli **225× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
 
 **Miksi tämä mittari on hyödyllinen?** Absoluuttinen vedenkäyttö kertoo ympäristökuorman mittakaavasta. `m³/M€` kertoo, kuinka vesaintensiivinen taloudellinen tuotantorakenne on. Kumpaakaan ei pidä käyttää yksin.
 
