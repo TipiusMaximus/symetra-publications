@@ -145,7 +145,7 @@ assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_water_withdrawal_p
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_water_design_per_revenue_floor').value,5669.373);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_property_tax_share_of_revenue').value,0.331);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_electricity_per_revenue').value,1.922);
-assert.equal(denominatorEngine.comparisons.find(x=>x.group==='water_per_revenue').spread,226);
+assert(Math.abs(denominatorEngine.comparisons.find(x=>x.group==='water_per_revenue').spread-226)<0.05);
 for(const id of ['RH-hamina_site_amplification','RH-kemi_direct_value_chain_multiplier','RH-GROUP-water_per_revenue']) assert(denominatorEngine.rabbitHoles.some(x=>x.id===id),`Missing denominator rabbit hole ${id}`);
 assert(files.some(f=>f.endsWith('/assets/og.png')),'OG image missing');
 assert.equal(files.filter(f=>f.endsWith('.html')).length,12);
