@@ -151,9 +151,9 @@ Näin esimerkiksi Haminan **0,3 milj. gallonan ei-merivesi-nettokulutus** ja **8
 
 Veden kohdalla Symetrix erottaa vähintään kolme suuretta: **vedenotto (withdrawal)**, **nettokulutus (consumption)** ja **jäähdytysveden läpivirtaus**. Niitä ei pisteytetä yhtenä lukuna.
 
-Metsä Fibre ilmoittaa Kemin biotuotetehtaan suunnitteluarvoksi **10 m³ / tuotettu sellutonni** ja kutsuu sitä raakaveden design-arvoksi. Samassa lähteessä design-arvon kuvataan liittyvän suunnitellulla tuotannolla syntyvän jäteveden kokonaismäärään. Siksi käsittelemme sitä tässä **vesikäytön design-proxyna**, emme mitattuna vedenottona. Nimelliskapasiteetilla 1,32 miljoonaa tonnia vuodessa proxy on:
+Metsä Fibre ilmoittaa Kemin biotuotetehtaan suunnitteluarvoksi **10 m³ / tuotettu sellutonni** ja kutsuu sitä raakaveden design-arvoksi. Samassa lähteessä design-arvon kuvataan liittyvän suunnitellulla tuotannolla syntyvän jäteveden kokonaismäärään. Siksi käsittelemme sitä tässä **vesikäytön design-proxyna**, emme mitattuna vedenottona. Nimelliskapasiteetilla 1,50 miljoonaa tonnia vuodessa proxy on:
 
-**10 m³/t × 1 320 000 t/v = 13 200 000 m³/v vesikäytön design-proxy.**
+**10 m³/t × 1 500 000 t/v = 15 000 000 m³/v vesikäytön design-proxy.**
 
 Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin **1 136 m³ nettokulutusta**. Googlen metodologia **sulkee meriveden pois** näistä luvuista. Google kuvaa erikseen Haminan käyttävän Suomenlahden merivettä jäähdytykseen, joten raportoitua vedenottoa ei tulkita merivesijäähdytyksen kokonaiseksi läpivirtausmääräksi. Tuiken YVA:ssa merivedenoton **lupakatto on 80 miljoonaa m³/v** (tasaiseksi virraksi muutettuna noin 2,54 m³/s), ja YVA toteaa toteutuneiden määrien alittaneen lupakaton.
 
@@ -163,7 +163,7 @@ Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin *
 | Nettokulutus | ~1 136 m³/v | ? | Ei vielä samaa Kemi-määritelmää |
 | Jäähdytysveden läpivirtaus | merivesijärjestelmä, määrä ei tässä mittarissa | suljettu jäähdytysvesikierto | eri fysikaalinen suure |
 
-Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 160×** mittakaavaeron, mutta tämä ei ole vielä withdrawal-score: käsitteet ja statukset eivät ole identtiset.
+Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 300×** mittakaavaeron, mutta tämä ei ole vielä withdrawal-score: käsitteet ja statukset eivät ole identtiset.
 
 Tämä ero on silti erittäin arvokas kaninkolo. Seuraava tavoite on rakentaa poikkitoimialainen normalisointi, esimerkiksi **m³ vedenottoa / M€ kotimaista arvonlisää** ja rinnalle **m³ nettokulutusta / M€ kotimaista arvonlisää**.
 
@@ -199,19 +199,60 @@ Raja ei ole täydellinen: vesiluku on kampuskohtainen ja liikevaihto oikeushenki
 
 ### Kemi — tarkoituksellinen konservatiivinen alaraja
 
-Kemin vesikäytön design-proxy on noin **13,2 Mm³/v**. Tehtaan omaa liikevaihtoa ei ole julkisesti eroteltu Metsä Fibren liikevaihdosta. Metsä Fibren koko sellu- ja sahaliiketoiminnan vuoden 2024 liikevaihto oli **2 328,3 M€**.
+Kemin vesikäytön design-proxy on noin **15,0 Mm³/v**. Tehtaan omaa liikevaihtoa ei ole julkisesti eroteltu Metsä Fibren liikevaihdosta. Metsä Fibren koko sellu- ja sahaliiketoiminnan vuoden 2024 liikevaihto oli **2 328,3 M€**.
 
-Jos Kemin 13,2 Mm³/v proxy jaetaan tarkoituksella **koko Metsä Fibren liikevaihdolla**, saadaan:
+Jos Kemin 15,0 Mm³/v proxy jaetaan tarkoituksella **koko Metsä Fibren liikevaihdolla**, saadaan:
 
-**≥ ~5 670 m³/M€**
+**≥ ~6 440 m³/M€**
 
-Tämä on konservatiivinen **alaraja**, ei Kemin tehtaan varsinainen intensiteetti: nimittäjä sisältää neljä sellutehdasta, neljä sahaa ja muuta liiketoimintaa. Kemin tehtaan oma liikevaihto on tätä pienempi, joten samalla 13,2 Mm³ numeratorilla tehdaskohtainen suhde olisi suurempi.
+Tämä on konservatiivinen **alaraja**, ei Kemin tehtaan varsinainen intensiteetti: nimittäjä sisältää neljä sellutehdasta, neljä sahaa ja muuta liiketoimintaa. Kemin tehtaan oma liikevaihto on tätä pienempi, joten samalla 15,0 Mm³ numeratorilla tehdaskohtainen suhde olisi suurempi.
 
-Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥5 670 m³/M€ antaa jo yli **225× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
+Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥6 440 m³/M€ antaa jo yli **250× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
 
 **Miksi tämä mittari on hyödyllinen?** Absoluuttinen vedenkäyttö kertoo ympäristökuorman mittakaavasta. `m³/M€` kertoo, kuinka vesaintensiivinen taloudellinen tuotantorakenne on. Kumpaakaan ei pidä käyttää yksin.
 
 Lähteet: [Tuike 2024 taloustiedot](https://www.asiakastieto.fi/yritykset/fi/tuike-finland-oy/22060717/taloustiedot), [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/), [Metsä Fibre water](https://www.metsagroup.com/metsafibre/news-and-publications/news-and-releases/stories/2025/every-drop-counts/), [Metsä Group Annual Review 2024](https://www.metsagroup.com/globalassets/metsa-group/documents/investors/financial-reporting/annual-reports/2024/metsa-group-annual-review-2024.pdf).
+
+
+## Sähkö suhteessa liikevaihtoon
+
+PUE ja sellutehtaan kWh/t ovat molemmat hyödyllisiä **toimialan sisäisiä** tehokkuusmittareita, mutta niitä ei voi verrata numerona keskenään. Poikkitoimialainen kysymys voidaan sen sijaan muodostaa samalla tavalla kuin vedelle:
+
+**sähköintensiteetti = vuotuinen sähkönkäyttö GWh / liikevaihto M€**
+
+### Hamina
+
+Haminan nykyinen sähköestimaatti on noin **870 GWh/v**. Tuike Finland Oy:n vuoden 2024 liikevaihto oli **452,704 M€**, joten exploratory-intensiteetti on:
+
+**~1,92 GWh/M€ (E)**
+
+Arvo yhdistää ulkoisen sähköestimaatin ja oikeushenkilön liikevaihdon, joten se ei ole mitattu site-tason tunnusluku.
+
+### Kemi
+
+Kemin biotuotetehdas tuottaa **2,0 TWh/v** sähköä ja ilmoittaa sähköomavaraisuudeksi **250 %**. Tulkinnalla tuotanto / oma kulutus = 2,5 saadaan johdettu oma sähkönkulutus noin **0,8 TWh/v**.
+
+Kemin omaa liikevaihtoa ei ole julkaistu erikseen. Jos 0,8 TWh jaetaan tarkoituksella **koko Metsä Fibren vuoden 2024 liikevaihdolla 2 328,3 M€**, saadaan konservatiivinen alaraja:
+
+**≥ ~0,344 GWh/M€ (Q)**
+
+Tämä ei tarkoita, että Kemin todellinen site-intensiteetti olisi 0,344. Koska tehtaan oma liikevaihto on koko Metsä Fibreä pienempi, todellinen site-luku olisi tätä suurempi.
+
+Mielenkiintoinen break-even-kysymys saadaan ratkaisemalla, millä Kemin site-liikevaihdolla 0,8 TWh/v antaisi saman ~1,92 GWh/M€ intensiteetin kuin Hamina:
+
+**~416 M€ / vuosi.**
+
+Jos Kemin site-liikevaihto olisi tätä suurempi, sähkö/liikevaihto olisi Haminan estimaattia pienempi; jos pienempi, suurempi. Metsä Fibre arvioi erikseen Kemin tehtaan lisäävän Suomen viennin arvoa noin **0,5 mrd € vuodessa**, mutta vientivaikutus ei ole sama asia kuin tehtaan liikevaihto, joten sitä ei käytetä harmonisoituna nimittäjänä.
+
+### Kemin toimialakohtainen sisäinen energiamittari
+
+Nykyisellä 1,50 Mt/v kokonaispulpin nimelliskapasiteetilla johdettu 0,8 TWh/v sähkönkulutus vastaa noin:
+
+**0,533 MWh/t = 533 kWh/t sellua.**
+
+Tämä on hyödyllinen sellutehtaan sisäinen tehokkuusmittari. Sen rooli on samantapainen kuin PUE:lla datakeskuksessa — se auttaa arvioimaan oman toimialan teknistä tehokkuutta — mutta **PUE ja kWh/t eivät ole keskenään yhteismitallisia**.
+
+Lähteet: [Metsä Fibre: Kemin biotuotetehdas](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Metsä Fibre: Kemin vaikutukset](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Tuike 2024 taloustiedot](https://www.asiakastieto.fi/yritykset/fi/tuike-finland-oy/22060717/taloustiedot).
 
 ## Sähköomavaraisuus
 
@@ -287,7 +328,7 @@ Tämänhetkiset automaattiset löydöt:
 |---|---:|---|
 | **Hamina site amplification** | **~4,17×** | Kampuksen säännöllinen työvoima on yli nelinkertainen Tuiken omaan henkilöstöön nähden |
 | **Kemi direct value-chain multiplier** | **10×** | Suoran kotimaisen arvoketjun työmäärä on yhtiön arvion mukaan noin kymmenkertainen omaan henkilöstöön nähden |
-| **Water / revenue spread** | **~226×** | Kemin konservatiivinen design-proxy/liikevaihto-alaraja ja Haminan 2024 ei-merivesi withdrawal/liikevaihto ovat erittäin kaukana toisistaan, mutta eivät harmonisoidulla boundarylla |
+| **Water / revenue spread** | **~257×** | Kemin konservatiivinen design-proxy/liikevaihto-alaraja ja Haminan 2024 ei-merivesi withdrawal/liikevaihto ovat erittäin kaukana toisistaan, mutta eivät harmonisoidulla boundarylla |
 
 Moottori laskee lisäksi ilman rabbit-hole-lippua esimerkiksi investointi/site-työntekijä -luvut (**Hamina ~7 M€/hlö, Kemi ~4 M€/hlö**), Haminan kiinteistöveron suhteessa vuoden 2024 liikevaihtoon (**~0,33 %**) ja sähköestimaatin suhteessa liikevaihtoon (**~1,92 GWh/M€**).
 

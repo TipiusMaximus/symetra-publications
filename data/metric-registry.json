@@ -295,6 +295,50 @@
           "period": "2024"
         }
       }
+    },
+    {
+      "id": "electricity_per_revenue",
+      "label": "Sähkönkäyttö / liikevaihto",
+      "formula": "annual site electricity use GWh / annual revenue M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_cross_boundary",
+      "required": [
+        "site_electricity_use",
+        "same_boundary_revenue"
+      ],
+      "purpose": "Poikkitoimialainen resurssi-intensiteetti: kuinka paljon sähköä käytetään suhteessa taloudelliseen myyntivolyymiin.",
+      "caveat": "Hamina uses an external electricity estimate; Kemi currently has only a conservative floor using whole Metsä Fibre revenue. Do not score until Kemi site revenue or a harmonized economic-output denominator is available.",
+      "current_examples": {
+        "hamina": {
+          "value": 1.922,
+          "unit": "GWh_per_MEUR",
+          "status": "estimate_near_match"
+        },
+        "kemi": {
+          "value": 0.344,
+          "unit": "GWh_per_MEUR_at_least",
+          "status": "derived_cross_boundary_floor"
+        },
+        "equality_threshold": {
+          "kemi_site_revenue_MEUR": 416.28,
+          "note": "At 0.8 TWh/y, Kemi equals Hamina's 1.922 GWh/M€ intensity at ~416 M€ site revenue."
+        }
+      }
+    },
+    {
+      "id": "pulp_electricity_per_tonne",
+      "label": "Sellutehtaan sähköintensiteetti / tonni",
+      "formula": "implied mill electricity consumption MWh / pulp tonnes",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "mill_electricity_consumption",
+        "pulp_output"
+      ],
+      "purpose": "Sellutehtaan sisäinen prosessitehokkuus; analoginen rooliltaan PUE:n kanssa siinä mielessä, että se kuvaa toimialan sisäistä tehokkuutta, mutta yksiköt ja fysikaalinen merkitys ovat eri.",
+      "caveat": "Do not compare numerically to data-center PUE. Current Kemi value ~0.533 MWh/t is derived from 2.0 TWh production and 250% self-sufficiency against 1.50 Mt/y nameplate pulp."
     }
   ]
 }
