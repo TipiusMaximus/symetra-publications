@@ -9,6 +9,16 @@ updated: 2026-09-22
 description: Mitä analyysissä on muuttunut, milloin ja miksi. Julkaisun kehityshistoria säilyy lukijan nähtävissä.
 layout: standalone
 ---
+## 1.1.0 — rakenneuudistus, luonnos 22.9.2026
+
+Julkaisun pääkertomus rakennetaan uudelleen tutkimuksen etenemisreitin mukaiseksi. Periaate on **selitä ennen kuin mittaat**: toimija, fyysinen kohde, ajanjakso ja laskentaraja avataan ennen tunnuslukua.
+
+Haminan case avaa nyt Google-konsernin, Tuike Finland Oy:n, fyysisen kampuksen ja Suomessa syntyvän vaikutuksen eri tarkastelutasoiksi. Datakeskuksen taloudellinen toimintaketju selitetään ennen Tuiken tunnuslukuja, eikä 574,374 M€:n liikevaihtoa käsitellä Suomen nettohyötynä.
+
+Vaikutukset-sivu etenee tutkimusreittinä työstä talouteen, sähköön, verkkoon, ympäristöön ja vaihtoehtoiskustannukseen. Hepokorpi, Kemi ja Kemi–Tornio esitellään sen kautta, mitä kukin opettaa vertailurajoista. Kansalaisaloitteen A01–A11-kysymykset säilyvät erillisenä lähdeauditointina pääanalyysin rinnalla.
+
+Etusivu toimii nyt itsenäisenä tutkimusyhteenvetona: se kertoo ydinvastauksen, keskeiset havainnot, avoimet tiedot, verrokkien tarkoituksen ja sen, mitä nykyisestä aineistosta voidaan ja ei voida päätellä.
+
 ## 1.0.0 — 22.9.2026
 
 Ensimmäinen toimitettu HTML-versio. Pääkehys on datakeskusten taloudellisten ja yhteiskunnallisten vaikutusten kohdevertailu valmistavaan teollisuuteen. Kansalaisaloitteen A01–A11-kohdat säilyvät tutkimuskysymyksinä ja niiden alkuperä on näkyvissä.
