@@ -81,6 +81,24 @@
         ],
         "classification": "permit_ceiling_not_actual",
         "note": "YVA states actual withdrawals have remained below the permitted ceiling."
+      },
+      "reported_non_seawater": {
+        "withdrawal_m3_2024": 11356,
+        "consumption_m3_2024": 1136,
+        "sourceRefs": [
+          "S083"
+        ],
+        "definition": "Google-reported operational water metrics excluding seawater; consumption = withdrawal - discharge."
+      },
+      "non_seawater_consumption_intensity_proxy": {
+        "anchor_L_per_kWh_IT": 0.00144,
+        "sensitivity_L_per_kWh_IT": {
+          "low": 0.00063,
+          "high": 0.00144
+        },
+        "classification": "mixed_period_derived_estimate",
+        "formula": "2024 non-seawater consumption / IT energy derived from electricity scenario and PUE 1.10",
+        "warning": "Not standard measured WUE. Water=2024, PUE=2025, electricity anchor=2026 external estimate; excludes seawater."
       }
     },
     "kemi": {
