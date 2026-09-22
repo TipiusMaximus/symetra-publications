@@ -472,5 +472,35 @@
     "title": "Lawrence Berkeley National Laboratory: 2024 United States Data Center Energy Usage Report",
     "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf",
     "verification": "Raportin WUE-vertailualue 0,45–0,48 L/kWh vuoden 2023 jälkeisissä skenaarioissa tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S080",
+    "title": "Tilastokeskus: Suomi lukuina 2026 – yritykset 2024",
+    "url": "https://otos.stat.fi/server/api/core/bitstreams/f3e835da-b220-4251-8079-7b7309d1d2a4/content",
+    "verification": "Vuoden 2024 yritysten henkilöstö- ja liikevaihtoluvut kokoluokittain tarkistettu 22.9.2026; Symetrix käyttää 20+ henkilön kokoluokkien yhdistettyä suhdetta empiirisenä baseline-ankkurina."
+  },
+  {
+    "id": "S081",
+    "title": "Uptime Institute Global Data Center Survey 2025",
+    "url": "https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2025.Annual.Survey.Report.pdf?version=0",
+    "verification": "Vuoden 2025 globaali painotettu keskimääräinen PUE 1,54 tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S082",
+    "title": "Google Data Centers: Power usage effectiveness",
+    "url": "https://www.datacenters.google/efficiency/",
+    "verification": "Haminan vuoden 2025 kampuskohtainen TTM PUE noin 1,10 tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S083",
+    "title": "Google 2025 Environmental Report",
+    "url": "https://sustainability.google/google-2025-environmental-report/",
+    "verification": "Haminan vuoden 2024 vedenotto 3,0 miljoonaa gallonaa, purku 2,7 ja kulutus 0,3 miljoonaa gallonaa tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S084",
+    "title": "Haminan Energia: Googlen datakeskuksen lämpöä kaukolämpöverkkoon",
+    "url": "https://haminanenergia.fi/googlen-datakeskuksen-lampoa-alkaa-virrata-haminan-kaukolampoverkossa-vuoden-2025-aikana/",
+    "verification": "5 MW lämpöpumppulaitoksen noin 40 GWh/v tuotantopotentiaali ja 80 % paikallisen kaukolämmön volyymista tarkistettu 22.9.2026."
   }
 ]
