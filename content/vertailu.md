@@ -11,6 +11,36 @@ layout: article
 ---
 Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan Hepokorpi, Kemi ja Kemi–Tornio.
 
+## Mitä datakeskus taloudellisesti tekee?
+
+Valmistavassa teollisuudessa tuotteen seuraaminen on usein konkreettista: raaka-aine tulee tehtaalle ja valmis tuote lähtee ulos. Datakeskuksessa arvoketju on vaikeampi nähdä, koska fyysisen laitoksen tehtävä on tuottaa ja ylläpitää **laskenta-, tallennus- ja verkkokapasiteettia**, jota käytetään osana digitaalisia palveluja.
+
+Yksinkertaistettu toimintaketju on:
+
+**sähkö + sähköverkko + maa ja rakennukset + palvelimet ja verkkolaitteet + työ ja palvelut → datakeskusoperaatio → käyttökelpoinen laskenta- ja tallennuskapasiteetti → Googlen digitaaliset palvelut**
+
+Google julkaisee myös markkinahintoja pilvilaskennan resursseille, mikä havainnollistaa sitä, että laskentakapasiteetilla on palvelumarkkinassa rahallinen arvo. Tämä ei kuitenkaan osoita, että Haminan kapasiteetti myytäisiin juuri näillä tuotteilla tai että loppuasiakkaan maksama hinta kirjautuisi Tuike Finland Oy:n liikevaihdoksi. [Google Cloud S066](/analyysit/datakeskukset/lahteet/#S066).
+
+Taloudellisen vaikutuksen kannalta ketjussa on siksi kaksi eri kysymystä:
+
+1. **Minkä arvoista digitaalista palvelua fyysisen datakeskuksen avulla tuotetaan?**
+2. **Kuinka suuri osa tämän arvoketjun tuloista, palkoista, ostoista ja veroista syntyy tai jää Suomeen?**
+
+Tämä auditointi pystyy tällä hetkellä vastaamaan jälkimmäiseen vain osittain. Julkisista lähteistä nähdään suomalaisen Tuike Finland Oy:n tunnuslukuja, Haminan kampusta koskevia tietoja sekä joitakin paikallisia vero- ja investointivirtoja. Sen sijaan käytössä ei ole sellaista konsernin sisäisten liiketoimien erittelyä, jolla Haminassa tuotettu laskentakapasiteetti voitaisiin luotettavasti yhdistää Googlen loppuasiakasmyyntiin.
+
+### Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
+
+Tuike Finland Oy:n vuoden 2025 liikevaihto on julkisissa yritystietopalveluissa 574,374 M€. Se on tärkeä havainto, koska se kertoo suomalaisen oikeushenkilön läpi kulkevasta suuresta liiketoiminnan volyymista. Mutta ennen yhteiskunnallisen hyödyn arviointia pitäisi tietää ainakin:
+
+- mistä Tuiken liikevaihto koostuu ja kuinka suuri osa liiketoimista on konsernin sisäisiä;
+- kuinka paljon toimintaan liittyy Suomessa ostettuja tavaroita ja palveluja;
+- paljonko Suomessa syntyy palkkoja ja muuta arvonlisää;
+- mitä veroja syntyy millekin julkisen talouden tasolle;
+- mitä pääoma- ja omistajatuloja siirtyy Suomen ulkopuolelle tai Suomeen;
+- mitä resursseja ja julkisia investointeja toiminta samalla sitoo.
+
+Siksi tässä julkaisussa **liikevaihto on tuotanto- ja rahavirran mittari, ei yhteiskunnallisen nettohyödyn mittari**. Sama sääntö koskee myös valmistavan teollisuuden verrokkeja.
+
 ## Hamina: ensin on ymmärrettävä, mikä Tuike Finland Oy on
 
 Haminan datakeskus tunnetaan Googlen datakeskuksena, mutta talouslukuja tarkasteltaessa vastaan tulee nimi **Tuike Finland Oy**. Tämä ei tarkoita, että analyysi vaihtaisi kohdetta kesken kaiken. Google-brändi, Google-konserni, suomalainen oikeushenkilö ja Haminan fyysinen kampus ovat saman kokonaisuuden eri tarkastelutasoja.
