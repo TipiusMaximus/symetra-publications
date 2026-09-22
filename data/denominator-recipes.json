@@ -213,7 +213,28 @@
       },
       "resultUnit": "GWh_per_MEUR",
       "boundaryPolicy": "near_match",
-      "periodPolicy": "near_period"
+      "periodPolicy": "near_period",
+      "comparisonGroup": "electricity_per_revenue"
+    },
+    {
+      "id": "kemi_electricity_per_business_revenue_floor",
+      "label": "Kemi implied electricity / whole Metsä Fibre revenue",
+      "question": "What conservative floor results for Kemi electricity intensity when site electricity use is divided by all Metsä Fibre revenue?",
+      "numerator": {
+        "evidence": "EV-KEMI-ENERGY-003",
+        "field": "value",
+        "scale": 1000,
+        "note": "TWh → GWh"
+      },
+      "denominator": {
+        "evidence": "EV-MF-FIN-2024-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "GWh_per_MEUR_at_least",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "mixed_explicit",
+      "comparisonGroup": "electricity_per_revenue"
     }
   ]
 }
