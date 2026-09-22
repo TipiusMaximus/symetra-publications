@@ -1,8 +1,8 @@
 const r1=x=>Math.round(x*10)/10;
 const c=(x,a=0,b=100)=>Math.max(a,Math.min(b,x));
 const lg=x=>Math.log(x)/Math.log(2);
-const higher=(x,b)=>c(50+20*lg(x/b));
-const lower=(x,b)=>c(50-20*lg(x/b));
+const higher=(x,b)=>c(50+15*lg(x/b));
+const lower=(x,b)=>c(50-15*lg(x/b));
 const threshold=(x,b)=>c(50*x/b);
 
 export function symetrixMatrixV02(){
@@ -84,8 +84,8 @@ export function symetrixMatrixV02(){
     version:'0.2',status:'exploratory-baseline',
     principle:'50 pistettä tarkoittaa näkyvää baselinea; piste ei riipu vertailujoukon minimi- ja maksimiarvoista.',
     baselineRules:{
-      ratioHigher:'50 + 20 × log2(value / baseline)',
-      ratioLower:'50 − 20 × log2(value / baseline)',
+      ratioHigher:'50 + 15 × log2(value / baseline)',
+      ratioLower:'50 − 15 × log2(value / baseline)',
       thresholdLinear:'50 × value / threshold',
       note:'Kaikki pisteet rajataan välille 0–100.'
     },
