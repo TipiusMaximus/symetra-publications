@@ -180,6 +180,22 @@
         "EV-HAM-STRUCT-001",
         "EV-KEMI-STRUCT-001"
       ]
+    },
+    {
+      "id": "employment_scope_jump",
+      "label": "Työllisyyden scope jump",
+      "formula": "E(n) / E0, missä n = 1, 2 tai 3",
+      "direction": "descriptive",
+      "baseline_status": "not_applicable",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "explicit_employment_boundaries",
+        "visible numerator_boundary",
+        "visible denominator_boundary"
+      ],
+      "purpose": "Etsiä kohtia, joissa juridinen oma henkilöstö kuvaa vain pientä osaa toimipaikan tai arvoketjun työstä.",
+      "caveat": "Suurta suhdetta ei tulkita automaattisesti hyväksi, huonoksi tai tehokkaaksi. Mixed-boundary-suhteet merkitään exploratory.",
+      "boundary_registry": "/downloads/employment-boundaries.json"
     }
   ]
 }
