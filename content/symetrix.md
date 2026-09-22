@@ -18,6 +18,7 @@ layout: article
 - **?** mittari sopii kohteelle, mutta tarvittava havainto puuttuu
 - **—** mittari ei sovellu tähän kohteeseen
 - **P** piste käyttää proxy-rajausta eikä täysin samaa kohde- tai vuosirajaa
+- **E** piste perustuu läpinäkyvään estimaattiin, ei mitattuun toteumaan
 - **Pre-op** kohde ei ole vielä käyttövaiheen vertailussa
 
 [Katso kaikkien mittarien baseline, raakadata, lähteet ja rajaukset](/analyysit/datakeskukset/symetrix-mittarit/).
@@ -29,9 +30,10 @@ layout: article
 | [Taloudellinen volyymi / työpanos](/analyysit/datakeskukset/symetrix-mittarit/#taloudellinen-volyymi-tyopanos) | liikevaihto / oma henkilöstö | ↑ | **86** | **60** | **73 P** | **64 P** | Pre-op |
 | [Työllistävyys suhteessa volyymiin](/analyysit/datakeskukset/symetrix-mittarit/#tyollistavyys-suhteessa-volyymiin) | oma henkilöstö / 100 M€ liikevaihtoa | ↑ | **14** | **40** | **27 P** | **36 P** | Pre-op |
 | [Datakeskuksen energiatehokkuus](/analyysit/datakeskukset/symetrix-mittarit/#datakeskuksen-energiatehokkuus) | PUE − 1 | ↓ | **74** | **61 P** | — | — | Pre-op |
-| [Datakeskuksen vedenkäytön tehokkuus](/analyysit/datakeskukset/symetrix-mittarit/#datakeskuksen-vedenkayton-tehokkuus) | WUE, L/kWh IT | ↓ | ? | **96** | — | — | Pre-op |
+| [Datakeskuksen vedenkäytön tehokkuus](/analyysit/datakeskukset/symetrix-mittarit/#datakeskuksen-vedenkayton-tehokkuus) | WUE, L/kWh IT | ↓ | **100 E*** | **96** | — | — | Pre-op |
 | [Sähköomavaraisuus](/analyysit/datakeskukset/symetrix-mittarit/#sahkoomavaraisuus) | oma tuotanto / oma kulutus | ↑ | ? | ? | **63** | ? | Pre-op |
 
+\n\* **100 E** = laskennallinen piste arvolle ~0,0014 L/kWh IT. Google raportoi vuoden 2024 vedenkulutuksen ilman merivettä; IT-energia johdetaan 0,87 TWh/v sähköestimaatista ja PUE 1,10:stä. Siksi arvo on eksplisiittisesti estimaatti, ei mitattu standardi-WUE.\n
 ### Miten pisteasteikko käyttäytyy?
 
 Ratio-mittareissa yksi kaksinkertaistuminen baselineen nähden muuttaa pistettä 10 pistettä:
@@ -64,7 +66,7 @@ Nämä rivit lisäävät vertailuun informaatiota ilman näennäistä tarkkuutta
 
 Tuike saa korkean pistemäärän taloudellisessa volyymissa suhteessa omaan henkilöstöön, mutta saman suhteen käänteinen työllistävyysmittari painuu matalaksi. Nebius ja Ferrochrome osuvat näissä mittareissa lähemmäs Tilastokeskuksesta johdettua poikkitoimialaista baselinea. Kemi käyttää näissä kahdessa rivissä **Metsä Fibre -liiketoiminnan 2025 proxy-lukuja**, ei Kemin tehtaan omaa talous- tai henkilöstörajaa, joten pisteen perässä on P.
 
-Datakeskusten teknisissä mittareissa Haminan PUE on selvästi vuoden 2025 globaalin datakeskusbaselinen paremmalla puolella. Nebiuksen PUE-piste on **P**, koska 1,25 on Nebiuksen koko portfolion vuoden 2025 keskiarvo eikä Mäntsälän erillinen PUE. Nebiuksen Suomen WUE-luku sen sijaan on toimipaikkakohtainen.
+Datakeskusten teknisissä mittareissa Haminan PUE on selvästi vuoden 2025 globaalin datakeskusbaselinen paremmalla puolella. Haminan WUE-solussa näkyvä **100 E*** on estimaattipiste: noin 0,0014 L/kWh IT osuu nykyisen pisteasteikon kattoon, mutta arvo ei ole mitattu standardi-WUE. Nebiuksen PUE-piste on **P**, koska 1,25 on Nebiuksen koko portfolion vuoden 2025 keskiarvo eikä Mäntsälän erillinen PUE. Nebiuksen Suomen WUE-luku sen sijaan on toimipaikkakohtainen.
 
 Kemin sähköomavaraisuus näyttää toisen tyyppisen vahvuuden: 250 % oma tuotanto / oma kulutus on selvästi 100 % tasapainobaselinen yläpuolella. Se ei kuitenkaan tee Kemistä automaattisesti “parasta”, koska mittari vastaa vain sähköomavaraisuuden kysymykseen.
 
@@ -72,6 +74,6 @@ Kemin sähköomavaraisuus näyttää toisen tyyppisen vahvuuden: 250 % oma tuota
 
 Kysymysmerkki on tutkimustulos, ei tyhjä solu. Tällä hetkellä arvokkaimmat puuttuvat havainnot ovat:
 
-**Kemin tehtaan oma liikevaihto/arvonlisä ja työpanos · Haminan kampuskohtainen WUE (vedenkäyttö tunnetaan, mutta samaan rajaan kuuluva IT-kWh puuttuu) · oma tuotanto/verkko-otto datakeskuksille · Ferrochrome-segmentin erillinen energiankulutus · HEL16:n käyttövaiheen toteuma.**
+**Kemin tehtaan oma liikevaihto/arvonlisä ja työpanos · Haminan mitattu ja samaan vuoteen rajattu standardi-WUE · oma tuotanto/verkko-otto datakeskuksille · Ferrochrome-segmentin erillinen energiankulutus · HEL16:n käyttövaiheen toteuma.**
 
 Kaikki muu nippelitieto — esimerkiksi Haminan vedenkulutus, Nebiuksen 19,5 GWh mitattu hukkalämmön vienti ja Tornion koko tehdasalueen noin 4 TWh energiankulutus — pidetään [mittarien perustelusivulla](/analyysit/datakeskukset/symetrix-mittarit/), kunnes sille löytyy vertailukelpoinen nimittäjä ja baseline.
