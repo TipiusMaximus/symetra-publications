@@ -1,0 +1,219 @@
+{
+  "version": "0.1",
+  "principle": "Generate ratios only from explicit recipes. Every recipe names numerator, denominator, unit conversions, period policy and boundary policy; no blind Cartesian product of evidence.",
+  "boundaryPolicies": {
+    "strict": "Same conceptual entity/boundary required.",
+    "near_match": "Boundaries are close enough for an exploratory ratio but the mismatch must remain visible.",
+    "cross_boundary": "Different boundaries are intentionally combined to expose structure; never render as harmonized score."
+  },
+  "periodPolicies": {
+    "same": "Same period required.",
+    "near_period": "Adjacent/mixed periods allowed only with explicit warning.",
+    "mixed_explicit": "Different periods are intentional and must be labelled."
+  },
+  "rabbitHoleHeuristics": {
+    "absolute_multiple": 4,
+    "group_spread": 4,
+    "note": "Thresholds are discovery heuristics, not value judgments. A flag asks a question; it does not rank entities."
+  },
+  "recipes": [
+    {
+      "id": "hamina_site_amplification",
+      "label": "Hamina site / own workforce",
+      "question": "How much larger is regular site workforce than own legal-entity workforce?",
+      "numerator": {
+        "evidence": "EV-HAM-WORK-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-TUIKE-WORK-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "near_period",
+      "comparisonGroup": "site_amplification",
+      "rabbitHole": {
+        "kind": "absolute_multiple",
+        "threshold": 4
+      }
+    },
+    {
+      "id": "kemi_site_amplification",
+      "label": "Kemi site / own workforce",
+      "question": "How much larger is mill-area workforce than mill own personnel?",
+      "numerator": {
+        "evidence": "EV-KEMI-WORK-003",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-KEMI-WORK-002",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "same",
+      "comparisonGroup": "site_amplification"
+    },
+    {
+      "id": "kemi_direct_value_chain_multiplier",
+      "label": "Kemi direct value chain / own workforce",
+      "question": "How large is the direct Finnish value-chain workforce relative to mill own personnel?",
+      "numerator": {
+        "evidence": "EV-KEMI-WORK-004",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-KEMI-WORK-002",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "same",
+      "rabbitHole": {
+        "kind": "absolute_multiple",
+        "threshold": 4
+      }
+    },
+    {
+      "id": "hamina_water_withdrawal_per_revenue",
+      "label": "Hamina non-seawater withdrawal / revenue",
+      "question": "How much reported non-seawater withdrawal occurs per M€ of revenue?",
+      "numerator": {
+        "evidence": "EV-HAM-WATER-001",
+        "field": "normalized_value",
+        "scale": 1000,
+        "note": "million litres → m3"
+      },
+      "denominator": {
+        "evidence": "EV-TUIKE-FIN-2024-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "m3_per_MEUR",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "same",
+      "comparisonGroup": "water_per_revenue"
+    },
+    {
+      "id": "hamina_water_consumption_per_revenue",
+      "label": "Hamina non-seawater consumption / revenue",
+      "question": "How much reported non-seawater net consumption occurs per M€ of revenue?",
+      "numerator": {
+        "evidence": "EV-HAM-WATER-003",
+        "field": "normalized_value",
+        "scale": 1000,
+        "note": "million litres → m3"
+      },
+      "denominator": {
+        "evidence": "EV-TUIKE-FIN-2024-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "m3_per_MEUR",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "same"
+    },
+    {
+      "id": "kemi_water_design_per_revenue_floor",
+      "label": "Kemi water design proxy / whole-business revenue",
+      "question": "What conservative lower bound results when Kemi's water design proxy is divided by all Metsä Fibre revenue?",
+      "numerator": {
+        "evidence": "EV-KEMI-WATER-002",
+        "field": "value",
+        "scale": 1000000,
+        "note": "million m3 → m3"
+      },
+      "denominator": {
+        "evidence": "EV-MF-FIN-2024-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "m3_per_MEUR_at_least",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "mixed_explicit",
+      "comparisonGroup": "water_per_revenue"
+    },
+    {
+      "id": "hamina_investment_per_site_worker",
+      "label": "Hamina cumulative investment / site worker",
+      "question": "How capital-heavy is the campus relative to current site workforce?",
+      "numerator": {
+        "evidence": "EV-HAM-CAPEX-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-HAM-WORK-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "MEUR_per_person",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "mixed_explicit",
+      "comparisonGroup": "investment_per_site_worker"
+    },
+    {
+      "id": "kemi_investment_per_site_worker",
+      "label": "Kemi investment / mill-area worker",
+      "question": "How capital-heavy is the mill relative to mill-area workforce?",
+      "numerator": {
+        "evidence": "EV-KEMI-CAPEX-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-KEMI-WORK-003",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "MEUR_per_person",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "mixed_explicit",
+      "comparisonGroup": "investment_per_site_worker"
+    },
+    {
+      "id": "hamina_property_tax_share_of_revenue",
+      "label": "Hamina property tax / Tuike revenue",
+      "question": "How large is local property tax relative to legal-entity revenue?",
+      "numerator": {
+        "evidence": "EV-HAM-TAX-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-TUIKE-FIN-2024-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "percent_of_revenue",
+      "resultScale": 100,
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "same"
+    },
+    {
+      "id": "hamina_electricity_per_revenue",
+      "label": "Hamina estimated electricity / revenue",
+      "question": "How much estimated annual electricity demand corresponds to each M€ of revenue?",
+      "numerator": {
+        "evidence": "EV-HAM-POWER-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-TUIKE-FIN-2024-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "GWh_per_MEUR",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "near_period"
+    }
+  ]
+}

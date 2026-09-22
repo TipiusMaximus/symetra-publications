@@ -47,6 +47,30 @@ Jos suhdeluvun nimittäjä lähestyy nollaa, vaihtaa etumerkkiä tai muuten teke
 
 Laskelmissa käytetään neljää näkyvää statusta: **lähdehavainto**, **johdettu laskelma**, **herkkyysskenaario** ja **avoin**. Näin matemaattisesti tarkka johdettu arvo ei näyttäydy lukijalle mitattuna toteumana.
 
+
+## Denominator Engine: suhdeluku syntyy vain reseptistä
+
+Symetran yleinen mittarimoottori ei muodosta kaikkia matemaattisesti mahdollisia jakolaskuja. Jokainen suhdeluku tarvitsee **reseptin**, jossa nimetään:
+
+1. osoittajan evidenssi;
+2. nimittäjän evidenssi;
+3. tarvittava yksikkömuunnos;
+4. ajanjaksosääntö;
+5. systeemirajasääntö;
+6. tulosyksikkö ja kysymys, johon suhde vastaa.
+
+Rajapolitiikka voi olla **strict**, **near-match** tai **cross-boundary**. Cross-boundary ei ole virhe: sitä käytetään tarkoituksella rakenteellisten erojen etsimiseen, mutta tulosta ei saa esittää harmonisoituna scorena.
+
+Moottori perii myös lähtöhavaintojen epävarmuuden. Mitattu havainto, estimaatti, design-arvo ja proxy eivät muutu samanarvoisiksi vain siksi, että niiden välinen jakolasku on täsmällinen.
+
+### Rabbit hole on tutkimussignaali
+
+Denominator Engine etsii reseptien tuloksista poikkeamia. Ensimmäisessä versiossa vähintään nelinkertainen scope-jump tai vähintään nelinkertainen saman mittariperheen spread merkitään **rabbit holeksi**. Raja on löytöheuristiikka, ei hyvä/huono-arvio.
+
+Esimerkiksi 500 site-työntekijää / 120 omaa työntekijää ≈ **4,17×** nostaa Haminan henkilöstörajan tutkittavaksi. Kemin 2 500 suoraa arvoketjutyöpaikkaa / 250 omaa työntekijää = **10×** nostaa toisen. Vesi/liikevaihto-perheessä Haminan ja Kemin nykyisten eksplisiittisesti eri rajojen välinen ero on yli 200-kertainen, mikä kertoo ennen kaikkea siitä, että rakenteiden ja vesikäsitteiden ero pitää avata.
+
+[Lataa Denominator Engine v0.1:n koneellinen tulos](/downloads/denominator-engine-v0.1.json).
+
 ## Kuvailevat luokat
 
 | Luokka | Merkitys |
