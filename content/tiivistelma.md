@@ -128,11 +128,12 @@ Tästä syntyi julkaisun periaate:
 
 Kansalaisaloite 17997 oli yksi tutkimuskysymysten lähteistä, mutta se ei määritä koko analyysin kehystä. Aloitteen väitteet A01–A11 on säilytetty erillisenä [lähdeauditointina](/analyysit/datakeskukset/vaiteet/). Aloite ei ole todiste omien väitteidensä paikkansapitävyydestä.
 
-Valmistavan teollisuuden tarkastelu on datakeskuskohteita suppeampi, eikä kohteista muodosteta yhteispistemäärää tai paremmuusjärjestystä. Julkaisu ei ratkaise myöskään uuden maksun tai muun politiikkatoimen tarkoituksenmukaisuutta puuttuvilla oletuksilla.
+Valmistavan teollisuuden tarkastelu on datakeskuskohteita suppeampi, eikä kohteista muodosteta yhtä yleispistemäärää tai pysyvää paremmuusjärjestystä. Symetrix Matrix muodostaa sen sijaan näkyvästi nimettyjä Lens-pisteitä, joiden tarkoitus on näyttää, kuinka arvotuksen muuttaminen voi muuttaa järjestystä. Julkaisu ei ratkaise myöskään uuden maksun tai muun politiikkatoimen tarkoituksenmukaisuutta puuttuvilla oletuksilla.
 
 ## Valitse lukutapa
 
 - [Toimintamalli ja vertailu](/analyysit/datakeskukset/vertailu/) — mitä datakeskus taloudellisesti tekee, miten Google–Tuike–Hamina-rajat toimivat ja mitä Hepokorpi, Kemi ja Outokumpu opettavat.
+- [Symetrix Matrix v0.1](/analyysit/datakeskukset/symetrix/) — ensimmäiset oikeat Lens-pisteet, coverage ja rank-flip samalla lähdedatalla.
 - [Vaikutukset](/analyysit/datakeskukset/vaikutukset/) — tutkimusreitti työstä talouteen, sähköön, verkkoon, ympäristöön ja vaihtoehtoiskustannukseen.
 - [Menetelmä](/menetelma/) — miten kohde, aika, yksikkö, lähde ja laskentaraja pidetään erillään.
 - [Kansalaisaloitteen väitteiden lähdeauditointi](/analyysit/datakeskukset/vaiteet/) — A01–A11 pääanalyysin rinnalla.
