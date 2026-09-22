@@ -495,5 +495,12 @@
     "url": "https://www.outokumpu.com/fi-fi/about/organization/ferrochrome",
     "provenance": "Kemin kaivoksen ja Tornion ferrokromitoiminnan yhteys. Myynnin sisäinen/ulkoinen jako luetaan vuosikertomuksesta.",
     "verification": "Sisältö tarkistettu verkkolähteestä 22.9.2026."
+  },
+  {
+    "id": "S072",
+    "title": "Google Workspace: Google Group Subprocessors, 2.3.2026",
+    "url": "https://workspace.google.com/terms/subprocessors-20260302/",
+    "provenance": "Julkaisun v1.1 rakenneuudistus: Tuike Finland Oy:n rooli Google-konsernin Suomen datakeskusoperaatiossa.",
+    "verification": "Google listaa Tuike Finland Oy:n Google Group Subprocessor -toimijaksi, tehtävänä Data Center Operations Suomessa. Sivun mukaan listattujen Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. Tarkistettu 22.9.2026."
   }
 ]
