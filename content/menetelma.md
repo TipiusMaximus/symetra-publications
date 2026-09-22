@@ -61,7 +61,7 @@ Luokkia ei lasketa yhteen, väritetä liikennevaloiksi tai muuteta totuusprosent
 
 ## Mitä ensimmäinen julkaisu kattaa?
 
-Tarkastelu kokoaa julkisista lähteistä talous-, ympäristö-, verkko- ja sääntelyaineiston. Pääkohteet ovat Hamina ja HEL16/Hepokorpi. Kemi ja Outokummun soveltuva Kemi–Tornio-toiminta ovat rakenteellisia verrokkeja; niiden auditointisyvyys ei ole sama. Irlanti toimii sähköjärjestelmän ja liittymisehtojen vertailuna.
+Tarkastelu kokoaa julkisista lähteistä talous-, ympäristö-, verkko- ja sääntelyaineiston. Pääkohteisiin kuuluvat Hamina, käytössä oleva Nebius Mäntsälä sekä pre-operational HEL16/Hepokorpi. Kemi ja Outokummun soveltuva Kemi–Tornio-toiminta ovat rakenteellisia verrokkeja; niiden auditointisyvyys ei ole sama. Irlanti toimii sähköjärjestelmän ja liittymisehtojen vertailuna.
 
 Kansalaisaloite 17997 toimii yhtenä tutkimuskysymysten lähteenä. Aloitetta koskevat väitearviot eivät määritä koko julkaisun kehystä. Päätelmät koskevat havaittua aineistoa 22.9.2026 mennessä; myöhempiä muutoksia ei ole seurattu automaattisesti.
 
@@ -75,4 +75,4 @@ Lähteiden ajantasaisuus on päivätty. Linkin tekninen toimivuus ei tarkoita si
 
 Muuttunut luku, tulkinta tai laskentasääntö kirjataan [muutoshistoriaan](/muutokset/). Markdown, lähderekisteri ja laskentamenetelmä versioidaan samassa julkaisurepossa.
 
-Symetrix Matrix v0.1 sisältää nyt ensimmäiset kiinteät Lens-profiilit. Jokaiselle Lensille julkaistaan käytetyt mittarit, painot, normalisointi, vertailujoukko ja puuttuvan tiedon käsittely. Pisteitä ei tulkita yleiseksi paremmuusluvuksi, vaan nimetyn arvotusprofiilin seuraukseksi. Tässä versiossa käyttäjä ei vielä muuta painoja käyttöliittymässä, eikä julkaisu tuota yhtä universaalia Symetra-pistettä tai voittajaa. Julkaisu ei esitä politiikkasuositusta.
+Symetrix Matrix v0.2 käyttää vertailujoukon min–max-skaalan sijasta näkyviä baselineja. Ratio-mittarissa 50 pistettä tarkoittaa baselinea ja yksi kaksinkertaistuminen muuttaa pistettä 15 pistettä; pienempi-on-parempi-mittarissa suunta käännetään. Jokaiselle mittarille julkaistaan baseline, scorer-tyyppi ja raakadata. **Score, coverage ja comparability pidetään erillään:** puuttuva havainto ei ole nolla eikä täydellinen coverage tarkoita täydellistä vertailukelpoisuutta. HEL16:n kaltaiset pre-operational-kohteet voivat näkyä matriisissa, mutta eivät osallistu käyttövaiheen rankingiin. Tässä versiossa käyttäjä ei vielä muuta painoja käyttöliittymässä, eikä julkaisu tuota yhtä universaalia Symetra-pistettä tai voittajaa. Julkaisu ei esitä politiikkasuositusta.
