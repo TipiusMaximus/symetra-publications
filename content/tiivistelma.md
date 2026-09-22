@@ -15,6 +15,20 @@ layout: article
 
 Julkaisu vastaa kysymykseen: **mitä datakeskusten taloudellisista ja yhteiskunnallisista vaikutuksista voidaan osoittaa, ja millä ehdoilla niitä voidaan verrata valmistavaan teollisuuteen?** Tarkastelu koskee nimettyjä kohteita ja 22.9.2026 mennessä koottua aineistoa. Se ei ole riippumaton tilintarkastus eikä koko toimialan kattava vaikutustutkimus.
 
+## Miten tutkimuskysymys laajeni?
+
+Auditointi ei lähtenyt valmiista mittaristosta. Se eteni havainto kerrallaan, ja jokainen rajausongelma synnytti seuraavan kysymyksen.
+
+Ensimmäinen konkreettinen kysymys oli **kuinka paljon Haminan datakeskus työllistää**. Julkisissa lähteissä tuli vastaan kaksi hyvin erilaista lukua: Tuike Finland Oy:n yritystason henkilöstö ja Haminan kampuksella työskentelevä laajempi henkilömäärä. Tämä pakotti erottamaan toisistaan Google-konsernin, suomalaisen oikeushenkilön ja fyysisen kampuksen.
+
+Seuraavaksi tarkasteluun tuli **talous**. Tuiken liikevaihto osoittautui suureksi suhteessa yhtiön omaan henkilöstöön, mutta samalla kävi ilmeiseksi, ettei liikevaihto vastaa Suomeen jäävää hyötyä. Siksi tutkimus laajeni palkkoihin, ostoihin, veroihin, arvonlisään ja konsernirajoihin.
+
+Tämän jälkeen kysymys muuttui muotoon **mitä saadaan suhteessa käytettyihin resursseihin**. Sähkö, verkkokapasiteetti, maa, vesi, varavoima ja hukkalämpö tulivat mukaan, eikä datakeskusta enää voinut tarkastella vain yrityksen tilinpäätöksenä.
+
+Vasta tämän jälkeen Kemi ja Kemi–Tornio tulivat vertailuun. Niiden tehtävä ei ole toimia automaattisina vaihtoehtoina Haminalle, vaan testata, mitä tapahtuu, kun samoja työ-, talous- ja energiaindikaattoreita yritetään käyttää erilaisiin tuotantorakenteisiin. Tästä syntyi myös tarve käsitellä vaihtoehtoiskustannusta erikseen.
+
+Tämä etenemisjärjestys on samalla julkaisun lukutapa: **ensin ymmärretään kohde ja laskentaraja, sitten mitataan, ja vasta sen jälkeen verrataan.**
+
 ## Neljä keskeistä havaintoa
 
 ### Ensin on erotettava Google, Tuike ja Haminan kampus
