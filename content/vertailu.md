@@ -26,19 +26,32 @@ Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintoja
 
 > **Vertailun rajaus.** Tässä julkaisussa ei esitetä toimialojen paremmuusjärjestystä. Puuttuvat energia-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
 
-## Hamina: yritys ja kampus erikseen
+## Hamina: ensin on ymmärrettävä, mikä Tuike Finland Oy on
 
-**Tutkimuskysymys:** mitä Googlen Haminan toiminnan taloudesta voidaan havaita julkisista tiedoista?
+Haminan datakeskus tunnetaan Googlen datakeskuksena, mutta talouslukuja tarkasteltaessa vastaan tulee nimi **Tuike Finland Oy**. Tämä ei tarkoita, että analyysi vaihtaisi kohdetta kesken kaiken. Google-brändi, Google-konserni, suomalainen oikeushenkilö ja Haminan fyysinen kampus ovat saman kokonaisuuden eri tarkastelutasoja.
 
-**Lähde ja havaintojakso:** Tuike Finland Oy:n 2025 tiedot Proffissa ja Profinderissa sekä Haminan kaupungin 22.6.2026 tiedote. [S001–S003](/analyysit/datakeskukset/lahteet/#S001).
+Googlen omassa konserniyhtiöiden alihankkijaluettelossa Tuike Finland Oy on merkitty Google Group Subprocessor -toimijaksi. Sen tehtäväksi on ilmoitettu **Data Center Operations** Suomessa ja osoitteeksi Ensontie 1, Hamina. Samassa lähteessä todetaan, että luettelon Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. [Google S072](/analyysit/datakeskukset/lahteet/#S072).
 
-**Mitä lähde osoittaa:** yritystietopalvelut ilmoittavat liikevaihdoksi 574,374 M€, käyttökatteeksi 60,0 % ja henkilöstöksi 120. Kaupunki ilmoittaa kampuksella työskentelevän noin 500 henkilöä.
+Tämän vuoksi julkaisussa käytetään kahta rinnakkaista näkymää:
 
-**Mitä se ei osoita:** liikevaihto ei ole Suomessa syntyvä nettotulo; kampusluku ei ole yrityksen henkilötyövuosien määrä. Yritystietopalvelut ovat toissijaisia lähteitä, joiden riippumattomuutta toisistaan ei ole varmistettu.
+- **Tuike Finland Oy** kertoo siitä suomalaisesta oikeushenkilöstä, josta julkisia yritystalouden tunnuslukuja on saatavissa.
+- **Haminan kampus** kertoo fyysisestä toimipaikasta ja siellä työskentelevästä laajemmasta joukosta, johon voi kuulua myös muiden työnantajien henkilöstöä.
 
-**Vertailukelpoisuus:** yrityksen henkilöstölukua verrataan saman rajauksen henkilöstölukuun. Vuoden 2025 ja kesäkuun 2026 lukujen erotusta ei tulkita alihankkijoiden määräksi.
+Näitä ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä näyttöä päätellä Googlen Haminassa tuotetun laskentapalvelun koko markkina-arvoa, koko Google-konsernin Suomessa syntyvää liikevaihtoa tai Suomeen jäävää nettohyötyä. Samoin kampuksella työskentelevien henkilöiden määrä ei ole sama asia kuin Tuike Finland Oy:n oma henkilöstömäärä.
 
-**Avoin tieto:** alkuperäinen tilinpäätös liitetietoineen, kampuksen saman vuoden henkilötyövuodet, energia ja hankintojen arvonlisäosuudet. [Laskelmat](/analyysit/datakeskukset/lahteet/#laskelmat).
+### Mitä julkisista luvuista voidaan tämän jälkeen havaita?
+
+**Tutkimuskysymys:** mitä Googlen Haminan toiminnan taloudesta voidaan havaita, kun yhtiö ja kampus pidetään erillään?
+
+**Lähde ja havaintojakso:** Googlen konsernirakennetta kuvaava lähde, Tuike Finland Oy:n vuoden 2025 yritystiedot Proffissa ja Profinderissa sekä Haminan kaupungin 22.6.2026 tiedote. [S001–S003](/analyysit/datakeskukset/lahteet/#S001), [S072](/analyysit/datakeskukset/lahteet/#S072).
+
+**Mitä lähteet osoittavat:** Google nimeää Tuike Finland Oy:n Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. Yritystietopalvelut ilmoittavat Tuiken vuoden 2025 liikevaihdoksi 574,374 M€, käyttökatteeksi 60,0 % ja henkilöstöksi 120. Haminan kaupunki puolestaan ilmoittaa kampuksella työskentelevän noin 500 henkilöä.
+
+**Mitä ne eivät osoita:** Tuiken liikevaihto ei ole sama asia kuin Suomessa syntyvä yhteiskunnallinen nettohyöty eikä kampuksen noin 500 henkilöä ole Tuiken henkilötyövuosien määrä. Yritystietopalvelut ovat toissijaisia lähteitä, joiden riippumattomuutta toisistaan ei ole varmistettu. Julkisesta aineistosta ei tässä vaiheessa myöskään rakenneta oletusta siitä, miten Google-konsernin sisäinen laskutus jakaa laskentapalvelujen tuotot eri oikeushenkilöille.
+
+**Vertailukelpoisuus:** yrityksen henkilöstölukua verrataan saman rajauksen henkilöstölukuun. Vuoden 2025 ja kesäkuun 2026 lukujen erotusta ei tulkita alihankkijoiden määräksi. Yhtiön talous, kampuksen toiminta ja konsernin asiakasmyynti käsitellään eri tasoina.
+
+**Avoin tieto:** Tuiken alkuperäinen tilinpäätös liitetietoineen, konsernin sisäisten liiketoimien merkitys, kampuksen saman vuoden henkilötyövuodet, energia sekä hankintojen kotimaiset arvonlisäosuudet. [Laskelmat](/analyysit/datakeskukset/lahteet/#laskelmat).
 
 ## Hepokorpi: HEL16 ei ole koko kampus
 
