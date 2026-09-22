@@ -106,9 +106,9 @@ export function symetrixMatrixV03(){
       direction:'lower',
       baseline:baselines.wue,
       applicability:'data_centers_only',
-      values:{nebius:.018},
+      values:{tuike:.00144,nebius:.018},
       scores:{},
-      evidence:{nebius:'finland_site_observed'}
+      evidence:{tuike:'estimate_non_seawater_mixed_period',nebius:'finland_site_observed'}
     },
     electricitySelfSufficiency:{
       label:'Sähköomavaraisuus',
