@@ -26,8 +26,8 @@ layout: article
 
 | Mittari | Kaava | Suunta | Google / Tuike | Nebius Mäntsälä | Kemi Bio | Ferrochrome | HEL16 |
 |---|---|:---:|---:|---:|---:|---:|---:|
-| [Taloudellinen volyymi / työpanos](/analyysit/datakeskukset/symetrix-mittarit/#taloudellinen-volyymi-tyopanos) | liikevaihto / oma henkilöstö | ↑ | **86** | **60** | ? | **64 P** | Pre-op |
-| [Työllistävyys suhteessa volyymiin](/analyysit/datakeskukset/symetrix-mittarit/#tyollistavyys-suhteessa-volyymiin) | oma henkilöstö / 100 M€ liikevaihtoa | ↑ | **14** | **40** | ? | **36 P** | Pre-op |
+| [Taloudellinen volyymi / työpanos](/analyysit/datakeskukset/symetrix-mittarit/#taloudellinen-volyymi-tyopanos) | liikevaihto / oma henkilöstö | ↑ | **86** | **60** | **73 P** | **64 P** | Pre-op |
+| [Työllistävyys suhteessa volyymiin](/analyysit/datakeskukset/symetrix-mittarit/#tyollistavyys-suhteessa-volyymiin) | oma henkilöstö / 100 M€ liikevaihtoa | ↑ | **14** | **40** | **27 P** | **36 P** | Pre-op |
 | [Datakeskuksen energiatehokkuus](/analyysit/datakeskukset/symetrix-mittarit/#datakeskuksen-energiatehokkuus) | PUE − 1 | ↓ | **74** | **61 P** | — | — | Pre-op |
 | [Datakeskuksen vedenkäytön tehokkuus](/analyysit/datakeskukset/symetrix-mittarit/#datakeskuksen-vedenkayton-tehokkuus) | WUE, L/kWh IT | ↓ | ? | **96** | — | — | Pre-op |
 | [Sähköomavaraisuus](/analyysit/datakeskukset/symetrix-mittarit/#sahkoomavaraisuus) | oma tuotanto / oma kulutus | ↑ | ? | ? | **63** | ? | Pre-op |
@@ -44,7 +44,7 @@ Tämä tekee pisteestä vakaan: uuden yrityksen lisääminen vertailuun ei muuta
 
 ## Mitä tästä näkee yhdellä silmäyksellä?
 
-Tuike saa korkean pistemäärän taloudellisessa volyymissa suhteessa omaan henkilöstöön, mutta saman suhteen käänteinen työllistävyysmittari painuu matalaksi. Nebius ja Ferrochrome osuvat näissä mittareissa lähemmäs Tilastokeskuksesta johdettua poikkitoimialaista baselinea.
+Tuike saa korkean pistemäärän taloudellisessa volyymissa suhteessa omaan henkilöstöön, mutta saman suhteen käänteinen työllistävyysmittari painuu matalaksi. Nebius ja Ferrochrome osuvat näissä mittareissa lähemmäs Tilastokeskuksesta johdettua poikkitoimialaista baselinea. Kemi käyttää näissä kahdessa rivissä **Metsä Fibre -liiketoiminnan 2025 proxy-lukuja**, ei Kemin tehtaan omaa talous- tai henkilöstörajaa, joten pisteen perässä on P.
 
 Datakeskusten teknisissä mittareissa Haminan PUE on selvästi vuoden 2025 globaalin datakeskusbaselinen paremmalla puolella. Nebiuksen PUE-piste on **P**, koska 1,25 on Nebiuksen koko portfolion vuoden 2025 keskiarvo eikä Mäntsälän erillinen PUE. Nebiuksen Suomen WUE-luku sen sijaan on toimipaikkakohtainen.
 
@@ -54,6 +54,6 @@ Kemin sähköomavaraisuus näyttää toisen tyyppisen vahvuuden: 250 % oma tuota
 
 Kysymysmerkki on tutkimustulos, ei tyhjä solu. Tällä hetkellä arvokkaimmat puuttuvat havainnot ovat:
 
-**saman vuoden liikevaihto/arvonlisä Kemille · kampuskohtainen WUE Haminalle · oma tuotanto/verkko-otto datakeskuksille · Ferrochrome-segmentin erillinen energiankulutus · HEL16:n käyttövaiheen toteuma.**
+**Kemin tehtaan oma liikevaihto/arvonlisä ja työpanos · kampuskohtainen WUE Haminalle · oma tuotanto/verkko-otto datakeskuksille · Ferrochrome-segmentin erillinen energiankulutus · HEL16:n käyttövaiheen toteuma.**
 
 Kaikki muu nippelitieto — esimerkiksi Haminan vedenkulutus, Nebiuksen 19,5 GWh mitattu hukkalämmön vienti ja Tornion koko tehdasalueen noin 4 TWh energiankulutus — pidetään [mittarien perustelusivulla](/analyysit/datakeskukset/symetrix-mittarit/), kunnes sille löytyy vertailukelpoinen nimittäjä ja baseline.
