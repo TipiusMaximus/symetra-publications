@@ -19,7 +19,7 @@ Yksinkertaistettu toimintaketju on:
 
 **sähkö + sähköverkko + maa ja rakennukset + palvelimet ja verkkolaitteet + työ ja palvelut → datakeskusoperaatio → käyttökelpoinen laskenta- ja tallennuskapasiteetti → Googlen digitaaliset palvelut**
 
-Google julkaisee myös markkinahintoja pilvilaskennan resursseille, mikä havainnollistaa sitä, että laskentakapasiteetilla on palvelumarkkinassa rahallinen arvo. Tämä ei kuitenkaan osoita, että Haminan kapasiteetti myytäisiin juuri näillä tuotteilla tai että loppuasiakkaan maksama hinta kirjautuisi Tuike Finland Oy:n liikevaihdoksi. [Google Cloud S066](/analyysit/datakeskukset/lahteet/#S066).
+Google julkaisee myös markkinahintoja pilvilaskennan resursseille, mikä havainnollistaa sitä, että laskentakapasiteetilla on palvelumarkkinassa rahallinen arvo. Tämä ei kuitenkaan osoita, että Haminan kapasiteetti myytäisiin juuri näillä tuotteilla tai että loppuasiakkaan maksama hinta kirjautuisi Tuike Finland Oy:n liikevaihdoksi. [Google Cloud](https://cloud.google.com/products/compute/pricing).
 
 Taloudellisen vaikutuksen kannalta ketjussa on siksi kaksi eri kysymystä:
 
@@ -45,7 +45,7 @@ Siksi tässä julkaisussa **liikevaihto on tuotanto- ja rahavirran mittari, ei y
 
 Haminan datakeskus tunnetaan Googlen datakeskuksena, mutta talouslukuja tarkasteltaessa vastaan tulee nimi **Tuike Finland Oy**. Tämä ei tarkoita, että analyysi vaihtaisi kohdetta kesken kaiken. Google-brändi, Google-konserni, suomalainen oikeushenkilö ja Haminan fyysinen kampus ovat saman kokonaisuuden eri tarkastelutasoja.
 
-Googlen omassa konserniyhtiöiden alihankkijaluettelossa Tuike Finland Oy on merkitty Google Group Subprocessor -toimijaksi. Sen tehtäväksi on ilmoitettu **Data Center Operations** Suomessa ja osoitteeksi Ensontie 1, Hamina. Samassa lähteessä todetaan, että luettelon Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. [Google S072](/analyysit/datakeskukset/lahteet/#S072).
+Googlen omassa konserniyhtiöiden alihankkijaluettelossa Tuike Finland Oy on merkitty Google Group Subprocessor -toimijaksi. Sen tehtäväksi on ilmoitettu **Data Center Operations** Suomessa ja osoitteeksi Ensontie 1, Hamina. Samassa lähteessä todetaan, että luettelon Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. [Google](https://workspace.google.com/terms/subprocessors-20260302/).
 
 Tämän vuoksi julkaisussa erotetaan neljä tasoa:
 
@@ -62,7 +62,7 @@ Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä
 
 **Tutkimuskysymys:** mitä Googlen Haminan toiminnan taloudesta voidaan havaita, kun yhtiö ja kampus pidetään erillään?
 
-**Lähde ja havaintojakso:** Googlen konsernirakennetta kuvaava lähde, Tuike Finland Oy:n vuoden 2025 yritystiedot Proffissa ja Profinderissa sekä Haminan kaupungin 22.6.2026 tiedote. [S001–S003](/analyysit/datakeskukset/lahteet/#S001), [S072](/analyysit/datakeskukset/lahteet/#S072).
+**Lähde ja havaintojakso:** Googlen konsernirakennetta kuvaava lähde, Tuike Finland Oy:n vuoden 2025 yritystiedot Proffissa ja Profinderissa sekä Haminan kaupungin 22.6.2026 tiedote. [Proff](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/), [Google Workspace: Google Group Subprocessors, 2.3.2026](https://workspace.google.com/terms/subprocessors-20260302/).
 
 **Mitä lähteet osoittavat:** Google nimeää Tuike Finland Oy:n Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. Yritystietopalvelut ilmoittavat Tuiken vuoden 2025 liikevaihdoksi 574,374 M€, käyttökatteeksi 60,0 % ja henkilöstöksi 120. Haminan kaupunki puolestaan ilmoittaa kampuksella työskentelevän noin 500 henkilöä.
 
@@ -84,13 +84,13 @@ Hepokorpi, Kemi ja Kemi–Tornio eivät ole kolme satunnaista rinnakkaista casea
 | Metsä Fibre, Kemi | Energiaintensiivinen tehdas testaa, miten oma sähköntuotanto muuttaa vertailua | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
 | Outokumpu, Kemi–Tornio | Segmenttiraportointi testaa, miten konsernin sisäiset virrat ja toimipaikkarajat vaikuttavat lukuihin | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
 
-Taulukon pohjana ovat [Tuike ja Hamina S001–S003](/analyysit/datakeskukset/lahteet/#S001), [HEL16 D08](/analyysit/datakeskukset/lahteet/#D08) sekä [teollisuuslähteet S068–S071](/analyysit/datakeskukset/lahteet/#S068).
+Taulukon pohjana ovat [Proff](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/), [HEL16](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711) sekä [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Metsä Group: Kemin biotuotetehtaan avajaiset, 23.10.2024](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/), [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
 
 ## Hepokorpi: tuleva keskus ei ole vielä toteutunut keskus
 
 Hamina antaa tietoa toiminnassa olevasta datakeskuksesta. Hepokorpi tuo mukaan toisen tilanteen: **mitä voidaan päätellä hankkeesta ennen kuin käyttö on vakiintunut?**
 
-HEL16:n hakemus, täydennykset ja ympäristölupa kuvaavat suunniteltua toimintaa ja sen ehtoja. Lupapäätös sisältää muun muassa varavoimaa, polttoainevarastointia, vettä, melua, riskejä ja tarkkailua koskevia määräyksiä. Päätöksen hakemuskuvauksessa aloitusajaksi esitetään marraskuu 2026. [D01, D04, D08](/analyysit/datakeskukset/lahteet/#D01).
+HEL16:n hakemus, täydennykset ja ympäristölupa kuvaavat suunniteltua toimintaa ja sen ehtoja. Lupapäätös sisältää muun muassa varavoimaa, polttoainevarastointia, vettä, melua, riskejä ja tarkkailua koskevia määräyksiä. Päätöksen hakemuskuvauksessa aloitusajaksi esitetään marraskuu 2026. [Ympäristölupahakemuksen selostus, 9.12.2024](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711), [Tarkennus ja täydennys, 27.1.2025](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711), [Päätös 302/2025, 7.10.2025](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711).
 
 Näistä asiakirjoista ei kuitenkaan saada vielä käyttövuoden sähköä, vettä, melua tai henkilöstöä. Esimerkiksi varavoiman noin 161 MW on polttoainetehoa, ei datakeskuksen mitattu verkkosähkön ottoteho.
 
@@ -102,7 +102,7 @@ Avoimeksi jäävät käyttöönotto, myöhemmät päätösmuutokset, toteutuneet
 
 Kemin biotuotetehdas tuli mukaan, kun kävi selväksi, ettei energiaintensiivisiä laitoksia voi verrata pelkän “paljonko sähköä käytetään” -kysymyksen avulla.
 
-Metsä Fibren nykyinen kohdekuvaus ilmoittaa henkilöstöksi 300, vuotuisen sähköntuotannon kuvaukseksi 2,0 TWh ja sähkön omavaraisuudeksi 250 %. Vuoden 2024 avaamistiedote ilmoitti tehtaalle noin 250 ja koko tehdasalueelle noin 500 henkilöä. [S068–S069](/analyysit/datakeskukset/lahteet/#S068).
+Metsä Fibren nykyinen kohdekuvaus ilmoittaa henkilöstöksi 300, vuotuisen sähköntuotannon kuvaukseksi 2,0 TWh ja sähkön omavaraisuudeksi 250 %. Vuoden 2024 avaamistiedote ilmoitti tehtaalle noin 250 ja koko tehdasalueelle noin 500 henkilöä. [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Metsä Group: Kemin biotuotetehtaan avajaiset, 23.10.2024](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/).
 
 Tämä tekee näkyväksi yhden ratkaisevan eron: tehdas voi olla samaan aikaan suuri energiankäyttäjä ja sähkön nettotuottaja. Datakeskuksen verkkosähkön ottoa ei siksi voi verrata sellutehtaan kokonaissähköntuotantoon tai -kulutukseen yhdellä luvulla.
 
@@ -114,7 +114,7 @@ Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia, työpanos ja te
 
 Outokumpu tuli mukaan, kun auditissa haluttiin verrata datakeskuksen taloudellista rakennetta perinteiseen, energiaintensiiviseen teollisuuteen. Samalla vastaan tuli tuttu ongelma: **mikä organisaatiotaso oikeastaan tuottaa tarkasteltavan luvun?**
 
-Outokummun vuoden 2025 vuosikertomuksessa Ferrochrome-segmentin myynti oli 462 M€, josta ulkoista myyntiä 217 M€ ja konsernin sisäistä 245 M€. Käyttökate oli 137 M€ ja vuoden lopun henkilöstö 454 henkilötyövuotta. Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon. [S070–S071](/analyysit/datakeskukset/lahteet/#S070).
+Outokummun vuoden 2025 vuosikertomuksessa Ferrochrome-segmentin myynti oli 462 M€, josta ulkoista myyntiä 217 M€ ja konsernin sisäistä 245 M€. Käyttökate oli 137 M€ ja vuoden lopun henkilöstö 454 henkilötyövuotta. Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
 
 Tässä 462 M€ ei siis ole sama asia kuin ulkopuolisilta asiakkailta saatu 462 M€:n myynti. Lähes puolet ilmoitetusta myynnistä on segmentin sisäistä myyntiä muille konsernin osille. Tämä on vertailulle arvokas havainto juuri siksi, että myös Tuiken kohdalla konsernin sisäisten liiketoimien merkitys on avoin.
 
