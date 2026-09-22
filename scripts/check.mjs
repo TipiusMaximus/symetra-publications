@@ -65,4 +65,4 @@ assert.equal(Number(sx3Download.baselines.turnoverPerWorkforce.value.toFixed(3))
 assert(report.includes('Symetrix Matrix v0.3'),'Long report missing Symetrix v0.3 chapter');
 assert(files.some(f=>f.endsWith('/assets/og.png')),'OG image missing');
 assert.equal(files.filter(f=>f.endsWith('.html')).length,12);
-console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; Symetrix v0.1/v0.2/v0.3; publication allowlist.`);
+console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; evidence ledger; Symetrix v0.1/v0.2/v0.3; publication allowlist.`);
