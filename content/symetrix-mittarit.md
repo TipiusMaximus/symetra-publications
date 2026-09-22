@@ -273,6 +273,41 @@ Kemi: [Metsä Fibre: Kemin biotuotetehdas](https://www.metsagroup.com/metsafibre
 
 Tämä mittari ei ole sama asia kuin verkon nettokuorma. Kemin 250 % omavaraisuudesta voidaan johtaa noin 0,8 TWh omaa kulutusta ja +1,2 TWh tuotannon ja johdetun kulutuksen erotusta, mutta +1,2 TWh **ei ole tässä auditissa mitattu verkkoon vienti**.
 
+
+## Nettoriippuvuus sähköverkosta
+
+Pelkkä sähkönkulutus ei kerro, onko toimipaikka verkon nettokuluttaja vai nettotuottaja. Tätä varten käytetään kuvailevaa mittaria:
+
+**net grid dependence = (netto-otto verkosta − nettovienti verkkoon) / oma sähkönkulutus × 100**
+
+Tulkinta:
+
+- **+100 %** = koko oma sähkönkulutus tulee vuositasolla nettomääräisesti verkosta
+- **0 %** = vuositasolla nettosähköomavarainen
+- **negatiivinen arvo** = toimipaikka on nettoviejä sähköverkkoon
+
+### Kemi
+
+Metsä Fibre raportoi Kemin biotuotetehtaan tuottavan **2,0 TWh/v** sähköä, sähköomavaraisuuden olevan **250 %**, ja ylijäävän sähkön menevän valtakunnan verkkoon. Näistä voidaan johtaa:
+
+- oma sähkönkulutus ≈ **0,8 TWh/v**
+- vuosittainen nettosähköylijäämä ≈ **1,2 TWh/v**
+- net grid dependence ≈ **−150 %**
+
+Negatiivinen arvo tarkoittaa, että johdettu vuosittainen nettovienti vastaa noin 1,5-kertaisesti tehtaan omaa sähkönkulutusta.
+
+Tämä on edelleen **johdettu vuositasetunnus**, ei erikseen raportoitu mittarilta luettu bruttoverkko-otto tai -vienti. Tehdas voi esimerkiksi yksittäisinä tunteina ostaa sähköä verkosta ja toisina syöttää sitä enemmän takaisin.
+
+### Hamina
+
+Haminan nykyinen sähköestimaatti on noin **0,87 TWh/v**. Tuiken YVA kuvaa dieselgeneraattorit varavoimaksi kriittiselle laitteistolle, ei normaaliksi sähköntuotannoksi. Jos oletetaan, ettei normaalikäytössä ole merkittävää omaa sähköntuotantoa, saadaan skenaario:
+
+**S ~+100 %**
+
+Tätä ei käsitellä havaintona ennen kuin kampuksen oma tuotanto ja mitattu verkkotase on varmennettu.
+
+Tämä mittari tekee yhden kiinnostavan eron näkyväksi: datakeskus voi olla **erittäin hyvä PUE:ssa** mutta silti vahva verkon nettokuluttaja, kun taas sellutehdas voi käyttää paljon sähköä prosessissaan ja silti olla vuositasolla nettosähköntuottaja.
+
 ## Työllisyyden systeemirajat E0–E3
 
 Työllisyysluvut jaetaan ennen pisteytystä neljään eri rajaan. Eri rajojen lukuja **ei verrata keskenään**.

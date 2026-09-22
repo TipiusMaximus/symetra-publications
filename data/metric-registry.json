@@ -339,6 +339,27 @@
       ],
       "purpose": "Sellutehtaan sisäinen prosessitehokkuus; analoginen rooliltaan PUE:n kanssa siinä mielessä, että se kuvaa toimialan sisäistä tehokkuutta, mutta yksiköt ja fysikaalinen merkitys ovat eri.",
       "caveat": "Do not compare numerically to data-center PUE. Current Kemi value ~0.533 MWh/t is derived from 2.0 TWh production and 250% self-sufficiency against 1.50 Mt/y nameplate pulp."
+    },
+    {
+      "id": "net_grid_dependence",
+      "label": "Nettoriippuvuus sähköverkosta",
+      "formula": "(net grid import - net grid export) / own electricity consumption × 100",
+      "direction": "lower",
+      "baseline_status": "technical_zero",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "annual onsite_generation_or_net_export",
+        "annual_own_electricity_consumption"
+      ],
+      "purpose": "Erottelee nettokuluttajan ja nettotuottajan samalla skaalalla. 0% = vuositasolla nettosähköomavarainen, positiivinen = nettotuonti verkosta, negatiivinen = nettovienti verkkoon.",
+      "caveat": "Current Kemi value is derived from company-reported generation and self-sufficiency, not separately metered gross import/export. Hamina cannot yet be harmonized without explicit onsite-generation boundary.",
+      "current_examples": {
+        "kemi": {
+          "value": -150,
+          "unit": "percent_of_own_consumption",
+          "status": "derived_from_company_reported"
+        }
+      }
     }
   ]
 }
