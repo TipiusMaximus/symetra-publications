@@ -17,6 +17,15 @@ export function calculations() {
   const kemiImpliedConsumptionTWh = kemiProductionTWh / kemiSelfSufficiency;
   const kemiArithmeticSurplusTWh = kemiProductionTWh - kemiImpliedConsumptionTWh;
 
+  const tuikePersonnel = 120;
+  const tuikeRevenueM = 574.374;
+  const tuikeEbitdaM = 344.6244;
+  const ferrochromeSalesM = 462;
+  const ferrochromeExternalSalesM = 217;
+  const ferrochromeInternalSalesM = 245;
+  const ferrochromeEbitdaM = 137;
+  const ferrochromeFte = 454;
+
   return {
     tuike:{
       unit:'M€',
@@ -29,6 +38,28 @@ export function calculations() {
         'Lähtötiedon käyttökateprosentti on pyöristetty.',
         'EBITDA–EBIT-erotus ei ole suoraan luettu poistojen erä.',
         'Liikevaihto–EBITDA-jäännös ei osoita kotimaisten hankintojen määrää.'
+      ]
+    },
+    structuralComparison:{
+      status:'rakenteellinen vertailu, ei tuottavuus- tai yhteiskuntahyötymittari',
+      sourceRefs:['S001','S002','S070'],
+      units:'M€/henkilö tai M€/FTE',
+      tuike:{
+        boundary:'Tuike Finland Oy, henkilöstö 120',
+        revenuePerOwnPersonnel:Number((tuikeRevenueM/tuikePersonnel).toFixed(3)),
+        ebitdaPerOwnPersonnel:Number((tuikeEbitdaM/tuikePersonnel).toFixed(3))
+      },
+      outokumpuFerrochrome:{
+        boundary:'Ferrochrome-segmentti, vuoden lopun FTE 454',
+        salesPerFte:Number((ferrochromeSalesM/ferrochromeFte).toFixed(3)),
+        externalSalesPerFte:Number((ferrochromeExternalSalesM/ferrochromeFte).toFixed(3)),
+        ebitdaPerFte:Number((ferrochromeEbitdaM/ferrochromeFte).toFixed(3)),
+        internalSalesSharePercent:Number((ferrochromeInternalSalesM/ferrochromeSalesM*100).toFixed(1))
+      },
+      limitations:[
+        'Tuiken henkilöstöluku ja Outokummun vuoden lopun FTE eivät ole sama henkilöstömittari.',
+        'Oikeushenkilö ja liiketoimintasegmentti eivät ole sama organisaatioraja.',
+        'Liikevaihto tai EBITDA per henkilö ei mittaa kotimaista arvonlisää tai yhteiskunnallista hyötyä.'
       ]
     },
     kemiIllustration:{
