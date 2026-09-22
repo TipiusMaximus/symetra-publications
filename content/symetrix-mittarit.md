@@ -132,6 +132,19 @@ Hamina: [Google Data Centers: PUE](https://www.datacenters.google/efficiency/). 
 
 Nebius: [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly). Google raportoi Haminan vuoden 2024 vedenkulutukseksi 0,3 miljoonaa US-gallonaa, mutta ilman samaan rajaan kuuluvaa IT-kWh-lukua siitä ei rakenneta WUE-pistettä. [Google 2025 Environmental Report](https://sustainability.google/google-2025-environmental-report/).
 
+## Resurssivirran neljä ulottuvuutta
+
+Työllisyys sopii E0→E3-rajoihin, mutta vesi ja energia tarvitsevat moniulotteisen rajauksen. Jokaiselle resurssihavainnolle kirjataan vähintään:
+
+1. **lähde** — esimerkiksi makea pintavesi, talousvesi, merivesi tai kierrätetty vesi;
+2. **käyttörooli** — prosessi, jäähdytys tai palvelukäyttö;
+3. **kirjanpitokäsite** — withdrawal, discharge, consumption, throughput, lupa tai design;
+4. **status** — toteuma, estimaatti, suunnittelu, lupa tai johdettu arvo.
+
+Näin esimerkiksi Haminan **0,3 milj. gallonan ei-merivesi-nettokulutus** ja **80 Mm³/v merivedenoton lupakatto** voivat näkyä yhtä aikaa ilman että niitä summataan yhdeksi harhaanjohtavaksi “vedenkulutukseksi”. Sama sääntö koskee energiaa: **MW kapasiteettia ei muuteta MWh/v energiaksi ilman eksplisiittistä käyttöaikaoletusta.**
+
+[Lataa resource-flow taxonomy](/downloads/resource-flow-taxonomy.json).
+
 ## Vesi: sama resurssi, kolme eri suuretta
 
 Veden kohdalla Symetrix erottaa vähintään kolme suuretta: **vedenotto (withdrawal)**, **nettokulutus (consumption)** ja **jäähdytysveden läpivirtaus**. Niitä ei pisteytetä yhtenä lukuna.
