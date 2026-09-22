@@ -32,12 +32,16 @@ Haminan datakeskus tunnetaan Googlen datakeskuksena, mutta talouslukuja tarkaste
 
 Googlen omassa konserniyhtiöiden alihankkijaluettelossa Tuike Finland Oy on merkitty Google Group Subprocessor -toimijaksi. Sen tehtäväksi on ilmoitettu **Data Center Operations** Suomessa ja osoitteeksi Ensontie 1, Hamina. Samassa lähteessä todetaan, että luettelon Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. [Google S072](/analyysit/datakeskukset/lahteet/#S072).
 
-Tämän vuoksi julkaisussa käytetään kahta rinnakkaista näkymää:
+Tämän vuoksi julkaisussa erotetaan neljä tasoa:
 
-- **Tuike Finland Oy** kertoo siitä suomalaisesta oikeushenkilöstä, josta julkisia yritystalouden tunnuslukuja on saatavissa.
-- **Haminan kampus** kertoo fyysisestä toimipaikasta ja siellä työskentelevästä laajemmasta joukosta, johon voi kuulua myös muiden työnantajien henkilöstöä.
+| Taso | Mitä sillä tarkoitetaan tässä julkaisussa? | Esimerkki tiedosta |
+|---|---|---|
+| Alphabet / Google-konserni | Kansainvälinen konsernikokonaisuus | Konsernin omistus- ja palvelurakenne |
+| Tuike Finland Oy | Suomessa toimiva oikeushenkilö, jonka Google nimeää datakeskusoperaatioiden toimijaksi | Yhtiön liikevaihto, tulos ja oma henkilöstö |
+| Haminan kampus | Fyysinen datakeskusalue ja siellä tehtävä työ | Kampuksella työskentelevien henkilöiden määrä |
+| Suomessa syntyvä yhteiskunnallinen vaikutus | Yhtiö- ja kampuslukujen lisäksi verot, kotimaiset ostot, palkat, julkiset kustannukset ja muut vaikutukset | Tämän auditoinnin varsinainen arviointikohde |
 
-Näitä ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä näyttöä päätellä Googlen Haminassa tuotetun laskentapalvelun koko markkina-arvoa, koko Google-konsernin Suomessa syntyvää liikevaihtoa tai Suomeen jäävää nettohyötyä. Samoin kampuksella työskentelevien henkilöiden määrä ei ole sama asia kuin Tuike Finland Oy:n oma henkilöstömäärä.
+Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä näyttöä päätellä Googlen Haminassa tuotetun laskentapalvelun koko markkina-arvoa, koko Google-konsernin Suomessa syntyvää liikevaihtoa tai Suomeen jäävää nettohyötyä. Samoin kampuksella työskentelevien henkilöiden määrä ei ole sama asia kuin Tuike Finland Oy:n oma henkilöstömäärä.
 
 ### Mitä julkisista luvuista voidaan tämän jälkeen havaita?
 
