@@ -31,6 +31,7 @@ const evidenceRaw=await read('data/evidence-index.jsonl');
 const evidence=evidenceRaw.trim().split(/\n+/).filter(Boolean).map(JSON.parse);
 const metricRegistry=JSON.parse(await read('data/metric-registry.json'));
 const employmentBoundaries=JSON.parse(await read('data/employment-boundaries.json'));
+const energyWaterScenarios=JSON.parse(await read('data/energy-water-scenarios.json'));
 let links=[];try{links=JSON.parse(await read('data/link-check.json')).results;}catch(error){if(error.code!=='ENOENT')throw error;}
 const statuses=new Map(links.map(r=>[r.url,r]));
 const routes=new Set();
@@ -66,7 +67,7 @@ await put('analyysit/datakeskukset/raportti/index.html',template(reportMeta,repo
 await put('404.html',template({title:'Sivua ei löytynyt',description:'Osoite on voinut muuttua. Julkaisun sisältö löytyy etusivulta ja analyysin hakemistosta.',route:'/404.html',updated:config.updated,layout:'404'},`<p><a href="${u('/')}">Palaa Symetran etusivulle</a> tai <a href="${u('/analyysit/datakeskukset/')}">avaa datakeskusanalyysi</a>.</p>`));
 await put('downloads/datakeskukset.md',reportMD);
 await put('downloads/evidence-index.jsonl',evidenceRaw.endsWith('\n')?evidenceRaw:evidenceRaw+'\n');
-for(const [name,data] of [['sources',sources],['documents',documents],['questions',questions.map(q=>({...q.meta,body:q.body}))],['calculations',calculations()],['symetrix-v0.1',symetrixMatrixV01()],['symetrix-v0.2',symetrixMatrixV02()],['symetrix-v0.3',symetrixMatrixV03()],['evidence-index',evidence],['evidence-coverage',evidenceCoverage(evidence)],['metric-registry',metricRegistry],['employment-boundaries',employmentBoundaries]])await put(`downloads/${name}.json`,JSON.stringify(data,null,2)+'\n');
+for(const [name,data] of [['sources',sources],['documents',documents],['questions',questions.map(q=>({...q.meta,body:q.body}))],['calculations',calculations()],['symetrix-v0.1',symetrixMatrixV01()],['symetrix-v0.2',symetrixMatrixV02()],['symetrix-v0.3',symetrixMatrixV03()],['evidence-index',evidence],['evidence-coverage',evidenceCoverage(evidence)],['metric-registry',metricRegistry],['employment-boundaries',employmentBoundaries],['energy-water-scenarios',energyWaterScenarios]])await put(`downloads/${name}.json`,JSON.stringify(data,null,2)+'\n');
 const csvValue=x=>'"'+String(x).replaceAll('"','""')+'"';await put('downloads/sources.csv','\ufeff'+[['id','title','url','verification'],...sources.map(s=>[s.id,s.title,s.url,s.verification])].map(row=>row.map(csvValue).join(',')).join('\r\n'));
 await put('.nojekyll','');
 await put('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...pages.map(p=>p.meta.route),reportMeta.route].map(r=>`<url><loc>${e(origin+u(r))}</loc><lastmod>${config.updated}</lastmod></url>`).join('')}</urlset>`);
