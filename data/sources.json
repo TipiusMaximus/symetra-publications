@@ -508,5 +508,11 @@
     "title": "Outokumpu 2026: Kemi–Tornio-ekosysteemin energiankulutus",
     "url": "https://www.outokumpu.com/en/expertise/industrial-evolution-insights/2026/circular-ecosystem-powering-industrial-side-streams",
     "verification": "Outokumpu ilmoittaa Tornion tehdasalueen kokonaisenergiankulutukseksi noin 4 TWh vuodessa. Tarkistettu 22.9.2026; luku ei ole Ferrochrome-segmentin erillinen kulutus."
+  },
+  {
+    "id": "S086",
+    "title": "Metsä Fibre: key figures and financial reporting",
+    "url": "https://www.metsagroup.com/metsafibre/about-metsafibre/key-figures-and-financial-reporting/",
+    "verification": "Metsä Fibre ilmoittaa vuoden 2025 liikevaihdoksi 2,6 mrd € ja henkilöstöksi noin 1 400. Käytetään Kemi Bio -sarakkeessa yritystason proxy-tietona, ei Kemin tehtaan omana lukuna. Tarkistettu 22.9.2026."
   }
 ]
