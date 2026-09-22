@@ -514,5 +514,17 @@
     "title": "Metsä Fibre: key figures and financial reporting",
     "url": "https://www.metsagroup.com/metsafibre/about-metsafibre/key-figures-and-financial-reporting/",
     "verification": "Metsä Fibre ilmoittaa vuoden 2025 liikevaihdoksi 2,6 mrd € ja henkilöstöksi noin 1 400. Käytetään Kemi Bio -sarakkeessa yritystason proxy-tietona, ei Kemin tehtaan omana lukuna. Tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S087",
+    "title": "Jaakkola 2026: The Fast Growing Role of ICT in Global Electricity Consumption",
+    "url": "https://journals.sagepub.com/doi/full/10.3233/FAIA251716",
+    "verification": "Artikkeli julkaistu 7.5.2026. Haminan Googlen julkisen teknisen kulutustiedon todetaan puuttuvan; epäsuora laskelma arvioi vuosikulutukseksi noin 870 GWh ja PUE:ksi 1,1. Tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S088",
+    "title": "Metsä Fibre 20.1.2025: Every drop counts",
+    "url": "https://www.metsagroup.com/metsafibre/news-and-publications/news-and-releases/stories/2025/every-drop-counts/",
+    "verification": "Kemin biotuotetehtaan raakaveden suunnitteluarvo 10 m³ tuotettua sellutonnia kohti tarkistettu 22.9.2026."
   }
 ]
