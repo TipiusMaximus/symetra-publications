@@ -49,9 +49,7 @@ Kansalaisaloite 17997 toimii yhtenä tutkimuskysymysten lähteenä. Aloitetta ko
 
 ## Aineisto ja toimitusprosessi
 
-Analyysi on koottu julkisista asiakirjoista, käyttäjän toimittamista julkisesti ladattavista PDF-tiedostoista sekä aiemmasta tutkimuskeskustelusta. Tekoälyä on käytetty aineiston kokoamisessa, lähdetarkistuksessa, laskennassa ja julkaisun toteutuksessa. Tekoälyn vastaus ei ole itsenäinen evidenssilähde.
-
-Historiallinen keskustelu sisältää alustavia tulkintoja ja myöhemmin korjattuja lukuja. Se säilytetään erillisenä tausta-arkistona; yksityisiä viestejä ei sisällytetä verkkosivuun tai julkiseen repositorioon. [Arkiston kattavuus ja julkaistava aineisto](/analyysit/datakeskukset/lahteet/#keskusteluarkisto).
+Analyysi on koottu julkisista verkkolähteistä, viranomaisasiakirjoista ja julkisesti saatavista PDF-aineistoista. Tekoälyä on käytetty aineiston kokoamisessa, lähdetarkistuksessa, laskennassa ja julkaisun toteutuksessa. Tekoälyn vastaus ei ole itsenäinen evidenssilähde.
 
 Lähteiden ajantasaisuus on päivätty. Linkin tekninen toimivuus ei tarkoita sisällön uudelleenvarmennusta. Hallinnollisten asiakirjojen alkuperäinen päätöspäivä erotetaan siitä, milloin asiakirja luettiin. Lähteen saatavuuseste merkitään näkyviin.
 
