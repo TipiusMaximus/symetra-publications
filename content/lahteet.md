@@ -11,17 +11,45 @@ layout: sources
 ---
 ## Laskelmat
 
-Laskentaketju käyttää Tuiken vuoden 2025 yritystietoja: liikevaihto 574,374 M€, lähteen pyöristetty käyttökate 60,0 % ja liiketulos 30,305 M€. [Proff — Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder — Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717). Alkuperäistä tilinpäätöstä liitetietoineen ei ole luettu.
+Tällä sivulla julkaistaan vain laskelmia, joilla on analyysissä jokin tehtävä. Jokainen johdettu luku erotetaan lähteestä suoraan luetusta luvusta.
 
-| Laskutoimitus | Laskentatulos | Tulkintaraja |
+### Tuike Finland Oy: mitä 60 prosentin käyttökate tarkoittaa euroina?
+
+Tuiken vuoden 2025 yritystiedoissa liikevaihto on 574,374 M€, käyttökateprosentti 60,0 % ja liiketulos 30,305 M€. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717).
+
+Pyöristetystä käyttökateprosentista voidaan johtaa:
+
+**574,374 M€ × 60,0 % ≈ 344,6 M€ käyttökate.**
+
+Tämä auttaa hahmottamaan yhtiön tulorakennetta, mutta sitä ei tulkita vapaaksi kassavirraksi, Suomen arvonlisäksi tai yhteiskunnalliseksi nettohyödyksi.
+
+Myös EBITDA–EBIT-erotus on laskennallisesti noin **314,3 M€**. Se on tutkimuksellisesti kiinnostava juuri siksi, että alkuperäistä tilinpäätöstä liitetietoineen ei ole vielä luettu: erotuksen sisältöä ei nimetä oletuksella poistoiksi tai muuksi yksittäiseksi eräksi.
+
+Sen sijaan liikevaihdon ja käyttökatteen erotusta ei nosteta päämittariksi. Se voidaan laskea aritmeettisesti, mutta ilman kulurakennetta se ei kerro esimerkiksi kotimaisten hankintojen määrää.
+
+### Kemi: sama sähkölähde, eri laskentatapa
+
+Metsä Fibre ilmoittaa Kemin biotuotetehtaan sähköntuotannoksi 2,0 TWh/v ja sähköomavaraisuudeksi 250 %. [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/).
+
+Jos 250 % tulkitaan havainnollistavasti suhteeksi **oma sähköntuotanto / oma sähkönkulutus = 2,5**, voidaan johtaa:
+
+| Laskelma | Johdettu tulos | Status |
 |---|---:|---|
-| 574,374 × 0,600 | 344,6244 M€ → noin 344,6 M€ | Käyttökatearvio; ei vapaa kassavirta |
-| 344,6244 − 30,305 | 314,3194 M€ → noin 314,3 M€ | EBITDA–EBIT-erotus; ei suoraan luettu poistojen erä |
-| 574,374 − 344,6244 | 229,7496 M€ → noin 229,7 M€ | Jäännös; ei kotimaisten hankintojen määrä |
+| 2,0 TWh / 2,5 | noin 0,8 TWh/v oma sähkönkulutus | Johdettu havainnollistus |
+| 2,0 TWh − 0,8 TWh | noin +1,2 TWh/v tuotannon ja johdetun kulutuksen erotus | Johdettu havainnollistus, **ei mitattu nettovienti** |
 
-Laskennan ylimääräiset desimaalit näyttävät ketjun, eivät lähtötiedon tarkkuutta. Tuotosta, palkkoja, hankintoja ja veroja ei lasketa yhteen samaksi nettohyödyksi.
+Tämä laskelma ei korvaa tehtaan todellista verkosta ottoa ja verkkoon syöttöä. Sen tarkoitus on osoittaa mittariherkkyys:
 
-[Lataa laskelmat JSON-muodossa](/downloads/calculations.json). Repositoriossa laskenta tehdään kokonaislukuyksiköillä ja testataan; verkkosivun luvut täsmäytetään laskentatuloksiin.
+- jos tarkastellaan kaikkea prosessissa käytettyä sähköä, Kemi on merkittävä sähkönkäyttäjä;
+- jos tarkastellaan omaa tuotantoa suhteessa omaan kulutukseen, sama tehdas näyttää erittäin vahvalta;
+- jos nimittäjäksi valitaan verkosta otettu sähkö, mittaria ei voida vielä laskea ilman mitattua verkkotasetta;
+- jos verkko-otto olisi hyvin pieni tai negatiivinen nettotaseen vuoksi, jotkin suhdeluvut voisivat kasvaa poikkeuksellisen suuriksi tai muuttua tulkinnallisesti käyttökelvottomiksi.
+
+Tämä ei ole virhe, joka pitäisi peittää. Se kertoo, että **mittarin valinta sisältää kysymyksen siitä, mitä vaikutusta pidetään olennaisena**. [Mittari muuttaa vastausta](/analyysit/datakeskukset/vertailu/#mittari-muuttaa-vastausta-kemin-sahkoesimerkki).
+
+### Laskelmien status
+
+Laskelmat ja niiden oletukset ovat myös [ladattavassa JSON-aineistossa](/downloads/calculations.json). Siellä Tuiken yritystalouden laskut ja Kemin sähköesimerkki on erotettu omiksi objekteikseen. Kemin esimerkin status on koneellisesti merkitty **johdetuksi havainnollistukseksi, ei mitatuksi verkkotaseeksi**.
 
 ## Aineiston kattavuus
 
