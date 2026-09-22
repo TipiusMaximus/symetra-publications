@@ -38,11 +38,11 @@ Ensimmäiseen ei tämän auditin aineistolla voida vastata Haminan osalta luotet
 
 ## Hamina näyttää, miksi laskentaraja ratkaisee
 
-Haminan datakeskus tunnetaan Googlen toimintana, mutta suomalaiset yritystalouden luvut löytyvät **Tuike Finland Oy:stä**. Google nimeää Tuiken Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. [S072](/analyysit/datakeskukset/lahteet/#S072).
+Haminan datakeskus tunnetaan Googlen toimintana, mutta suomalaiset yritystalouden luvut löytyvät **Tuike Finland Oy:stä**. Google nimeää Tuiken Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. [Google Workspace: Google Group Subprocessors, 2.3.2026](https://workspace.google.com/terms/subprocessors-20260302/).
 
 Tämän vuoksi Google-konserni, Tuike Finland Oy, Haminan fyysinen kampus ja Suomessa syntyvä yhteiskunnallinen vaikutus on erotettava toisistaan.
 
-Tuiken vuoden 2025 yritystiedoissa henkilöstömäärä on 120. Haminan kaupunki ilmoitti kesäkuussa 2026 kampuksella työskentelevän noin 500 henkilöä. Nämä eivät ole kaksi arviota samasta luvusta, vaan kaksi eri laskentarajaa eri ajankohdilta. **500 − 120 ei siis ole varmennettu alihankkijamäärä.** [S001–S003](/analyysit/datakeskukset/lahteet/#S001).
+Tuiken vuoden 2025 yritystiedoissa henkilöstömäärä on 120. Haminan kaupunki ilmoitti kesäkuussa 2026 kampuksella työskentelevän noin 500 henkilöä. Nämä eivät ole kaksi arviota samasta luvusta, vaan kaksi eri laskentarajaa eri ajankohdilta. **500 − 120 ei siis ole varmennettu alihankkijamäärä.** [Proff](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/).
 
 Sama näkyy taloudessa. Tuike Finland Oy:n vuoden 2025 liikevaihdoksi ilmoitetaan 574,374 M€. Se kertoo suuresta suomalaisen oikeushenkilön läpi kulkevasta liiketoiminnan volyymista, mutta **574 miljoonaa euroa ei ole sama asia kuin Suomeen jäävä yhteiskunnallinen hyöty**. Siihen tarvitaan erikseen tietoa palkoista, kotimaisista ostoista, veroista, pääoma- ja omistajatuloista, konsernin sisäisistä liiketoimista sekä julkisista kustannuksista. [Talousvaikutukset](/analyysit/datakeskukset/vaikutukset/#talous-574-miljoonaa-euroa-on-lahtopiste-ei-hyotyluku).
 
@@ -58,7 +58,7 @@ Yrityksen myynti voi olla suuri ilman, että koko summa jää Suomeen. Toisaalta
 
 ### MW, MWh ja sähköntase on erotettava
 
-Liittymisteho tai nimellisteho ei ole sama asia kuin vuoden energiankulutus. Fingridin noin 40 prosentin kulutuskasvukuva on ehdollinen hankkeiden toteutumiselle, eikä se koske vain datakeskuksia. Kemin biotuotetehdas puolestaan ilmoittaa tuottavansa sähköä yli oman tarpeensa, joten sen energiatalous on rakenteeltaan erilainen kuin verkosta sähköä ottavan datakeskuksen. [S048–S049](/analyysit/datakeskukset/lahteet/#S048), [S068](/analyysit/datakeskukset/lahteet/#S068).
+Liittymisteho tai nimellisteho ei ole sama asia kuin vuoden energiankulutus. Fingridin noin 40 prosentin kulutuskasvukuva on ehdollinen hankkeiden toteutumiselle, eikä se koske vain datakeskuksia. Kemin biotuotetehdas puolestaan ilmoittaa tuottavansa sähköä yli oman tarpeensa, joten sen energiatalous on rakenteeltaan erilainen kuin verkosta sähköä ottavan datakeskuksen. [Elokuun tiedote](https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun--rinnalle-tarvitaan-lisaa-saatovoimaa/), [Syyskuun tiedote](https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/fingridin-selvitys-teollisuuskulutuksen-sijoittuminen-lahelle-sahkontuotantoa-lisaa-kantaverkon-liitettavyytta-merkittavasti/), [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/).
 
 ### Verkkoinvestointia ei voi automaattisesti kohdistaa yhdelle käyttäjälle
 
@@ -66,7 +66,7 @@ Hepokorven aineisto osoittaa, että sama sähköverkon vahvistus voi palvella us
 
 ### Lupa, suunnitelma ja toteuma ovat eri näyttötasoja
 
-HEL16:n lupa kertoo toiminnan sallituista rajoista ja velvoitteista. Se ei vielä kerro toteutunutta vedenkäyttöä, energiankulutusta, melua tai hukkalämmön toimitusta. Lupatieto on vahvaa näyttöä siitä, **mitä saa tehdä ja mitä pitää seurata**, ei siitä mitä käytössä lopulta tapahtuu. [D08](/analyysit/datakeskukset/lahteet/#D08).
+HEL16:n lupa kertoo toiminnan sallituista rajoista ja velvoitteista. Se ei vielä kerro toteutunutta vedenkäyttöä, energiankulutusta, melua tai hukkalämmön toimitusta. Lupatieto on vahvaa näyttöä siitä, **mitä saa tehdä ja mitä pitää seurata**, ei siitä mitä käytössä lopulta tapahtuu. [Päätös 302/2025, 7.10.2025](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711).
 
 ## Miksi mukana ovat Kemi ja Outokumpu?
 
@@ -74,7 +74,7 @@ Valmistavan teollisuuden verrokkeja ei tuotu mukaan todistamaan, että datakesku
 
 **Kemi** näyttää, että energiankäyttöä ei voi verrata ilman omaa tuotantoa, verkosta ottoa ja verkkoon vientiä.
 
-**Outokumpu** näyttää, että konsernin segmenttiluku ei ole sama asia kuin yhden tehtaan tai ulkoisen myynnin luku. Ferrochrome-segmentin vuoden 2025 myynnistä osa on konsernin sisäistä, mikä tekee siitä hyvän vertailuparin Tuiken konsernirajaongelmalle. [S070–S071](/analyysit/datakeskukset/lahteet/#S070).
+**Outokumpu** näyttää, että konsernin segmenttiluku ei ole sama asia kuin yhden tehtaan tai ulkoisen myynnin luku. Ferrochrome-segmentin vuoden 2025 myynnistä osa on konsernin sisäistä, mikä tekee siitä hyvän vertailuparin Tuiken konsernirajaongelmalle. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
 
 **Hepokorpi** puolestaan näyttää, ettei tulevaa datakeskusta voi käsitellä samoin kuin jo toimivaa laitosta: suunnitelma, lupa, rakennettu kapasiteetti ja toteutunut käyttö on erotettava.
 
@@ -84,7 +84,7 @@ Näiden verrokkien tärkein tehtävä on siis testata **mittaustapaa**, ei tuott
 
 Yhteiskunnallinen vaikutus ei ratkea vain vertaamalla kahta toimivaa laitosta toisiinsa. Pitää myös kysyä, **mitä samoilla resursseilla olisi realistisesti tapahtunut ilman tarkasteltavaa hanketta**.
 
-Haminassa paperitehtaan sulkeminen vuonna 2008 tapahtui ennen Googlen kiinteistökauppaa vuonna 2009 ja datakeskuksen avaamista vuonna 2011. Tämä aikajärjestys ei tue tulkintaa, että Google olisi syrjäyttänyt samanaikaisesti toimivan paperitehtaan. Samalla se ei todista vaihtoehtoiskustannusta nollaksi. [S028–S029](/analyysit/datakeskukset/lahteet/#S028).
+Haminassa paperitehtaan sulkeminen vuonna 2008 tapahtui ennen Googlen kiinteistökauppaa vuonna 2009 ja datakeskuksen avaamista vuonna 2011. Tämä aikajärjestys ei tue tulkintaa, että Google olisi syrjäyttänyt samanaikaisesti toimivan paperitehtaan. Samalla se ei todista vaihtoehtoiskustannusta nollaksi. [Stora Enso Oyj, emoyhtiön tilinpäätös 2010](https://www.storaenso.com/-/media/documents/download-center/documents/annual-reports/2010/stora_enso_eng_parent_company_financial_statements_2010), [Google, Haminan datakeskuksen aikajana](https://datacenters.google/locations/hamina-finland/).
 
 Todellinen vaihtoehto tarvitsee sijainnin, ajan, kysynnän, rahoituksen, verkkotarpeen ja toteuttamiskelpoisuuden. Kemi tai Tornio eivät ole automaattisesti vaihtoehtoja Haminan tontille. [Vaihtoehtoiskustannus](/analyysit/datakeskukset/vaikutukset/#vaihtoehtoiskustannus-mita-olisi-oikeasti-tapahtunut-ilman-datakeskusta).
 
