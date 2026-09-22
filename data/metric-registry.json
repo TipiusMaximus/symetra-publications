@@ -266,10 +266,10 @@
           "period": "2024"
         },
         "kemi": {
-          "value": 6442,
+          "value": 5669.4,
           "unit": "m3_per_MEUR_at_least_approx",
           "status": "derived_cross_boundary_floor",
-          "note": "Conservative floor from Kemi design proxy divided by whole Metsä Fibre 2024 revenue."
+          "note": "Conservative floor from 13.2 Mm3/y Kemi design proxy divided by whole Metsä Fibre 2024 revenue."
         }
       }
     },
