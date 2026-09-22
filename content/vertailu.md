@@ -110,6 +110,29 @@ Tarvitaan erikseen **oma tuotanto, oma kulutus, verkosta otto ja verkkoon vienti
 
 Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia, työpanos ja tehdaskohtainen arvonlisä samoilla rajauksilla kuin datakeskuksissa.
 
+## Rakennelaskelma: paljonko rahavirtaa näkyy omaa henkilöstöä kohti?
+
+Tuiken ja Outokummun Ferrochrome-segmentin julkisista luvuista voidaan tehdä yksi havainnollinen rakennevertailu. Se ei mittaa tuottavuutta tai yhteiskunnallista hyötyä, vaan sitä, kuinka paljon myyntiä ja käyttökatetta näkyy suhteessa raportoituun omaan henkilöstöön.
+
+Tuiken vuoden 2025 luvut ovat liikevaihto 574,374 M€, noin 344,6 M€:n johdettu käyttökate ja henkilöstö 120. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717).
+
+Outokummun Ferrochrome-segmentin vuoden 2025 myynti oli 462 M€, käyttökate 137 M€ ja vuoden lopun henkilöstö 454 FTE. Myynnistä 217 M€ oli ulkoista ja 245 M€ konsernin sisäistä. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b).
+
+| Rakenneluku | Tuike Finland Oy | Outokumpu Ferrochrome |
+|---|---:|---:|
+| Myynti / oma henkilöstö tai FTE | noin 4,786 M€/hlö | noin 1,018 M€/FTE |
+| Ulkoinen myynti / FTE | ei eroteltu julkisessa aineistossa | noin 0,478 M€/FTE |
+| Käyttökate / oma henkilöstö tai FTE | noin 2,872 M€/hlö | noin 0,302 M€/FTE |
+| Konsernin sisäisen myynnin osuus | avoin | noin 53,0 % |
+
+Ensimmäinen reaktio voisi olla, että Tuike näyttää moninkertaisesti “tehokkaammalta”. Se olisi liian vahva tulkinta.
+
+Tuiken luku on oikeushenkilön henkilöstömäärä, Outokummun luku liiketoimintasegmentin vuoden lopun FTE. Datakeskuksen fyysinen kampus käyttää lisäksi muiden työnantajien työpanosta, jota Tuiken 120 henkilön luku ei sisällä. Outokummun segmentissä taas yli puolet ilmoitetusta myynnistä on konsernin sisäistä.
+
+Siksi tämä vertailu kertoo ennen kaikkea **tuotanto- ja organisaatiorakenteen erilaisuudesta**: pääoma- ja infrastruktuuri-intensiivisessä toiminnassa suuri rahavirta voi näkyä hyvin pienellä omalla henkilöstöllä. Se ei yksin kerro, kuinka paljon kotimaista arvonlisää, kokonaisuutta palvelevaa työpanosta tai yhteiskunnallista hyötyä syntyy.
+
+Tämä on toinen esimerkki siitä, miksi yhden suhdeluvun korkea arvo ei vielä ole kokonaisarvio.
+
 ## Mittari muuttaa vastausta: Kemin sähköesimerkki
 
 Vertailun tarkoitus ei ole löytää yhtä kaavaa, joka automaattisesti kertoo mikä investointi on paras. Sama toiminta voi näyttää hyvin erilaiselta sen mukaan, **mitä kysytään ja mikä suure valitaan nimittäjäksi**.
