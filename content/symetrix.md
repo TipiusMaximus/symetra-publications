@@ -54,6 +54,6 @@ Kemin sähköomavaraisuus näyttää toisen tyyppisen vahvuuden: 250 % oma tuota
 
 Kysymysmerkki on tutkimustulos, ei tyhjä solu. Tällä hetkellä arvokkaimmat puuttuvat havainnot ovat:
 
-**Kemin tehtaan oma liikevaihto/arvonlisä ja työpanos · kampuskohtainen WUE Haminalle · oma tuotanto/verkko-otto datakeskuksille · Ferrochrome-segmentin erillinen energiankulutus · HEL16:n käyttövaiheen toteuma.**
+**Kemin tehtaan oma liikevaihto/arvonlisä ja työpanos · Haminan kampuskohtainen WUE (vedenkäyttö tunnetaan, mutta samaan rajaan kuuluva IT-kWh puuttuu) · oma tuotanto/verkko-otto datakeskuksille · Ferrochrome-segmentin erillinen energiankulutus · HEL16:n käyttövaiheen toteuma.**
 
 Kaikki muu nippelitieto — esimerkiksi Haminan vedenkulutus, Nebiuksen 19,5 GWh mitattu hukkalämmön vienti ja Tornion koko tehdasalueen noin 4 TWh energiankulutus — pidetään [mittarien perustelusivulla](/analyysit/datakeskukset/symetrix-mittarit/), kunnes sille löytyy vertailukelpoinen nimittäjä ja baseline.
