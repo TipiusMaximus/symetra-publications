@@ -90,30 +90,32 @@ Sama resurssia ei myöskään lasketa kahdesti: esimerkiksi julkinen avustus on 
 
 Avoimeksi jäävät toteutuneet kokonaiskustannukset, liittymismaksut, kustannusten jakautuminen käyttäjille sekä uskottava verkon kehitys ilman kyseistä hanketta. Tämä on tärkeää myös vaihtoehtoiskustannuksessa: verkkokapasiteetti voi olla niukka resurssi, vaikka sen arvoa ei saataisikaan yhdellä euromäärällä.
 
-## Ympäristö
+## Ympäristö: lupa kertoo ehdoista, ei toteutuneesta vaikutuksesta
 
-**Tutkimuskysymys:** mitä vedestä, lämmöstä, varavoimasta, melusta ja maankäytöstä tiedetään kohteittain?
+Ympäristöaineistossa tutkimuksen tärkein oppi oli erottaa toisistaan **suunnitelma, lupa ja toteuma**.
 
-**Lähde ja jakso:** HEL16:n 2024–2025 hakemus- ja päätösaineisto sekä Haminan lupavaliokunnan 16.6.2026 § 44. [D01, D04, D08](/analyysit/datakeskukset/lahteet/#D01), [S022](/analyysit/datakeskukset/lahteet/#S022).
+HEL16:n ympäristölupa kertoo, millä ehdoilla toimintaa saa harjoittaa. Hakemus ja lupapäätös sisältävät esimerkiksi vedenkäyttöä, varavoimaa, melua, riskejä ja tarkkailua koskevia tietoja. HEL16:n suunniteltu vedenkäyttö on noin 3 000 m³ vuodessa, ja lupa sisältää varavoimaa sekä melumittausta koskevia ehtoja. [D08](/analyysit/datakeskukset/lahteet/#D08).
 
-**Osoittaa:** HEL16:n suunniteltu vedenkäyttö on noin 3 000 m³/v (D08 s. 15). Lupa sallii varavoimassa kevyen polttoöljyn tai hakemuksen mukaisen biopolttoaineen. Käyttöraja on yksikkökohtaisesti 500 h/v kolmen vuoden liukuvana keskiarvona. Käyttötoiminnan melumittaus edellytetään 12 kuukaudessa toiminnan alkamisesta (s. 50–54). Haminan murskauspäätös sisältää torjunta- ja seurantamääräyksiä.
+Tämä ei vielä kerro, kuinka paljon vettä käytetään toteutuneessa toiminnassa, kuinka usein varavoimaa käytetään tai täyttyvätkö melua ja muita vaikutuksia koskevat ehdot käytännössä. Lupapäätös on siis vahvaa näyttöä **toiminnan sallituista rajoista ja velvoitteista**, mutta ei mittaus toteutuneesta ympäristökuormasta.
 
-**Ei osoita:** lupa ei takaa fossiilitonta käyttöä, haitattomuutta tai ehtojen toteutumista. Hakemuksen vesitaseen likimääräisistä osavirroista ei saada tarkkaa mitattua tasetta. HEL16:n suunnitteluarvoja ei yleistetä kaikkiin datakeskuksiin.
+Sama koskee hukkalämpöä. Lämmön talteenottovalmius, todellisuudessa toimitettu lämpö ja sillä korvatun muun lämmöntuotannon nettohyöty ovat eri asioita. Suomessa datakeskusten hukkalämmön hyödyntämistä koskee sääntely, mutta sääntelyvelvoitteen olemassaolo ei itsessään osoita saavutettua hyötyä. [A03](/analyysit/datakeskukset/vaiteet/#A03).
 
-**Vertailukelpoisuus:** vedenotto, kulutus, palautus ja lämpökuorma eritellään. Hukkalämmön talteenottovalmius, toimitettu lämpö ja korvatun tuotannon nettohyöty ovat eri asioita. Ympäristövelvoite ei todista kaikkien jäljelle jäävien haittojen korvaamista.
+Haminan ja HEL16:n aineistot osoittavat myös, että paikalliset vaikutukset eivät rajoitu vain sähköön: melu, veden käyttö, maankäyttö, rakentaminen, polttoainevarastointi ja lämpövirrat voivat kaikki olla merkityksellisiä. [S013–S023](/analyysit/datakeskukset/lahteet/#S013).
 
-**Avoin tieto:** käyttöönotto ja toteutuneet mittaukset, toimitettu lämpö ja sen apusähkö, jäännöshaitat sekä yhteismitallinen laitteiden elinkaari- ja jätearvio. Lämmön hyödyntämisen sääntely käsitellään erikseen [A03:ssa](/analyysit/datakeskukset/vaiteet/#A03).
+Jatkoa varten tarvitaan ennen kaikkea käyttövaiheen mittauksia: toteutunut vedenotto ja palautus, toimitettu lämpö ja sen apusähkö, varavoiman todellinen käyttö, melumittaukset sekä yhteismitallinen laitteiden elinkaari- ja jätearvio. Ilman näitä suunnittelutietoa ei muuteta toteumaksi.
 
-## Vaihtoehtoiskustannus
+## Vaihtoehtoiskustannus: mitä olisi oikeasti tapahtunut ilman datakeskusta?
 
-**Tutkimuskysymys:** mitä samoilla maa-, työ-, pääoma- ja verkkoresursseilla olisi voinut tapahtua?
+Kun työ, talous, sähkö, verkko ja ympäristö oli saatu eroteltua, jäljelle jäi ehkä vaikein kysymys: **mihin datakeskusta pitäisi verrata?**
 
-**Lähde ja jakso:** Stora Enson tilinpäätösaineisto 2010 ja Googlen Haminan aikajana; Fingridin nykyiset sijoittumis- ja liittymisrajoitteet. [S028–S031](/analyysit/datakeskukset/lahteet/#S028), [S049](/analyysit/datakeskukset/lahteet/#S049).
+Hamina tarjoaa tähän hyvän esimerkin. Summan paperitehtaan sulkeminen vuonna 2008 edelsi Googlen kiinteistökauppaa vuonna 2009 ja datakeskuksen avaamista vuonna 2011. Tämän aikajärjestyksen perusteella Google ei syrjäyttänyt samanaikaisesti toimivaa paperitehdasta. [S028–S029](/analyysit/datakeskukset/lahteet/#S028).
 
-**Osoittaa:** Haminan paperitehtaan sulkeminen 2008 edelsi Googlen kiinteistökauppaa 2009 ja datakeskuksen avaamista 2011. Laajennuksen vaikutus on eri kysymys kuin alkuperäisen alueen uudelleenkäytön vaikutus.
+Tästä ei kuitenkaan seuraa, että datakeskuksen vaihtoehtoiskustannus olisi nolla. Oikea kysymys on: **mikä realistinen hanke, käyttö tai kehityspolku olisi ollut mahdollinen samalle maalle, sähkölle, verkkokapasiteetille, työvoimalle ja pääomalle samassa ajassa?**
 
-**Ei osoita:** Google ei näiden tapahtumien järjestyksen perusteella syrjäyttänyt samanaikaisesti toimivaa paperitehdasta. Aineistossa ei yksilöidä valmista vaihtoehtoista investointia, joka olisi estynyt juuri datakeskuksen vuoksi. Tämä ei osoita vaihtoehtoiskustannusta nollaksi.
+Kemi tai Tornio eivät siksi ole automaattisia “vaihtoehtoja Haminalle”. Ne ovat vertailukohteita, joilla testataan mittareita ja tuotantorakenteiden eroja. Todellinen vaihtoehtoiskustannus tarvitsee sijaintiin ja aikaan sidotun vastinparin.
 
-**Vertailukelpoisuus:** uuden vaiheen vaihtoehto voi olla olemassa oleva kampus ilman laajennusta. Koko historiallisen kampuksen hyötyä ei kirjata uuden vaiheen lisähyödyksi. Kemi tai Tornio ei ole automaattisesti toteuttamiskelpoinen vaihtoehto Haminan tontille.
+Myös laajennushankkeissa vaihtoehto muuttuu. Uuden datakeskusvaiheen vastinpari voi olla esimerkiksi **olemassa oleva kampus ilman laajennusta**, ei koko alueen historiallinen tila ilman Googlea. Koko aiemman kampuksen hyötyä ei silloin kirjata uuden laajennuksen lisähyödyksi.
 
-**Avoin tieto:** nimetty vaihtoehtohanke, sijaintiedellytykset, aikataulu, kysyntä, rahoitus ja verkkotarve. Viiden, kahdenkymmenen ja yli viidenkymmenen vuoden vaikutuksia ei diskontata yhteiseksi nykyarvoksi ilman näitä lähtötietoja.
+Luotettava vaihtoehtotilanne tarvitsee nimetyn vaihtoehdon, sen sijaintiedellytykset, aikataulun, kysynnän, rahoituksen ja verkkotarpeen. Vasta sen jälkeen voidaan arvioida esimerkiksi sitä, olisiko sama sähkö tai verkkokapasiteetti voinut palvella muuta teollista toimintaa ja millä aikajänteellä.
+
+Tämä on koko auditin tärkeä raja: **kuvaileva kohdevertailu ei vielä ole kausaalinen vaikutusarvio**.
