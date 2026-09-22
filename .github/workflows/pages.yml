@@ -1,7 +1,7 @@
 name: Build and deploy publication
 on:
   push:
-    branches: [main]
+    branches: [main, release/v1.1-preview-2026-09-22]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -34,7 +34,9 @@ jobs:
         with:
           path: dist
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.PUBLISH_APPROVED == 'true'
+    # Preview release branch deploys intentionally without merging to main.
+    # Main keeps the explicit PUBLISH_APPROVED gate.
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/release/v1.1-preview-2026-09-22' || (github.ref == 'refs/heads/main' && vars.PUBLISH_APPROVED == 'true'))
     needs: build
     runs-on: ubuntu-latest
     permissions:
