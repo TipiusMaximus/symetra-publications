@@ -17,33 +17,46 @@ Siksi tällä sivulla jokaisen vaikutusalueen kohdalla kysytään ensin, **mink�
 
 [Haminan Google–Tuike–kampus-rajaus avataan kohdevertailussa](/analyysit/datakeskukset/vertailu/#hamina-ensin-on-ymmarrettava-mika-tuike-finland-oy-on).
 
-## Työ
+## Työ: miksi Haminasta löytyy sekä 120 että noin 500 henkilöä?
 
-**Tutkimuskysymys:** kuinka paljon työtä kohde tuottaa, kenelle ja missä vaiheessa?
+Auditin ensimmäinen konkreettinen ongelma syntyi työllisyydestä. Tuike Finland Oy:n vuoden 2025 yritystiedoissa henkilöstömäärä on 120, kun taas Haminan kaupunki kertoi kesäkuussa 2026 kampuksella työskentelevän noin 500 henkilöä. [S001–S003](/analyysit/datakeskukset/lahteet/#S001).
 
-**Lähde ja jakso:** Tuiken yritystiedot 2025, Haminan kaupungin 22.6.2026 ilmoitus ja [teollisuuden kohdelähteet](/analyysit/datakeskukset/vertailu/). [S001–S003](/analyysit/datakeskukset/lahteet/#S001), [S068–S071](/analyysit/datakeskukset/lahteet/#S068).
+Luvut näyttävät ensi silmäyksellä ristiriitaisilta, mutta ne eivät mittaa samaa asiaa. **120 on suomalaisen oikeushenkilön henkilöstöluku. Noin 500 on fyysisellä kampuksella työskentelevien henkilöiden määrä eri ajankohtana ja laajemmalla työnantajarajalla.** Tämä oli samalla ensimmäinen merkki siitä, ettei datakeskuksen vaikutusta voi arvioida yhden yrityksen tilinpäätöksestä.
 
-**Osoittaa:** Tuiken 120 työntekijää ja kampuksen noin 500 henkilöä ovat eri rajauksen tietoja. Kemin kohdesivun 300 henkilöä ja Outokummun Ferrochrome-segmentin 454 FTE:tä antavat vertailuun lähdehavaintoja.
+Erotuksesta 500 − 120 ei siksi tehdä arviota 380 alihankkijasta. Kampusluku voi sisältää eri työnantajien henkilöstöä, mutta käytössä oleva lähdeaineisto ei anna yhteisen vuoden työnantaja- tai henkilötyövuosijakoa.
 
-**Ei osoita:** luvut eivät yksin kerro paikallisten asukkaiden työpaikkoja, työttömyysvaikutusta tai rakentamisen ja operoinnin yhteistä vuotuista työpanosta.
+### Mitä työllisyydestä voidaan tällä hetkellä sanoa?
 
-**Vertailukelpoisuus:** vuosittainen henkilötyövuosi, työnantaja ja toimipaikka täsmäytetään. Rakennusvaiheen henkilötyövuosia ei esitetä pysyvinä työpaikkoina.
+Tuiken 120 henkilön luku kuvaa yhtiötä vuonna 2025. Haminan noin 500 henkilön luku kuvaa kampusta kesäkuussa 2026. Kemin biotuotetehtaan nykyinen kohdesivu ilmoittaa 300 henkilöä ja Outokummun Ferrochrome-segmentti vuoden 2025 lopussa 454 henkilötyövuotta. [S068–S071](/analyysit/datakeskukset/lahteet/#S068).
 
-**Avoin tieto:** saman vuoden FTE-erittely, alihankintaketju ja työntekijöiden asuinalue. Laskennassa 500 − 120 ei ole varmennettu alihankkijamäärä.
+Näitä lukuja voidaan käyttää kohteiden kuvaamiseen, mutta suora tehokkuusvertailu vaatii yhteisen määritelmän. **Henkilömäärä, henkilötyövuosi, oman yhtiön henkilöstö, kampuksen koko työjoukko sekä rakennusvaiheen työ ovat eri mittareita.**
 
-## Talous
+Jatkovertailua varten tarvitaan saman vuoden operoinnin FTE:t, työnantajajako, rakentamisen ja käytön erottelu sekä mielellään myös työntekijöiden asuinalue. Vasta silloin voidaan kysyä luotettavammin, kuinka paljon pysyvää työtä toiminta synnyttää Suomessa tai paikallisesti.
 
-**Tutkimuskysymys:** miten yrityksen rahavirrat muuttuvat paikalliseksi tai kansantaloudelliseksi hyödyksi?
+## Talous: 574 miljoonaa euroa on lähtöpiste, ei hyötyluku
 
-**Lähde ja jakso:** Tuike 2025 yritystietopalveluissa; Ylen ilmoittama Haminan kiinteistövero 2024; Verohallinnon sähkövero-ohje luettu 22.9.2026. [S001–S004](/analyysit/datakeskukset/lahteet/#S001), [S058](/analyysit/datakeskukset/lahteet/#S058).
+Kun työllisyysraja oli ensin erotettu, seuraava kysymys oli talous. Tuike Finland Oy:n vuoden 2025 liikevaihdoksi ilmoitetaan yritystietopalveluissa 574,374 M€, liiketulokseksi 30,305 M€ ja tilikauden tulokseksi −12,188 M€. Haminan vuoden 2024 kiinteistöveroksi on ilmoitettu noin 1,5 M€. [S001–S004](/analyysit/datakeskukset/lahteet/#S001).
 
-**Osoittaa:** Tuiken myynti oli lähteissä 574,374 M€, liiketulos 30,305 M€ ja tilikauden tulos −12,188 M€. Vuoden 2024 kiinteistöveroksi ilmoitettiin noin 1,5 M€. Datakeskukset siirtyivät sähköveroluokkaan I 1.7.2026.
+Suuri liikevaihto on olennainen havainto: suomalaisessa oikeushenkilössä näkyy huomattava liiketoiminnan volyymi suhteessa sen omaan henkilöstömäärään. Mutta siitä ei vielä seuraa, että 574 miljoonaa euroa olisi Suomeen jäävää tuloa tai yhteiskunnallista hyötyä. [Datakeskuksen taloudellinen toimintaketju avataan vertailusivulla](/analyysit/datakeskukset/vertailu/#mita-datakeskus-taloudellisesti-tekee).
 
-**Ei osoita:** käyttökate ei ole vapaata kassavirtaa tai lisäveron maksukykyä. Liiketuloksen ja tilikauden tuloksen erotusta ei nimetä kokonaan rahoituskuluiksi tai ulkomaille siirretyksi voitoksi. Kiinteistövero ei ole kunnan nettohyöty tai pysyvä vuosittainen alaraja.
+Liikevaihdosta maksetaan esimerkiksi toiminnan ostoja ja muita kustannuksia. Käyttökate, liiketulos ja tilikauden tulos kuvaavat eri kohtia tuloslaskelmassa, eikä niitä voi nimetä suoraan kotimaiseksi arvonlisäksi, vapaaksi kassavirraksi tai ulkomaille siirtyväksi voitoksi. Tämän auditin käytössä ei myöskään ole vielä Tuiken alkuperäistä tilinpäätöstä liitetietoineen, joten konsernin sisäisten liiketoimien rakennetta ei päätellä toissijaisten yritystietojen perusteella.
 
-**Vertailukelpoisuus:** vuoden 2025 taloutta ei lasketa automaattisesti vuoden 2026 verosäännöillä. Kertaluonteinen maan myynti, vuotuiset verot, palkat ja arvonlisä pidetään erillään. Myyntiä ja siitä jo maksettuja palkkoja ei lasketa yhteen hyötyinä.
+### Mitä Suomeen jäävästä rahavirrasta pitäisi erottaa?
 
-**Avoin tieto:** alkuperäinen tilinpäätös, hankintojen kotimainen arvonlisä, omistajatulot, kunnan menot ja uskottava vaihtoehtotilanne. [Toistettava laskentaketju](/analyysit/datakeskukset/lahteet/#laskelmat).
+Yhteiskunnallisen vaikutuksen arvioinnissa ainakin seuraavat erät on pidettävä erillään:
+
+- Suomessa maksetut palkat ja niihin liittyvä työpanos;
+- Suomessa ostettujen tavaroiden ja palvelujen kotimainen arvonlisä;
+- kiinteistö-, yhteisö-, energia- ja muut verot niiden oikeilla vuosilla ja veropohjilla;
+- kunnalle tai valtiolle syntyvät menot ja infrastruktuurin kustannukset;
+- pääoma- ja omistajatulot sekä konsernin sisäiset liiketoimet;
+- kertaluonteiset investointi- ja maanmyyntivirrat verrattuna jatkuvaan operointiin.
+
+Näitä eriä ei lasketa mekaanisesti yhteen. Esimerkiksi liikevaihto sisältää jo rahaa, josta palkat ja ostot maksetaan, joten niiden lisääminen liikevaihdon päälle tuottaisi kaksinkertaista laskentaa. Samoin kiinteistövero on kunnalle tuloa, mutta ei vielä kunnan nettohyöty ilman menoja ja vaihtoehtotilannetta.
+
+Datakeskukset siirtyivät Suomessa sähköveroluokkaan I 1.7.2026, joten vuoden 2025 yritystaloutta ei lasketa automaattisesti vuoden 2026 verosäännöillä. [S058](/analyysit/datakeskukset/lahteet/#S058).
+
+Avoimeksi jäävät erityisesti Tuiken alkuperäinen tilinpäätös, hankintojen kotimainen arvonlisä, omistaja- ja konsernivirrat, kunnan kohdistettavat menot sekä uskottava vaihtoehtotilanne. [Toistettava laskentaketju](/analyysit/datakeskukset/lahteet/#laskelmat).
 
 ## Sähkö
 
