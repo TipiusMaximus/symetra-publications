@@ -1,0 +1,24 @@
+import {readFile,readdir} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {load} from 'cheerio';
+import assert from 'node:assert/strict';
+import {frontmatter,renderMarkdown} from './lib.mjs';
+import {calculations} from './calculations.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),dist=path.join(root,'dist');
+const meta=JSON.parse(await readFile(path.join(dist,'build-meta.json'),'utf8'));
+async function walk(dir){const entries=await readdir(dir,{withFileTypes:true});return(await Promise.all(entries.map(x=>x.isDirectory()?walk(path.join(dir,x.name)):[path.join(dir,x.name)]))).flat();}
+const files=await walk(dist), htmls=new Map();
+const normalize=s=>s.replace(/\s+/g,' ').trim();
+for(const file of files){if(!file.endsWith('.html'))continue;const html=await readFile(file,'utf8');assert(!/\/Users\/|\/Volumes\/|chatgpt-content-reference|keskustelu-raaka|gho_[A-Za-z0-9]/.test(html),`Private data in ${file}`);const $=load(html);assert.equal($('html').attr('lang'),'fi');assert.equal($('h1').length,1);assert.equal($('main').length,1);assert.equal($('meta[property="og:image"]').attr('content'),meta.origin+meta.basePath+'/assets/og.png');const ids=new Set();$('[id]').each((_,el)=>{const id=$(el).attr('id');assert(!ids.has(id),`Duplicate ${id} in ${file}`);ids.add(id);});let previous=0;$('h1,h2,h3,h4,h5,h6').each((_,el)=>{const level=Number(el.tagName[1]);assert(level<=previous+1,`Heading jump ${previous}->${level}: ${$(el).text()} in ${file}`);previous=level;});htmls.set(file,{$,ids});}
+let checked=0;
+for(const [file,{$}] of htmls){for(const el of $('a[href],link[href],script[src],img[src]').toArray()){const href=$(el).attr('href')||$(el).attr('src');if(!href||/^(https?:|mailto:)/.test(href))continue;assert(!/^(javascript:|data:|file:|\/\/)/i.test(href),'Unsafe URL');const pagePath='/'+path.relative(dist,file).split(path.sep).join('/');const target=new URL(href,'https://local.test'+meta.basePath+pagePath);assert(!meta.basePath||target.pathname.startsWith(meta.basePath+'/'),`Missing base path: ${href}`);let relative=decodeURIComponent(target.pathname.slice(meta.basePath.length));if(relative.endsWith('/'))relative+='index.html';const full=path.join(dist,relative);assert(files.includes(full),`Missing file ${href} from ${pagePath}`);if(target.hash){assert(htmls.get(full)?.ids.has(decodeURIComponent(target.hash.slice(1))),`Missing anchor ${href} from ${pagePath}`);}checked++;}}
+// Canonical Markdown text must survive into the page, including all question bodies.
+for(const file of (await readdir(path.join(root,'content'))).filter(f=>f.endsWith('.md'))){const {meta:p,body}=frontmatter(await readFile(path.join(root,'content',file),'utf8'));const dest=path.join(dist,p.route,'index.html');const actual=normalize(htmls.get(dest).$('main').text());const expected=load(renderMarkdown(body,meta.basePath).html);expected('p,td,th,h2,h3,li').each((_,el)=>{assert(actual.includes(normalize(expected(el).text())),`Markdown mismatch ${file}: ${expected(el).text().slice(0,80)}`);});}
+for(let i=1;i<=11;i++){const id='A'+String(i).padStart(2,'0');const {body}=frontmatter(await readFile(path.join(root,'content/questions',id+'.md'),'utf8'));const $=htmls.get(path.join(dist,'analyysit/datakeskukset/vaiteet/index.html')).$;assert.equal($('#'+id).length,1);const expected=load(renderMarkdown(body,meta.basePath).html);assert(normalize($('#'+id).text()).includes(normalize(expected.text())),`Question body mismatch ${id}`);}
+const report=await readFile(path.join(dist,'downloads/datakeskukset.md'),'utf8');for(const id of ['A01','A11','S001','S071','D08'])assert(report.includes(id));assert(!/\/Users\/|\/Volumes\/|chatgpt-content-reference/.test(report));
+const c=calculations();assert.equal(c.output.ebitda,'344.6244');assert.equal(c.output.ebitdaMinusEbit,'314.3194');assert.equal(c.output.revenueMinusEbitda,'229.7496');
+const calcPage=htmls.get(path.join(dist,'analyysit/datakeskukset/lahteet/index.html')).$.text();for(const value of Object.values(c.output))assert(calcPage.includes(value.replace('.',',')),'Displayed calculation mismatch');
+assert(files.some(f=>f.endsWith('/assets/og.png')),'OG image missing');
+assert.equal(files.filter(f=>f.endsWith('.html')).length,10);
+console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; publication allowlist.`);

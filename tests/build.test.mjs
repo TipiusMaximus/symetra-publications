@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {frontmatter,basePath,renderMarkdown} from '../scripts/lib.mjs';
+import {calculations} from '../scripts/calculations.mjs';
+test('frontmatter preserves Finnish text, boolean and source arrays',()=>{const p=frontmatter('---\ntitle: Lähteet\npublished: false\nsourceRefs: ["S001","D08"]\n---\nSisältö');assert.equal(p.meta.published,false);assert.deepEqual(p.meta.sourceRefs,['S001','D08']);assert.equal(p.body,'Sisältö');});
+test('duplicate metadata and missing separator fail',()=>{assert.throws(()=>frontmatter('---\ntitle: a\ntitle: b\n---\nx'));assert.throws(()=>frontmatter('# Hello'));});
+test('root and GitHub project paths work without rewriting external or hash links',()=>{assert.equal(basePath('/repo/'),'/repo');assert.equal(basePath('/'),'');for(const invalid of ['/../secret','//evil','relative'])assert.throws(()=>basePath(invalid));const {html}=renderMarkdown('[local](/a/) [hash](#b) [web](https://example.org/)','/repo');assert(html.includes('href="/repo/a/"'));assert(html.includes('href="#b"'));assert(html.includes('href="https://example.org/"'));});
+test('Finnish headings have unique stable anchors',()=>{const r=renderMarkdown('## Sähkö ja työ\n\n## Sähkö ja työ');assert.deepEqual(r.headings.map(h=>h.id),['sahko-ja-tyo','sahko-ja-tyo-2']);});
+test('financial arithmetic keeps input precision and interpretation boundaries',()=>{assert.deepEqual(calculations().output,{ebitda:'344.6244',ebitdaMinusEbit:'314.3194',revenueMinusEbitda:'229.7496'});assert.equal(calculations().limitations.length,3);});
