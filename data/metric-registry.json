@@ -243,6 +243,58 @@
       "purpose": "Täyttää informaatiovaje läpinäkyvällä estimaatilla ilman että se naamioidaan standardiksi WUE:ksi.",
       "caveat": "Current Hamina value mixes 2024 water, 2025 PUE and a 2026 external electricity estimate and excludes seawater. Keep outside harmonized WUE score until scopes are aligned.",
       "scenario_registry": "/downloads/energy-water-scenarios.json"
+    },
+    {
+      "id": "water_withdrawal_per_revenue",
+      "label": "Vedenotto / liikevaihto",
+      "formula": "annual withdrawal m3 / annual revenue M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "same_or_near_boundary_withdrawal",
+        "same_period_revenue",
+        "explicit_water_scope"
+      ],
+      "purpose": "Kuvaa vedenoton intensiteettiä suhteessa taloudelliseen myyntivolyymiin.",
+      "caveat": "Revenue is not value added. Seawater, freshwater, process water and mixed water scopes must stay explicit; design proxies and actuals cannot be silently merged.",
+      "current_examples": {
+        "hamina": {
+          "value": 25.085,
+          "unit": "m3_per_MEUR",
+          "status": "derived_boundary_near_match",
+          "period": "2024"
+        },
+        "kemi": {
+          "value": 6442,
+          "unit": "m3_per_MEUR_at_least_approx",
+          "status": "derived_cross_boundary_floor",
+          "note": "Conservative floor from Kemi design proxy divided by whole Metsä Fibre 2024 revenue."
+        }
+      }
+    },
+    {
+      "id": "water_consumption_per_revenue",
+      "label": "Nettovedenkulutus / liikevaihto",
+      "formula": "annual net water consumption m3 / annual revenue M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "same_or_near_boundary_consumption",
+        "same_period_revenue",
+        "explicit_water_scope"
+      ],
+      "purpose": "Erottaa varsinaisen nettokulutuksen suuresta läpivirtaavasta tai palautettavasta vesimäärästä.",
+      "caveat": "Hamina value excludes seawater. Comparable Kemi net-consumption observation is not yet available.",
+      "current_examples": {
+        "hamina": {
+          "value": 2.509,
+          "unit": "m3_per_MEUR",
+          "status": "derived_boundary_near_match",
+          "period": "2024"
+        }
+      }
     }
   ]
 }
