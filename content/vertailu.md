@@ -110,6 +110,54 @@ Tarvitaan erikseen **oma tuotanto, oma kulutus, verkosta otto ja verkkoon vienti
 
 Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia, työpanos ja tehdaskohtainen arvonlisä samoilla rajauksilla kuin datakeskuksissa.
 
+## Mittari muuttaa vastausta: Kemin sähköesimerkki
+
+Vertailun tarkoitus ei ole löytää yhtä kaavaa, joka automaattisesti kertoo mikä investointi on paras. Sama toiminta voi näyttää hyvin erilaiselta sen mukaan, **mitä kysytään ja mikä suure valitaan nimittäjäksi**.
+
+Metsä Fibre ilmoittaa Kemin biotuotetehtaan vuotuisen sähköntuotannon kuvaukseksi 2,0 TWh ja sähköomavaraisuudeksi 250 %. [Metsä Fibre: Kemin biotuotetehdas](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/).
+
+Jos 250 % tulkitaan tässä havainnollistuksessa suhteeksi
+
+**oma sähköntuotanto / oma sähkönkulutus = 2,5,**
+
+saadaan johdetuksi omaksi sähkönkulutukseksi noin
+
+**2,0 TWh / 2,5 = 0,8 TWh/v**
+
+ja tuotannon sekä tämän johdetun oman kulutuksen erotukseksi
+
+**2,0 − 0,8 = +1,2 TWh/v.**
+
+Nämä kaksi lukua ovat **johdettu havainnollistus, eivät mitattu verkkotase**. Erityisesti +1,2 TWh/v ei ole tässä aineistossa varmennettu verkkoon syötetty vuosienergia.
+
+Silti laskelma näyttää hyvin, miksi mittarin valinta muuttaa vastausta:
+
+| Laskentatapa | Mitä se kysyy? | Kemi tämän aineiston perusteella | Mitä mittari palkitsee? |
+|---|---|---|---|
+| Oma sähkönkulutus | Kuinka paljon prosessi tarvitsee sähköä? | noin 0,8 TWh/v, johdettu | Pientä fyysistä energiantarvetta |
+| Tuotanto − oma kulutus | Jääkö sähköä tuotannon jälkeen yli? | noin +1,2 TWh/v, johdettu | Omaa sähköntuotantoa |
+| Verkosta otettu MWh | Kuinka paljon kohde kuormittaa sähköjärjestelmää? | **avoin: mitattu verkko-otto puuttuu** | Vähäistä verkosta ottoa |
+| FTE / kokonaiskulutettu MWh | Kuinka paljon työtä syntyy suhteessa prosessin sähköön? | laskettavissa vasta yhteisellä FTE-vuodella | Työvoimaintensiivisyyttä |
+| Arvonlisä / verkosta otettu MWh | Kuinka paljon kotimaista arvoa syntyy suhteessa verkkokuormaan? | ei vielä laskettavissa | Omaa tuotantoa ja korkeaa kotimaista arvonlisää |
+
+Tässä on olennainen mittariraja. Jos verkosta otettu energia lähestyisi nollaa tai kohde olisi vuositasolla nettoviejä, esimerkiksi **arvonlisä / verkosta otettu MWh** voisi kasvaa erittäin suureksi, vaihtaa etumerkkiä tai lakata olemasta järkevästi tulkittava suhdeluku. Se ei tarkoittaisi, että tehdas olisi saanut “äärettömän hyvän” yhteiskunnallisen arvon. Se tarkoittaisi, että valittu mittari ei enää käyttäydy mielekkäästi tässä tapauksessa.
+
+Datakeskuksen kohdalla sama laskentatapa voisi antaa aivan toisen kuvan, koska tarkastelun kannalta keskeinen suure voi olla nimenomaan verkosta otettu sähkö. Haminasta ei tässä auditissa kuitenkaan ole käytössä samalla rajauksella mitattua vuosittaista verkko-ottoa, joten vertailulukua ei täytetä oletuksella.
+
+### Kolme eri kysymystä, kolme eri mahdollista järjestystä
+
+Samaa kohdejoukkoa voidaan perustellusti tarkastella ainakin kolmella tavalla:
+
+1. **Fyysinen energiaintensiteetti:** taloudellinen tai työllisyystuotos suhteessa kaikkeen prosessissa käytettyyn sähköön.
+2. **Sähköjärjestelmäintensiteetti:** taloudellinen tai työllisyystuotos suhteessa verkosta otettuun sähköön.
+3. **Nettotase:** oma sähköntuotanto vähennettynä omalla sähkönkulutuksella.
+
+Ensimmäinen voi tehdä suuren prosessiteollisuuden energiantarpeen näkyväksi. Toinen voi nostaa omaa sähköä tuottavan tehtaan erittäin korkealle. Kolmas voi muuttaa saman tehtaan sähkönkuluttajasta sähköjärjestelmän nettotuottajaksi.
+
+**Jos kohteiden järjestys muuttuu mittarin mukana, se ei ole analyysin epäonnistuminen. Se on analyysin tulos.** Se kertoo, että kysymys “mikä on tehokkain?” on puutteellinen ilman täsmennystä: tehokkain minkä resurssin, vaikutuksen ja laskentarajan suhteen?
+
+Tässä julkaisussa tätä epävarmuutta ei piiloteta yhteen yhdistelmäpistemäärään. Eri mittarit pidetään näkyvinä, niiden oletukset ilmoitetaan ja tulosta tarkastellaan herkkyytenä mittarivalinnalle.
+
 ## Kemi–Tornio: konsernin segmentti opettaa saman ongelman kuin Tuike
 
 Outokumpu tuli mukaan, kun auditissa haluttiin verrata datakeskuksen taloudellista rakennetta perinteiseen, energiaintensiiviseen teollisuuteen. Samalla vastaan tuli tuttu ongelma: **mikä organisaatiotaso oikeastaan tuottaa tarkasteltavan luvun?**
