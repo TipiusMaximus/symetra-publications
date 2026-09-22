@@ -526,5 +526,11 @@
     "title": "Metsä Fibre 20.1.2025: Every drop counts",
     "url": "https://www.metsagroup.com/metsafibre/news-and-publications/news-and-releases/stories/2025/every-drop-counts/",
     "verification": "Kemin biotuotetehtaan raakaveden suunnitteluarvo 10 m³ tuotettua sellutonnia kohti tarkistettu 22.9.2026."
+  },
+  {
+    "id": "S089",
+    "title": "World Bank: diesel generator characteristics",
+    "url": "https://documents1.worldbank.org/curated/en/986551468338480525/pdf/430990v20Annexes0Box0327386B01PUBLIC1.pdf",
+    "verification": "Tekninen taustalähde ilmoittaa dieselgeneraattorin hyötysuhteen tyypillisesti noin 35–45 %. Käytetään vain varavoimatehon suuruusluokan ristiintarkistukseen, ei Haminan vuosikulutuksen varsinaisena estimaattorina."
   }
 ]
