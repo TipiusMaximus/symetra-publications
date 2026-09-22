@@ -1,12 +1,12 @@
 ---
-title: Kohteet ja vertailun rajat
+title: Mitä datakeskus tekee ja miten sitä verrataan?
 slug: vertailu
 route: /analyysit/datakeskukset/vertailu/
 language: fi
 status: ready
 published: false
 updated: 2026-09-22
-description: Sama tunnusluku ei vielä tarkoita samaa mittaria. Vertailu alkaa kohteesta, ajanjaksosta ja laskentarajasta.
+description: Ensin avataan datakeskuksen taloudellinen toimintamalli ja Haminan laskentarajat. Vasta sen jälkeen verrataan muita kohteita.
 layout: article
 ---
 Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan Hepokorpi, Kemi ja Kemi–Tornio.
