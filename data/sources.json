@@ -1,13 +1,13 @@
 [
   {
     "id": "S001",
-    "title": "Proff",
+    "title": "Proff: Tuike Finland Oy",
     "url": "https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S002",
-    "title": "Profinder",
+    "title": "Profinder: Tuike Finland Oy",
     "url": "https://b2b.profinder.fi/haku/tuike-finland-oy/22060717",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
@@ -127,7 +127,7 @@
   },
   {
     "id": "S022",
-    "title": "Hamina, lupavaliokunta 16.6.2026 §44, Hamina/238/2026 / Hamina, lupavaliokunta 16.6.2026 §44",
+    "title": "Haminan lupavaliokunta 16.6.2026 § 44",
     "url": "https://hamina-julkaisu.triplancloud.fi/ktwebscr/fileshow?doctype=7&docid=337290",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
@@ -229,7 +229,7 @@
   },
   {
     "id": "S039",
-    "title": "aloitteen 17997",
+    "title": "Kansalaisaloite 17997",
     "url": "https://www.kansalaisaloite.fi/fi/aloite/17997",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
@@ -283,25 +283,25 @@
   },
   {
     "id": "S048",
-    "title": "Elokuun tiedote",
+    "title": "Fingrid 18.8.2026: sähkönkulutus on kääntymässä voimakkaaseen kasvuun",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun--rinnalle-tarvitaan-lisaa-saatovoimaa/",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S049",
-    "title": "Syyskuun tiedote",
+    "title": "Fingrid 3.9.2026: teollisuuskulutuksen sijoittuminen lähelle sähköntuotantoa",
     "url": "https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/fingridin-selvitys-teollisuuskulutuksen-sijoittuminen-lahelle-sahkontuotantoa-lisaa-kantaverkon-liitettavyytta-merkittavasti/",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S050",
-    "title": "CSO, Key Findings, taulukko 1",
+    "title": "CSO Ireland: Data Centres Metered Electricity Consumption 2025 – Key Findings",
     "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S051",
-    "title": "CSO, Background Notes",
+    "title": "CSO Ireland: Data Centres Metered Electricity Consumption 2025 – Background Notes",
     "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/backgroundnotes/",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
@@ -343,19 +343,19 @@
   },
   {
     "id": "S058",
-    "title": "Verohallinto, Sähkövero / Verohallinto, Sähkövero, Veroluokat I ja II",
+    "title": "Verohallinto: sähkövero",
     "url": "https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/valmisteverotus/sahkovero/",
     "verification": "Asiaankuuluvat velvoite-, määräaika- tai veroluokkakohdat tarkistettu uudelleen 22.9.2026."
   },
   {
     "id": "S059",
-    "title": "Opas 11.2",
+    "title": "Finlex Lainkirjoittajan opas 11.2: verot ja maksut",
     "url": "https://lainkirjoittaja.finlex.fi/11-verot-ja-maksut/11-2/",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
   {
     "id": "S060",
-    "title": "opas 11.1",
+    "title": "Finlex Lainkirjoittajan opas 11.1: verot ja maksut",
     "url": "https://lainkirjoittaja.finlex.fi/11-verot-ja-maksut/11-1/",
     "verification": "Lähde tarkistettu 21.–22.9.2026."
   },
