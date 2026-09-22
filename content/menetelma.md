@@ -75,4 +75,4 @@ Lähteiden ajantasaisuus on päivätty. Linkin tekninen toimivuus ei tarkoita si
 
 Muuttunut luku, tulkinta tai laskentasääntö kirjataan [muutoshistoriaan](/muutokset/). Markdown, lähderekisteri ja laskentamenetelmä versioidaan samassa julkaisurepossa.
 
-Symetra voi myöhemmin mahdollistaa erilaisia tunnuslukuja, vertailuja ja profiilikohtaisia pisteytyksiä. Painot, vertailuryhmä ja puuttuvan tiedon käsittely on silloin julkaistava. Tässä versiossa ei ole käyttäjän muokattavaa mittaristoa, yhteispisteitä tai voittajaa. Julkaisu ei esitä politiikkasuositusta.
+Symetrix Matrix v0.1 sisältää nyt ensimmäiset kiinteät Lens-profiilit. Jokaiselle Lensille julkaistaan käytetyt mittarit, painot, normalisointi, vertailujoukko ja puuttuvan tiedon käsittely. Pisteitä ei tulkita yleiseksi paremmuusluvuksi, vaan nimetyn arvotusprofiilin seuraukseksi. Tässä versiossa käyttäjä ei vielä muuta painoja käyttöliittymässä, eikä julkaisu tuota yhtä universaalia Symetra-pistettä tai voittajaa. Julkaisu ei esitä politiikkasuositusta.
