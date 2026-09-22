@@ -120,6 +120,8 @@ Hakemukset kertovat suunnitelmista, päätökset luvan ehdoista ja myöhempi tar
 - [Evidence Ledger JSONL-muodossa](/downloads/evidence-index.jsonl)
 - [Evidence Ledger JSON-muodossa](/downloads/evidence-index.json)
 - [Evidence coverage JSON-muodossa](/downloads/evidence-coverage.json)
+- [Denominator Engine v0.1:n tulokset](/downloads/denominator-engine-v0.1.json)
+- [Denominator Engine -reseptirekisteri](/downloads/denominator-recipes.json)
 
 ## Verkkolähteet
 
