@@ -99,7 +99,7 @@
       "resultUnit": "m3_per_MEUR",
       "boundaryPolicy": "near_match",
       "periodPolicy": "same",
-      "comparisonGroup": "water_per_revenue"
+      "comparisonGroup": "water_withdrawal_per_revenue"
     },
     {
       "id": "hamina_water_consumption_per_revenue",
@@ -138,7 +138,7 @@
       "resultUnit": "m3_per_MEUR_at_least",
       "boundaryPolicy": "cross_boundary",
       "periodPolicy": "mixed_explicit",
-      "comparisonGroup": "water_per_revenue"
+      "comparisonGroup": "water_design_per_revenue"
     },
     {
       "id": "hamina_investment_per_site_worker",
@@ -235,6 +235,26 @@
       "boundaryPolicy": "cross_boundary",
       "periodPolicy": "mixed_explicit",
       "comparisonGroup": "electricity_per_revenue"
+    },
+    {
+      "id": "kemi_actual_water_withdrawal_per_business_revenue_floor",
+      "label": "Kemi actual water withdrawal / whole Metsä Fibre revenue",
+      "question": "What conservative lower bound results when Kemi's actual 2025 withdrawal is divided by all Metsä Fibre 2025 revenue?",
+      "numerator": {
+        "evidence": "EV-KEMI-WATER-003",
+        "field": "value",
+        "scale": 1000000,
+        "note": "million m3 → m3"
+      },
+      "denominator": {
+        "evidence": "EV-MF-PROXY-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "m3_per_MEUR_at_least",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "same",
+      "comparisonGroup": "water_withdrawal_per_revenue"
     }
   ]
 }
