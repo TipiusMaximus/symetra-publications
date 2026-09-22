@@ -207,7 +207,7 @@ Jos Kemin 13,2 Mm³/v proxy jaetaan tarkoituksella **koko Metsä Fibren liikevai
 
 Tämä on konservatiivinen **alaraja**, ei Kemin tehtaan varsinainen intensiteetti: nimittäjä sisältää neljä sellutehdasta, neljä sahaa ja muuta liiketoimintaa. Kemin tehtaan oma liikevaihto on tätä pienempi, joten samalla 13,2 Mm³ numeratorilla tehdaskohtainen suhde olisi suurempi.
 
-Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥6 440 m³/M€ antaa jo yli **225× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
+Haminan ~25,1 m³/M€ vastaan Kemin konservatiivinen ≥5 670 m³/M€ antaa jo yli **225× scope-jumpin**. Sitä ei pisteytetä, koska numeratorien vesikäsitteet ja Kemin boundary/status eroavat. Mutta se on erittäin vahva tutkimussignaali.
 
 **Miksi tämä mittari on hyödyllinen?** Absoluuttinen vedenkäyttö kertoo ympäristökuorman mittakaavasta. `m³/M€` kertoo, kuinka vesaintensiivinen taloudellinen tuotantorakenne on. Kumpaakaan ei pidä käyttää yksin.
 
@@ -321,7 +321,7 @@ Alla ei pisteytetä yrityksiä. Taulukko kertoo vain, **minkä tyyppistä käytt
 
 | Aihe | Hamina / Tuike | Nebius | Kemi Bio | Outokumpu |
 |---|---:|---:|---:|---:|
-| Talous | 3 D | 3 D | 1 Q | 4 D + 1 J |
+| Talous | 3 D | 3 D | 1 D + 1 Q | 4 D + 1 J |
 | Työ | 2 D | 1 D | 3 D + 2 Q | 2 D + 1 Q |
 | Energia / tehokkuus | 1 D | — | 2 D + 2 J | 1 D* |
 | Vesi | 3 D | 1 D | — | — |
