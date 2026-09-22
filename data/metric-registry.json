@@ -228,6 +228,21 @@
       "purpose": "Tunnistaa vedenkäytön mittakaavaeroja ennen yhteisen poikkitoimialaisen normalisoinnin valintaa.",
       "caveat": "Withdrawal, consumption and cooling-water throughput are different quantities. Design-at-nameplate and measured actual must be labelled separately.",
       "scenario_registry": "/downloads/energy-water-scenarios.json"
+    },
+    {
+      "id": "non_seawater_water_intensity_proxy",
+      "label": "Raportoidun muun kuin meriveden kulutusintensiteetti",
+      "formula": "reported non-seawater water consumption / estimated IT kWh",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "estimate_ready_not_scoreable",
+      "required": [
+        "non_seawater_consumption",
+        "IT_energy_same_period_and_boundary"
+      ],
+      "purpose": "Täyttää informaatiovaje läpinäkyvällä estimaatilla ilman että se naamioidaan standardiksi WUE:ksi.",
+      "caveat": "Current Hamina value mixes 2024 water, 2025 PUE and a 2026 external electricity estimate and excludes seawater. Keep outside harmonized WUE score until scopes are aligned.",
+      "scenario_registry": "/downloads/energy-water-scenarios.json"
     }
   ]
 }
