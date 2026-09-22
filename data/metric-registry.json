@@ -1,0 +1,182 @@
+{
+  "version": "0.1",
+  "scoring_principle": "A metric is scoreable only when its formula, direction, baseline and required evidence boundary are explicit.",
+  "metrics": [
+    {
+      "id": "economic_throughput_per_workforce",
+      "label": "Taloudellinen volyymi / työpanos",
+      "formula": "revenue / own workforce",
+      "direction": "higher",
+      "baseline_status": "ready_empirical",
+      "readiness": "scoreable_exploratory",
+      "required": [
+        "revenue_same_period",
+        "own_workforce_same_boundary"
+      ],
+      "caveat": "Legal entity and segment boundaries are not fully identical.",
+      "symetrix_version": "0.3"
+    },
+    {
+      "id": "employment_intensity_per_revenue",
+      "label": "Työllistävyys suhteessa volyymiin",
+      "formula": "own workforce / 100 M€ revenue",
+      "direction": "higher",
+      "baseline_status": "ready_empirical",
+      "readiness": "scoreable_exploratory",
+      "required": [
+        "revenue_same_period",
+        "own_workforce_same_boundary"
+      ],
+      "caveat": "Measures own reported workforce, not full domestic value chain.",
+      "symetrix_version": "0.3"
+    },
+    {
+      "id": "datacenter_facility_efficiency",
+      "label": "Datakeskuksen energiatehokkuus",
+      "formula": "PUE - 1",
+      "direction": "lower",
+      "baseline_status": "ready_industry",
+      "readiness": "scoreable_partial",
+      "required": [
+        "site_or_explicit_proxy_PUE"
+      ],
+      "caveat": "Nebius value is portfolio proxy; Hamina is site-level.",
+      "symetrix_version": "0.3"
+    },
+    {
+      "id": "datacenter_water_efficiency",
+      "label": "Datakeskuksen vedenkäytön tehokkuus",
+      "formula": "water consumption litres / IT kWh",
+      "direction": "lower",
+      "baseline_status": "ready_external",
+      "readiness": "blocked_for_hamina",
+      "required": [
+        "site_water_consumption",
+        "same_period_site_IT_energy"
+      ],
+      "blocker": "Hamina water consumption exists, but same-period site IT kWh denominator is not yet available.",
+      "candidate_evidence": [
+        "EV-HAM-WATER-003",
+        "EV-NEB-WATER-001"
+      ]
+    },
+    {
+      "id": "electricity_self_sufficiency",
+      "label": "Sähköomavaraisuus",
+      "formula": "own electricity production / own electricity consumption",
+      "direction": "higher",
+      "baseline_status": "ready_technical",
+      "readiness": "scoreable_single_entity",
+      "required": [
+        "own_generation",
+        "own_consumption_same_boundary"
+      ],
+      "blocker": "Comparable own-generation/consumption pairs are missing for other entities.",
+      "candidate_evidence": [
+        "EV-KEMI-ENERGY-001",
+        "EV-KEMI-ENERGY-002"
+      ]
+    },
+    {
+      "id": "heat_recovery_intensity",
+      "label": "Lämmön hyödyntämisaste",
+      "formula": "measured useful heat export / chosen common denominator",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked",
+      "required": [
+        "measured_heat_export",
+        "common_denominator",
+        "same_period"
+      ],
+      "blocker": "Nebius has measured 2025 heat export; Hamina currently has design potential, not matched measured output.",
+      "candidate_evidence": [
+        "EV-NEB-HEAT-001",
+        "EV-HAM-HEAT-001",
+        "EV-HAM-HEAT-002"
+      ]
+    },
+    {
+      "id": "domestic_value_added_per_grid_energy",
+      "label": "Kotimainen arvonlisä / verkkosähkö",
+      "formula": "domestic value added € / grid MWh",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked_high_priority",
+      "required": [
+        "domestic_value_added_same_boundary",
+        "measured_grid_import_MWh_same_period"
+      ],
+      "blocker": "Neither Hamina nor the industrial comparators yet have both quantities on a common boundary."
+    },
+    {
+      "id": "value_chain_employment_intensity",
+      "label": "Kotimaisen arvoketjun työllisyys",
+      "formula": "domestic value-chain FTE / chosen denominator",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked_high_priority",
+      "required": [
+        "same_definition_value_chain_FTE",
+        "common_denominator"
+      ],
+      "blocker": "Kemi and Outokumpu have company impact estimates; Google has supplier-company count, which is not a job count.",
+      "candidate_evidence": [
+        "EV-KEMI-WORK-004",
+        "EV-HAM-SUPPLY-001",
+        "EV-TORNIO-WORK-002"
+      ]
+    },
+    {
+      "id": "local_public_capture",
+      "label": "Paikallinen julkistaloudellinen capture",
+      "formula": "comparable recurring local public revenues / chosen denominator",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked_high_priority",
+      "required": [
+        "same_tax_basket",
+        "same_year",
+        "common_denominator"
+      ],
+      "blocker": "Hamina property tax is known, but comparable local tax baskets are not yet assembled for peers.",
+      "candidate_evidence": [
+        "EV-HAM-TAX-001"
+      ]
+    },
+    {
+      "id": "land_efficiency",
+      "label": "Maa-alan tehokkuus",
+      "formula": "chosen output / occupied hectares",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked",
+      "required": [
+        "total_operating_site_area",
+        "comparable_output"
+      ],
+      "blocker": "Tornio site area exists; Hamina currently has only an additional land purchase area, not total campus area.",
+      "candidate_evidence": [
+        "EV-TORNIO-LAND-001",
+        "EV-HAM-LAND-001"
+      ]
+    },
+    {
+      "id": "capital_per_site_worker",
+      "label": "Pääoma / alueella työskentelevä",
+      "formula": "cumulative investment / current site workers",
+      "direction": "descriptive",
+      "baseline_status": "not_set",
+      "readiness": "illustrative_only",
+      "required": [
+        "cumulative_investment",
+        "site_worker_count"
+      ],
+      "caveat": "Mixes a cumulative stock-like numerator with a current workforce denominator; useful for structural anatomy, not productivity or social value.",
+      "candidate_evidence": [
+        "EV-HAM-STRUCT-001",
+        "EV-KEMI-STRUCT-001"
+      ]
+    }
+  ]
+}
