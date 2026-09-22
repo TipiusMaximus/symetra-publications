@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {load} from 'cheerio';
 import {escape as e,frontmatter,basePath,renderMarkdown} from './lib.mjs';
 import {calculations} from './calculations.mjs';
+import {symetrixMatrixV01} from './symetrix.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read = file => readFile(path.join(root,file),'utf8');
@@ -31,7 +32,7 @@ const sourceIDs=new Set([...sources,...documents].map(s=>s.id));
 const classes=['tuettu','osittain tuettu','epätarkka','avoin','näyttöä ei löytynyt'];
 questions.forEach(({meta,body},i)=>{if(meta.id!==`A${String(i+1).padStart(2,'0')}`||!classes.includes(meta.classification)||!meta.question||!meta.rationale||!meta.openData||!meta.sourceRefs.length||!body)throw new Error('Invalid question');meta.sourceRefs.forEach(id=>{if(!sourceIDs.has(id))throw new Error(`Unknown source ${id}`);});});
 if(questions.length!==11)throw new Error('Expected 11 questions');
-const nav=[['Tiivistelmä',''],['Toimintamalli ja vertailu','vertailu/'],['Vaikutukset','vaikutukset/'],['Tutkimuskysymykset','vaiteet/'],['Lähteet ja laskelmat','lahteet/'],['Pitkä raportti','raportti/']];
+const nav=[['Tiivistelmä',''],['Toimintamalli ja vertailu','vertailu/'],['Symetrix Matrix','symetrix/'],['Vaikutukset','vaikutukset/'],['Tutkimuskysymykset','vaiteet/'],['Lähteet ja laskelmat','lahteet/'],['Pitkä raportti','raportti/']];
 function sectionNav(route) {return nav.map(([name,suffix])=>{const target='/analyysit/datakeskukset/'+suffix;return `<a href="${u(target)}"${route===target?' aria-current="page"':''}>${name}</a>`;}).join('');}
 function tableOfContents(headings){const h=headings.filter(h=>h.level===2);return h.length<2?'':`<nav class="contents" aria-label="Tällä sivulla"><strong>Tällä sivulla</strong><ul>${h.map(x=>`<li><a href="#${e(x.id)}">${e(x.text)}</a></li>`).join('')}</ul></nav>`;}
 function toolsBar(){return `<div class="tools"><button type="button" class="js-only" data-print>Tulosta / tallenna PDF</button><a href="${u('/downloads/datakeskukset.md')}" download>Lataa pitkä raportti (.md)</a></div>`;}
@@ -49,7 +50,7 @@ if(meta.layout==='questions'){toc=tableOfContents(questions.map(q=>({id:q.meta.i
 if(meta.layout==='sources')html+=sourcesHTML();
 await put(meta.route==='/'?'index.html':meta.route.slice(1)+'index.html',template(meta,html,toc));}
 // The report is composed from the canonical pages and question files, not a second edited copy.
-const chapterSlugs=['datakeskukset','vertailu','vaikutukset','menetelma','vaiteet','lahteet'];
+const chapterSlugs=['datakeskukset','vertailu','symetrix','vaikutukset','menetelma','vaiteet','lahteet'];
 let reportHTML='',reportMD=`# Datakeskusten taloudellisten ja yhteiskunnallisten vaikutusten auditointi\n\nSymetra · versio ${config.version} · 22.9.2026\n\n`;
 for(const id of chapterSlugs){const p=pages.find(p=>p.meta.slug===id);const shifted=p.body.replace(/^(#{2,5}) /gm,'#$1 ');reportHTML+=`<section class="chapter" id="raportti-${id}"><h2>${e(p.meta.title)}</h2>${renderMarkdown(shifted,base,id+'-').html}`;reportMD+=`\n## ${p.meta.title}\n\n${shifted}\n`;if(id==='vaiteet'){reportHTML+=questions.map(q=>questionHTML(q,'raportti-').replace(/<h2>/g,'<h3>').replace(/<\/h2>/g,'</h3>')).join('');reportMD+=questions.map(q=>`\n### ${q.meta.id}: ${q.meta.question}\n\nLuokka: ${q.meta.classification}\n\n${q.body}`).join('\n');}if(id==='lahteet'){reportHTML+=sourcesHTML().replace('<h2 id="asiakirjat">','<h3 id="asiakirjat">').replace('HEL16:n asiakirjat</h2>','HEL16:n asiakirjat</h3>');reportMD+=sources.map(s=>`\n### ${s.id}: ${s.title}\n\n${s.url}\n\n${s.verification}\n`).join('')+documents.map(d=>`\n### ${d.id}: ${d.title}\n\n${d.note}\n\n${d.url}\n\nSHA-256: ${d.sha256}\n`).join('');}reportHTML+='</section>';}
 reportMD=reportMD.replace(/\]\(\/(?!\/)([^)]*)\)/g,(_,p)=>`](${origin+u('/'+p)})`).replace(/\]\(#(S\d+)\)/g,(_,id)=>`](${origin+u('/analyysit/datakeskukset/lahteet/#'+id)})`);
@@ -57,7 +58,7 @@ const reportMeta={title:'Datakeskukset: pitkä raportti',description:'Toimitettu
 await put('analyysit/datakeskukset/raportti/index.html',template(reportMeta,reportHTML,tableOfContents(chapterSlugs.map(id=>({id:'raportti-'+id,level:2,text:pages.find(p=>p.meta.slug===id).meta.title})))));
 await put('404.html',template({title:'Sivua ei löytynyt',description:'Osoite on voinut muuttua. Julkaisun sisältö löytyy etusivulta ja analyysin hakemistosta.',route:'/404.html',updated:config.updated,layout:'404'},`<p><a href="${u('/')}">Palaa Symetran etusivulle</a> tai <a href="${u('/analyysit/datakeskukset/')}">avaa datakeskusanalyysi</a>.</p>`));
 await put('downloads/datakeskukset.md',reportMD);
-for(const [name,data] of [['sources',sources],['documents',documents],['questions',questions.map(q=>({...q.meta,body:q.body}))],['calculations',calculations()]])await put(`downloads/${name}.json`,JSON.stringify(data,null,2)+'\n');
+for(const [name,data] of [['sources',sources],['documents',documents],['questions',questions.map(q=>({...q.meta,body:q.body}))],['calculations',calculations()],['symetrix-v0.1',symetrixMatrixV01()]])await put(`downloads/${name}.json`,JSON.stringify(data,null,2)+'\n');
 const csvValue=x=>'"'+String(x).replaceAll('"','""')+'"';await put('downloads/sources.csv','\ufeff'+[['id','title','url','verification'],...sources.map(s=>[s.id,s.title,s.url,s.verification])].map(row=>row.map(csvValue).join(',')).join('\r\n'));
 await put('.nojekyll','');
 await put('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...pages.map(p=>p.meta.route),reportMeta.route].map(r=>`<url><loc>${e(origin+u(r))}</loc><lastmod>${config.updated}</lastmod></url>`).join('')}</urlset>`);
