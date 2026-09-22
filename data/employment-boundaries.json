@@ -145,5 +145,50 @@
       },
       "note": "Kemi ainoa nykyinen kohde, jolla E2 on määritelty eksplisiittisesti suoraksi kotimaiseksi arvoketjuksi."
     }
-  ]
+  ],
+  "scope_jump_analysis": {
+    "principle": "Eri systeemirajojen välinen suhde on sallittu kuvailevana analyysina, kun osoittaja ja nimittäjä nimetään eksplisiittisesti. Suuri suhde on tutkimussignaali, ei automaattinen hyvä/huono-arvio.",
+    "ratios": [
+      {
+        "id": "E1_over_E0",
+        "label": "Site amplification",
+        "formula": "E1 / E0",
+        "meaning": "Kuinka monta toimipaikalla säännöllisesti työskentelevää henkilöä näkyy yhtä oman henkilöstön henkilöä/FTE:tä kohti.",
+        "interpretation": "Suuri arvo voi viitata ulkoistamiseen, monityönantajamalliin tai siihen, että juridinen henkilöstöluku kuvaa huonosti fyysisen toimipaikan työvoimaa.",
+        "values": {
+          "hamina": 4.17,
+          "kemi": 2
+        },
+        "direction": "descriptive_only"
+      },
+      {
+        "id": "E2_over_E0",
+        "label": "Domestic value-chain multiplier",
+        "formula": "E2 / E0",
+        "meaning": "Suoran kotimaisen arvoketjun työmäärä suhteessa omaan henkilöstöön.",
+        "interpretation": "Suuri arvo voi kertoa työvoimavaltaisesta kotimaisesta toimitusketjusta. Se ei yksin kerro tuottavuudesta tai yhteiskunnallisesta hyödystä.",
+        "values": {
+          "kemi": 10
+        },
+        "direction": "descriptive_only"
+      },
+      {
+        "id": "E3_over_E0",
+        "label": "Extended employment multiplier",
+        "formula": "E3 / E0",
+        "meaning": "Laajemman välillisen/supported employment -arvion suhde omaan henkilöstöön.",
+        "interpretation": "Korkean epävarmuuden exploratory-suhde. Käytetään kaninkolojen löytämiseen, ei pisteytykseen.",
+        "values": {
+          "outokumpu": 17.62
+        },
+        "direction": "descriptive_only",
+        "caveat": "Outokummun E3 koskee Kemi–Tornio-kokonaisuutta, kun E0 on Ferrochrome-segmentti. Tämä on tarkoituksellinen cross-boundary exploratory ratio, ei harmonisoitu mittari."
+      }
+    ],
+    "flags": {
+      "missing_upper_boundary": "Jos E0/E1 tunnetaan mutta E2/E3 puuttuu, merkitään tutkimusaukko eikä oleteta kertoimeksi 1.",
+      "large_jump": "Suuri scope jump nostetaan jatkotutkimukseen riippumatta siitä, onko se positiivinen vai negatiivinen ilmiö.",
+      "mixed_boundary": "Jos osoittaja ja nimittäjä ovat eri organisaatiorajoista, suhde merkitään exploratory/cross-boundary."
+    }
+  }
 }

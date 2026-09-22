@@ -143,6 +143,29 @@ Jo E0→E1-suhde on kiinnostava **kuvaileva** mittari: Haminassa ~500 / 120 ≈ 
 
 [Lataa työllisyyden systeemirajarekisteri](/downloads/employment-boundaries.json).
 
+## Scope jump: etsitään tarkoituksella kaninkoloja
+
+Harmonisoitu vertailu estää E0-, E1-, E2- ja E3-lukujen sekoittamisen samaan scoreen. **Se ei tarkoita, etteikö niiden välinen ero olisi itsessään kiinnostava.**
+
+Scope-jump-näkymässä eri rajojen suhde lasketaan tarkoituksella ja merkitään kuvailevaksi:
+
+| Kohde | Suhde | Arvo | Mitä se kertoo? |
+|---|---|---:|---|
+| Hamina | E1 / E0 | **~4,2×** | Kampuksella työskentelee noin 4,2 henkilöä jokaista Tuiken omaa työntekijää kohti |
+| Kemi Bio | E1 / E0 | **~2,0×** | Tehdasalueen työvoima on noin kaksinkertainen tehtaan omaan henkilöstöön nähden |
+| Kemi Bio | E2 / E0 | **~10×** | Suora kotimainen arvoketju on yhtiön arvion mukaan noin kymmenkertainen tehtaan omaan henkilöstöön nähden |
+| Outokumpu | E3 / E0 | **~17,6× Q** | E3 on Kemi–Tornio-vaikutusarvio ja E0 Ferrochrome-segmentti: tarkoituksellinen mixed-boundary exploratory -suhde |
+
+Nämä **eivät ole paremmuuspisteitä**. Suuri hyppy on signaali kysyä esimerkiksi:
+
+- onko työ ulkoistettu juridisen yhtiön ulkopuolelle?
+- syntyykö suuri osa työstä raaka-aine- ja logistiikkaketjussa?
+- onko vaikutusarvion menetelmä paljon laajempi kuin toisella toimijalla?
+- onko itse liiketoimintamalli poikkeuksellisen pääoma- tai työvoimavaltainen?
+- piilottaako oikeushenkilön henkilöstöluku toiminnan todellisen fyysisen työpanoksen?
+
+Juuri tällainen poikkeama on Symetrixissä **kaninkolo**, ei virhe. Harmonisoitu score kertoo yhden asian; scope jump kertoo, mistä kannattaa seuraavaksi kaivaa.
+
 ## Candidate metrics: data on jo olemassa, piste ei vielä
 
 Kaikkea hyvää evidenssiä ei pidä muuttaa pisteeksi. Alla oleva data on jo Evidence Ledgerissä, mutta yhteinen nimittäjä, baseline tai sama systeemiraja puuttuu.
