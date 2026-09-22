@@ -117,15 +117,18 @@
       "baseline_status": "not_set",
       "readiness": "blocked_high_priority",
       "required": [
-        "same_definition_value_chain_FTE",
-        "common_denominator"
+        "E2_direct_domestic_value_chain_jobs",
+        "common_denominator",
+        "same_period_or_explicit_period_rule"
       ],
-      "blocker": "Kemi and Outokumpu have company impact estimates; Google has supplier-company count, which is not a job count.",
+      "blocker": "Only Kemi currently has an explicit E2 direct domestic value-chain job estimate. Hamina has 600+ supplier companies, not job count; Outokumpu has direct employees and a separate E3 indirect-jobs estimate.",
       "candidate_evidence": [
         "EV-KEMI-WORK-004",
         "EV-HAM-SUPPLY-001",
         "EV-TORNIO-WORK-002"
-      ]
+      ],
+      "system_boundary": "E2",
+      "boundary_registry": "/downloads/employment-boundaries.json"
     },
     {
       "id": "local_public_capture",

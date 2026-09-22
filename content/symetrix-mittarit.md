@@ -122,6 +122,27 @@ Kemi: [Metsä Fibre: Kemin biotuotetehdas](https://www.metsagroup.com/metsafibre
 
 Tämä mittari ei ole sama asia kuin verkon nettokuorma. Kemin 250 % omavaraisuudesta voidaan johtaa noin 0,8 TWh omaa kulutusta ja +1,2 TWh tuotannon ja johdetun kulutuksen erotusta, mutta +1,2 TWh **ei ole tässä auditissa mitattu verkkoon vienti**.
 
+## Työllisyyden systeemirajat E0–E3
+
+Työllisyysluvut jaetaan ennen pisteytystä neljään eri rajaan. Eri rajojen lukuja **ei verrata keskenään**.
+
+| Taso | Mitä lasketaan? | Hamina | Nebius | Kemi Bio | Outokumpu |
+|---|---|---:|---:|---:|---:|
+| **E0 Oma henkilöstö** | Yhtiön/segmentin oma henkilöstö | 120 | 37 | ~250 | 454 FTE |
+| **E1 Toimipaikan työvoima** | Samalla site-alueella säännöllisesti työskentelevät, työnantajasta riippumatta | ~500 | ? | ~500 | >2 000* |
+| **E2 Suora kotimainen arvoketju** | Suomessa toimiva suora tuotanto-, raaka-aine-, logistiikka- ja palveluketju | ? | ? | ~2 500 | ? |
+| **E3 Laajempi välillinen vaikutus** | Yhtiön/vaikutusarvion epäsuora työllisyys | ? | ? | ? | ~8 000 Q |
+
+\* Outokummun >2 000 koskee Kemi–Tornio-kokonaisuuden suoria työntekijöitä, joten se on laajempi raja kuin Ferrochrome-segmentin E0.
+
+**Haminan 600+ suomalaista toimittajayritystä ei ole E2-työpaikkaluku.** Yritysten määrä kertoo verkoston laajuudesta, mutta ei montako henkilötyövuotta Google-asiakkuus niissä synnyttää.
+
+Kemin ~2 500 on tällä hetkellä puhtain E2-havainto: Metsä Fibre kuvaa sen nimenomaan tehtaan suoraksi arvoketjuksi Suomessa. Outokummun ~8 000 on puolestaan E3-tason yhtiön vaikutusarvio. Näiden rinnastaminen samaan scoreen olisi systeemirajavirhe.
+
+Jo E0→E1-suhde on kiinnostava **kuvaileva** mittari: Haminassa ~500 / 120 ≈ **4,2**, Kemissä ~500 / 250 ≈ **2,0**. Tätä ei vielä pisteytetä, mutta se kertoo kuinka paljon toimipaikan työvoimaa jää oman juridisen henkilöstöluvun ulkopuolelle.
+
+[Lataa työllisyyden systeemirajarekisteri](/downloads/employment-boundaries.json).
+
 ## Candidate metrics: data on jo olemassa, piste ei vielä
 
 Kaikkea hyvää evidenssiä ei pidä muuttaa pisteeksi. Alla oleva data on jo Evidence Ledgerissä, mutta yhteinen nimittäjä, baseline tai sama systeemiraja puuttuu.
