@@ -163,7 +163,7 @@ Haminassa Google raportoi vuodelta 2024 noin **11 356 m³ vedenottoa** ja noin *
 | Nettokulutus | ~1 136 m³/v | ? | Ei vielä samaa Kemi-määritelmää |
 | Jäähdytysveden läpivirtaus | merivesijärjestelmä, määrä ei tässä mittarissa | suljettu jäähdytysvesikierto | eri fysikaalinen suure |
 
-Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 160×** mittakaavaeron, mutta tämä ei ole vielä withdrawal-score: käsitteet ja statukset eivät ole identtiset.
+Haminan raportoitu 2024 vedenotto ja Kemin design-proxy tuottavat noin **1 300×** mittakaavaeron, mutta tämä ei ole vielä withdrawal-score: käsitteet ja statukset eivät ole identtiset.
 
 Tämä ero on silti erittäin arvokas kaninkolo. Seuraava tavoite on rakentaa poikkitoimialainen normalisointi, esimerkiksi **m³ vedenottoa / M€ kotimaista arvonlisää** ja rinnalle **m³ nettokulutusta / M€ kotimaista arvonlisää**.
 
