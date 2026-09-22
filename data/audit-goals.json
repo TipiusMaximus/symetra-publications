@@ -33,18 +33,19 @@
       "priority": 2,
       "status": "partial",
       "nowKnown": [
-        "2025 actual water withdrawal 32.819 Mm3",
-        "2025 actual wastewater flow 13.931 Mm3",
-        "2025 chemical pulp production 927 kt",
-        "derived withdrawal intensity 35.4 m3/t",
-        "derived wastewater-flow intensity 15.0 m3/t",
-        "closed cooling-water circulation",
-        "10 m3/t design proxy remains useful as design context"
+        "2025 actual water withdrawal 32.819 million m3",
+        "2025 actual wastewater flow 13.931 million m3",
+        "2025 actual chemical pulp production 927 kt",
+        "derived 2025 withdrawal intensity ~35.4 m3/t",
+        "derived 2025 wastewater-flow intensity ~15.0 m3/t",
+        "10 m3/t design proxy remains useful as design comparator",
+        "closed cooling-water circulation"
       ],
       "missing": [
-        "mill-specific net consumptive water loss / water consumption under the Group definition"
+        "site-specific net consumptive water loss / consumption",
+        "full-capacity steady-state actual water intensity"
       ],
-      "next": "Search mill-specific consumption/evaporation accounting; keep withdrawal and wastewater-flow metrics usable meanwhile."
+      "next": "Keep actual withdrawal and wastewater as observed metrics; search for site-specific consumption and later steady-state year."
     },
     {
       "id": "G-HAM-ELECTRICITY",
