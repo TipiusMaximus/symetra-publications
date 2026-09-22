@@ -31,18 +31,20 @@
       "id": "G-KEMI-WATER",
       "label": "Kemi actual water withdrawal/consumption",
       "priority": 2,
-      "status": "open",
+      "status": "partial",
       "nowKnown": [
-        "10 m3/t water design proxy",
+        "2025 actual water withdrawal 32.819 Mm3",
+        "2025 actual wastewater flow 13.931 Mm3",
+        "2025 chemical pulp production 927 kt",
+        "derived withdrawal intensity 35.4 m3/t",
+        "derived wastewater-flow intensity 15.0 m3/t",
         "closed cooling-water circulation",
-        "2026 company source says water consumption is materially lower than old mill"
+        "10 m3/t design proxy remains useful as design context"
       ],
       "missing": [
-        "current measured annual raw-water withdrawal",
-        "current measured annual wastewater discharge",
-        "net consumptive loss"
+        "mill-specific net consumptive water loss / water consumption under the Group definition"
       ],
-      "next": "Find environmental monitoring/permit annual report; do not substitute commissioning wastewater flow."
+      "next": "Search mill-specific consumption/evaporation accounting; keep withdrawal and wastewater-flow metrics usable meanwhile."
     },
     {
       "id": "G-HAM-ELECTRICITY",
