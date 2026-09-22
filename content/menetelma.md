@@ -59,7 +59,7 @@ Luokkia ei lasketa yhteen, väritetä liikennevaloiksi tai muuteta totuusprosent
 
 ## Mitä ensimmäinen julkaisu kattaa?
 
-Tarkastelu kokoaa aiemman auditoinnin talous-, ympäristö-, verkko- ja sääntelyaineiston. Pääkohteet ovat Hamina ja HEL16/Hepokorpi. Kemi ja Outokummun soveltuva Kemi–Tornio-toiminta ovat rakenteellisia verrokkeja; niiden auditointisyvyys ei ole sama. Irlanti toimii sähköjärjestelmän ja liittymisehtojen vertailuna.
+Tarkastelu kokoaa julkisista lähteistä talous-, ympäristö-, verkko- ja sääntelyaineiston. Pääkohteet ovat Hamina ja HEL16/Hepokorpi. Kemi ja Outokummun soveltuva Kemi–Tornio-toiminta ovat rakenteellisia verrokkeja; niiden auditointisyvyys ei ole sama. Irlanti toimii sähköjärjestelmän ja liittymisehtojen vertailuna.
 
 Kansalaisaloite 17997 toimii yhtenä tutkimuskysymysten lähteenä. Aloitetta koskevat väitearviot eivät määritä koko julkaisun kehystä. Päätelmät koskevat havaittua aineistoa 22.9.2026 mennessä; myöhempiä muutoksia ei ole seurattu automaattisesti.
 
