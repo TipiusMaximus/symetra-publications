@@ -529,8 +529,8 @@
   },
   {
     "id": "S089",
-    "title": "World Bank: diesel generator characteristics",
-    "url": "https://documents1.worldbank.org/curated/en/986551468338480525/pdf/430990v20Annexes0Box0327386B01PUBLIC1.pdf",
-    "verification": "Tekninen taustalähde ilmoittaa dieselgeneraattorin hyötysuhteen tyypillisesti noin 35–45 %. Käytetään vain varavoimatehon suuruusluokan ristiintarkistukseen, ei Haminan vuosikulutuksen varsinaisena estimaattorina."
+    "title": "Caterpillar: diesel engine/generator efficiency background",
+    "url": "https://www.cat.com/en_MX/by-industry/electric-power/Articles/White-papers/answers-for-the-telecom-industry.html",
+    "verification": "Caterpillar kuvaa dieselmoottorin hyötysuhteeksi parhaalla polttoainetalouden alueella noin 40 % ja AC-generaattorin hyötysuhteeksi noin 90 %. Käytetään vain Haminan varavoimatehon suuruusluokan sanity checkiin, ei vuosikulutuksen estimaattorina."
   }
 ]
