@@ -27,6 +27,21 @@ Myös EBITDA–EBIT-erotus on laskennallisesti noin **314,3 M€**. Se on tutkim
 
 Sen sijaan liikevaihdon ja käyttökatteen erotusta ei nosteta päämittariksi. Se voidaan laskea aritmeettisesti, mutta ilman kulurakennetta se ei kerro esimerkiksi kotimaisten hankintojen määrää.
 
+### Tuike ja Ferrochrome: rahavirta suhteessa omaan henkilöstöön
+
+Rakennelaskelma käyttää Tuiken vuoden 2025 yhtiölukuja ja Outokummun Ferrochrome-segmentin vuoden 2025 lukuja. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b).
+
+| Johdettu suhdeluku | Tulos |
+|---|---:|
+| Tuike: 574,374 M€ / 120 henkilöä | noin 4,786 M€ liikevaihtoa / oma henkilö |
+| Tuike: 344,6244 M€ / 120 henkilöä | noin 2,872 M€ käyttökatetta / oma henkilö |
+| Ferrochrome: 462 M€ / 454 FTE | noin 1,018 M€ myyntiä / FTE |
+| Ferrochrome: 217 M€ / 454 FTE | noin 0,478 M€ ulkoista myyntiä / FTE |
+| Ferrochrome: 137 M€ / 454 FTE | noin 0,302 M€ käyttökatetta / FTE |
+| Ferrochrome: 245 M€ / 462 M€ | noin 53,0 % myynnistä konsernin sisäistä |
+
+Laskelmaa ei nimetä tuottavuusmittariksi. Tuiken henkilöstö ja Outokummun vuoden lopun FTE eivät ole sama henkilöstömittari, eikä oikeushenkilö ole sama organisaatioraja kuin liiketoimintasegmentti. [Vertailun tulkinta](/analyysit/datakeskukset/vertailu/#rakennelaskelma-paljonko-rahavirtaa-nakyy-omaa-henkilostoa-kohti).
+
 ### Kemi: sama sähkölähde, eri laskentatapa
 
 Metsä Fibre ilmoittaa Kemin biotuotetehtaan sähköntuotannoksi 2,0 TWh/v ja sähköomavaraisuudeksi 250 %. [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/).
