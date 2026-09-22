@@ -103,8 +103,8 @@
     },
     "kemi": {
       "water_design_value_m3_per_tonne_pulp": 10,
-      "pulp_nameplate_tonnes_per_year": 1320000,
-      "derived_design_proxy_m3_per_year": 13200000,
+      "pulp_nameplate_tonnes_per_year": 1500000,
+      "derived_design_proxy_m3_per_year": 15000000,
       "sourceRefs": [
         "S088",
         "S069"
@@ -113,8 +113,8 @@
       "note": "Metsä Fibre calls 10 m3/t a raw-water design value but also explains that the design value refers to total wastewater generated at planned output; retain as a water-use design proxy, not measured withdrawal."
     },
     "descriptive_ratio": {
-      "kemi_design_proxy_over_hamina_reported_withdrawal": 1162,
-      "hamina_seawater_permit_ceiling_over_kemi_design_proxy": 6.06,
+      "kemi_design_proxy_over_hamina_reported_withdrawal": 1321,
+      "hamina_seawater_permit_ceiling_over_kemi_design_proxy": 5.33,
       "interpretation": "Rabbit-hole indicators only. Different water concepts and statuses must remain visible: Hamina 2024 reported withdrawal, Hamina seawater permit ceiling, and Kemi design proxy are not interchangeable."
     },
     "next_required": {
@@ -129,6 +129,32 @@
         "water withdrawal / annual operating value",
         "absolute freshwater withdrawal as descriptive burden"
       ]
+    }
+  },
+  "energy_cross_sector": {
+    "principle": "Keep sector-specific internal-efficiency metrics separate from cross-sector resource-intensity metrics.",
+    "hamina": {
+      "annual_electricity_GWh_estimate": 870,
+      "revenue_MEUR_2024": 452.704,
+      "electricity_per_revenue_GWh_per_MEUR": 1.922,
+      "status": "mixed-period estimate / near-match boundary",
+      "note": "Electricity is an external estimate; revenue is Tuike Finland Oy 2024."
+    },
+    "kemi": {
+      "electricity_production_GWh": 2000,
+      "electricity_self_sufficiency_percent": 250,
+      "implied_electricity_consumption_GWh": 800,
+      "total_pulp_nameplate_tonnes": 1500000,
+      "electricity_per_tonne_MWh": 0.533,
+      "whole_business_revenue_MEUR_2024": 2328.3,
+      "electricity_per_whole_business_revenue_floor_GWh_per_MEUR": 0.344,
+      "equality_revenue_threshold_MEUR_vs_hamina": 416.28,
+      "status": "derived + cross-boundary floor",
+      "note": "Site revenue is unknown. 0.344 GWh/M€ is a conservative floor because the denominator is all Metsä Fibre revenue."
+    },
+    "comparison": {
+      "hamina_over_kemi_floor": 5.593,
+      "interpretation": "Discovery signal only. Because Kemi is a conservative floor, the actual site-level spread is smaller than this if the same 0.8 TWh numerator is retained and may reverse if site revenue is sufficiently low."
     }
   }
 }
