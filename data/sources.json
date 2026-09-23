@@ -880,5 +880,15 @@
     "sourceType": "Tilaajan julkaisema aluetaloudellinen selvitys",
     "publishedAt": "2021-11-02",
     "reviewScope": []
+  },
+  {
+    "id": "S095",
+    "title": "Tilastokeskus: Yritysten tilinpäätöstiedot — jalostusarvon määritelmä",
+    "url": "https://pxdata.stat.fi/PXWeb/pxweb/fi/StatFin/StatFin__yrti/13w2.px/",
+    "verification": "Tarkistettu 23.9.2026: oikeushenkilötason jalostusarvo määritellään muodossa käyttökate + henkilöstökulut yhteensä. Käytetään Nebius DC Oy:n jalostusarvon konservatiivisen alarajaproxyn perustana.",
+    "publisher": "Tilastokeskus",
+    "sourceType": "Virallinen tilastomääritelmä",
+    "publishedAt": null,
+    "reviewScope": []
   }
 ]
