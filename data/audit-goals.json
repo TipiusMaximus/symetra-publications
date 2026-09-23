@@ -113,15 +113,19 @@
       "id": "G-DOMESTIC-VA",
       "label": "Domestic value added",
       "priority": 7,
-      "status": "open",
+      "status": "partial",
       "nowKnown": [
-        "Kemi company impact estimate ~0.5bn €/y positive income effect",
-        "Hamina revenue/property-tax/supplier evidence"
+        "2021 Ramboll steady-state scenario: Kemi mill direct revenue ~760 M€/y, intermediate consumption ~520 M€/y and direct value added ~230 M€/y at 1.5 Mt/y pulp output",
+        "2025 observed Kemi pulp output 927 kt",
+        "production-scaled 2025 direct value-added proxy ~142.14 M€/y (P/S), not observed",
+        "Kemi 2025 water withdrawal / value-added proxy ~230,892 m3 per M€"
       ],
       "missing": [
-        "same-method domestic value added for all entities"
+        "observed 2024/2025 Kemi site value added or site revenue plus intermediate consumption on the same boundary",
+        "same-method site/domestic value added for datacenter comparators",
+        "harmonized value-added denominator for Outokumpu/Tornio"
       ],
-      "next": "Use national accounts / input-output or transparent value-added proxy before scoring MWh/M€, m3/M€, htv/M€."
+      "next": "Search for Kemi site-level financial/establishment data. Until found, keep the 142.14 M€ production-scaled value as an explicit P/S denominator and do not Symetrix-score it against observed values."
     }
   ]
 }
