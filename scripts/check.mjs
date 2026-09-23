@@ -197,7 +197,7 @@ assert.equal(auditGoals.goals.find(x=>x.id==='G-KEMI-GRID').status,'partial');
 assert.equal(auditGoals.goals.find(x=>x.id==='G-KEMI-WATER').status,'partial');
 const denominatorEngine=JSON.parse(await readFile(path.join(dist,'downloads/denominator-engine-v0.1.json'),'utf8'));
 assert.equal(denominatorEngine.version,'0.1');
-assert.equal(denominatorEngine.generatedFrom.recipes,14);
+assert.equal(denominatorEngine.generatedFrom.recipes,15);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_site_amplification').value,4.167);
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_direct_value_chain_multiplier').value,10);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_water_withdrawal_per_revenue').value,25.085);
@@ -205,6 +205,7 @@ assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_water_design_per_rev
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_actual_water_withdrawal_per_business_revenue_floor').value,12622.692);
 assert.equal(denominatorEngine.results.find(x=>x.id==='nebius_water_withdrawal_per_revenue').value,51.953);
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_nebius_water_withdrawal_multiple').value,22494.174);
+assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_water_withdrawal_per_value_added_proxy').value,230892.078);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_property_tax_share_of_revenue').value,0.331);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_electricity_per_revenue').value,1.922);
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_electricity_per_business_revenue_floor').value,0.344);
