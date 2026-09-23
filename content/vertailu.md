@@ -4,21 +4,12 @@ slug: vertailu
 route: /analyysit/datakeskukset/vertailu/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Ensin avataan datakeskuksen taloudellinen toimintamalli ja Haminan laskentarajat. Vasta sen jälkeen verrataan muita kohteita.
 layout: article
 ---
 Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan toinen toimiva datakeskus Mäntsälästä sekä Hepokorpi, Kemi ja Kemi–Tornio.
-
-## Mitä datakeskus taloudellisesti tekee?
-
-Valmistavassa teollisuudessa tuotteen seuraaminen on usein konkreettista: raaka-aine tulee tehtaalle ja valmis tuote lähtee ulos. Datakeskuksessa arvoketju on vaikeampi nähdä, koska fyysisen laitoksen tehtävä on tuottaa ja ylläpitää **laskenta-, tallennus- ja verkkokapasiteettia**, jota käytetään osana digitaalisia palveluja.
-
-Yksinkertaistettu toimintaketju on:
-
-**sähkö + sähköverkko + maa ja rakennukset + palvelimet ja verkkolaitteet + työ ja palvelut → datakeskusoperaatio → käyttökelpoinen laskenta- ja tallennuskapasiteetti → Googlen digitaaliset palvelut**
-
 Google julkaisee myös markkinahintoja pilvilaskennan resursseille, mikä havainnollistaa sitä, että laskentakapasiteetilla on palvelumarkkinassa rahallinen arvo. Tämä ei kuitenkaan osoita, että Haminan kapasiteetti myytäisiin juuri näillä tuotteilla tai että loppuasiakkaan maksama hinta kirjautuisi Tuike Finland Oy:n liikevaihdoksi. [Google Cloud](https://cloud.google.com/products/compute/pricing).
 
 **Liikevaihto** tarkoittaa yrityksen tavaroiden ja palvelujen myyntiä euroina ilman arvonlisäveroa ja myönnettyjä alennuksia. Se ei ole voittoa, sillä toiminnan kuluja ei ole vielä vähennetty.
@@ -32,7 +23,7 @@ Tämä auditointi pystyy tällä hetkellä vastaamaan jälkimmäiseen vain ositt
 
 **Konserni** on saman omistuksen ja määräysvallan alla toimiva yritysryhmä. **Konsernin sisäinen myynti** tapahtuu sen omien yhtiöiden tai liiketoiminta-alueiden välillä; **ulkoinen myynti** suuntautuu konsernin ulkopuolisille asiakkaille. Ulkoinen ei tarkoita ulkomaille myyntiä. Sisäinen myynti poistetaan konsernin yhteenlasketusta myynnistä, jotta sama myynti ei tule lasketuksi kahdesti. Tuiken myynnin jakautumista näihin ryhmiin ei tässä aineistossa tunneta.
 
-### Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
+## Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
 
 Tuike Finland Oy:n vuoden 2025 liikevaihto on julkisissa yritystietopalveluissa 574,374 M€. Se on tärkeä havainto, koska se kertoo suomalaisen oikeushenkilön läpi kulkevasta suuresta liiketoiminnan volyymista. Mutta ennen yhteiskunnallisen hyödyn arviointia pitäisi tietää ainakin:
 
