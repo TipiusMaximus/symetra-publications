@@ -161,6 +161,39 @@ Symetrix ei oletusarvoisesti yhdistä eri mittareita yhdeksi kokonaispisteeksi. 
 
 Tämän rakenteen tarkoitus on tukea tutkivaa analyysiä: samaa todellisuutta voidaan tarkastella useista perustelluista näkökulmista muuttamatta alkuperäisiä havaintoja tai piilottamatta arvovalintoja.
 
+### Syntraus — mielikuvitus kohtaa todisteet
+
+**Syntraus** on Symetran tutkiva vaihe, jossa havaintojen, symetriikoiden ja tulkintojen väliltä etsitään uusia rakenteita, ristiriitoja, poikkeamia ja tutkimuskysymyksiä.
+
+Perusperiaate:
+
+> **Mielikuvitus kohtaa todisteet.**
+
+Syntraus saa olla luovaa. Se voi ehdottaa uuden nimittäjän, uuden symetriikan, uuden verrokin, uuden boundaryn tai kokonaan uuden tutkimushaaran. Ehdotus ei kuitenkaan muutu havainnoksi, mittariksi tai johtopäätökseksi ennen kuin se läpäisee samat evidenssi-, provenance- ja boundary-säännöt kuin muu analyysi.
+
+Syntrauksen tulos on ensisijaisesti **kandidaattikysymys tai hypoteesi**, ei fakta.
+
+Esimerkiksi suuri ero kahden kohteen vedenotossa voi syntrata kysymyksen siitä, seuraako julkinen huomio fyysisen resurssivirran mittakaavaa. Tällöin voidaan ehdottaa uutta mittaria, kuten julkinen huomio / vedenotto, mutta mittaria ei julkaista vahvana vertailuna ennen kuin huomion mittausmenetelmä, aikaraja, aineisto ja nimittäjä ovat eksplisiittisiä.
+
+Syntrauksen työkierto on:
+
+**Observation → Symetry → Symetrix → Interpretation → Syntraus → uusi kysymys → uusi Observation**
+
+Kierto saa jatkua niin kauan kuin uudet kysymykset tuottavat testattavia rakenteita. Menetelmä ei kuitenkaan palkitse pelkkää yllättävyyttä: rabbit hole on tutkimusvihje, ei johtopäätös.
+
+Syntrauksen turvarajat:
+
+1. **Mielikuvitus saa ehdottaa, ei todistaa.**
+2. **Uusi suhdeluku tarvitsee aina nimettyyn kysymykseen sopivan nimittäjän.**
+3. **Korrelaatio tai suuri kertaluokkaero ei yksin muodosta kausaaliväitettä.**
+4. **Heikko evidenssi ei vahvistu sillä, että siitä johdetaan kiinnostava mittari.**
+5. **Uusi tutkimushaara säilyttää alkuperäisen havainnon, boundaryn ja provenancen.**
+6. **Jos ehdotus ei läpäise yhteensopivuusporttia, se jää rabbit holeksi, hypoteesiksi tai avoimeksi kysymykseksi.**
+
+Lyhyt englanninkielinen muoto:
+
+> **Imagination proposes the symmetry. Evidence decides whether it survives.**
+
 ## 6. Mittarit ja Symetrix
 
 Mittari vastaa aina yhteen rajattuun kysymykseen. Se ei ole yleisarvosana kohteesta.
@@ -259,6 +292,7 @@ Seuraavat saavat muuttua tutkimuskysymyksen mukaan:
 - toimialakohtaiset käsitteet;
 - Symetrixin soveltuvat rivit.
 - valittu symetoinnin nimittäjä, kun tutkimuskysymys sitä perustelee.
+- syntrauksessa syntyvät hypoteesit, rabbit holet ja uudet tutkimushaarat.
 
 ## 11. AI-driftin estäminen
 
@@ -276,7 +310,8 @@ Siksi tulevien mallien pitää noudattaa seuraavia sääntöjä:
 8. **Älä muuta visuaalista järjestelmää** yksittäisen analyysin vuoksi.
 9. **Älä poista vanhaa toimivaa lähde- tai laskentapolkua**, ellei korvaava polku ole testattu.
 10. **Älä muuta julkaistua lukua ilman changelog-merkintää**, jos muutos vaikuttaa tulkintaan.
-11. **Jos uusi tutkimustarve ei sovi standardiin, muuta standardia tietoisesti ensin** — älä tee poikkeusta piilossa.
+11. **Älä käsittele syntrauksessa syntyvää hypoteesia havaintona tai johtopäätöksenä** ennen evidenssi- ja boundary-porttia.
+12. **Jos uusi tutkimustarve ei sovi standardiin, muuta standardia tietoisesti ensin** — älä tee poikkeusta piilossa.
 
 ## 12. Julkaisukynnys
 
