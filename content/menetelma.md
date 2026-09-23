@@ -4,7 +4,7 @@ slug: menetelma
 route: /menetelma/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Näyttö, mittarit, vertailurajat ja epävarmuus muodostavat analyysin. Lukija voi seurata päätelmän takaisin lähteeseen.
 layout: standalone
@@ -91,7 +91,11 @@ Kansalaisaloite 17997 toimii yhtenä tutkimuskysymysten lähteenä. Aloitetta ko
 
 ## Aineisto ja toimitusprosessi
 
-Analyysi on koottu julkisista verkkolähteistä, viranomaisasiakirjoista ja julkisesti saatavista PDF-aineistoista. Tekoälyä on käytetty aineiston kokoamisessa, lähdetarkistuksessa, laskennassa ja julkaisun toteutuksessa. Tekoälyn vastaus ei ole itsenäinen evidenssilähde.
+Analyysi on koottu julkisista verkkolähteistä, viranomaisasiakirjoista ja julkisesti saatavista PDF-aineistoista. Julkaisun tekijä on Symetra organisaationa. Symetra vastaa toimituksellisista ratkaisuista, rajauksista ja siitä, että päätelmät sidotaan julkaistuun näyttöön.
+
+Tekoälyä on käytetty aineiston kokoamisessa, lähteiden käsittelyssä, laskennassa ja julkaisun toteutuksessa. Tekoälyn vastaus ei ole itsenäinen evidenssilähde, eikä automaattinen käsittely siirrä toimitusvastuuta pois Symetralta.
+
+Tässä julkaisussa ei ole ilmoitettu ulkopuolista rahoittajaa, toimeksiantajaa tai analyysin kohteeseen liittyvää sidonnaisuutta. Jos julkaisuun vaikuttava rahoitus tai sidonnaisuus myöhemmin syntyy tai havaitaan, se kirjataan menetelmään ja muutoshistoriaan.
 
 Lähteiden ajantasaisuus on päivätty. Linkin tekninen toimivuus ei tarkoita sisällön uudelleenvarmennusta. Hallinnollisten asiakirjojen alkuperäinen päätöspäivä erotetaan siitä, milloin asiakirja luettiin. Lähteen saatavuuseste merkitään näkyviin.
 

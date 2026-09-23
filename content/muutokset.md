@@ -4,11 +4,19 @@ slug: muutokset
 route: /muutokset/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
 description: Mitä analyysissä on muuttunut, milloin ja miksi. Julkaisun kehityshistoria säilyy lukijan nähtävissä.
 layout: standalone
 ---
+## 1.2.0 — raporttivetoinen julkaisu 22.9.2026
+
+Pitkä raportti on nyt julkaisun ensisijainen lukureitti osoitteessa `/analyysit/datakeskukset/`. Orientaatio, esipuhe, tutkimuskysymys, varsinainen analyysi, A01–A11-väiteauditointi, johtopäätökset ja menetelmä tuotetaan yhdestä järjestetystä sisältömanifestista.
+
+Yhteensopivuusosoite `/analyysit/datakeskukset/raportti/` käyttää samaa runkosisältöä ja osoittaa canonical-metatiedolla pääraporttiin. Kohdennetut vaikutus- ja vertailunäkymät säilyvät, mutta eivät kuulu ensisijaiseen navigaatioon. Markdown-lataus ja tulostusversio sisältävät täydellisen lähdeliitteen.
+
+Tekijäksi on merkitty Symetra organisaationa. Julkaisu sisältää näkyvät versio-, julkaisu-, päivitys- ja aineistopäivät sekä Article-JSON-LD:n. Julkaisuportti avattiin hyväksytyn julkaisupäätöksen perusteella; selain- ja PDF-tarkistus jatkuu julkaisun jälkeisenä QA-tehtävänä.
+
 ## 1.1.0 — rakenneuudistus, luonnos 22.9.2026
 
 Julkaisun pääkertomus rakennetaan uudelleen tutkimuksen etenemisreitin mukaiseksi. Periaate on **selitä ennen kuin mittaat**: toimija, fyysinen kohde, ajanjakso ja laskentaraja avataan ennen tunnuslukua.

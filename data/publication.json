@@ -1,0 +1,28 @@
+{
+  "canonicalRoute": "/analyysit/datakeskukset/",
+  "compatibilityRoute": "/analyysit/datakeskukset/raportti/",
+  "reportSections": [
+    {"kind": "page", "id": "datakeskukset", "group": "orientaatio"},
+    {"kind": "chapter", "id": "esipuhe", "group": "orientaatio"},
+    {"kind": "chapter", "id": "tutkimuskysymys", "group": "orientaatio"},
+    {"kind": "chapter", "id": "lukutapa", "group": "menetelma"},
+    {"kind": "chapter", "id": "hamina", "group": "kohde"},
+    {"kind": "chapter", "id": "tyo", "group": "vaikutusketju"},
+    {"kind": "chapter", "id": "talous", "group": "vaikutusketju"},
+    {"kind": "chapter", "id": "sahko", "group": "vaikutusketju"},
+    {"kind": "chapter", "id": "verkko", "group": "vaikutusketju"},
+    {"kind": "chapter", "id": "ymparisto", "group": "vaikutusketju"},
+    {"kind": "chapter", "id": "hepokorpi", "group": "vertailukohteet"},
+    {"kind": "chapter", "id": "kemi", "group": "vertailukohteet"},
+    {"kind": "chapter", "id": "outokumpu", "group": "vertailukohteet"},
+    {"kind": "chapter", "id": "vertailu", "group": "vertailu"},
+    {"kind": "chapter", "id": "vaihtoehto", "group": "vertailu"},
+    {"kind": "page", "id": "symetrix", "group": "vertailu"},
+    {"kind": "questions", "id": "vaiteet", "group": "vaiteauditointi"},
+    {"kind": "chapter", "id": "johtopaatokset", "group": "johtopaatokset"},
+    {"kind": "page", "id": "menetelma", "group": "liitteet"}
+  ],
+  "downloadAppendices": [
+    {"kind": "page", "id": "lahteet", "group": "liitteet"}
+  ]
+}

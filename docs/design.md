@@ -6,8 +6,8 @@ Toteutuksen visuaalinen viite on kaksi Image Genillä 22.9.2026 tuotettua etusiv
 - Georgia otsikoissa ja tekstimuotoisessa Symetra-nimessä; järjestelmän sans-serif leipätekstissä. Ulkoisia fonttipalveluita ei tarvita.
 - Enintään 1296 px sivu, 900 px artikkeli, noin 70 merkin tekstirivi. Etusivun otsikko 64–96 px, artikkeli 40–60 px, leipäteksti 18–20 px. Mobiilissa pienempi otsikko ja 20 px reunat.
 - Avoimet palstat, vaakaviivat, taulukot ja yksi rajausnoston tyyli. Ei pisteitä, liikennevaloja, markkinointikuvia tai koristekortteja.
-- Etusivu: nimi ja kolme linkkiä; Vaikutukset näkyviksi.; käyttäjän pääviesti; Tutustu analyysiin; ensimmäinen analyysi; kolme periaatetta; alatunniste.
-- Artikkeli: osionavigaatio, otsikko, ingressi, versio ja päiväys, sisältö, lähde- ja jatkolinkit. Mobiilin osionavigaatio käyttää details-elementtiä. Taulukoiden vaakavieritys on näppäimistöllä käytettävä.
+- Etusivu: nimi ja julkaisun päälinkit; Vaikutukset näkyviksi.; käyttäjän pääviesti; Lue raportti; ensimmäinen analyysi; kolme periaatetta; alatunniste.
+- Raportti: osionavigaatio, otsikko, ingressi, tekijä ja päivätyt julkaisutiedot, orientaatio, toimituksellinen esipuhe, sisältö, lähde- ja jatkolinkit. Esipuhe on rauhallinen tekstiosio, ei mainosbanneri. Mobiilin osionavigaatio käyttää details-elementtiä. Taulukoiden vaakavieritys on näppäimistöllä käytettävä.
 - Nuolia tai muita koristeikoneita ei tarvita. Painikkeiden, linkkien ja summary-elementtien fokus näkyy. Liike rajoittuu natiivikäyttöön.
 
 Tietoiset erot kuvakonsepteihin: kuvageneraattorin keksimät taulukkosisällöt korvataan varmennetuilla lähdehavainnoilla (erityisesti Outokumpu on valmistavaa teollisuutta). Lähdelinkit, lataukset, tulostus ja sisällysluettelot lisätään käyttäjän hyväksymiskriteerien toteuttamiseksi. Konseptin pienet tekstuurit ja painovirheet eivät kuulu HTML-toteutukseen.
