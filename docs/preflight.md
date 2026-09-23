@@ -15,6 +15,7 @@
 - Nebius DC Oy:n 2025 julkisista taloustiedoista johdetaan noin 13,34 M€ EBITDA ja Tilastokeskuksen jalostusarvomääritelmän perusteella konservatiivinen jalostusarvon alarajaproxy. Vesi- ja sähköintensiteetit säilyttävät lower-bound/upper-bound-merkinnät; noin 2 111× veden spread on rabbit-hole-signaali, ei ranking.
 - Tornion 2024 physical-site boundary on lisätty: sähkö 2 637 GWh, polttoaine-energia 1 428 GWh, raakavedenotto 20,712315 Mm³ (joki 6,977101; meri 13,735214) ja P3+P7-poisjohtovirta 21,033049 Mm³. Noin 4 TWh:n aiempi luku pidetään kokonaisenergian suuruusluokkana, ei sähkönkulutuksena.
 - Tornion talous pidetään erillisessä legal-entity envelope -rajassa: Stainless Oy ja Chrome Oy eivät muodosta hiljaisesti yhtä site-liikevaihtoa, ja Chrome Oy sisältää Kemin kaivoksen.
+- Haminan Resource Flow -raja erottaa vuoden 2024 Googlen raportoiman muun kuin meriveden (otto 11 356 m³, purku 10 221 m³, kulutus 1 136 m³) jäähdytysmerivedestä. Toteutunut merivesiotto pysyy `unknown`-tilassa; 80 Mm³/v säilyy vain lupakattona. Kemi–Hamina- ja Tornio–Hamina-total-water-suhteet ovat eksplisiittisesti `blocked` kunnes vesiscopet voidaan harmonisoida.
 - Laskennassa kokonaislukuaritmetiikka; käyttökatteen pyöristys ja johdettujen lukujen rajat näkyvät.
 - Alkuperäistä keskusteluarkistoa, käyttäjän paikallisia polkuja ja PDF-kokotekstejä ei sisällytetä julkaisurepoon tai buildiin.
 - Ei väitettä koko valmistavan teollisuuden kattavasta auditoinnista; verrokkien suppeampi tutkimussyvyys näkyy.
