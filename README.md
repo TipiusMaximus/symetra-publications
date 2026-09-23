@@ -27,9 +27,10 @@ npm run check
 
 - `content/*.md`: sivujen ensisijainen sisältö.
 - `content/questions/A01.md`–`A11.md`: tutkimuskysymykset ja koneluettavat metatiedot.
-- `data/sources.json`: 74 verkkolähdettä ja niiden alkuperäketju.
+- `data/sources.json`: 92 verkkolähdettä ja niiden alkuperäketju.
 - `data/documents.json`: HEL16:n kymmenen asiakirjan metadata; ei alkuperäisiä PDF:iä tai henkilökohtaisia polkuja.
 - `scripts/calculations.mjs`: toistettava laskenta.
+- `scripts/symetrix.mjs` ja `scripts/symetrix-v02.mjs`: historialliset v0.1/v0.2-mallit toistettavuutta varten. Nykyinen näkyvä malli on `scripts/symetrix-v03.mjs`, ja testi varmistaa että `content/symetrix.md` käyttää samaa versiota.
 - `assets/`: CSS, pieni tulostus-JavaScript ja 1200 × 630 PNG-jakokuva.
 - `dist/`: generoitu HTML ja ladattavat aineistot, ei Gitissä.
 
@@ -47,7 +48,7 @@ Linkkien tarkistus tarvitsee verkkoyhteyden. HTTP 403 merkitään estyneeksi; si
 
 ## GitHub Pages
 
-Työnkulku rakentaa PR:t ja main-haaran, tarkistaa sekä projektipolun että juuripolun ja tuottaa Pages-artefaktin. **Julkaisu on lukittu**, kunnes repositorion Actions-muuttuja `PUBLISH_APPROVED` on `true`.
+Työnkulku rakentaa PR:t, `main`-haaran ja `release/v1.1-preview-2026-09-22`-esikatseluhaaran. Release-haara voidaan julkaista Pagesiin ilman mergeä `main`iin; `main` säilyttää `PUBLISH_APPROVED=true`-julkaisuportin.
 
 Ennen lukon avaamista:
 
