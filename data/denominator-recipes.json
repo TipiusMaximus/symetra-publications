@@ -255,6 +255,48 @@
       "boundaryPolicy": "cross_boundary",
       "periodPolicy": "same",
       "comparisonGroup": "water_withdrawal_per_revenue"
+    },
+    {
+      "id": "nebius_water_withdrawal_per_revenue",
+      "label": "Nebius Finland-1 water withdrawal / revenue",
+      "question": "How much reported Finland-1 water withdrawal occurs per M€ of Nebius DC Oy revenue?",
+      "numerator": {
+        "evidence": "EV-NEB-WATER-002",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-NEB-FIN-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "m3_per_MEUR",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "same",
+      "comparisonGroup": "water_withdrawal_per_revenue"
+    },
+    {
+      "id": "kemi_nebius_water_withdrawal_multiple",
+      "label": "Kemi / Nebius annual water withdrawal",
+      "question": "How many times larger is Kemi's 2025 reported water withdrawal than Nebius Finland-1's 2025 reported water withdrawal?",
+      "numerator": {
+        "evidence": "EV-KEMI-WATER-003",
+        "field": "value",
+        "scale": 1000000,
+        "note": "million m3 → m3"
+      },
+      "denominator": {
+        "evidence": "EV-NEB-WATER-002",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "same",
+      "rabbitHole": {
+        "kind": "absolute_multiple",
+        "threshold": 4
+      }
     }
   ]
 }

@@ -860,5 +860,15 @@
     "title": "Metsä Group Annual Review 2025",
     "url": "https://www.metsagroup.com/globalassets/metsa-group/documents/investors/financial-reporting/annual-reports/2025/metsa-group-annual-review-2025.pdf",
     "verification": "Metsä Fibre production-unit table: Kemi 2025 chemical pulp 927 kt, water withdrawal 32.819 Mm3 and wastewater flow 13.931 Mm3. Mill-specific figures are not separately assured; they are covered at business-area/Group level by limited assurance. Checked 22.9.2026."
+  },
+  {
+    "id": "S093",
+    "title": "Nebius 2025 Sustainability Report",
+    "url": "https://assets.nebius.com/assets/79cf11ba-bb23-4cb8-802e-21dc155be31c/Nebius%202025%20Sustainability%20Report.pdf",
+    "verification": "Tarkistettu 23.9.2026: Finland-1:n 2025 vedenotto 1 459 m³, WUE 0,018 L/kWh, 19,5 GWh hukkalämmön vienti ja tieto, että tämä vastasi noin 20 %:a kohteen vuotuisesta sähkönkulutuksesta. Raportti ei julkaise 2025 veden kulutusta tai purkua kattavasti.",
+    "publisher": "Nebius",
+    "sourceType": "Julkaisijan oma vastuullisuusraportti",
+    "publishedAt": "2026-07-30",
+    "reviewScope": []
   }
 ]

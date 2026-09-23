@@ -1,0 +1,149 @@
+{
+  "version": "0.1",
+  "principle": "Resource flows stay separate by accounting concept. Unknown is explicit; withdrawal is not consumption, wastewater is not complete return flow, and derived annual balances are not metered grid flows.",
+  "entities": {
+    "nebius_finland1": {
+      "label": "Nebius Finland-1, Mäntsälä",
+      "period": "2025",
+      "boundary": "owned data center site"
+    },
+    "kemi": {
+      "label": "Metsä Fibre Kemi bioproduct mill",
+      "period": "2025 / current-source energy figures where noted",
+      "boundary": "Kemi production unit"
+    }
+  },
+  "water": {
+    "nebius_finland1": {
+      "in": {
+        "withdrawal": {
+          "value": 1459,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-NEB-WATER-002"
+        }
+      },
+      "out": {
+        "discharge": {
+          "state": "unknown",
+          "note": "Nebius does not report 2025 discharge with sufficient coverage."
+        }
+      },
+      "net": {
+        "consumption": {
+          "state": "unknown",
+          "note": "Nebius does not report 2025 water consumption with sufficient coverage."
+        }
+      }
+    },
+    "kemi": {
+      "in": {
+        "withdrawal": {
+          "value": 32819000,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-KEMI-WATER-003"
+        }
+      },
+      "out": {
+        "wastewater_flow": {
+          "value": 13931000,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-KEMI-WATER-004"
+        }
+      },
+      "net": {
+        "consumption": {
+          "state": "unknown",
+          "note": "Withdrawal minus wastewater flow is not labelled net consumption."
+        },
+        "withdrawal_minus_wastewater": {
+          "value": 18888000,
+          "unit": "m3/y",
+          "status": "derived_not_consumption",
+          "evidence": "EV-KEMI-WATER-007"
+        }
+      }
+    }
+  },
+  "electricity": {
+    "nebius_finland1": {
+      "in": {
+        "total_consumption": {
+          "value": 97.5,
+          "unit": "GWh/y_approx",
+          "status": "derived",
+          "evidence": "EV-NEB-ENERGY-001"
+        },
+        "measured_grid_import": {
+          "state": "unknown"
+        }
+      },
+      "own_production": {
+        "state": "unknown"
+      },
+      "out": {
+        "recovered_heat": {
+          "value": 19.5,
+          "unit": "GWh/y",
+          "status": "observed",
+          "evidence": "EV-NEB-HEAT-001"
+        }
+      },
+      "net": {
+        "measured_grid_balance": {
+          "state": "unknown"
+        }
+      }
+    },
+    "kemi": {
+      "in": {
+        "own_consumption": {
+          "value": 800,
+          "unit": "GWh/y_approx",
+          "status": "derived",
+          "evidence": "EV-KEMI-ENERGY-003"
+        },
+        "measured_grid_import": {
+          "state": "unknown"
+        }
+      },
+      "own_production": {
+        "value": 2000,
+        "unit": "GWh/y",
+        "status": "company_reported_current_annual_figure",
+        "evidence": "EV-KEMI-ENERGY-001"
+      },
+      "out": {
+        "arithmetic_surplus": {
+          "value": 1200,
+          "unit": "GWh/y_approx",
+          "status": "derived_not_metered_export",
+          "evidence": "EV-KEMI-ENERGY-004"
+        }
+      },
+      "net": {
+        "dependence": {
+          "value": -150,
+          "unit": "percent_of_own_consumption",
+          "status": "derived",
+          "evidence": "EV-KEMI-GRID-002"
+        },
+        "measured_grid_balance": {
+          "state": "unknown"
+        }
+      }
+    }
+  },
+  "cross_entity_diagnostics": {
+    "water_withdrawal_multiple": {
+      "numerator": "EV-KEMI-WATER-003",
+      "denominator": "EV-NEB-WATER-002",
+      "value": 22494.174,
+      "unit": "x",
+      "status": "derived",
+      "interpretation": "Kemi 2025 reported withdrawal divided by Nebius Finland-1 2025 reported withdrawal. Same accounting concept and year; different industrial processes. Descriptive scale difference, not an overall environmental ranking."
+    }
+  }
+}
