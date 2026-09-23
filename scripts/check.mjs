@@ -197,7 +197,7 @@ assert.equal(auditGoals.goals.find(x=>x.id==='G-KEMI-GRID').status,'partial');
 assert.equal(auditGoals.goals.find(x=>x.id==='G-KEMI-WATER').status,'partial');
 const denominatorEngine=JSON.parse(await readFile(path.join(dist,'downloads/denominator-engine-v0.1.json'),'utf8'));
 assert.equal(denominatorEngine.version,'0.1');
-assert.equal(denominatorEngine.generatedFrom.recipes,22);
+assert.equal(denominatorEngine.generatedFrom.recipes,23);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_site_amplification').value,4.167);
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_direct_value_chain_multiplier').value,10);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_water_withdrawal_per_revenue').value,25.085);
@@ -213,6 +213,7 @@ assert.equal(denominatorEngine.results.find(x=>x.id==='tornio_nebius_water_withd
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_tornio_water_withdrawal_multiple').value,1.585);
 assert.equal(denominatorEngine.results.find(x=>x.id==='tornio_nebius_electricity_multiple').value,27.046);
 assert.equal(denominatorEngine.results.find(x=>x.id==='tornio_kemi_electricity_multiple').value,3.296);
+assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_nebius_external_useful_heat_multiple').value,2.569);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_property_tax_share_of_revenue').value,0.331);
 assert.equal(denominatorEngine.results.find(x=>x.id==='hamina_electricity_per_revenue').value,1.922);
 assert.equal(denominatorEngine.results.find(x=>x.id==='kemi_electricity_per_business_revenue_floor').value,0.344);
@@ -236,6 +237,10 @@ assert.equal(resourceMatrix.water.hamina_2024.in.reported_non_seawater_withdrawa
 assert.equal(resourceMatrix.water.hamina_2024.in.seawater_cooling_withdrawal.state,'unknown');
 assert.equal(resourceMatrix.water.hamina_2024.in.seawater_cooling_withdrawal.permit_ceiling.value,80000000);
 assert.equal(resourceMatrix.cross_entity_diagnostics.kemi_hamina_total_water_comparison.state,'blocked');
+assert.equal(resourceMatrix.heat.kemi.out.district_heat_transfer.value,50.1);
+assert.equal(resourceMatrix.heat.nebius_finland1.out.useful_heat_export.value,19.5);
+assert.equal(resourceMatrix.heat.hamina_2024.out.actual_district_heat_delivery.state,'unknown');
+assert.equal(resourceMatrix.heat.tornio_2024.internal.recovered_heat.value,98);
 assert(files.some(f=>f.endsWith('/assets/og.png')),'OG image missing');
 assert.equal(files.filter(f=>f.endsWith('.html')).length,12);
 console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; evidence ledger exports; Symetrix v0.1/v0.2/v0.3; publication allowlist.`);
