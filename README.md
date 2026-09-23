@@ -36,6 +36,8 @@ npm run check
 - `scripts/calculations.mjs`: toistettava laskenta.
 - `scripts/symetrix.mjs` ja `scripts/symetrix-v02.mjs`: historialliset v0.1/v0.2-mallit toistettavuutta varten. Nykyinen näkyvä malli on `scripts/symetrix-v03.mjs`, ja testi varmistaa että `content/symetrix.md` käyttää samaa versiota.
 - `assets/`: CSS, pieni tulostus-JavaScript ja 1200 × 630 PNG-jakokuva.
+- `docs/editorial-style.md`: Symetran pysyvä toimituksellinen standardi — lukureitti, evidenssitilat, lähdeketju, navigaatio ja AI-driftin estäminen.
+- `docs/design.md`: visuaalisen järjestelmän pysyvät periaatteet.
 - `dist/`: generoitu HTML ja ladattavat aineistot, ei Gitissä.
 
 Kanoninen raportti on osoitteessa `/analyysit/datakeskukset/`. Yhteensopivuusreitti `/analyysit/datakeskukset/raportti/`, Markdown-lataus ja tulostusversio generoidaan samasta manifestista; niiden runkosisältöä ei muokata erikseen. Tulosteessa ja Markdown-latauksessa on täydellinen lähdeliite. Sivusto toimii ilman JavaScriptiä; silloin selaimen oma tulostustoiminto on käytettävissä.
