@@ -297,6 +297,26 @@
         "kind": "absolute_multiple",
         "threshold": 4
       }
+    },
+    {
+      "id": "kemi_water_withdrawal_per_value_added_proxy",
+      "label": "Kemi water withdrawal / value-added proxy",
+      "question": "How much 2025 Kemi water withdrawal corresponds to each M€ of the production-scaled direct value-added proxy?",
+      "numerator": {
+        "evidence": "EV-KEMI-WATER-003",
+        "field": "value",
+        "scale": 1000000,
+        "note": "million m3 → m3"
+      },
+      "denominator": {
+        "evidence": "EV-KEMI-VA-PROXY-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "m3_per_MEUR_value_added_proxy",
+      "boundaryPolicy": "strict",
+      "periodPolicy": "same",
+      "comparisonGroup": "water_withdrawal_per_value_added"
     }
   ]
 }
