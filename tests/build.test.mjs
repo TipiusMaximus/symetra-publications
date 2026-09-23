@@ -1,3 +1,4 @@
+import {readFile} from 'node:fs/promises';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {frontmatter,basePath,renderMarkdown} from '../scripts/lib.mjs';
@@ -72,6 +73,14 @@ test('Symetrix v0.3 uses empirical baselines and explicit cell states',()=>{
   assert.equal(s.matrix.economicThroughput.kemi.evidence,'proxy_business_level');
 });
 
+
+test('published Symetrix title matches the current v0.3 model',async()=>{
+  const source=await readFile(new URL('../content/symetrix.md',import.meta.url),'utf8');
+  const {meta}=frontmatter(source);
+  const current=symetrixMatrixV03();
+  assert.equal(current.version,'0.3');
+  assert.equal(meta.title,\`Symetrix Matrix v\${current.version}\`);
+});
 
 test('Denominator Engine keeps boundaries and flags rabbit holes',()=>{
   const evidence=[
