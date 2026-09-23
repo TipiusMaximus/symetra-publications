@@ -37,6 +37,9 @@ npm run check
 - `scripts/symetrix.mjs` ja `scripts/symetrix-v02.mjs`: historialliset v0.1/v0.2-mallit toistettavuutta varten. Nykyinen näkyvä malli on `scripts/symetrix-v03.mjs`, ja testi varmistaa että `content/symetrix.md` käyttää samaa versiota.
 - `assets/`: CSS, pieni tulostus-JavaScript ja 1200 × 630 PNG-jakokuva.
 - `docs/editorial-style.md`: Symetran pysyvä toimituksellinen standardi — lukureitti, evidenssitilat, lähdeketju, navigaatio ja AI-driftin estäminen.
+  - metodin ydin: **Observation → Symetry → Symetrix → Interpretation**;
+  - **symetointi** suhteuttaa havaintoaineiston valittuun, boundary-yhteensopivaan nimittäjään;
+  - **symetriikka / Symetry** on syntyvä suhteutettu mittari ennen Symetrix-normalisointia.
 - `docs/design.md`: visuaalisen järjestelmän pysyvät periaatteet.
 - `dist/`: generoitu HTML ja ladattavat aineistot, ei Gitissä.
 

@@ -74,7 +74,94 @@ Siksi:
 - HTTP-saatavuus ei tarkoita sisällön faktantarkistusta;
 - lähteen puuttumista ei korvata todennäköisellä luvulla ilman E-, P- tai S-tilaa.
 
-## 5. Mittarit ja Symetrix
+## 5. Symetry, symetriikka ja symetointi
+
+Symetran analyysimenetelmä erottaa neljä kerrosta toisistaan:
+
+**Observation → Symetry → Symetrix → Interpretation**
+
+### Observation
+
+**Observation** on lähteeseen sidottu havainto. Siihen kuuluvat aina arvo, yksikkö, kohde, ajanjakso, boundary, evidenssitila ja provenance. Havaintoa ei muuteta vain siksi, että myöhempi vertailu tarvitsee toisenlaisen mittarin.
+
+Esimerkki:
+
+**Kemin vedenotto 2025 = 32 819 000 m³, Observed.**
+
+### Symetointi
+
+**Symetointi** on operaatio, jossa havaittu tai muuten eksplisiittisesti luokiteltu suure suhteutetaan valittuun nimittäjään tutkimuskysymyksen muodostamiseksi.
+
+Yleinen muoto:
+
+[
+R = rac{X}{D}
+]
+
+missä:
+
+- **X** on tarkasteltava suure;
+- **D** on valittu vertailunimittäjä;
+- **R** on syntyvä symetriikka.
+
+Sama havainto voidaan symetoida usealla eri, sisällöllisesti perustellulla nimittäjällä. Esimerkiksi vedenotto voidaan ilmaista suhteessa arvonlisään, energiankäyttöön, henkilöstöön, tuotantoon tai maa-alaan.
+
+Symetointi ei itsessään väitä, että yksi nimittäjä olisi muita oikeampi. Se muotoilee uuden kysymyksen samalle havaintoaineistolle.
+
+### Symetriikka / Symetry
+
+**Symetriikka** (englanniksi **Symetry**) on symetoinnin tuloksena syntyvä suhteutettu mittari. Se säilyttää molempien lähtöarvojen provenance- ja boundary-tiedot.
+
+Esimerkkejä:
+
+- m³ vedenottoa / M€ arvonlisää;
+- MWh sähköä / M€ arvonlisää;
+- htv / M€ arvonlisää;
+- m² maa-alaa / M€ arvonlisää;
+- kg päästöä / tuotantotonni.
+
+Symetriikka ei ole vielä Symetrix-piste eikä yleinen arvosana kohteesta.
+
+### Symetoinnin yhteensopivuusportti
+
+Symetointi tehdään vain, jos suhdeluku vastaa ymmärrettävään kysymykseen ja lähtöarvojen yhteensopivuus on näkyvästi arvioitu.
+
+Tarkistetaan vähintään:
+
+1. **Kohdeboundary** — kuvaavatko osoittaja ja nimittäjä samaa kohdetta tai onko niiden välinen kartoitus eksplisiittinen?
+2. **Aika** — ovatko ajanjaksot samat tai onko aikapoikkeama perusteltu?
+3. **Käsitemerkitys** — tarkoittavatko suureet juuri sitä, mitä mittarin nimi väittää?
+4. **Yksiköt** — onko suhdeluvun dimensio määritelty ja toistettavissa?
+5. **Provenance** — voidaanko kumpikin lähtöarvo jäljittää lähteeseen tai näkyvään laskentaan?
+6. **Tulkinta** — onko selvää, mihin kysymykseen suhdeluku vastaa ja mihin se ei vastaa?
+
+Jos nämä ehdot eivät täyty, suhdelukua ei esitetä vahvana vertailumittarina. Tarvittaessa se merkitään proxyksi tai jätetään avoimeksi.
+
+Esimerkiksi vedenottoa ei nimetä WUE:ksi, jos WUE:n määritelmä edellyttää veden kulutusta. Tällöin voidaan määritellä erillinen **Water Withdrawal Intensity** -mittari, jos vedenotto ja nimittäjä ovat yhteensopivia.
+
+### Evidenssin heikoin lenkki
+
+Symetointi ei saa vahvistaa lähtöaineistoa keinotekoisesti.
+
+Jos symetriikka johdetaan kahdesta havaitusta lähtöarvosta, itse suhdeluku on johdettu **J**, vaikka sen lähtöarvot ovat Observed. Jos jokin olennainen lähtöarvo on estimaatti, proxy tai skenaario, tämä epävarmuus säilytetään symetriikan metadatassa eikä tulosta esitetä vahvempana kuin sen heikoin olennainen lähtötekijä sallii.
+
+Periaate:
+
+> **Muunnos voi lisätä ymmärrettävyyttä, mutta ei evidenssin laatua.**
+
+### Symetrix
+
+**Symetrix** on seuraava kerros. Se suhteuttaa valitun symetriikan eksplisiittiseen baselineen tai muuhun ennalta määriteltyyn vertailukohtaan.
+
+Putki on siten:
+
+**raakahavainto → symetointi → symetriikka → baseline-normalisointi → Symetrix → tulkinta**
+
+Symetrix ei oletusarvoisesti yhdistä eri mittareita yhdeksi kokonaispisteeksi. Eri symetriikat vastaavat eri kysymyksiin ja säilyvät näkyvinä rinnakkain.
+
+Tämän rakenteen tarkoitus on tukea tutkivaa analyysiä: samaa todellisuutta voidaan tarkastella useista perustelluista näkökulmista muuttamatta alkuperäisiä havaintoja tai piilottamatta arvovalintoja.
+
+## 6. Mittarit ja Symetrix
 
 Mittari vastaa aina yhteen rajattuun kysymykseen. Se ei ole yleisarvosana kohteesta.
 
@@ -95,7 +182,7 @@ Uuden kohteen lisääminen ei saa muuttaa vanhojen pisteitä vain vertailujoukon
 
 Symetra ei muodosta eri mittareista yhteispistettä, voittajaa tai toimialojen yleistä paremmuusjärjestystä ilman erikseen määriteltyä ja perusteltua tutkimuskysymystä.
 
-## 6. Kirjoitustapa
+## 7. Kirjoitustapa
 
 Teksti on rauhallista, täsmällistä ja luettavaa ihmiselle, joka ei tunne aihetta ennalta.
 
@@ -112,7 +199,7 @@ Vakiosäännöt:
 
 Hyvä Symetra-kappale vie lukijaa eteenpäin. Sen pitää vastata yhteen kysymykseen tai valmistaa seuraava kysymys.
 
-## 7. Visuaalinen linja
+## 8. Visuaalinen linja
 
 Visuaalisen toteutuksen ensisijainen määrittely on docs/design.md.
 
@@ -128,7 +215,7 @@ Pysyvät periaatteet:
 
 Ulkoasua ei suunnitella joka analyysille uudelleen. Uusi analyysi saa oman sisältönsä, ei omaa visuaalista järjestelmäänsä.
 
-## 8. Navigaatio
+## 9. Navigaatio
 
 Symetran navigaation pitää tukea lukemista eikä esitellä repositorion rakennetta.
 
@@ -142,7 +229,7 @@ Kanoninen raportti on aina ensisijainen lukureitti. Kohdennetut sivut, raakadata
 
 Vanhat toimivat osoitteet ja olennaiset ankkurit säilytetään mahdollisuuksien mukaan yhteensopivuusreiteillä tai legacy-ankkureilla.
 
-## 9. Mikä on vakio ja mikä saa muuttua
+## 10. Mikä on vakio ja mikä saa muuttua
 
 ### Vakio
 
@@ -171,8 +258,9 @@ Seuraavat saavat muuttua tutkimuskysymyksen mukaan:
 - tarvittavat liitteet;
 - toimialakohtaiset käsitteet;
 - Symetrixin soveltuvat rivit.
+- valittu symetoinnin nimittäjä, kun tutkimuskysymys sitä perustelee.
 
-## 10. AI-driftin estäminen
+## 11. AI-driftin estäminen
 
 AI-avusteinen kehitys saa nopeuttaa työtä, mutta ei määritellä julkaisumallia uudelleen jokaisessa työjaksossa.
 
@@ -183,13 +271,14 @@ Siksi tulevien mallien pitää noudattaa seuraavia sääntöjä:
 3. **Älä yhdistä eri boundaryja** vain saadaksesi täydemmän taulukon.
 4. **Älä korvaa kysymysmerkkiä arviolla** ilman näkyvää E-, P- tai S-merkintää ja perustetta.
 5. **Älä muuta Symetrixin pistefilosofiaa** hiljaisesti.
-6. **Älä lisää yhteispisteitä, rankingia tai normatiivista paras-tulkintaa** olemassa olevien mittareiden päälle.
-7. **Älä muuta visuaalista järjestelmää** yksittäisen analyysin vuoksi.
-8. **Älä poista vanhaa toimivaa lähde- tai laskentapolkua**, ellei korvaava polku ole testattu.
-9. **Älä muuta julkaistua lukua ilman changelog-merkintää**, jos muutos vaikuttaa tulkintaan.
-10. **Jos uusi tutkimustarve ei sovi standardiin, muuta standardia tietoisesti ensin** — älä tee poikkeusta piilossa.
+6. **Älä symetoi yhteensopimattomia boundaryja** vain saadaksesi vertailuluvun; tee kartoitus näkyväksi tai jätä mittari avoimeksi.
+7. **Älä lisää yhteispisteitä, rankingia tai normatiivista paras-tulkintaa** olemassa olevien mittareiden päälle.
+8. **Älä muuta visuaalista järjestelmää** yksittäisen analyysin vuoksi.
+9. **Älä poista vanhaa toimivaa lähde- tai laskentapolkua**, ellei korvaava polku ole testattu.
+10. **Älä muuta julkaistua lukua ilman changelog-merkintää**, jos muutos vaikuttaa tulkintaan.
+11. **Jos uusi tutkimustarve ei sovi standardiin, muuta standardia tietoisesti ensin** — älä tee poikkeusta piilossa.
 
-## 11. Julkaisukynnys
+## 12. Julkaisukynnys
 
 Ennen mergeä main-haaraan uuden tai olennaisesti muuttuneen analyysin pitää täyttää vähintään:
 
@@ -204,7 +293,7 @@ Ennen mergeä main-haaraan uuden tai olennaisesti muuttuneen analyysin pitää t
 - projektipolku ja juuripolku rakentuvat;
 - mobiili- ja tulostuskäyttö eivät rikkoudu olennaisesti.
 
-## 12. Standardin muuttaminen
+## 13. Standardin muuttaminen
 
 Tätä tiedostoa käsitellään julkaisujärjestelmän osana, ei vapaana muistiinpanona.
 
