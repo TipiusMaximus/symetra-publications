@@ -154,7 +154,7 @@ assert.equal(coverage.coverage.kemi.energy.derived,2);
 assert.equal(coverage.coverage.outokumpu.land.direct,2);
 const coverageDownload=JSON.parse(await readFile(path.join(dist,'downloads/evidence-coverage.json'),'utf8'));
 assert.equal(coverageDownload.coverage.hamina.water.direct,3,'Evidence coverage download mismatch');
-assert.equal(coverageDownload.coverage.outokumpu.finance.direct,4,'Evidence coverage download mismatch');
+assert.equal(coverageDownload.coverage.outokumpu.finance.direct,6,'Evidence coverage download mismatch');
 const metricRegistry=JSON.parse(await readFile(path.join(dist,'downloads/metric-registry.json'),'utf8'));
 assert.equal(metricRegistry.version,'0.1');
 assert(metricRegistry.metrics.some(x=>x.id==='domestic_value_added_per_grid_energy'&&x.readiness==='blocked_high_priority'));
