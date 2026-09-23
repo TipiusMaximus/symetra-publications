@@ -79,7 +79,7 @@ test('published Symetrix title matches the current v0.3 model',async()=>{
   const {meta}=frontmatter(source);
   const current=symetrixMatrixV03();
   assert.equal(current.version,'0.3');
-  assert.equal(meta.title,\`Symetrix Matrix v\${current.version}\`);
+  assert.equal(meta.title,`Symetrix Matrix v${current.version}`);
 });
 
 test('Denominator Engine keeps boundaries and flags rabbit holes',()=>{
