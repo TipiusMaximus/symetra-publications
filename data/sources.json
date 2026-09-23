@@ -890,5 +890,55 @@
     "sourceType": "Virallinen tilastomääritelmä",
     "publishedAt": null,
     "reviewScope": []
+  },
+  {
+    "id": "S096",
+    "title": "Outokumpu: Tornion tehtaiden ympäristönsuojelun vuosiraportti 2024",
+    "url": "https://www.outokumpu.com/-/media/files/sustainability/ympristnsuojelun-vuosiraportti_tornion-tehtaat_2024.pdf?modified=20250521120649&revision=317d993a-42c7-4c27-8231-f1c165547954",
+    "verification": "Tarkistettu 23.9.2026: Tornion tehdasalueen 2024 sähkö 2 637 GWh, polttoaine-energia 1 428 GWh, lämmöntalteenotto 98 GWh, ostettu lämpö 277 GWh; raakavedenotto 20 712 315 m³, josta jokivettä 6 977 101 m³ ja merivettä 13 735 214 m³; P3+P7-poisjohdettu jätevesivirta 21 033 049 m³/a. Tuotanto mm. ferrokromi 393 570 t ja teräsaihiot 1 169 800 t.",
+    "publisher": "Outokumpu",
+    "sourceType": "Toimipaikan ympäristönsuojelun vuosiraportti",
+    "publishedAt": "2025-05-21",
+    "reviewScope": []
+  },
+  {
+    "id": "S097",
+    "title": "Suomen Asiakastieto: Outokumpu Stainless Oy taloustiedot",
+    "url": "https://www.asiakastieto.fi/yritykset/fi/outokumpu-stainless-oy/08233159/taloustiedot",
+    "verification": "Tarkistettu 23.9.2026: 2024 liikevaihto 4 296,216 M€, liiketulos 28,585 M€ ja henkilöstö 1 899; 2025 liikevaihto 3 551,888 M€, liiketulos 29,500 M€ ja henkilöstö 1 890. Oikeushenkilödataa, ei automaattisesti Tornion toimipaikkatase.",
+    "publisher": "Suomen Asiakastieto",
+    "sourceType": "Toissijainen yritystieto",
+    "publishedAt": null,
+    "reviewScope": []
+  },
+  {
+    "id": "S098",
+    "title": "Suomen Asiakastieto: Outokumpu Chrome Oy taloustiedot",
+    "url": "https://www.asiakastieto.fi/yritykset/fi/outokumpu-chrome-oy/07727683/taloustiedot",
+    "verification": "Tarkistettu 23.9.2026: 2024 liikevaihto 469,131 M€, liiketulos 53,830 M€ ja henkilöstö 486; 2025 liikevaihto 456,939 M€, liiketulos 86,632 M€ ja henkilöstö 496. Yhtiö sisältää Tornion ferrokromitoiminnan lisäksi Kemin kaivoksen.",
+    "publisher": "Suomen Asiakastieto",
+    "sourceType": "Toissijainen yritystieto",
+    "publishedAt": null,
+    "reviewScope": []
+  },
+  {
+    "id": "S099",
+    "title": "EUR-Lex: EU ETS Finland allocation table 2021–2025",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32025D05242",
+    "verification": "Tarkistettu 23.9.2026: installaatio FI000000000000444 'Outokumpu Tornion tehtaat'; operaattoreina Outokumpu Chrome Oy ja Outokumpu Stainless Oy.",
+    "publisher": "European Union / EUR-Lex",
+    "sourceType": "Viranomaisrekisteri / EU-päätös",
+    "publishedAt": "2025-09-26",
+    "reviewScope": []
+  },
+  {
+    "id": "S100",
+    "title": "Outokumpu: Kemi Mine",
+    "url": "https://www.outokumpu.com/locations/kemimine",
+    "verification": "Tarkistettu 23.9.2026: Kemin kaivoksen operaattori on Outokumpu Chrome Oy; kaivoksen rikaste toimitetaan yksinomaan Tornion ferrokromitehtaalle. Tämä vahvistaa, ettei Chrome Oy:n talousraja ole pelkkä Tornion toimipaikka.",
+    "publisher": "Outokumpu",
+    "sourceType": "Julkaisijan oma toimipaikkasivu",
+    "publishedAt": null,
+    "reviewScope": []
   }
 ]
