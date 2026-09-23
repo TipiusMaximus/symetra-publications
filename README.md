@@ -40,7 +40,8 @@ npm run check
 - `docs/editorial-style.md`: Symetran pysyvä toimituksellinen standardi — lukureitti, evidenssitilat, lähdeketju, navigaatio ja AI-driftin estäminen.
   - metodin ydin: **Observation → Symetry → Symetrix → Interpretation**;
   - **symetointi** suhteuttaa havaintoaineiston valittuun, boundary-yhteensopivaan nimittäjään;
-  - **symetriikka / Symetry** on syntyvä suhteutettu mittari ennen Symetrix-normalisointia.
+  - **symetriikka / Symetry** on syntyvä suhteutettu mittari ennen Symetrix-normalisointia;
+  - **syntraus** etsii havaintojen ja symetriikoiden välistä uusia testattavia kysymyksiä: *mielikuvitus kohtaa todisteet*.
 - `docs/design.md`: visuaalisen järjestelmän pysyvät periaatteet.
 - `dist/`: generoitu HTML ja ladattavat aineistot, ei Gitissä.
 
