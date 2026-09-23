@@ -6,6 +6,12 @@ Haminan kaupungin kesäkuun 2026 tiedote kertoo vuosittaisista miljoonaluokan ki
 
 Yhtiön myynti, arvonlisä, tulos ja kassavirta vastaavat eri kysymyksiin. Arvonlisää arvioitaessa tuotoksesta vähennetään välituotekäyttö; kassavirran selvittäminen taas vaatii tietoa maksujen ajoituksesta ja investoinneista. Omistajan saama tulo ja Suomessa syntynyt tuotannollinen arvonlisä eivät nekään ole sama rajaus. Konsernin sisäisen laskutuksen määrää tai suuntaa ei päätellä ilman asiakirjoja.
 
+Kemin biotuotetehtaalle on käytettävissä ennen käyttöönottoa laadittu Rambollin tuotantoskenaario. Siinä 1,5 miljoonan tonnin vuosituotannolla tehtaan suoraksi liikevaihdoksi arvioitiin noin **760 M€**, välituotekäytöksi noin **520 M€**, suoraksi työvoimatarpeeksi noin **350 htv** ja suoraksi arvonlisäksi noin **230 M€ vuodessa**. Kyse ei ole toteutuneesta tilinpäätös- tai toimipaikkaluvusta. [Ramboll / Kemin kaupunki 2021](https://www.kemi.fi/wp-content/uploads/2021/11/Metsa-Fibren-biotuotetehtaan-aluetalousvaikutukset-vaikutukset-28.10.2021.pdf).
+
+Vuonna 2025 Kemin toteutunut kemiallisen sellun tuotanto oli **927 kt**. Jos vuoden 2021 arvonlisäskenaario skaalataan ainoastaan tällä toteutuneella tuotantomäärällä, saadaan noin **142,14 M€ vuodessa**. Tämä merkitään **P/S-proxyksi**: laskelma olettaa arvonlisän tonnia kohti pysyvän ennallaan eikä huomioi vuoden 2025 hintoja, puukustannuksia, seisokkeja, tuotejakaumaa tai sivutuotteita. Metsä Fibren koko Pulp and Sawn Timber -liiketoiminnan vuoden 2025 luvut — 2 578,1 M€ myynti ja 159,4 M€ EBITDA — osoittavat myös, ettei vuoden 2021 mallin talousympäristöä voi käsitellä vuoden 2025 toteumana. [Metsä Group Annual Review 2025](https://www.metsagroup.com/globalassets/metsa-group/documents/investors/financial-reporting/annual-reports/2025/metsa-group-annual-review-2025.pdf).
+
+Tätä proxyä voidaan silti käyttää eksploratiiviseen symetointiin. Kemin vuoden 2025 vedenotto **32,819 Mm³ / 142,14 M€** antaa noin **230 892 m³ vedenottoa / M€ arvonlisäproxyä**. Mittaria ei Symetrix-pisteytetä ennen kuin Kemin toteutunut toimipaikka-arvonlisä ja vertailukohteiden samalla menetelmällä muodostetut nimittäjät ovat saatavilla.
+
 Tuiken vuoden 2025 talousluvut ovat saatavilla tässä aineistossa yritystietopalveluiden kautta. Alkuperäistä tilinpäätöstä liitetietoineen ei ole käytössä, joten lukuihin perustuvat laskut esitetään erillisinä taustaesimerkkeinä. Niistä ei johdeta raportin arviota kotimaisesta nettohyödystä.
 
 ### Mitä Suomeen jäävästä rahavirrasta pitäisi erottaa?
