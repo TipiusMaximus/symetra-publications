@@ -461,14 +461,14 @@
       "formula": "annual water withdrawal m3 / annual site or domestic value added M€",
       "direction": "lower",
       "baseline_status": "not_set",
-      "readiness": "proxy_ready_single_entity",
+      "readiness": "proxy_ready_two_entities",
       "required": [
         "water_withdrawal_same_boundary",
         "value_added_same_boundary",
         "same_period_or_explicit_proxy_rule"
       ],
       "purpose": "Suhteuttaa vedenoton taloudessa syntyvään arvonlisään liikevaihdon sijasta.",
-      "caveat": "Kemin nykyinen 2025 nimittäjä on 2021 Ramboll-skenaariosta toteutuneella selluntuotannolla skaalattu proxy, ei toteutunut toimipaikan jalostusarvo. Mittaria ei pisteytetä ennen yhteistä baselinea ja vertailukelpoista arvonlisää muille kohteille.",
+      "caveat": "Kemi uses a production-scaled P/S value-added proxy; Nebius uses a conservative legal-entity value-added lower bound and site/legal-entity near-match. The resulting >2000× spread is a Syntraus/rabbit-hole diagnostic, not an observed-value-added ranking.",
       "current_examples": {
         "kemi_2025": {
           "numerator_evidence": "EV-KEMI-WATER-003",
@@ -476,6 +476,41 @@
           "value": 230892.078,
           "unit": "m3_per_MEUR_value_added_proxy",
           "status": "derived_scenario_proxy"
+        },
+        "nebius_2025": {
+          "numerator_evidence": "EV-NEB-WATER-002",
+          "denominator_evidence": "EV-NEB-VA-FLOOR-001",
+          "value": 109.375,
+          "unit": "m3_per_MEUR_value_added_at_most",
+          "status": "derived_boundary_near_match_lower_bound_denominator",
+          "note": "Conservative upper bound because the value-added denominator is a lower bound."
+        }
+      }
+    },
+    {
+      "id": "electricity_per_value_added",
+      "label": "Sähkönkäyttö / arvonlisä",
+      "formula": "annual site electricity use GWh / annual site or legal-entity value added M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "proxy_ready_two_entities",
+      "required": [
+        "electricity_use_same_or_explicit_period",
+        "value_added_same_or_near_boundary",
+        "explicit_evidence_state"
+      ],
+      "purpose": "Testaa, säilyykö resurssiero, kun sähkönkäyttö suhteutetaan taloudelliseen arvonlisään samalla tavalla kuin vedenotto.",
+      "caveat": "Nebius value is an upper-bound proxy because its denominator is a value-added lower bound; Kemi mixes current annual electricity figures with a 2025 P/S value-added proxy. Do not score or rank.",
+      "current_examples": {
+        "nebius_2025": {
+          "value": 7.309,
+          "unit": "GWh_per_MEUR_value_added_at_most",
+          "status": "derived_boundary_near_match_lower_bound_denominator"
+        },
+        "kemi_proxy": {
+          "value": 5.628,
+          "unit": "GWh_per_MEUR_value_added_proxy",
+          "status": "derived_mixed_period_proxy"
         }
       }
     }

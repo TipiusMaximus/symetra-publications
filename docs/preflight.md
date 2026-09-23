@@ -9,9 +9,10 @@
 - Tekijä on Symetra organisaationa. Versio, julkaisu- ja päivityspäivä, aineiston katkaisupäivä sekä julkaistu tila näkyvät raportissa.
 - Kaikki A01–A11-kysymykset, niiden alkuperä, kuvaileva arvio, lähteet ja avoimet tiedot mukana.
 - Kohdevertailu ja kuusi vaikutusaluetta noudattavat kuusiosaista havaintomallia. Ei yhteispisteitä, voittajaa tai politiikkasuositusta.
-- 94 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin vuoden 2025 toteumatietoja, Nebius Finland-1:n vuoden 2025 vesi- ja lämpödataa sekä Symetrix-mittariaineistoa säilytetään lähderekisterissä ja latauksissa.
+- 95 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin vuoden 2025 toteumatietoja, Nebius Finland-1:n vuoden 2025 vesi- ja lämpödataa sekä Symetrix-mittariaineistoa säilytetään lähderekisterissä ja latauksissa.
 - Resource Flow Matrix v0.1 erottaa vedenoton, vedenkulutuksen, jäte-/poistovirran, sähkön kokonaiskulutuksen, oman tuotannon, hyötylämmön ja mitatun verkkotaseen. Puuttuva toteuma pysyy `unknown`-tilassa.
 - Kemin arvonlisästä on lisätty 2021 Ramboll-skenaario (230 M€/v suorana arvonlisänä 1,5 Mt/v tuotannolla) ja siitä 2025 toteutuneella 927 kt:n tuotannolla johdettu 142,14 M€ P/S-proxy. Proxyä ei käsitellä toteutuneena toimipaikkalukuna eikä Symetrix-pisteytetä.
+- Nebius DC Oy:n 2025 julkisista taloustiedoista johdetaan noin 13,34 M€ EBITDA ja Tilastokeskuksen jalostusarvomääritelmän perusteella konservatiivinen jalostusarvon alarajaproxy. Vesi- ja sähköintensiteetit säilyttävät lower-bound/upper-bound-merkinnät; noin 2 111× veden spread on rabbit-hole-signaali, ei ranking.
 - Laskennassa kokonaislukuaritmetiikka; käyttökatteen pyöristys ja johdettujen lukujen rajat näkyvät.
 - Alkuperäistä keskusteluarkistoa, käyttäjän paikallisia polkuja ja PDF-kokotekstejä ei sisällytetä julkaisurepoon tai buildiin.
 - Ei väitettä koko valmistavan teollisuuden kattavasta auditoinnista; verrokkien suppeampi tutkimussyvyys näkyy.
@@ -25,7 +26,7 @@
 - Tulostus-HTML ja Markdown-lataus sisältävät täydellisen lähdeliitteen. Ulkoinen linkkitarkistus ei korvaa aiempaa rekisteriä, jos kaikki osoitteet epäonnistuvat verkkotasolla.
 - Sekä `/symetra-publications/`-alihakemisto että tyhjä juuripolku rakennettu ja tarkistettu.
 - Puhtaassa tilapäishakemistossa tehty `npm ci --ignore-scripts`, preflight ja juuripolun tarkistus hyväksytysti (paikallinen Node 23.11.0). GitHub Actions varmentaa erikseen Node 22:n.
-- Ulkoinen linkkirekisteri on laajentunut 94 lähteeseen; täydellinen linkkitarkistus ja puhtaan asennuksen auditointi kirjataan yhdistetyn puun lopullisilla tuloksilla. HTTP-tulos ei ole sisällön varmennus.
+- Ulkoinen linkkirekisteri on laajentunut 95 lähteeseen; täydellinen linkkitarkistus ja puhtaan asennuksen auditointi kirjataan yhdistetyn puun lopullisilla tuloksilla. HTTP-tulos ei ole sisällön varmennus.
 - Aiemmin `npm audit` raportoi 0 haavoittuvuutta; yhdistetyn puun lopullinen auditointi ajetaan ennen pushia.
 
 ### Termiselitysten tarkistus — 22.9.2026

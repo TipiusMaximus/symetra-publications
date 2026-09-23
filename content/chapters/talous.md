@@ -12,6 +12,12 @@ Vuonna 2025 Kemin toteutunut kemiallisen sellun tuotanto oli **927 kt**. Jos vuo
 
 Tätä proxyä voidaan silti käyttää eksploratiiviseen symetointiin. Kemin vuoden 2025 vedenotto **32,819 Mm³ / 142,14 M€** antaa noin **230 892 m³ vedenottoa / M€ arvonlisäproxyä**. Mittaria ei Symetrix-pisteytetä ennen kuin Kemin toteutunut toimipaikka-arvonlisä ja vertailukohteiden samalla menetelmällä muodostetut nimittäjät ovat saatavilla.
 
+Nebiukselle voidaan tehdä toisenlainen, tarkoituksella konservatiivinen talousraja. Nebius DC Oy:n vuoden 2025 liikevaihto oli **28,083 M€** ja julkinen yritystietoaineisto ilmoittaa EBITDA-marginaaliksi **47,5 %**, mistä johdetaan noin **13,34 M€** käyttökate. Tilastokeskuksen oikeushenkilötason määritelmässä jalostusarvo on käyttökate + henkilöstökulut yhteensä. Koska henkilöstökuluja ei tässä aineistossa vielä tunneta, 13,34 M€ toimii ainoastaan jalostusarvon **konservatiivisena alarajaproxyna**, ei toteutuneena jalostusarvona. [Proff: Nebius DC Oy](https://www.proff.fi/yrityksen/nebius-dc-oy/m%C3%A4nts%C3%A4l%C3%A4/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2541661-9I0ZDG), [Tilastokeskus: yritysten tilinpäätöstiedot](https://pxdata.stat.fi/PXWeb/pxweb/fi/StatFin/StatFin__yrti/13w2.px/).
+
+Tällä alarajalla Nebius Finland-1:n vuoden 2025 vedenotto **1 459 m³ / ≥13,34 M€** antaa enintään noin **109,4 m³/M€ jalostusarvoa**. Kemin nykyinen P/S-laskelma on noin **230 892 m³/M€**, joten nykyisten proxyjen välinen vedenottoero on noin **2 111-kertainen**. Ero on Syntraus-signaali, ei lopullinen paremmuusväite: Kemin nimittäjä on tuotannolla skaalattu skenaario, kun taas Nebiuksen nimittäjä on oikeushenkilötason alaraja ja veden osoittaja Finland-1-kohteelta.
+
+Sähkö toimii tässä hyödyllisenä kontrollina. Nebiuksen johdettu noin 97,5 GWh:n vuosikulutus suhteessa samaan alarajaan antaa enintään noin **7,31 GWh/M€**, kun Kemin nykyinen 0,8 TWh:n johdettu vuosikulutus suhteessa 142,14 M€:n P/S-proxyyn antaa noin **5,63 GWh/M€**. Sähköluvut ovat siis nykyisessä proxy-avaruudessa samaa suuruusluokkaa, vaikka vedenotossa ero on tuhansia kertoja. Tätäkään sähkövertailua ei pisteytetä: Kemin energia- ja talousperiodit eivät ole täysin samat, ja Nebiuksen arvo on yläraja.
+
 Tuiken vuoden 2025 talousluvut ovat saatavilla tässä aineistossa yritystietopalveluiden kautta. Alkuperäistä tilinpäätöstä liitetietoineen ei ole käytössä, joten lukuihin perustuvat laskut esitetään erillisinä taustaesimerkkeinä. Niistä ei johdeta raportin arviota kotimaisesta nettohyödystä.
 
 ### Mitä Suomeen jäävästä rahavirrasta pitäisi erottaa?

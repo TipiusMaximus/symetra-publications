@@ -115,17 +115,23 @@
       "priority": 7,
       "status": "partial",
       "nowKnown": [
-        "2021 Ramboll steady-state scenario: Kemi mill direct revenue ~760 M€/y, intermediate consumption ~520 M€/y and direct value added ~230 M€/y at 1.5 Mt/y pulp output",
-        "2025 observed Kemi pulp output 927 kt",
-        "production-scaled 2025 direct value-added proxy ~142.14 M€/y (P/S), not observed",
-        "Kemi 2025 water withdrawal / value-added proxy ~230,892 m3 per M€"
+        "2021 Ramboll steady-state scenario: Kemi mill direct value added ~230 M€/y at 1.5 Mt/y pulp output",
+        "2025 observed Kemi pulp output 927 kt and production-scaled 2025 direct value-added proxy ~142.14 M€/y (P/S), not observed",
+        "Kemi 2025 water withdrawal / value-added proxy ~230,892 m3 per M€",
+        "Nebius DC Oy 2025 revenue 28.083 M€ and EBITDA margin 47.5%; derived EBITDA ~13.34 M€",
+        "Statistics Finland legal-unit definition: value added = EBITDA + personnel costs",
+        "Nebius value-added lower-bound proxy >=13.34 M€; water withdrawal intensity <=109.4 m3/M€ on a site/legal-entity near-match",
+        "Current Kemi-vs-Nebius water/value-added proxy spread ~2,111x; exploratory only",
+        "Electricity/value-added proxies are of the same order: Nebius <=7.31 GWh/M€, Kemi ~5.63 GWh/M€"
       ],
       "missing": [
         "observed 2024/2025 Kemi site value added or site revenue plus intermediate consumption on the same boundary",
-        "same-method site/domestic value added for datacenter comparators",
-        "harmonized value-added denominator for Outokumpu/Tornio"
+        "Nebius DC Oy personnel costs to replace the lower-bound proxy with a fuller legal-unit value-added figure",
+        "proof that Nebius Finland-1 site and Nebius DC Oy financial boundary are fully identical for 2025",
+        "harmonized value-added denominator for Outokumpu/Tornio",
+        "same-method value added for Google/Tuike Hamina"
       ],
-      "next": "Search for Kemi site-level financial/establishment data. Until found, keep the 142.14 M€ production-scaled value as an explicit P/S denominator and do not Symetrix-score it against observed values."
+      "next": "Next highest-value move: build the Outokumpu Tornio/Ferrochrome common-boundary pack, while continuing to search Nebius personnel costs and Kemi site financials. Preserve all current value-added figures as proxies/lower bounds until those gaps close."
     }
   ]
 }
