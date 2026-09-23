@@ -422,6 +422,38 @@
           "status": "derived_from_observed"
         }
       }
+    },
+    {
+      "id": "water_withdrawal_symetry",
+      "label": "Vedenoton symetriikka",
+      "formula": "annual water withdrawal m3 / chosen compatible denominator",
+      "direction": "descriptive",
+      "baseline_status": "denominator_specific",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "observed_or_explicitly_qualified_water_withdrawal",
+        "explicit_denominator",
+        "boundary_compatibility",
+        "period_compatibility"
+      ],
+      "purpose": "Mahdollistaa saman vedenottohavainnon symetoinnin eri perusteltuihin nimittäjiin, kuten M€ liikevaihtoa tai arvonlisää, GWh energiaa, henkilöstöä tai tuotantoyksikköä kohti.",
+      "caveat": "Vedenotto ei ole nettovedenkulutus eikä jäähdytysveden läpivirtaus. Nimittäjän vaihtaminen muuttaa tutkimuskysymystä; raakavedenoitto ja provenance säilyvät muuttumattomina.",
+      "current_examples": {
+        "nebius_2025_revenue": {
+          "numerator_evidence": "EV-NEB-WATER-002",
+          "denominator_evidence": "EV-NEB-FIN-001",
+          "value": 51.953,
+          "unit": "m3_per_MEUR",
+          "status": "derived_boundary_near_match"
+        },
+        "kemi_2025_whole_business_revenue_floor": {
+          "numerator_evidence": "EV-KEMI-WATER-003",
+          "denominator_evidence": "EV-MF-PROXY-001",
+          "value": 12622.692,
+          "unit": "m3_per_MEUR_at_least_approx",
+          "status": "derived_cross_boundary_floor"
+        }
+      }
     }
   ]
 }
