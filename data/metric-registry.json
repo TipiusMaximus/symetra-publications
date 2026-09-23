@@ -454,6 +454,30 @@
           "status": "derived_cross_boundary_floor"
         }
       }
+    },
+    {
+      "id": "water_withdrawal_per_value_added",
+      "label": "Vedenotto / arvonlisä",
+      "formula": "annual water withdrawal m3 / annual site or domestic value added M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "proxy_ready_single_entity",
+      "required": [
+        "water_withdrawal_same_boundary",
+        "value_added_same_boundary",
+        "same_period_or_explicit_proxy_rule"
+      ],
+      "purpose": "Suhteuttaa vedenoton taloudessa syntyvään arvonlisään liikevaihdon sijasta.",
+      "caveat": "Kemin nykyinen 2025 nimittäjä on 2021 Ramboll-skenaariosta toteutuneella selluntuotannolla skaalattu proxy, ei toteutunut toimipaikan jalostusarvo. Mittaria ei pisteytetä ennen yhteistä baselinea ja vertailukelpoista arvonlisää muille kohteille.",
+      "current_examples": {
+        "kemi_2025": {
+          "numerator_evidence": "EV-KEMI-WATER-003",
+          "denominator_evidence": "EV-KEMI-VA-PROXY-001",
+          "value": 230892.078,
+          "unit": "m3_per_MEUR_value_added_proxy",
+          "status": "derived_scenario_proxy"
+        }
+      }
     }
   ]
 }
