@@ -78,9 +78,28 @@
       "next": "Replace E* only if a same-boundary operator-reported WUE or IT-energy denominator is found."
     },
     {
+      "id": "G-HAM-SEAWATER",
+      "label": "Hamina actual seawater cooling flow",
+      "priority": 5,
+      "status": "partial",
+      "nowKnown": [
+        "Google 2024 reported operational withdrawal 11,356 m3 excludes seawater",
+        "Google 2024 reported non-seawater discharge 10,221 m3 and consumption 1,136 m3",
+        "Hamina cooling system pumps seawater from Summanlahti and returns it to the sea",
+        "water permit ceiling for seawater withdrawal is 80 million m3/y",
+        "2024 YVA states realized seawater withdrawals have remained below the permit ceiling"
+      ],
+      "missing": [
+        "actual annual metered seawater withdrawal for a named operating year",
+        "actual annual seawater return volume on the same period",
+        "same-period realized thermal load if thermal-water impact is normalized"
+      ],
+      "next": "Keep actual seawater flow as unknown and 80 Mm3/y as permit ceiling only. Search regulator/monitoring records or request the annual monitoring material; do not compare Google's non-seawater withdrawal with industrial total/raw-water withdrawal as if scopes matched."
+    },
+    {
       "id": "G-OUTOKUMPU-BOUNDARY",
       "label": "Outokumpu Ferrochrome/Tornio common-boundary energy water finance",
-      "priority": 5,
+      "priority": 6,
       "status": "partial",
       "nowKnown": [
         "Tornio 2024 site electricity use 2,637 GWh observed",
@@ -103,7 +122,7 @@
     {
       "id": "G-HEAT",
       "label": "Useful heat on common denominator",
-      "priority": 6,
+      "priority": 7,
       "status": "partial",
       "nowKnown": [
         "Nebius measured 19.5 GWh heat export 2025",
@@ -119,7 +138,7 @@
     {
       "id": "G-DOMESTIC-VA",
       "label": "Domestic value added",
-      "priority": 7,
+      "priority": 8,
       "status": "partial",
       "nowKnown": [
         "2021 Ramboll steady-state scenario: Kemi mill direct value added ~230 M€/y at 1.5 Mt/y pulp output",
