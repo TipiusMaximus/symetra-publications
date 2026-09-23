@@ -6,8 +6,8 @@ Kohteet kuvaavat erilaisia tuotantoketjuja: Hamina ylläpitää digitaalisten pa
 |---|---|---|
 | Työ | Haminan kaupungin kampusluku, Metsä Fibren tehdaskuvaus ja Outokummun segmentin FTE | Vuosi, työnantajaraja ja henkilöstömittari poikkeavat |
 | Talous | Kaupungin kuvaus verotulosta sekä Outokummun ulkoisen ja konserninsisäisen myynnin erittely | Verotulo, myynti ja kotimainen arvonlisä eivät ole sama suure |
-| Sähkö | Kemin ilmoittama tuotanto ja omavaraisuus; datakeskusten suunnittelu- ja hanketietoja | Yhteisen vuoden mitattu verkosta otto ja syöttö puuttuvat |
-| Ympäristö | HEL16:n lupaehdot, YVA-aineisto ja lämpöyhtiöiden tiedotteet | Lupaehdot, yrityksen ilmoitus ja mitattu vaikutus erotetaan |
+| Sähkö | Kemin ilmoittama tuotanto ja omavaraisuus; Tornion 2024 mitattu 2 637 GWh site-kulutus; datakeskusten toteuma- ja estimaattitietoja | Yhteisen vuoden mitattu verkosta otto ja syöttö puuttuvat useilta kohteilta; Tornion site-kulutus ei ole sama asia kuin verkkotuonti |
+| Ympäristö | Kemin ja Tornion toteutuneet vedenotot, Nebius Finland-1:n vedenotto, HEL16:n lupaehdot ja YVA-aineisto | Vedenotto, merivesi, jokivesi, purku ja nettokulutus erotetaan; eri vuosia ei käsitellä harmonisoituna rankingina |
 
 Taulukko kokoaa edellä esitellyt lähteistetyt havainnot. Se ei lisää niihin uusia oletuksia. Tuiken toissijaisista yritystiedoista johdetut henkilöstösuhdeluvut löytyvät [taustalaskelmista](/analyysit/datakeskukset/lahteet/#tuike-ja-ferrochrome-rahavirta-suhteessa-omaan-henkilostoon); niiden erisuuruisuutta ei tulkita toimialojen tehokkuuseroksi.
 

@@ -9,10 +9,12 @@
 - Tekijä on Symetra organisaationa. Versio, julkaisu- ja päivityspäivä, aineiston katkaisupäivä sekä julkaistu tila näkyvät raportissa.
 - Kaikki A01–A11-kysymykset, niiden alkuperä, kuvaileva arvio, lähteet ja avoimet tiedot mukana.
 - Kohdevertailu ja kuusi vaikutusaluetta noudattavat kuusiosaista havaintomallia. Ei yhteispisteitä, voittajaa tai politiikkasuositusta.
-- 95 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin vuoden 2025 toteumatietoja, Nebius Finland-1:n vuoden 2025 vesi- ja lämpödataa sekä Symetrix-mittariaineistoa säilytetään lähderekisterissä ja latauksissa.
+- 100 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin vuoden 2025 toteumatietoja, Nebius Finland-1:n vuoden 2025 vesi- ja lämpödataa sekä Symetrix-mittariaineistoa säilytetään lähderekisterissä ja latauksissa.
 - Resource Flow Matrix v0.1 erottaa vedenoton, vedenkulutuksen, jäte-/poistovirran, sähkön kokonaiskulutuksen, oman tuotannon, hyötylämmön ja mitatun verkkotaseen. Puuttuva toteuma pysyy `unknown`-tilassa.
 - Kemin arvonlisästä on lisätty 2021 Ramboll-skenaario (230 M€/v suorana arvonlisänä 1,5 Mt/v tuotannolla) ja siitä 2025 toteutuneella 927 kt:n tuotannolla johdettu 142,14 M€ P/S-proxy. Proxyä ei käsitellä toteutuneena toimipaikkalukuna eikä Symetrix-pisteytetä.
 - Nebius DC Oy:n 2025 julkisista taloustiedoista johdetaan noin 13,34 M€ EBITDA ja Tilastokeskuksen jalostusarvomääritelmän perusteella konservatiivinen jalostusarvon alarajaproxy. Vesi- ja sähköintensiteetit säilyttävät lower-bound/upper-bound-merkinnät; noin 2 111× veden spread on rabbit-hole-signaali, ei ranking.
+- Tornion 2024 physical-site boundary on lisätty: sähkö 2 637 GWh, polttoaine-energia 1 428 GWh, raakavedenotto 20,712315 Mm³ (joki 6,977101; meri 13,735214) ja P3+P7-poisjohtovirta 21,033049 Mm³. Noin 4 TWh:n aiempi luku pidetään kokonaisenergian suuruusluokkana, ei sähkönkulutuksena.
+- Tornion talous pidetään erillisessä legal-entity envelope -rajassa: Stainless Oy ja Chrome Oy eivät muodosta hiljaisesti yhtä site-liikevaihtoa, ja Chrome Oy sisältää Kemin kaivoksen.
 - Laskennassa kokonaislukuaritmetiikka; käyttökatteen pyöristys ja johdettujen lukujen rajat näkyvät.
 - Alkuperäistä keskusteluarkistoa, käyttäjän paikallisia polkuja ja PDF-kokotekstejä ei sisällytetä julkaisurepoon tai buildiin.
 - Ei väitettä koko valmistavan teollisuuden kattavasta auditoinnista; verrokkien suppeampi tutkimussyvyys näkyy.

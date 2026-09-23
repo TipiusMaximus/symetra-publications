@@ -183,4 +183,43 @@ test('value-added Symetries expose water rabbit hole but not an electricity-scal
   assert(!x.rabbitHoles.some(r=>r.id==='RH-GROUP-electricity_per_value_added'));
 });
 
+test('Tornio resource boundary separates electricity, total energy and water accounting',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const byId=new Map(evidence.map(x=>[x.id,x]));
+  assert.equal(byId.get('EV-TORNIO-ELECTRICITY-002').value,2637);
+  assert.equal(byId.get('EV-TORNIO-FUEL-001').value,1428);
+  assert.equal(byId.get('EV-TORNIO-WATER-001').value,20712315);
+  assert.equal(byId.get('EV-TORNIO-WATER-002').value,6977101);
+  assert.equal(byId.get('EV-TORNIO-WATER-003').value,13735214);
+  assert.equal(byId.get('EV-TORNIO-WATER-004').value,21033049);
+  assert(byId.get('EV-TORNIO-WATER-004').note.includes('do not derive negative consumption'));
+});
+
+test('Tornio resource Symetries stay descriptive and mixed-period',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const recipes=JSON.parse(await readFile(new URL('../data/denominator-recipes.json',import.meta.url),'utf8'));
+  const x=runDenominatorEngine(evidence,recipes);
+  const tnW=x.results.find(r=>r.id==='tornio_nebius_water_withdrawal_multiple');
+  const ktW=x.results.find(r=>r.id==='kemi_tornio_water_withdrawal_multiple');
+  const tnE=x.results.find(r=>r.id==='tornio_nebius_electricity_multiple');
+  const tkE=x.results.find(r=>r.id==='tornio_kemi_electricity_multiple');
+  assert.equal(tnW.value,14196.241);
+  assert.equal(ktW.value,1.585);
+  assert.equal(tnE.value,27.046);
+  assert.equal(tkE.value,3.296);
+  assert.equal(tnW.periodPolicy,'near_period');
+  assert.equal(tnW.quality,'qualified');
+  assert(x.rabbitHoles.some(r=>r.id==='RH-tornio_nebius_water_withdrawal_multiple'));
+  assert(x.rabbitHoles.some(r=>r.id==='RH-tornio_nebius_electricity_multiple'));
+});
+
+test('resource flow matrix carries Tornio site without inventing net consumption',async()=>{
+  const flow=JSON.parse(await readFile(new URL('../data/resource-flow-matrix.json',import.meta.url),'utf8'));
+  assert.equal(flow.water.tornio_2024.in.withdrawal.value,20712315);
+  assert.equal(flow.water.tornio_2024.out.wastewater_discharge_P3_P7.value,21033049);
+  assert.equal(flow.water.tornio_2024.net.consumption.state,'unknown');
+  assert.equal(flow.electricity.tornio_2024.in.total_consumption.value,2637);
+  assert.equal(flow.electricity.tornio_2024.in.measured_grid_import.state,'unknown');
+});
+
 test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});

@@ -81,17 +81,24 @@
       "id": "G-OUTOKUMPU-BOUNDARY",
       "label": "Outokumpu Ferrochrome/Tornio common-boundary energy water finance",
       "priority": 5,
-      "status": "open",
+      "status": "partial",
       "nowKnown": [
-        "Ferrochrome segment financials/workforce",
-        "Tornio site total energy ~4 TWh/y"
+        "Tornio 2024 site electricity use 2,637 GWh observed",
+        "Tornio 2024 fuel energy 1,428 GWh, recovered heat 98 GWh and purchased heat 277 GWh",
+        "Tornio 2024 raw-water withdrawal 20.712315 million m3: river water 6.977101 million m3 + seawater 13.735214 million m3",
+        "Tornio 2024 P3+P7 wastewater/discharge flow 21.033049 million m3; not a closed return-flow balance",
+        "Tornio 2024 ferrochrome production 393,570 t and steel-slab production 1,169,800 t",
+        "EU ETS installation boundary names both Outokumpu Chrome Oy and Outokumpu Stainless Oy as Tornio operators",
+        "Outokumpu Chrome Oy legal entity includes Kemi mine, so Chrome company finance is wider than Tornio site",
+        "2024 legal-entity envelope available separately: Stainless Oy revenue 4,296.216 M€ / 1,899 personnel; Chrome Oy revenue 469.131 M€ / 486 personnel"
       ],
       "missing": [
-        "Ferrochrome/site electricity boundary",
-        "water withdrawal/consumption same boundary",
-        "economic output same physical site boundary"
+        "Tornio-site economic output/value added on the same physical boundary as environmental data",
+        "Ferrochrome-vs-stainless split of site electricity and water if segment-level normalization is required",
+        "Tornio site net consumptive water use",
+        "proof of how much Outokumpu Stainless Oy legal-entity finance maps exclusively to Tornio physical operations"
       ],
-      "next": "Build one explicit Tornio/Ferrochrome boundary pack."
+      "next": "Keep the physical Tornio site as one environmental/resource boundary and the two legal entities as a separate economic envelope. Search site-level value added or establishment accounts before any MWh/M€ or m3/M€ Tornio score."
     },
     {
       "id": "G-HEAT",
