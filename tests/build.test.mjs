@@ -153,4 +153,34 @@ test('Kemi water per value-added Symetry remains qualified',async()=>{
   assert.equal(r.boundaryPolicy,'strict');
 });
 
+test('Nebius value-added floor stays conservative and traceable',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const byId=new Map(evidence.map(x=>[x.id,x]));
+  const ebitda=byId.get('EV-NEB-EBITDA-001');
+  const va=byId.get('EV-NEB-VA-FLOOR-001');
+  assert.equal(Number(ebitda.value.toFixed(6)),13.339425);
+  assert.equal(va.status,'derived_lower_bound_proxy');
+  assert.equal(Number(va.value.toFixed(6)),13.339425);
+  assert(va.note.includes('not observed') || va.note.includes('not observed'.replace('not','Not')));
+});
+
+test('value-added Symetries expose water rabbit hole but not an electricity-scale rabbit hole',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const recipes=JSON.parse(await readFile(new URL('../data/denominator-recipes.json',import.meta.url),'utf8'));
+  const x=runDenominatorEngine(evidence,recipes);
+  const water=x.results.find(r=>r.id==='nebius_water_withdrawal_per_value_added_floor');
+  const ne=x.results.find(r=>r.id==='nebius_electricity_per_value_added_floor');
+  const ke=x.results.find(r=>r.id==='kemi_electricity_per_value_added_proxy');
+  assert.equal(water.value,109.375);
+  assert.equal(water.quality,'qualified');
+  assert.equal(ne.value,7.309);
+  assert.equal(ke.value,5.628);
+  const waterSpread=x.comparisons.find(c=>c.group==='water_withdrawal_per_value_added');
+  const energySpread=x.comparisons.find(c=>c.group==='electricity_per_value_added');
+  assert.equal(waterSpread.spread,2111.01);
+  assert.equal(energySpread.spread,1.3);
+  assert(x.rabbitHoles.some(r=>r.id==='RH-GROUP-water_withdrawal_per_value_added'));
+  assert(!x.rabbitHoles.some(r=>r.id==='RH-GROUP-electricity_per_value_added'));
+});
+
 test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});
