@@ -132,4 +132,25 @@ test('real withdrawal symetry recipes stay boundary-qualified',async()=>{
   assert(x.rabbitHoles.some(r=>r.id==='RH-kemi_nebius_water_withdrawal_multiple'));
 });
 
+test('Kemi value-added proxy stays explicitly scenario-derived',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const byId=new Map(evidence.map(x=>[x.id,x]));
+  const va=byId.get('EV-KEMI-VA-PROXY-001');
+  assert.equal(va.value,142.14);
+  assert.equal(va.status,'derived_scenario_proxy');
+  assert(va.note.includes('Not observed value added'));
+  const waterva=byId.get('EV-KEMI-WATERVA-001');
+  assert.equal(Number(waterva.value.toFixed(3)),230892.078);
+});
+
+test('Kemi water per value-added Symetry remains qualified',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const recipes=JSON.parse(await readFile(new URL('../data/denominator-recipes.json',import.meta.url),'utf8'));
+  const x=runDenominatorEngine(evidence,recipes);
+  const r=x.results.find(r=>r.id==='kemi_water_withdrawal_per_value_added_proxy');
+  assert.equal(r.value,230892.078);
+  assert.equal(r.quality,'qualified');
+  assert.equal(r.boundaryPolicy,'strict');
+});
+
 test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});
