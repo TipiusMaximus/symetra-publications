@@ -222,4 +222,23 @@ test('resource flow matrix carries Tornio site without inventing net consumption
   assert.equal(flow.electricity.tornio_2024.in.measured_grid_import.state,'unknown');
 });
 
+test('Hamina water boundary keeps seawater actual unknown and permit ceiling separate',async()=>{
+  const flow=JSON.parse(await readFile(new URL('../data/resource-flow-matrix.json',import.meta.url),'utf8'));
+  const h=flow.water.hamina_2024;
+  assert.equal(h.in.reported_non_seawater_withdrawal.value,11356);
+  assert.equal(h.out.reported_non_seawater_discharge.value,10221);
+  assert.equal(h.net.reported_non_seawater_consumption.value,1136);
+  assert.equal(h.in.seawater_cooling_withdrawal.state,'unknown');
+  assert.equal(h.in.seawater_cooling_withdrawal.permit_ceiling.value,80000000);
+  assert.equal(h.in.seawater_cooling_withdrawal.permit_ceiling.status,'permit_ceiling');
+  assert.equal(h.net.total_consumption.state,'unknown');
+});
+
+test('Hamina total-water cross-sector Symetry is blocked until seawater actual exists',async()=>{
+  const flow=JSON.parse(await readFile(new URL('../data/resource-flow-matrix.json',import.meta.url),'utf8'));
+  assert.equal(flow.cross_entity_diagnostics.kemi_hamina_total_water_comparison.state,'blocked');
+  assert.equal(flow.cross_entity_diagnostics.tornio_hamina_total_water_comparison.state,'blocked');
+  assert(flow.cross_entity_diagnostics.kemi_hamina_total_water_comparison.reason.includes('different water scopes'));
+});
+
 test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});

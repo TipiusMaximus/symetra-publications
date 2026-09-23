@@ -232,6 +232,10 @@ assert.equal(resourceMatrix.electricity.kemi.net.measured_grid_balance.state,'un
 assert.equal(resourceMatrix.water.tornio_2024.in.withdrawal.value,20712315);
 assert.equal(resourceMatrix.water.tornio_2024.net.consumption.state,'unknown');
 assert.equal(resourceMatrix.electricity.tornio_2024.in.total_consumption.value,2637);
+assert.equal(resourceMatrix.water.hamina_2024.in.reported_non_seawater_withdrawal.value,11356);
+assert.equal(resourceMatrix.water.hamina_2024.in.seawater_cooling_withdrawal.state,'unknown');
+assert.equal(resourceMatrix.water.hamina_2024.in.seawater_cooling_withdrawal.permit_ceiling.value,80000000);
+assert.equal(resourceMatrix.cross_entity_diagnostics.kemi_hamina_total_water_comparison.state,'blocked');
 assert(files.some(f=>f.endsWith('/assets/og.png')),'OG image missing');
 assert.equal(files.filter(f=>f.endsWith('.html')).length,12);
 console.log(`PASS: ${htmls.size} HTML pages; ${checked} internal links/assets/anchors; Markdown correspondence; 11 questions; calculations; evidence ledger exports; Symetrix v0.1/v0.2/v0.3; publication allowlist.`);

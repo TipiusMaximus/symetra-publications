@@ -16,6 +16,11 @@
       "label": "Outokumpu Tornio site",
       "period": "2024",
       "boundary": "integrated Tornio production site; environmental-report boundary"
+    },
+    "hamina_2024": {
+      "label": "Google Hamina campus",
+      "period": "2024 / current seawater permit context",
+      "boundary": "Hamina campus; Google operational water reporting excludes seawater"
     }
   },
   "water": {
@@ -104,6 +109,53 @@
         "consumption": {
           "state": "unknown",
           "note": "P3+P7 discharge exceeds raw-water withdrawal, so subtraction is not a valid consumptive-use calculation; accounting includes additional water pathways."
+        }
+      }
+    },
+    "hamina_2024": {
+      "in": {
+        "reported_non_seawater_withdrawal": {
+          "value": 11356,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-HAM-WATER-001",
+          "source_class": "non_seawater_reported"
+        },
+        "seawater_cooling_withdrawal": {
+          "state": "unknown",
+          "source_class": "seawater",
+          "role": "cooling",
+          "note": "YVA confirms seawater intake for cooling and states actual withdrawals have remained below the permit ceiling, but the currently available public source does not give the actual annual volume.",
+          "permit_ceiling": {
+            "value": 80000000,
+            "unit": "m3/y",
+            "status": "permit_ceiling",
+            "evidence": "EV-HAM-WATER-004"
+          }
+        }
+      },
+      "out": {
+        "reported_non_seawater_discharge": {
+          "value": 10221,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-HAM-WATER-002"
+        },
+        "seawater_return": {
+          "state": "unknown",
+          "note": "Cooling seawater is returned to the sea, but an actual annual return volume is not available in the current public audit data."
+        }
+      },
+      "net": {
+        "reported_non_seawater_consumption": {
+          "value": 1136,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-HAM-WATER-003"
+        },
+        "total_consumption": {
+          "state": "unknown",
+          "note": "Google's reported operational water metrics exclude seawater; no total campus consumptive-use balance is inferred."
         }
       }
     }
@@ -234,6 +286,20 @@
       "unit": "x",
       "status": "derived_mixed_period_and_evidence",
       "interpretation": "Observed Tornio 2024 electricity use divided by derived Nebius 2025 electricity use."
+    },
+    "kemi_hamina_total_water_comparison": {
+      "state": "blocked",
+      "numerator": "EV-KEMI-WATER-003",
+      "denominator": "EV-HAM-WATER-001",
+      "reason": "Kemi observation is total reported mill withdrawal, while Hamina observation excludes seawater and the actual cooling-seawater withdrawal is unknown. A numeric ratio would compare different water scopes.",
+      "permit_context": "EV-HAM-WATER-004"
+    },
+    "tornio_hamina_total_water_comparison": {
+      "state": "blocked",
+      "numerator": "EV-TORNIO-WATER-001",
+      "denominator": "EV-HAM-WATER-001",
+      "reason": "Tornio raw-water withdrawal includes seawater and river water; Hamina reported operational withdrawal excludes seawater. Actual Hamina seawater throughput is unknown.",
+      "permit_context": "EV-HAM-WATER-004"
     }
   }
 }
