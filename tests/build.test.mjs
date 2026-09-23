@@ -105,4 +105,31 @@ test('Denominator Engine keeps boundaries and flags rabbit holes',()=>{
   assert.equal(x.results.find(r=>r.id==='intensity').value,2);
   assert(x.rabbitHoles.some(r=>r.id==='RH-scope'));
 });
+test('resource flow matrix keeps withdrawal, consumption and grid balance distinct',async()=>{
+  const flow=JSON.parse(await readFile(new URL('../data/resource-flow-matrix.json',import.meta.url),'utf8'));
+  assert.equal(flow.version,'0.1');
+  assert.equal(flow.water.nebius_finland1.in.withdrawal.value,1459);
+  assert.equal(flow.water.nebius_finland1.net.consumption.state,'unknown');
+  assert.equal(flow.water.kemi.in.withdrawal.value,32819000);
+  assert.equal(flow.water.kemi.net.withdrawal_minus_wastewater.status,'derived_not_consumption');
+  assert.equal(flow.electricity.nebius_finland1.in.total_consumption.value,97.5);
+  assert.equal(flow.electricity.nebius_finland1.in.measured_grid_import.state,'unknown');
+  assert.equal(flow.electricity.kemi.net.measured_grid_balance.state,'unknown');
+  assert.equal(Number(flow.cross_entity_diagnostics.water_withdrawal_multiple.value.toFixed(3)),22494.174);
+});
+
+test('real withdrawal symetry recipes stay boundary-qualified',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const recipes=JSON.parse(await readFile(new URL('../data/denominator-recipes.json',import.meta.url),'utf8'));
+  const x=runDenominatorEngine(evidence,recipes);
+  const nebius=x.results.find(r=>r.id==='nebius_water_withdrawal_per_revenue');
+  const scale=x.results.find(r=>r.id==='kemi_nebius_water_withdrawal_multiple');
+  assert.equal(nebius.value,51.953);
+  assert.equal(nebius.quality,'direct');
+  assert.equal(nebius.boundaryPolicy,'near_match');
+  assert.equal(scale.value,22494.174);
+  assert.equal(scale.quality,'qualified');
+  assert(x.rabbitHoles.some(r=>r.id==='RH-kemi_nebius_water_withdrawal_multiple'));
+});
+
 test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});
