@@ -940,5 +940,15 @@
     "sourceType": "Julkaisijan oma toimipaikkasivu",
     "publishedAt": null,
     "reviewScope": []
+  },
+  {
+    "id": "S101",
+    "title": "Oulun Energia Kenve Oy: Vuosikertomus 2025",
+    "url": "https://www.kenve.fi/wp-content/uploads/2026/03/KeEnVe-vuosikertomus-2025.pdf",
+    "verification": "Tarkistettu 23.9.2026: lämpöliiketoiminnan ympäristötaseessa lämmön osto 50,1 GWh vuonna 2025 ja kaukolämmön myynti 145,3 GWh; tekstissä kaukolämmön tuotanto 163,2 GWh ja 29,9 % energiasta ilmoitetaan Metsä Fibreltä ostetuksi. Metsä Fibren biotuotetehtaan lämmönsiirrinaseman teho 30 MW.",
+    "publisher": "Oulun Energia Kenve Oy",
+    "sourceType": "Energiayhtiön vuosikertomus",
+    "publishedAt": "2026-03-01",
+    "reviewScope": []
   }
 ]
