@@ -375,6 +375,88 @@
       "boundaryPolicy": "strict",
       "periodPolicy": "mixed_explicit",
       "comparisonGroup": "electricity_per_value_added"
+    },
+    {
+      "id": "tornio_nebius_water_withdrawal_multiple",
+      "label": "Tornio / Nebius annual water withdrawal",
+      "question": "How many times larger is Tornio 2024 raw-water withdrawal than Nebius Finland-1 2025 reported water withdrawal?",
+      "numerator": {
+        "evidence": "EV-TORNIO-WATER-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-NEB-WATER-002",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "near_period",
+      "rabbitHole": {
+        "kind": "absolute_multiple",
+        "threshold": 4
+      }
+    },
+    {
+      "id": "kemi_tornio_water_withdrawal_multiple",
+      "label": "Kemi / Tornio annual water withdrawal",
+      "question": "How large is Kemi 2025 water withdrawal relative to Tornio 2024 raw-water withdrawal?",
+      "numerator": {
+        "evidence": "EV-KEMI-WATER-003",
+        "field": "value",
+        "scale": 1000000,
+        "note": "million m3 → m3"
+      },
+      "denominator": {
+        "evidence": "EV-TORNIO-WATER-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "near_period"
+    },
+    {
+      "id": "tornio_nebius_electricity_multiple",
+      "label": "Tornio / Nebius annual electricity use",
+      "question": "How many times larger is observed Tornio 2024 electricity use than derived Nebius Finland-1 2025 electricity use?",
+      "numerator": {
+        "evidence": "EV-TORNIO-ELECTRICITY-002",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-NEB-ENERGY-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "near_period",
+      "rabbitHole": {
+        "kind": "absolute_multiple",
+        "threshold": 4
+      }
+    },
+    {
+      "id": "tornio_kemi_electricity_multiple",
+      "label": "Tornio / Kemi annual electricity use",
+      "question": "How large is observed Tornio 2024 electricity use relative to Kemi's implied current annual electricity use?",
+      "numerator": {
+        "evidence": "EV-TORNIO-ELECTRICITY-002",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-KEMI-ENERGY-003",
+        "field": "value",
+        "scale": 1000,
+        "note": "TWh → GWh"
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "cross_boundary",
+      "periodPolicy": "mixed_explicit"
     }
   ]
 }
