@@ -52,7 +52,7 @@ Linkkien tarkistus tarvitsee verkkoyhteyden. HTTP 403 merkitään estyneeksi; si
 
 ## GitHub Pages
 
-Työnkulku rakentaa PR:t, `main`-haaran ja `release/v1.1-preview-2026-09-22`-esikatseluhaaran. Release-haara voidaan julkaista Pagesiin ilman mergeä `main`iin; `main` säilyttää `PUBLISH_APPROVED=true`-julkaisuportin.
+Työnkulku rakentaa PR:t ja `main`-haaran, tarkistaa sekä projektipolun että juuripolun ja tuottaa Pages-artefaktin. `main`-haaran onnistunut build julkaisee Pages-artefaktin.
 
 Julkaisun yhteydessä:
 
