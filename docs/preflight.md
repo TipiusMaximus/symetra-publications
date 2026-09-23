@@ -1,25 +1,30 @@
 # Julkaisun preflight — 22.9.2026
 
-**Tila: toteutus valmis tarkasteltavaksi; julkinen julkaisu ja selainhyväksyntä odottavat.** GitHub Pagesin julkaisu on lukittu muuttujalla `PUBLISH_APPROVED`.
+**Tila: v1.2.0 on julkaistu teknisesti hyväksytyn preflightin jälkeen.** Selain- ja PDF-tarkistus jatkuu julkaisun jälkeisenä QA-tehtävänä käyttäjän hyväksynnän mukaisesti.
 
 ## Sisältö ja aineisto
 
-- 8 suunnitelman mukaista pääsivua, lisäksi pitkä raportti ja 404: yhteensä 10 HTML-sivua.
+- 10 sisältösivua, lisäksi kanoninen raportti, `/raportti/`-yhteensopivuussivu ja 404: yhteensä 12 HTML-sivua.
+- `/analyysit/datakeskukset/` sisältää orientaation, esipuheen, tutkimuskysymyksen, lukutavan, varsinaisen analyysin, A01–A11-väiteauditoinnin, johtopäätökset ja menetelmän tässä järjestyksessä.
+- Tekijä on Symetra organisaationa. Versio, julkaisu- ja päivityspäivä, aineiston katkaisupäivä sekä julkaistu tila näkyvät raportissa.
 - Kaikki A01–A11-kysymykset, niiden alkuperä, kuvaileva arvio, lähteet ja avoimet tiedot mukana.
 - Kohdevertailu ja kuusi vaikutusaluetta noudattavat kuusiosaista havaintomallia. Ei yhteispisteitä, voittajaa tai politiikkasuositusta.
-- 74 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin ja Outokummun alkuperäislähteet lisätty ja tarkistettu julkaisuvaiheessa.
+- 92 verkkolähdettä ja kymmenen HEL16-asiakirjan metadata. Kemin vuoden 2025 toteumatietoja ja Symetrix-mittariaineistoa säilytetään lähderekisterissä ja latauksissa.
 - Laskennassa kokonaislukuaritmetiikka; käyttökatteen pyöristys ja johdettujen lukujen rajat näkyvät.
 - Alkuperäistä keskusteluarkistoa, käyttäjän paikallisia polkuja ja PDF-kokotekstejä ei sisällytetä julkaisurepoon tai buildiin.
 - Ei väitettä koko valmistavan teollisuuden kattavasta auditoinnista; verrokkien suppeampi tutkimussyvyys näkyy.
 
 ## Automaattiset tarkistukset
 
-- `npm run preflight`: 7 testiä hyväksytty; 10 HTML-sivua; 290 sisäistä linkki-, resurssi- ja ankkuriviittausta; yksi H1 sivua kohti; ei otsikkotasojen hyppyjä tai päällekkäisiä tunnisteita.
+- `npm run preflight`: yhdistetyn puun testimäärä ja sisäisten viittausten määrä vahvistetaan viimeisessä ajossa; raporttijärjestys, Symetrix-viennit, metatiedot ja legacy-ankkurit ovat automaattisia portteja.
 - Kanonisten Markdown-sisältöjen tekstivastaavuus HTML:ään tarkistettu, mukaan lukien jokaisen tutkimuskysymyksen koko teksti.
+- Yhteiset lukutiedostot laajennetaan ennen renderöintiä; ratkaisemattomat `chapter`- ja `cite`-tokenit estävät preflightin. Raportin lukujärjestys tulee `data/publication.json`-tiedostosta. Esipuheen yksikäsitteisyys, A01–A11:n sijainti vertailun ja johtopäätösten välissä sekä aiempien versioiden ankkurit tarkistetaan automaattisesti.
+- Pääraportin ja `/raportti/`-reitin canonical-, robots-, Open Graph- ja Article-JSON-LD-metatiedot tarkistetaan. Pääraportti on sitemapissa; yhteensopivuusreitti ei ole.
+- Tulostus-HTML ja Markdown-lataus sisältävät täydellisen lähdeliitteen. Ulkoinen linkkitarkistus ei korvaa aiempaa rekisteriä, jos kaikki osoitteet epäonnistuvat verkkotasolla.
 - Sekä `/symetra-publications/`-alihakemisto että tyhjä juuripolku rakennettu ja tarkistettu.
 - Puhtaassa tilapäishakemistossa tehty `npm ci --ignore-scripts`, preflight ja juuripolun tarkistus hyväksytysti (paikallinen Node 23.11.0). GitHub Actions varmentaa erikseen Node 22:n.
-- 74 yksilöllistä ulkoista lähdeosoitetta tarkistettu: 72 vastasi onnistuneesti; Stora Enson vuoden 2010 tilinpäätös ja IMF:n taustalähde palauttivat HTTP 403. Ei HTTP 404 -lähteitä. Käyttörajaukset näkyvät lähdesivulla. HTTP-tulos ei ole sisällön varmennus.
-- Asennuksen riippuvuusauditointi: ei havaittuja haavoittuvuuksia. Yksi riippuvuuden vanhentumisilmoitus (`whatwg-encoding`); ei estä buildia, vaihto jätetään riippuvuuden ylläpitäjälle.
+- Ulkoinen linkkirekisteri on laajentunut 92 lähteeseen; täydellinen linkkitarkistus ja puhtaan asennuksen auditointi kirjataan yhdistetyn puun lopullisilla tuloksilla. HTTP-tulos ei ole sisällön varmennus.
+- Aiemmin `npm audit` raportoi 0 haavoittuvuutta; yhdistetyn puun lopullinen auditointi ajetaan ennen pushia.
 
 ### Termiselitysten tarkistus — 22.9.2026
 
@@ -43,8 +48,8 @@ Sisäisen selaimen yritys avata paikallinen sivusto estyi, koska organisaation p
 
 Toteutuksesta ei ole selaimen kuvakaappausta eikä konseptin ja toteutuksen lopullista visuaalista vastaavuutta väitetä varmennetuksi. Natiivikoon 1440 × 1100, mobiilin 320/390 px, näppäimistöpolun, selaimen konsolin ja PDF-tulostuksen tarkistus ovat edelleen tekemättä. Myöskään sosiaalisen palvelun todellista esikatseluhakua ei ole testattu; metadata ja PNG ovat paikallisesti olemassa.
 
-Varmennettava polku: etusivu → Tutustu analyysiin → Kohdevertailu → Tutkimuskysymykset → A03 → lähde. Testaa myös paluu, mobiilivalikon avaaminen, vaakataulukon näppäimistövieritys, raportin lataus, tulostus ja tuntematon osoite.
+Varmennettava polku: etusivu → Lue raportti → sisällysluettelon luku → A03 → lähde → paluu. Testaa myös `/raportti/`-yhteensopivuusreitti, mobiilivalikon avaaminen, vaakataulukon näppäimistövieritys, raportin lataus, A4-tulostus, PDF, jakokuvan esikatselu ja tuntematon osoite.
 
 ## Julkaisupäätös
 
-Julkaisuportti pidetään suljettuna, kunnes edellä nimetyt selainkokeet on voitu tehdä. Tämä toteuttaa käyttäjän suunnitelman julkaisemista edeltävät responsiivisuus- ja tulostuskriteerit. Muut aineistopuutteet ovat analyysin näkyviä tuloksia; niitä ei piiloteta julkaisumuotoa vaihtamalla.
+Versio 1.2.0 julkaistaan käyttäjän nimenomaisella päätöksellä ennen selain- ja PDF-kokeita. Nämä kokeet kirjataan julkaisemisen jälkeiseksi QA:ksi. Muut aineistopuutteet ovat analyysin näkyviä tuloksia; niitä ei piiloteta julkaisumuotoa vaihtamalla.
