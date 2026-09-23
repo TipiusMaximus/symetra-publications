@@ -1,0 +1,194 @@
+{
+  "version": "0.1",
+  "principle": "Työllisyyslukuja verrataan vain samalla systeemirajalla. Suurempi raja ei automaattisesti tarkoita parempaa tulosta; se kuvaa laajempaa vaikutusketjua.",
+  "tiers": [
+    {
+      "id": "E0",
+      "label": "Oma henkilöstö",
+      "definition": "Raportoivan oikeushenkilön tai segmentin oma henkilöstö/FTE.",
+      "allowed_examples": [
+        "Tuike Finland Oy 120 henkilöä",
+        "Nebius DC Oy 37 henkilöä",
+        "Ferrochrome-segmentti 454 FTE"
+      ],
+      "warning": "Oikeushenkilö, segmentti ja vuoden lopun FTE eivät ole täysin sama henkilöstökäsite."
+    },
+    {
+      "id": "E1",
+      "label": "Toimipaikan työvoima",
+      "definition": "Samalla fyysisellä site-/kampusalueella säännöllisesti työskentelevät henkilöt työnantajasta riippumatta.",
+      "allowed_examples": [
+        "Google Hamina noin 500 henkilöä",
+        "Kemin tehdasalue noin 500 henkilöä"
+      ],
+      "warning": "Rakennusvaiheen tilapäinen työvoima erotetaan käyttövaiheen säännöllisestä työvoimasta."
+    },
+    {
+      "id": "E2",
+      "label": "Suora kotimainen arvoketju",
+      "definition": "Oman toiminnan lisäksi Suomessa toimivat välittömät tuotanto-, raaka-aine-, logistiikka- ja palveluketjun työpaikat samalla määritellyllä vaikutusrajalla.",
+      "allowed_examples": [
+        "Kemin biotuotetehdas noin 2 500 henkilöä suorassa arvoketjussa Suomessa"
+      ],
+      "warning": "Toimittajayritysten lukumäärä ei ole työpaikkamäärä. Google Haminan 600+ toimittajaa ei kelpaa E2-henkilöstöluvuksi."
+    },
+    {
+      "id": "E3",
+      "label": "Laajempi välillinen työllisyys",
+      "definition": "Raportoijan tai vaikutusarvion ilmoittama laajempi epäsuora/supported employment -vaikutus.",
+      "allowed_examples": [
+        "Outokumpu Kemi–Tornio noin 8 000 välillisesti tuettua työpaikkaa"
+      ],
+      "warning": "Yhtiön vaikutusarvio ei ole sama asia kuin tilastollisesti havaittu työpaikkamäärä eikä välttämättä sama menetelmä eri yhtiöillä."
+    }
+  ],
+  "entity_map": {
+    "hamina": {
+      "E0": {
+        "value": 120,
+        "unit": "persons",
+        "evidence": "EV-TUIKE-WORK-001"
+      },
+      "E1": {
+        "value": 500,
+        "unit": "persons_approx",
+        "evidence": "EV-HAM-WORK-001"
+      },
+      "E2": {
+        "state": "unknown",
+        "note": "600+ Finnish suppliers is a company count, not jobs."
+      },
+      "E3": {
+        "state": "unknown"
+      }
+    },
+    "nebius": {
+      "E0": {
+        "value": 37,
+        "unit": "persons",
+        "evidence": "EV-NEB-WORK-001"
+      },
+      "E1": {
+        "state": "unknown"
+      },
+      "E2": {
+        "state": "unknown"
+      },
+      "E3": {
+        "state": "unknown"
+      }
+    },
+    "kemi": {
+      "E0": {
+        "value": 250,
+        "unit": "persons_approx",
+        "evidence": "EV-KEMI-WORK-002",
+        "period": "2024"
+      },
+      "E1": {
+        "value": 500,
+        "unit": "persons_approx",
+        "evidence": "EV-KEMI-WORK-003",
+        "period": "2024"
+      },
+      "E2": {
+        "value": 2500,
+        "unit": "persons_approx",
+        "evidence": "EV-KEMI-WORK-004"
+      },
+      "E3": {
+        "state": "unknown"
+      }
+    },
+    "outokumpu": {
+      "E0": {
+        "value": 454,
+        "unit": "FTE",
+        "evidence": "EV-FC-WORK-001",
+        "boundary": "Ferrochrome segment"
+      },
+      "E1": {
+        "value": 2000,
+        "unit": "persons_more_than",
+        "evidence": "EV-TORNIO-WORK-001",
+        "boundary": "Kemi–Tornio direct employees; broader than Ferrochrome"
+      },
+      "E2": {
+        "state": "unknown",
+        "note": "Current 2,000+ direct-employees figure is not a harmonized domestic direct-value-chain estimate."
+      },
+      "E3": {
+        "value": 8000,
+        "unit": "jobs_estimated",
+        "evidence": "EV-TORNIO-WORK-002",
+        "boundary": "Kemi–Tornio company impact estimate"
+      }
+    }
+  },
+  "derived_descriptive": [
+    {
+      "id": "site_to_own_workforce_ratio",
+      "formula": "E1 / E0",
+      "direction": "descriptive",
+      "values": {
+        "hamina": 4.17,
+        "kemi": 2
+      },
+      "note": "Kuvaa oman henkilöstön ulkopuolisen site-työvoiman merkitystä. Ei vielä score: vain kaksi vertailukelpoista kohdetta ja henkilöstökäsitteet eivät ole täydellisesti identtiset."
+    },
+    {
+      "id": "direct_value_chain_multiplier",
+      "formula": "E2 / E0",
+      "direction": "descriptive",
+      "values": {
+        "kemi": 10
+      },
+      "note": "Kemi ainoa nykyinen kohde, jolla E2 on määritelty eksplisiittisesti suoraksi kotimaiseksi arvoketjuksi."
+    }
+  ],
+  "scope_jump_analysis": {
+    "principle": "Eri systeemirajojen välinen suhde on sallittu kuvailevana analyysina, kun osoittaja ja nimittäjä nimetään eksplisiittisesti. Suuri suhde on tutkimussignaali, ei automaattinen hyvä/huono-arvio.",
+    "ratios": [
+      {
+        "id": "E1_over_E0",
+        "label": "Site amplification",
+        "formula": "E1 / E0",
+        "meaning": "Kuinka monta toimipaikalla säännöllisesti työskentelevää henkilöä näkyy yhtä oman henkilöstön henkilöä/FTE:tä kohti.",
+        "interpretation": "Suuri arvo voi viitata ulkoistamiseen, monityönantajamalliin tai siihen, että juridinen henkilöstöluku kuvaa huonosti fyysisen toimipaikan työvoimaa.",
+        "values": {
+          "hamina": 4.17,
+          "kemi": 2
+        },
+        "direction": "descriptive_only"
+      },
+      {
+        "id": "E2_over_E0",
+        "label": "Domestic value-chain multiplier",
+        "formula": "E2 / E0",
+        "meaning": "Suoran kotimaisen arvoketjun työmäärä suhteessa omaan henkilöstöön.",
+        "interpretation": "Suuri arvo voi kertoa työvoimavaltaisesta kotimaisesta toimitusketjusta. Se ei yksin kerro tuottavuudesta tai yhteiskunnallisesta hyödystä.",
+        "values": {
+          "kemi": 10
+        },
+        "direction": "descriptive_only"
+      },
+      {
+        "id": "E3_over_E0",
+        "label": "Extended employment multiplier",
+        "formula": "E3 / E0",
+        "meaning": "Laajemman välillisen/supported employment -arvion suhde omaan henkilöstöön.",
+        "interpretation": "Korkean epävarmuuden exploratory-suhde. Käytetään kaninkolojen löytämiseen, ei pisteytykseen.",
+        "values": {
+          "outokumpu": 17.62
+        },
+        "direction": "descriptive_only",
+        "caveat": "Outokummun E3 koskee Kemi–Tornio-kokonaisuutta, kun E0 on Ferrochrome-segmentti. Tämä on tarkoituksellinen cross-boundary exploratory ratio, ei harmonisoitu mittari."
+      }
+    ],
+    "flags": {
+      "missing_upper_boundary": "Jos E0/E1 tunnetaan mutta E2/E3 puuttuu, merkitään tutkimusaukko eikä oleteta kertoimeksi 1.",
+      "large_jump": "Suuri scope jump nostetaan jatkotutkimukseen riippumatta siitä, onko se positiivinen vai negatiivinen ilmiö.",
+      "mixed_boundary": "Jos osoittaja ja nimittäjä ovat eri organisaatiorajoista, suhde merkitään exploratory/cross-boundary."
+    }
+  }
+}

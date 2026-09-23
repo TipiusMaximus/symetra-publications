@@ -1,0 +1,127 @@
+{
+  "version": "0.1",
+  "purpose": "Close the datacenter-vs-industry audit before treating Symetra as a separate product.",
+  "statusLegend": {
+    "closed": "Sufficient evidence for current audit claim",
+    "partial": "Useful evidence exists but a harmonized or measured value is still missing",
+    "open": "Material evidence gap remains",
+    "blocked": "Public source not yet found or boundary cannot yet be harmonized"
+  },
+  "goals": [
+    {
+      "id": "G-KEMI-GRID",
+      "label": "Kemi measured grid import/export",
+      "priority": 1,
+      "status": "partial",
+      "nowKnown": [
+        "2.0 TWh/y renewable electricity generation",
+        "250% electricity self-sufficiency",
+        "company states surplus electricity is delivered to national grid",
+        "derived own consumption ~0.8 TWh/y",
+        "derived annual net surplus ~1.2 TWh/y",
+        "derived normalized net-grid dependence -150%"
+      ],
+      "missing": [
+        "separately reported metered annual gross grid import",
+        "separately reported metered annual gross grid export"
+      ],
+      "next": "Search regulatory/energy-market reporting and mill annual monitoring for metered import/export."
+    },
+    {
+      "id": "G-KEMI-WATER",
+      "label": "Kemi actual water withdrawal/consumption",
+      "priority": 2,
+      "status": "partial",
+      "nowKnown": [
+        "2025 actual water withdrawal 32.819 million m3",
+        "2025 actual wastewater flow 13.931 million m3",
+        "2025 actual chemical pulp production 927 kt",
+        "derived 2025 withdrawal intensity ~35.4 m3/t",
+        "derived 2025 wastewater-flow intensity ~15.0 m3/t",
+        "10 m3/t design proxy remains useful as design comparator",
+        "closed cooling-water circulation"
+      ],
+      "missing": [
+        "site-specific net consumptive water loss / consumption",
+        "full-capacity steady-state actual water intensity"
+      ],
+      "next": "Keep actual withdrawal and wastewater as observed metrics; search for site-specific consumption and later steady-state year."
+    },
+    {
+      "id": "G-HAM-ELECTRICITY",
+      "label": "Hamina measured annual electricity",
+      "priority": 3,
+      "status": "partial",
+      "nowKnown": [
+        "external indirect estimate ~870 GWh/y",
+        "derived ~99 MW average total load",
+        "campus PUE ~1.10"
+      ],
+      "missing": [
+        "operator- or grid-reported annual metered site electricity"
+      ],
+      "next": "Search grid connection, energy-statistics and operator disclosures; preserve 0.87-2.0 TWh sensitivity until found."
+    },
+    {
+      "id": "G-HAM-WUE",
+      "label": "Hamina same-period measured WUE",
+      "priority": 4,
+      "status": "partial",
+      "nowKnown": [
+        "2024 non-seawater consumption 0.3M US gal",
+        "E-flagged proxy ~0.0014 L/kWh IT",
+        "seawater excluded from Google reported water metrics"
+      ],
+      "missing": [
+        "same-year site IT kWh / measured standard WUE"
+      ],
+      "next": "Replace E* only if a same-boundary operator-reported WUE or IT-energy denominator is found."
+    },
+    {
+      "id": "G-OUTOKUMPU-BOUNDARY",
+      "label": "Outokumpu Ferrochrome/Tornio common-boundary energy water finance",
+      "priority": 5,
+      "status": "open",
+      "nowKnown": [
+        "Ferrochrome segment financials/workforce",
+        "Tornio site total energy ~4 TWh/y"
+      ],
+      "missing": [
+        "Ferrochrome/site electricity boundary",
+        "water withdrawal/consumption same boundary",
+        "economic output same physical site boundary"
+      ],
+      "next": "Build one explicit Tornio/Ferrochrome boundary pack."
+    },
+    {
+      "id": "G-HEAT",
+      "label": "Useful heat on common denominator",
+      "priority": 6,
+      "status": "partial",
+      "nowKnown": [
+        "Nebius measured 19.5 GWh heat export 2025",
+        "Hamina ~40 GWh/y design potential"
+      ],
+      "missing": [
+        "Hamina measured annual delivered heat",
+        "Kemi useful exported heat same-period figure",
+        "common denominator such as electricity use or site output"
+      ],
+      "next": "Separate design potential from measured export, then normalize."
+    },
+    {
+      "id": "G-DOMESTIC-VA",
+      "label": "Domestic value added",
+      "priority": 7,
+      "status": "open",
+      "nowKnown": [
+        "Kemi company impact estimate ~0.5bn €/y positive income effect",
+        "Hamina revenue/property-tax/supplier evidence"
+      ],
+      "missing": [
+        "same-method domestic value added for all entities"
+      ],
+      "next": "Use national accounts / input-output or transparent value-added proxy before scoring MWh/M€, m3/M€, htv/M€."
+    }
+  ]
+}

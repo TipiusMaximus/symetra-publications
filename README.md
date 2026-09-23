@@ -26,35 +26,40 @@ npm run check
 ## Sisältö
 
 - `content/*.md`: sivujen ensisijainen sisältö.
+- `content/chapters/*.md`: pääkertomukseen ja kohdennettuihin näkymiin koottavat yhteiset luvut.
 - `content/questions/A01.md`–`A11.md`: tutkimuskysymykset ja koneluettavat metatiedot.
-- `data/sources.json`: 71 verkkolähdettä ja niiden alkuperäketju.
+- `data/sources.json`: 92 verkkolähdettä ja niiden alkuperäketju.
 - `data/documents.json`: HEL16:n kymmenen asiakirjan metadata; ei alkuperäisiä PDF:iä tai henkilökohtaisia polkuja.
+- `data/observations.json`: rajatusti varmennetut havainnot, niiden lähteet ja tulkintarajat.
+- `data/publication.json`: kanonisen raportin, yhteensopivuusreitin, latauksen ja tulosteen yhteinen järjestetty sisältömanifesti.
+- `data/legacy-anchors.json`: aiempien versioiden pysyvät fragmenttitunnisteet.
 - `scripts/calculations.mjs`: toistettava laskenta.
+- `scripts/symetrix.mjs` ja `scripts/symetrix-v02.mjs`: historialliset v0.1/v0.2-mallit toistettavuutta varten. Nykyinen näkyvä malli on `scripts/symetrix-v03.mjs`, ja testi varmistaa että `content/symetrix.md` käyttää samaa versiota.
 - `assets/`: CSS, pieni tulostus-JavaScript ja 1200 × 630 PNG-jakokuva.
 - `dist/`: generoitu HTML ja ladattavat aineistot, ei Gitissä.
 
-Pitkä raportti generoidaan samoista sivuista ja kysymyksistä. Sen HTML:ää tai Markdown-latausta ei muokata erikseen. Sivusto toimii ilman JavaScriptiä; silloin selaimen oma tulostustoiminto on käytettävissä.
+Kanoninen raportti on osoitteessa `/analyysit/datakeskukset/`. Yhteensopivuusreitti `/analyysit/datakeskukset/raportti/`, Markdown-lataus ja tulostusversio generoidaan samasta manifestista; niiden runkosisältöä ei muokata erikseen. Tulosteessa ja Markdown-latauksessa on täydellinen lähdeliite. Sivusto toimii ilman JavaScriptiä; silloin selaimen oma tulostustoiminto on käytettävissä.
 
-Frontmatter tukee yhtä skalaaria per rivi sekä JSON-muotoisia listoja (kelvollista YAMLia). Monirivisiä YAML-rakenteita ei tueta. Pakolliset sivukentät: `title`, `slug`, `route`, `language`, `status`, `published`, `updated`, `description`, `layout`. `published: false` ilmaisee, ettei verkkoversiota ole vielä julkaistu; valmis paikallinen sisältö voi olla `status: ready`. Julkaisubuild sisältää toimitetut sivut myös esikatselua varten, joten varsinainen julkaisulukko on GitHub Actionsin `PUBLISH_APPROVED`-muuttuja.
+Frontmatter tukee yhtä skalaaria per rivi sekä JSON-muotoisia listoja (kelvollista YAMLia). Monirivisiä YAML-rakenteita ei tueta. Pakolliset sivukentät: `title`, `slug`, `route`, `language`, `status`, `published`, `updated`, `description`, `layout`. `published: false` ilmaisee, ettei verkkoversiota ole vielä julkaistu; valmis sisältö merkitään `status: ready`.
 
 Kysymyksillä lisäksi `id`, `question`, `classification`, `original`, `rationale`, `sourceRefs` ja `openData`. Luokat ovat kuvailevia, eivät pisteitä. Markdowniin saa lisätä vain repossa toimitettua luotettua sisältöä; build ei ole julkisen käyttäjäsyötteen HTML-puhdistin.
 
 ## Testit ja lähdelinkit
 
-`npm run preflight` rakentaa sivut, testaa polku- ja laskentasäännöt sekä tarkistaa sisäiset linkit, kaikki ankkurit, otsikkotasot, Markdown-vastaavuuden, lähdetunnisteet, ladattavan raportin ja aineiston julkaisurajan. `npm run check:external` tarkistaa ulkoiset lähdeosoitteet ja päivittää `data/link-check.json`-tiedoston. Rakenna sivusto tämän jälkeen uudelleen, jotta saatavuustiedot näkyvät lukijalle.
+`npm run preflight` rakentaa sivut, testaa polku- ja laskentasäännöt sekä tarkistaa sisäiset linkit, kaikki ankkurit, otsikkotasot, Markdown-vastaavuuden, raporttijärjestyksen, metadatajoukon, lähdetunnisteet, ladattavan raportin ja aineiston julkaisurajan. `npm run check:external` tarkistaa ulkoiset lähdeosoitteet ja päivittää `data/link-check.json`-tiedoston. Jos kaikki osoitteet epäonnistuvat verkkotasolla, aiempi kelvollinen rekisteri säilytetään. Rakenna sivusto tämän jälkeen uudelleen, jotta saatavuustiedot näkyvät lukijalle.
 
 Linkkien tarkistus tarvitsee verkkoyhteyden. HTTP 403 merkitään estyneeksi; sitä ei tulkita kadonneeksi lähteeksi. HTTP 200 ei ole lähteen faktantarkistus. Aidosti puuttuvat sivut (404) aiheuttavat virhekoodin. Automaattinen CI ei tee toistuvia verkkohakuja: päivätty saatavuustulos versioidaan erikseen.
 
 ## GitHub Pages
 
-Työnkulku rakentaa PR:t ja main-haaran, tarkistaa sekä projektipolun että juuripolun ja tuottaa Pages-artefaktin. **Julkaisu on lukittu**, kunnes repositorion Actions-muuttuja `PUBLISH_APPROVED` on `true`.
+Työnkulku rakentaa PR:t, `main`-haaran ja `release/v1.1-preview-2026-09-22`-esikatseluhaaran. Release-haara voidaan julkaista Pagesiin ilman mergeä `main`iin; `main` säilyttää `PUBLISH_APPROVED=true`-julkaisuportin.
 
-Ennen lukon avaamista:
+Julkaisun yhteydessä:
 
 1. Varmista dokumentoidut sisältö-, linkki- ja Git-tarkistukset.
 2. Varmenna työpöytä, mobiili (myös 320 px), näppäimistö, tulostus/PDF ja jakokuvan esikatselu oikeassa selaimessa.
 3. Päivitä metatietojen `published`-tila ja `docs/preflight.md` todellisten tulosten perusteella.
-4. Ota repossa Pagesin lähteeksi GitHub Actions, varmista julkisen julkaisemisen edellytykset ja aseta `PUBLISH_APPROVED=true`.
+4. Ota repossa Pagesin lähteeksi GitHub Actions ja varmista julkisen julkaisemisen edellytykset.
 5. Käynnistä työnkulku ja tarkista julkinen sivusto sekä tuntemattoman polun 404-vastaus.
 
 Toteutus noudattaa [GitHubin Pages-työnkulkuohjetta](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).

@@ -1,0 +1,187 @@
+{
+  "version": "0.1",
+  "principle": "Estimated values are allowed when the anchor, formula, uncertainty band, system boundary and non-observed status are explicit.",
+  "hamina_electricity": {
+    "status": "estimated_with_sensitivity",
+    "anchor": {
+      "annual_GWh": 870,
+      "sourceRefs": [
+        "S087"
+      ],
+      "classification": "independent_indirect_estimate",
+      "note": "External 2026 study; not operator-reported metered consumption."
+    },
+    "derived": {
+      "average_total_load_MW": 99.3,
+      "average_IT_load_MW_at_PUE_1_10": 90.3,
+      "pue": 1.1,
+      "pueSourceRefs": [
+        "S082"
+      ]
+    },
+    "sensitivity": [
+      {
+        "label": "A",
+        "annual_TWh": 0.87,
+        "average_load_MW": 99.3,
+        "average_IT_load_MW": 90.3,
+        "classification": "anchored_estimate"
+      },
+      {
+        "label": "B",
+        "annual_TWh": 1.5,
+        "average_load_MW": 171.2,
+        "average_IT_load_MW": 155.7,
+        "classification": "audit_sensitivity_scenario"
+      },
+      {
+        "label": "C",
+        "annual_TWh": 2,
+        "average_load_MW": 228.3,
+        "average_IT_load_MW": 207.6,
+        "classification": "audit_sensitivity_scenario"
+      }
+    ],
+    "backup_power_crosscheck": {
+      "aggregate_fuel_power_threshold_MW": 300,
+      "relation": ">",
+      "sourceRefs": [
+        "S013"
+      ],
+      "boundary": "existing + planned data centers in 2024 YVA full-build scope; 100% backup for critical equipment",
+      "manufacturer_efficiency_context": {
+        "diesel_engine_approx_percent": 40,
+        "AC_generator_approx_percent": 90,
+        "sourceRefs": [
+          "S089"
+        ]
+      },
+      "interpretation": "Useful only as an order-of-magnitude consistency check. Fuel power is not electrical output, the YVA scope includes planned expansion, and backup covers critical equipment rather than defining annual average load.",
+      "forbidden_use": "Do not multiply backup MW by 8760 h to estimate annual electricity consumption."
+    }
+  },
+  "water_scope_jump": {
+    "status": "descriptive_mixed_actual_design",
+    "hamina": {
+      "period": "2024",
+      "reported_withdrawal_m3": 11356,
+      "reported_consumption_m3": 1136,
+      "sourceRefs": [
+        "S083"
+      ],
+      "cooling_note": "Google separately describes seawater cooling at Hamina. Reported withdrawal/consumption must not be treated as total seawater cooling throughput.",
+      "coolingSourceRefs": [
+        "S029"
+      ],
+      "seawater_cooling": {
+        "permit_ceiling_m3_per_year": 80000000,
+        "permit_ceiling_average_flow_m3_s": 2.54,
+        "sourceRefs": [
+          "S013"
+        ],
+        "classification": "permit_ceiling_not_actual",
+        "note": "YVA states actual withdrawals have remained below the permitted ceiling."
+      },
+      "reported_non_seawater": {
+        "withdrawal_m3_2024": 11356,
+        "consumption_m3_2024": 1136,
+        "sourceRefs": [
+          "S083"
+        ],
+        "definition": "Google-reported operational water metrics excluding seawater; consumption = withdrawal - discharge."
+      },
+      "non_seawater_consumption_intensity_proxy": {
+        "anchor_L_per_kWh_IT": 0.00144,
+        "sensitivity_L_per_kWh_IT": {
+          "low": 0.00063,
+          "high": 0.00144
+        },
+        "classification": "mixed_period_derived_estimate",
+        "formula": "2024 non-seawater consumption / IT energy derived from electricity scenario and PUE 1.10",
+        "warning": "Not standard measured WUE. Water=2024, PUE=2025, electricity anchor=2026 external estimate; excludes seawater."
+      }
+    },
+    "kemi": {
+      "water_design_value_m3_per_tonne_pulp": 10,
+      "pulp_nameplate_tonnes_per_year": 1500000,
+      "derived_design_proxy_m3_per_year": 15000000,
+      "sourceRefs": [
+        "S088",
+        "S069"
+      ],
+      "classification": "design_proxy_not_measured_actual",
+      "note": "Metsä Fibre calls 10 m3/t a raw-water design value but also explains that the design value refers to total wastewater generated at planned output; retain as a water-use design proxy, not measured withdrawal."
+    },
+    "descriptive_ratio": {
+      "kemi_design_proxy_over_hamina_reported_withdrawal": 1321,
+      "hamina_seawater_permit_ceiling_over_kemi_design_proxy": 5.33,
+      "interpretation": "Rabbit-hole indicators only. Different water concepts and statuses must remain visible: Hamina 2024 reported withdrawal, Hamina seawater permit ceiling, and Kemi design proxy are not interchangeable."
+    },
+    "next_required": {
+      "cross_sector_score": [
+        "same water concept: withdrawal or consumption",
+        "same status: measured actual or design scenario",
+        "normalization denominator representing comparable resource/value output"
+      ],
+      "preferred_candidates": [
+        "freshwater withdrawal / domestic value added",
+        "water consumption / domestic value added",
+        "water withdrawal / annual operating value",
+        "absolute freshwater withdrawal as descriptive burden"
+      ]
+    }
+  },
+  "energy_cross_sector": {
+    "principle": "Keep sector-specific internal-efficiency metrics separate from cross-sector resource-intensity metrics.",
+    "hamina": {
+      "annual_electricity_GWh_estimate": 870,
+      "revenue_MEUR_2024": 452.704,
+      "electricity_per_revenue_GWh_per_MEUR": 1.922,
+      "status": "mixed-period estimate / near-match boundary",
+      "note": "Electricity is an external estimate; revenue is Tuike Finland Oy 2024."
+    },
+    "kemi": {
+      "electricity_production_GWh": 2000,
+      "electricity_self_sufficiency_percent": 250,
+      "implied_electricity_consumption_GWh": 800,
+      "total_pulp_nameplate_tonnes": 1500000,
+      "electricity_per_tonne_MWh": 0.533,
+      "whole_business_revenue_MEUR_2024": 2328.3,
+      "electricity_per_whole_business_revenue_floor_GWh_per_MEUR": 0.344,
+      "equality_revenue_threshold_MEUR_vs_hamina": 416.28,
+      "status": "derived + cross-boundary floor",
+      "note": "Site revenue is unknown. 0.344 GWh/M€ is a conservative floor because the denominator is all Metsä Fibre revenue."
+    },
+    "comparison": {
+      "hamina_over_kemi_floor": 5.593,
+      "interpretation": "Discovery signal only. Because Kemi is a conservative floor, the actual site-level spread is smaller than this if the same 0.8 TWh numerator is retained and may reverse if site revenue is sufficiently low."
+    }
+  },
+  "net_grid_dependence": {
+    "definition": "(annual net grid import - annual net grid export) / own electricity consumption × 100",
+    "interpretation": "0% = annual net self-sufficient; positive = net importer; negative = net exporter.",
+    "kemi": {
+      "value_percent": -150,
+      "status": "derived_from_company_reported",
+      "formula": "(0.8 - 2.0) / 0.8 × 100",
+      "evidence": [
+        "EV-KEMI-ENERGY-001",
+        "EV-KEMI-ENERGY-002",
+        "EV-KEMI-GRID-001",
+        "EV-KEMI-GRID-002"
+      ],
+      "note": "Company reports 2.0 TWh/y generation, 250% self-sufficiency and surplus delivered to national grid. Does not reveal gross hourly import/export."
+    },
+    "hamina": {
+      "value_percent": 100,
+      "status": "scenario_assumption",
+      "formula": "(0.87 - 0) / 0.87 × 100",
+      "evidence": [
+        "EV-HAM-POWER-001",
+        "EV-HAM-BACKUP-001"
+      ],
+      "assumption": "No material normal-operation onsite electricity generation; backup generators are excluded from normal generation.",
+      "note": "Scenario only until onsite generation and metered grid exchange are confirmed."
+    }
+  }
+}

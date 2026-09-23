@@ -1,0 +1,427 @@
+{
+  "version": "0.1",
+  "scoring_principle": "A metric is scoreable only when its formula, direction, baseline and required evidence boundary are explicit.",
+  "metrics": [
+    {
+      "id": "economic_throughput_per_workforce",
+      "label": "Taloudellinen volyymi / työpanos",
+      "formula": "revenue / own workforce",
+      "direction": "higher",
+      "baseline_status": "ready_empirical",
+      "readiness": "scoreable_exploratory",
+      "required": [
+        "revenue_same_period",
+        "own_workforce_same_boundary"
+      ],
+      "caveat": "Legal entity and segment boundaries are not fully identical.",
+      "symetrix_version": "0.3"
+    },
+    {
+      "id": "employment_intensity_per_revenue",
+      "label": "Työllistävyys suhteessa volyymiin",
+      "formula": "own workforce / 100 M€ revenue",
+      "direction": "higher",
+      "baseline_status": "ready_empirical",
+      "readiness": "scoreable_exploratory",
+      "required": [
+        "revenue_same_period",
+        "own_workforce_same_boundary"
+      ],
+      "caveat": "Measures own reported workforce, not full domestic value chain.",
+      "symetrix_version": "0.3"
+    },
+    {
+      "id": "datacenter_facility_efficiency",
+      "label": "Datakeskuksen energiatehokkuus",
+      "formula": "PUE - 1",
+      "direction": "lower",
+      "baseline_status": "ready_industry",
+      "readiness": "scoreable_partial",
+      "required": [
+        "site_or_explicit_proxy_PUE"
+      ],
+      "caveat": "Nebius value is portfolio proxy; Hamina is site-level.",
+      "symetrix_version": "0.3"
+    },
+    {
+      "id": "datacenter_water_efficiency",
+      "label": "Datakeskuksen vedenkäytön tehokkuus",
+      "formula": "water consumption litres / IT kWh",
+      "direction": "lower",
+      "baseline_status": "ready_external",
+      "readiness": "scoreable_with_estimate_flag",
+      "required": [
+        "site_water_consumption_or_explicit_estimate",
+        "site_IT_energy_or_explicit_estimate"
+      ],
+      "candidate_evidence": [
+        "EV-HAM-WATER-006",
+        "EV-NEB-WATER-001"
+      ],
+      "caveat": "Hamina uses an E-flagged mixed-period estimate: 2024 non-seawater consumption / estimated IT energy derived from 0.87 TWh/y and PUE 1.10. Nebius is site-reported 2025 WUE. The Hamina score must never render as observed."
+    },
+    {
+      "id": "electricity_self_sufficiency",
+      "label": "Sähköomavaraisuus",
+      "formula": "own electricity production / own electricity consumption",
+      "direction": "higher",
+      "baseline_status": "ready_technical",
+      "readiness": "scoreable_single_entity",
+      "required": [
+        "own_generation",
+        "own_consumption_same_boundary"
+      ],
+      "blocker": "Comparable own-generation/consumption pairs are missing for other entities.",
+      "candidate_evidence": [
+        "EV-KEMI-ENERGY-001",
+        "EV-KEMI-ENERGY-002"
+      ]
+    },
+    {
+      "id": "heat_recovery_intensity",
+      "label": "Lämmön hyödyntämisaste",
+      "formula": "measured useful heat export / chosen common denominator",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked",
+      "required": [
+        "measured_heat_export",
+        "common_denominator",
+        "same_period"
+      ],
+      "blocker": "Nebius has measured 2025 heat export; Hamina currently has design potential, not matched measured output.",
+      "candidate_evidence": [
+        "EV-NEB-HEAT-001",
+        "EV-HAM-HEAT-001",
+        "EV-HAM-HEAT-002"
+      ]
+    },
+    {
+      "id": "domestic_value_added_per_grid_energy",
+      "label": "Kotimainen arvonlisä / verkkosähkö",
+      "formula": "domestic value added € / grid MWh",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked_high_priority",
+      "required": [
+        "domestic_value_added_same_boundary",
+        "measured_grid_import_MWh_same_period"
+      ],
+      "blocker": "Neither Hamina nor the industrial comparators yet have both quantities on a common boundary."
+    },
+    {
+      "id": "value_chain_employment_intensity",
+      "label": "Kotimaisen arvoketjun työllisyys",
+      "formula": "domestic value-chain FTE / chosen denominator",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked_high_priority",
+      "required": [
+        "E2_direct_domestic_value_chain_jobs",
+        "common_denominator",
+        "same_period_or_explicit_period_rule"
+      ],
+      "blocker": "Only Kemi currently has an explicit E2 direct domestic value-chain job estimate. Hamina has 600+ supplier companies, not job count; Outokumpu has direct employees and a separate E3 indirect-jobs estimate.",
+      "candidate_evidence": [
+        "EV-KEMI-WORK-004",
+        "EV-HAM-SUPPLY-001",
+        "EV-TORNIO-WORK-002"
+      ],
+      "system_boundary": "E2",
+      "boundary_registry": "/downloads/employment-boundaries.json"
+    },
+    {
+      "id": "local_public_capture",
+      "label": "Paikallinen julkistaloudellinen capture",
+      "formula": "comparable recurring local public revenues / chosen denominator",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked_high_priority",
+      "required": [
+        "same_tax_basket",
+        "same_year",
+        "common_denominator"
+      ],
+      "blocker": "Hamina property tax is known, but comparable local tax baskets are not yet assembled for peers.",
+      "candidate_evidence": [
+        "EV-HAM-TAX-001"
+      ]
+    },
+    {
+      "id": "land_efficiency",
+      "label": "Maa-alan tehokkuus",
+      "formula": "chosen output / occupied hectares",
+      "direction": "higher",
+      "baseline_status": "not_set",
+      "readiness": "blocked",
+      "required": [
+        "total_operating_site_area",
+        "comparable_output"
+      ],
+      "blocker": "Tornio site area exists; Hamina currently has only an additional land purchase area, not total campus area.",
+      "candidate_evidence": [
+        "EV-TORNIO-LAND-001",
+        "EV-HAM-LAND-001"
+      ]
+    },
+    {
+      "id": "capital_per_site_worker",
+      "label": "Pääoma / alueella työskentelevä",
+      "formula": "cumulative investment / current site workers",
+      "direction": "descriptive",
+      "baseline_status": "not_set",
+      "readiness": "illustrative_only",
+      "required": [
+        "cumulative_investment",
+        "site_worker_count"
+      ],
+      "caveat": "Mixes a cumulative stock-like numerator with a current workforce denominator; useful for structural anatomy, not productivity or social value.",
+      "candidate_evidence": [
+        "EV-HAM-STRUCT-001",
+        "EV-KEMI-STRUCT-001"
+      ]
+    },
+    {
+      "id": "employment_scope_jump",
+      "label": "Työllisyyden scope jump",
+      "formula": "E(n) / E0, missä n = 1, 2 tai 3",
+      "direction": "descriptive",
+      "baseline_status": "not_applicable",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "explicit_employment_boundaries",
+        "visible numerator_boundary",
+        "visible denominator_boundary"
+      ],
+      "purpose": "Etsiä kohtia, joissa juridinen oma henkilöstö kuvaa vain pientä osaa toimipaikan tai arvoketjun työstä.",
+      "caveat": "Suurta suhdetta ei tulkita automaattisesti hyväksi, huonoksi tai tehokkaaksi. Mixed-boundary-suhteet merkitään exploratory.",
+      "boundary_registry": "/downloads/employment-boundaries.json"
+    },
+    {
+      "id": "estimated_annual_grid_energy",
+      "label": "Arvioitu vuotuinen verkkosähkön käyttö",
+      "formula": "estimated annual electricity demand",
+      "direction": "descriptive",
+      "baseline_status": "not_applicable",
+      "readiness": "estimated_ready_partial",
+      "required": [
+        "transparent_anchor",
+        "explicit_uncertainty_band",
+        "system_boundary"
+      ],
+      "purpose": "Korvaa tarpeettoman kysymysmerkin silloin, kun mitattua lukua ei ole mutta lähteistetty estimaatti ja herkkyyshaarukka voidaan esittää.",
+      "caveat": "Estimate must never render as observed. Backup-generator capacity may only be used as a sanity check, not annual-energy estimator.",
+      "scenario_registry": "/downloads/energy-water-scenarios.json"
+    },
+    {
+      "id": "freshwater_withdrawal_scope_jump",
+      "label": "Makean/raakavedenoton scope jump",
+      "formula": "annual withdrawal volume; optional ratio between explicitly named boundaries",
+      "direction": "descriptive",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_mixed_status",
+      "required": [
+        "explicit_water_definition",
+        "period",
+        "actual_or_design_status"
+      ],
+      "purpose": "Tunnistaa vedenkäytön mittakaavaeroja ennen yhteisen poikkitoimialaisen normalisoinnin valintaa.",
+      "caveat": "Withdrawal, consumption and cooling-water throughput are different quantities. Design-at-nameplate and measured actual must be labelled separately.",
+      "scenario_registry": "/downloads/energy-water-scenarios.json"
+    },
+    {
+      "id": "non_seawater_water_intensity_proxy",
+      "label": "Raportoidun muun kuin meriveden kulutusintensiteetti",
+      "formula": "reported non-seawater water consumption / estimated IT kWh",
+      "direction": "lower",
+      "baseline_status": "uses_wue_external_baseline_with_caveat",
+      "readiness": "estimate_scoreable_with_flag",
+      "required": [
+        "non_seawater_consumption",
+        "IT_energy_same_period_and_boundary"
+      ],
+      "purpose": "Täyttää informaatiovaje läpinäkyvällä estimaatilla ilman että se naamioidaan standardiksi WUE:ksi.",
+      "caveat": "Current Hamina value mixes 2024 water, 2025 PUE and a 2026 external electricity estimate and excludes seawater. It may appear in the WUE row only with an E flag and explicit caveat; it is not a measured standard WUE.",
+      "scenario_registry": "/downloads/energy-water-scenarios.json"
+    },
+    {
+      "id": "water_withdrawal_per_revenue",
+      "label": "Vedenotto / liikevaihto",
+      "formula": "annual withdrawal m3 / annual revenue M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "same_or_near_boundary_withdrawal",
+        "same_period_revenue",
+        "explicit_water_scope"
+      ],
+      "purpose": "Kuvaa vedenoton intensiteettiä suhteessa taloudelliseen myyntivolyymiin.",
+      "caveat": "Revenue is not value added. Seawater, freshwater, process water and mixed water scopes must stay explicit; design proxies and actuals cannot be silently merged.",
+      "current_examples": {
+        "hamina": {
+          "value": 25.085,
+          "unit": "m3_per_MEUR",
+          "status": "derived_boundary_near_match",
+          "period": "2024"
+        },
+        "kemi": {
+          "value": 12622.692,
+          "unit": "m3_per_MEUR_at_least_approx",
+          "status": "derived_cross_boundary_floor",
+          "note": "2025 actual Kemi withdrawal divided by all Metsä Fibre 2025 revenue; conservative floor."
+        }
+      }
+    },
+    {
+      "id": "water_consumption_per_revenue",
+      "label": "Nettovedenkulutus / liikevaihto",
+      "formula": "annual net water consumption m3 / annual revenue M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "same_or_near_boundary_consumption",
+        "same_period_revenue",
+        "explicit_water_scope"
+      ],
+      "purpose": "Erottaa varsinaisen nettokulutuksen suuresta läpivirtaavasta tai palautettavasta vesimäärästä.",
+      "caveat": "Hamina value excludes seawater. Comparable Kemi net-consumption observation is not yet available.",
+      "current_examples": {
+        "hamina": {
+          "value": 2.509,
+          "unit": "m3_per_MEUR",
+          "status": "derived_boundary_near_match",
+          "period": "2024"
+        }
+      }
+    },
+    {
+      "id": "electricity_per_revenue",
+      "label": "Sähkönkäyttö / liikevaihto",
+      "formula": "annual site electricity use GWh / annual revenue M€",
+      "direction": "lower",
+      "baseline_status": "not_set",
+      "readiness": "descriptive_ready_cross_boundary",
+      "required": [
+        "site_electricity_use",
+        "same_boundary_revenue"
+      ],
+      "purpose": "Poikkitoimialainen resurssi-intensiteetti: kuinka paljon sähköä käytetään suhteessa taloudelliseen myyntivolyymiin.",
+      "caveat": "Hamina uses an external electricity estimate; Kemi currently has only a conservative floor using whole Metsä Fibre revenue. Do not score until Kemi site revenue or a harmonized economic-output denominator is available.",
+      "current_examples": {
+        "hamina": {
+          "value": 1.922,
+          "unit": "GWh_per_MEUR",
+          "status": "estimate_near_match"
+        },
+        "kemi": {
+          "value": 0.344,
+          "unit": "GWh_per_MEUR_at_least",
+          "status": "derived_cross_boundary_floor"
+        },
+        "equality_threshold": {
+          "kemi_site_revenue_MEUR": 416.28,
+          "note": "At 0.8 TWh/y, Kemi equals Hamina's 1.922 GWh/M€ intensity at ~416 M€ site revenue."
+        }
+      }
+    },
+    {
+      "id": "pulp_electricity_per_tonne",
+      "label": "Sellutehtaan sähköintensiteetti / tonni",
+      "formula": "implied mill electricity consumption MWh / pulp tonnes",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "mill_electricity_consumption",
+        "pulp_output"
+      ],
+      "purpose": "Sellutehtaan sisäinen prosessitehokkuus; analoginen rooliltaan PUE:n kanssa siinä mielessä, että se kuvaa toimialan sisäistä tehokkuutta, mutta yksiköt ja fysikaalinen merkitys ovat eri.",
+      "caveat": "Do not compare numerically to data-center PUE. Current Kemi value ~0.533 MWh/t is derived from 2.0 TWh production and 250% self-sufficiency against 1.50 Mt/y nameplate pulp."
+    },
+    {
+      "id": "net_grid_dependence",
+      "label": "Nettoriippuvuus sähköverkosta",
+      "formula": "(net grid import - net grid export) / own electricity consumption × 100",
+      "direction": "lower",
+      "baseline_status": "technical_zero",
+      "readiness": "descriptive_ready_partial",
+      "required": [
+        "annual onsite_generation_or_net_export",
+        "annual_own_electricity_consumption"
+      ],
+      "purpose": "Erottelee nettokuluttajan ja nettotuottajan samalla skaalalla. 0% = vuositasolla nettosähköomavarainen, positiivinen = nettotuonti verkosta, negatiivinen = nettovienti verkkoon.",
+      "caveat": "Current Kemi value is derived from company-reported generation and self-sufficiency, not separately metered gross import/export. Hamina cannot yet be harmonized without explicit onsite-generation boundary.",
+      "current_examples": {
+        "kemi": {
+          "value": -150,
+          "unit": "percent_of_own_consumption",
+          "status": "derived_from_company_reported"
+        }
+      }
+    },
+    {
+      "id": "pulp_water_withdrawal_per_tonne",
+      "label": "Sellutehtaan vedenotto / tonni",
+      "formula": "annual water withdrawal m3 / annual chemical pulp tonnes",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "same_year_mill_water_withdrawal",
+        "same_year_pulp_output"
+      ],
+      "purpose": "Sellutehtaan toteutunut vedenottointensiteetti.",
+      "caveat": "Includes process/cooling water withdrawals under Metsä Group reporting; not comparable directly to data-center consumptive WUE.",
+      "current_examples": {
+        "kemi_2025": {
+          "value": 35.403,
+          "unit": "m3_per_tonne"
+        }
+      }
+    },
+    {
+      "id": "pulp_wastewater_per_tonne",
+      "label": "Sellutehtaan jätevesivirta / tonni",
+      "formula": "annual wastewater flow m3 / annual chemical pulp tonnes",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "same_year_mill_wastewater_flow",
+        "same_year_pulp_output"
+      ],
+      "purpose": "Kuvaa käsiteltävän/palautettavan jätevesivirran intensiteettiä.",
+      "caveat": "Wastewater flow is not net consumptive water use.",
+      "current_examples": {
+        "kemi_2025": {
+          "value": 15.028,
+          "unit": "m3_per_tonne"
+        }
+      }
+    },
+    {
+      "id": "pulp_actual_water_withdrawal_per_tonne",
+      "label": "Sellutehtaan toteutunut vedenotto / tonni",
+      "formula": "annual actual water withdrawal m3 / actual pulp production t",
+      "direction": "lower",
+      "baseline_status": "sector_specific_not_set",
+      "readiness": "descriptive_ready_single_entity",
+      "required": [
+        "actual_site_water_withdrawal",
+        "actual_site_pulp_output_same_period"
+      ],
+      "purpose": "Separates actual operating water intensity from design values.",
+      "caveat": "2025 Kemi value reflects ramp-up/repair-shutdown year and includes total mill water withdrawal; do not equate directly with net consumption or data-center WUE.",
+      "current_examples": {
+        "kemi": {
+          "value": 35.403,
+          "unit": "m3_per_tonne",
+          "period": "2025",
+          "status": "derived_from_observed"
+        }
+      }
+    }
+  ]
+}

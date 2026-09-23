@@ -158,6 +158,18 @@
       "checked": "2026-09-22"
     },
     {
+      "url": "https://stat.fi/meta/kas/arvonlisays.html",
+      "status": 200,
+      "result": "palvelin vastasi onnistuneesti",
+      "checked": "2026-09-22"
+    },
+    {
+      "url": "https://stat.fi/meta/kas/henkilotyovuosi.html",
+      "status": 200,
+      "result": "palvelin vastasi onnistuneesti",
+      "checked": "2026-09-22"
+    },
+    {
       "url": "https://valtioneuvosto.fi/-/1410877/luonnos-datakeskusrekisterilaista-lausuntokierrokselle",
       "status": 200,
       "result": "palvelin vastasi onnistuneesti",
@@ -165,6 +177,12 @@
     },
     {
       "url": "https://valtioneuvosto.fi/hanke?tunnus=TEM040:00/2026",
+      "status": 200,
+      "result": "palvelin vastasi onnistuneesti",
+      "checked": "2026-09-22"
+    },
+    {
+      "url": "https://workspace.google.com/terms/subprocessors-20260302/",
       "status": 200,
       "result": "palvelin vastasi onnistuneesti",
       "checked": "2026-09-22"

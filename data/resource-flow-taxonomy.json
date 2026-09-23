@@ -1,0 +1,186 @@
+{
+  "version": "0.1",
+  "principle": "Resource flows are comparable only when source, role, accounting concept, period/boundary and evidence status are explicit. Cross-dimension comparisons are allowed only as labelled scope-jump diagnostics.",
+  "water_dimensions": {
+    "source_class": [
+      {
+        "id": "fresh_surface",
+        "label": "Makea pintavesi"
+      },
+      {
+        "id": "potable",
+        "label": "Talous-/juomavesi"
+      },
+      {
+        "id": "seawater",
+        "label": "Merivesi"
+      },
+      {
+        "id": "reclaimed",
+        "label": "Kierrätetty tai uudelleenkäytetty vesi"
+      },
+      {
+        "id": "mixed_or_unspecified",
+        "label": "Sekoitettu / määrittelemätön"
+      }
+    ],
+    "role": [
+      {
+        "id": "process",
+        "label": "Prosessivesi"
+      },
+      {
+        "id": "cooling",
+        "label": "Jäähdytysvesi"
+      },
+      {
+        "id": "potable_services",
+        "label": "Henkilöstö- ja palvelukäyttö"
+      },
+      {
+        "id": "mixed",
+        "label": "Useita käyttötapoja"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "withdrawal",
+        "label": "Vedenotto"
+      },
+      {
+        "id": "discharge",
+        "label": "Palautus / purku"
+      },
+      {
+        "id": "consumption",
+        "label": "Nettokulutus"
+      },
+      {
+        "id": "throughput",
+        "label": "Läpivirtaus / kierto"
+      },
+      {
+        "id": "permit_ceiling",
+        "label": "Lupakatto"
+      },
+      {
+        "id": "design_proxy",
+        "label": "Suunnitteluarvo / proxy"
+      }
+    ],
+    "status": [
+      {
+        "id": "observed",
+        "label": "Mitattu/raportoitu toteuma"
+      },
+      {
+        "id": "estimated",
+        "label": "Estimaatti"
+      },
+      {
+        "id": "design",
+        "label": "Suunnittelu"
+      },
+      {
+        "id": "permit",
+        "label": "Lupa"
+      },
+      {
+        "id": "derived",
+        "label": "Johdettu"
+      }
+    ]
+  },
+  "examples": {
+    "hamina_reported_withdrawal": {
+      "value": 11356,
+      "unit": "m3/y",
+      "source_class": "mixed_or_unspecified",
+      "role": "mixed",
+      "accounting": "withdrawal",
+      "status": "observed",
+      "evidence": "EV-HAM-WATER-001",
+      "caveat": "Google reporting excludes seawater."
+    },
+    "hamina_reported_consumption": {
+      "value": 1136,
+      "unit": "m3/y",
+      "source_class": "mixed_or_unspecified",
+      "role": "mixed",
+      "accounting": "consumption",
+      "status": "observed",
+      "evidence": "EV-HAM-WATER-003",
+      "caveat": "Google reporting excludes seawater."
+    },
+    "hamina_seawater_ceiling": {
+      "value": 80,
+      "unit": "million_m3/y",
+      "source_class": "seawater",
+      "role": "cooling",
+      "accounting": "permit_ceiling",
+      "status": "permit",
+      "evidence": "EV-HAM-WATER-004"
+    },
+    "kemi_water_design_proxy": {
+      "value": 10,
+      "unit": "m3/t_pulp",
+      "source_class": "fresh_surface",
+      "role": "process",
+      "accounting": "design_proxy",
+      "status": "design",
+      "evidence": "EV-KEMI-WATER-001",
+      "caveat": "Source calls this raw-water design value and also relates the design value to total wastewater generation."
+    }
+  },
+  "energy_dimensions": {
+    "accounting": [
+      {
+        "id": "gross_consumption",
+        "label": "Kokonaiskulutus"
+      },
+      {
+        "id": "grid_import",
+        "label": "Verkko-otto"
+      },
+      {
+        "id": "own_generation",
+        "label": "Oma tuotanto"
+      },
+      {
+        "id": "net_grid_balance",
+        "label": "Nettotase"
+      },
+      {
+        "id": "backup_capacity",
+        "label": "Varavoimakapasiteetti"
+      },
+      {
+        "id": "it_energy",
+        "label": "IT-energia"
+      }
+    ],
+    "status": [
+      {
+        "id": "observed",
+        "label": "Mitattu/raportoitu"
+      },
+      {
+        "id": "estimated",
+        "label": "Estimaatti"
+      },
+      {
+        "id": "scenario",
+        "label": "Herkkyysskenaario"
+      },
+      {
+        "id": "derived",
+        "label": "Johdettu"
+      },
+      {
+        "id": "permit_or_design",
+        "label": "Lupa/suunnittelu"
+      }
+    ]
+  },
+  "rule": "Never convert capacity (MW) directly into annual energy (MWh) without an explicit utilisation/time assumption. Never compare water withdrawal with consumption or cooling throughput without a scope-jump label."
+}

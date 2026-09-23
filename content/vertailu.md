@@ -1,88 +1,217 @@
 ---
-title: Kohteet ja vertailun rajat
+title: Mitä datakeskus tekee ja miten sitä verrataan?
 slug: vertailu
 route: /analyysit/datakeskukset/vertailu/
 language: fi
 status: ready
-published: false
+published: true
 updated: 2026-09-22
-description: Sama tunnusluku ei vielä tarkoita samaa mittaria. Vertailu alkaa kohteesta, ajanjaksosta ja laskentarajasta.
+description: Ensin avataan datakeskuksen taloudellinen toimintamalli ja Haminan laskentarajat. Vasta sen jälkeen verrataan muita kohteita.
 layout: article
 ---
-## Neljä kohdetta, eri lähtökohdat
+Vertailu ei ala neljän kohteen rinnastamisesta. Ensin on ymmärrettävä yksi kohde riittävän hyvin, jotta tiedetään **mitä suureita ylipäätään voidaan verrata**. Tässä julkaisussa ensimmäinen pääcase on Hamina: sen kautta erotetaan konserni, suomalainen yhtiö, fyysinen kampus ja Suomeen syntyvä yhteiskunnallinen vaikutus. Vasta tämän jälkeen mukaan tuodaan toinen toimiva datakeskus Mäntsälästä sekä Hepokorpi, Kemi ja Kemi–Tornio.
+Google julkaisee myös markkinahintoja pilvilaskennan resursseille, mikä havainnollistaa sitä, että laskentakapasiteetilla on palvelumarkkinassa rahallinen arvo. Tämä ei kuitenkaan osoita, että Haminan kapasiteetti myytäisiin juuri näillä tuotteilla tai että loppuasiakkaan maksama hinta kirjautuisi Tuike Finland Oy:n liikevaihdoksi. [Google Cloud](https://cloud.google.com/products/compute/pricing).
 
-| Kohde | Tarkasteluraja | Keskeinen avoin tieto |
+**Liikevaihto** tarkoittaa yrityksen tavaroiden ja palvelujen myyntiä euroina ilman arvonlisäveroa ja myönnettyjä alennuksia. Se ei ole voittoa, sillä toiminnan kuluja ei ole vielä vähennetty.
+
+Taloudellisen vaikutuksen kannalta ketjussa on siksi kaksi eri kysymystä:
+
+1. **Minkä arvoista digitaalista palvelua fyysisen datakeskuksen avulla tuotetaan?**
+2. **Kuinka suuri osa tämän arvoketjun tuloista, palkoista, ostoista ja veroista syntyy tai jää Suomeen?**
+
+Tämä auditointi pystyy tällä hetkellä vastaamaan jälkimmäiseen vain osittain. Julkisista lähteistä nähdään suomalaisen Tuike Finland Oy:n tunnuslukuja, Haminan kampusta koskevia tietoja sekä joitakin paikallisia vero- ja investointivirtoja. Sen sijaan käytössä ei ole sellaista konsernin sisäisten liiketoimien erittelyä, jolla Haminassa tuotettu laskentakapasiteetti voitaisiin luotettavasti yhdistää Googlen loppuasiakasmyyntiin.
+
+**Konserni** on saman omistuksen ja määräysvallan alla toimiva yritysryhmä. **Konsernin sisäinen myynti** tapahtuu sen omien yhtiöiden tai liiketoiminta-alueiden välillä; **ulkoinen myynti** suuntautuu konsernin ulkopuolisille asiakkaille. Ulkoinen ei tarkoita ulkomaille myyntiä. Sisäinen myynti poistetaan konsernin yhteenlasketusta myynnistä, jotta sama myynti ei tule lasketuksi kahdesti. Tuiken myynnin jakautumista näihin ryhmiin ei tässä aineistossa tunneta.
+
+## Miksi Tuiken 574 miljoonan euron liikevaihto ei vielä vastaa kysymykseen?
+
+Tuike Finland Oy:n vuoden 2025 liikevaihto on julkisissa yritystietopalveluissa 574,374 M€. Se on tärkeä havainto, koska se kertoo suomalaisen oikeushenkilön läpi kulkevasta suuresta liiketoiminnan volyymista. Mutta ennen yhteiskunnallisen hyödyn arviointia pitäisi tietää ainakin:
+
+- mistä Tuiken liikevaihto koostuu ja kuinka suuri osa liiketoimista on konsernin sisäisiä;
+- kuinka paljon toimintaan liittyy Suomessa ostettuja tavaroita ja palveluja;
+- paljonko Suomessa syntyy palkkoja ja muuta **arvonlisää** eli tuotannon arvoa sen jälkeen, kun siinä käytetyt muilta hankitut tavarat ja palvelut on vähennetty;
+- mitä veroja syntyy millekin julkisen talouden tasolle;
+- mitä pääoma- ja omistajatuloja siirtyy Suomen ulkopuolelle tai Suomeen;
+- mitä resursseja ja julkisia investointeja toiminta samalla sitoo.
+
+Siksi tässä julkaisussa **liikevaihto on tuotanto- ja rahavirran mittari, ei yhteiskunnallisen nettohyödyn mittari**. Sama sääntö koskee myös valmistavan teollisuuden verrokkeja.
+
+## Hamina: ensin on ymmärrettävä, mikä Tuike Finland Oy on
+
+Haminan datakeskus tunnetaan Googlen datakeskuksena, mutta talouslukuja tarkasteltaessa vastaan tulee nimi **Tuike Finland Oy**. Tämä ei tarkoita, että analyysi vaihtaisi kohdetta kesken kaiken. Google-brändi, Google-konserni, suomalainen oikeushenkilö ja Haminan fyysinen kampus ovat saman kokonaisuuden eri tarkastelutasoja.
+
+Googlen omassa konserniyhtiöiden alihankkijaluettelossa Tuike Finland Oy on merkitty Google Group Subprocessor -toimijaksi. Sen tehtäväksi on ilmoitettu **Data Center Operations** Suomessa ja osoitteeksi Ensontie 1, Hamina. Samassa lähteessä todetaan, että luettelon Google Group Subprocessors -yhtiöiden ylin emoyhtiö on Google LLC, joka kuuluu Alphabet Inc:iin. [Google](https://workspace.google.com/terms/subprocessors-20260302/).
+
+Tämän vuoksi julkaisussa erotetaan neljä tasoa:
+
+| Taso | Mitä sillä tarkoitetaan tässä julkaisussa? | Esimerkki tiedosta |
 |---|---|---|
-| Google / Tuike, Hamina | Suomen oikeushenkilön talous 2025 ja erikseen kampuksen tiedot 2026 | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
-| Microsoft HEL16, Hepokorpi | HEL16:n hakemus ja ympäristölupa 302/2025 | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
-| Metsä Fibre, Kemi | Biotuotetehdas; yrityksen kohdekuvaus ja 2024 avaamistiedote | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
-| Outokumpu, Kemi–Tornio | Ferrochrome-liiketoiminta-alue 2025; kaivos ja ferrokromituotanto | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
+| Alphabet / Google-konserni | Kansainvälinen konsernikokonaisuus | Konsernin omistus- ja palvelurakenne |
+| Tuike Finland Oy | Suomessa toimiva oikeushenkilö, jonka Google nimeää datakeskusoperaatioiden toimijaksi | Yhtiön liikevaihto, tulos ja oma henkilöstö |
+| Haminan kampus | Fyysinen datakeskusalue ja siellä tehtävä työ | Kampuksella työskentelevien henkilöiden määrä |
+| Suomessa syntyvä yhteiskunnallinen vaikutus | Yhtiö- ja kampuslukujen lisäksi verot, kotimaiset ostot, palkat, julkiset kustannukset ja muut vaikutukset | Tämän auditoinnin varsinainen arviointikohde |
 
-Taulukon pohjana ovat [Tuike ja Hamina S001–S003](/analyysit/datakeskukset/lahteet/#S001), [HEL16 D08](/analyysit/datakeskukset/lahteet/#D08) sekä [teollisuuslähteet S068–S071](/analyysit/datakeskukset/lahteet/#S068).
+Näitä tasoja ei saa sekoittaa. Tuiken liikevaihdosta ei voida ilman erillistä näyttöä päätellä Googlen Haminassa tuotetun laskentapalvelun koko markkina-arvoa, koko Google-konsernin Suomessa syntyvää liikevaihtoa tai Suomeen jäävää nettohyötyä. Samoin kampuksella työskentelevien henkilöiden määrä ei ole sama asia kuin Tuike Finland Oy:n oma henkilöstömäärä.
 
-## Mitä vertailusta voidaan päätellä?
+### Mitä julkisista luvuista voidaan tämän jälkeen havaita?
 
-Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintojaksoja. Niiden luvut auttavat kuvaamaan kohteita, mutta eivät sellaisinaan muodosta yhteistä tehokkuusmittaria. Tämä on aineiston rakenteesta tehty menetelmäpäätelmä.
+**Tutkimuskysymys:** mitä Googlen Haminan toiminnan taloudesta voidaan havaita, kun yhtiö ja kampus pidetään erillään?
 
-> **Vertailun rajaus.** Tässä julkaisussa ei esitetä toimialojen paremmuusjärjestystä. Puuttuvat energia-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
+**Lähde ja havaintojakso:** Googlen konsernirakennetta kuvaava lähde, Tuike Finland Oy:n vuoden 2025 yritystiedot Proffissa ja Profinderissa sekä Haminan kaupungin 22.6.2026 tiedote. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/), [Google Workspace: Google Group Subprocessors, 2.3.2026](https://workspace.google.com/terms/subprocessors-20260302/).
 
-## Hamina: yritys ja kampus erikseen
+**Mitä lähteet osoittavat:** Google nimeää Tuike Finland Oy:n Suomessa datakeskusoperaatioita hoitavaksi konsernitoimijaksi. Yritystietopalvelut ilmoittavat Tuiken vuoden 2025 liikevaihdoksi 574,374 M€, käyttökatteeksi 60,0 % ja henkilöstöksi 120. Haminan kaupunki puolestaan ilmoittaa kampuksella työskentelevän noin 500 henkilöä.
 
-**Tutkimuskysymys:** mitä Googlen Haminan toiminnan taloudesta voidaan havaita julkisista tiedoista?
+**Käyttökate (EBITDA)** on liiketoiminnan tulos ennen poistoja, rahoituseriä ja tuloveroja. Poistoissa esimerkiksi palvelimen hankintahinta jaetaan kuluksi käyttövuosille. Käyttökateprosentti 60,0 % tarkoittaa noin 60 euroa käyttökatetta 100 euron liikevaihdosta; se ei tarkoita 60 euroa vapaasti käytettävää rahaa. **Liiketuloksessa (EBIT)** poistot ja omaisuuden arvonalentumiset on jo huomioitu. **Tilikauden tulos** on lopullinen kirjattu voitto tai tappio myös rahoitus-, vero- ja muiden tulokseen kuuluvien erien jälkeen. [Termit ja laskuesimerkki](/analyysit/datakeskukset/lahteet/#termit-lyhyesti).
 
-**Lähde ja havaintojakso:** Tuike Finland Oy:n 2025 tiedot Proffissa ja Profinderissa sekä Haminan kaupungin 22.6.2026 tiedote. [S001–S003](/analyysit/datakeskukset/lahteet/#S001).
+**Mitä ne eivät osoita:** Tuiken liikevaihto ei ole sama asia kuin Suomessa syntyvä yhteiskunnallinen nettohyöty eikä kampuksen noin 500 henkilöä ole Tuiken henkilötyövuosien määrä. **Henkilötyövuosi** tarkoittaa yhden kokoaikaisen työntekijän vuoden työpanosta; esimerkiksi kaksi puoli vuotta kokoaikaisesti työskentelevää vastaa yhtä henkilötyövuotta. Yritystietopalvelut ovat toissijaisia lähteitä, joiden riippumattomuutta toisistaan ei ole varmistettu. Julkisesta aineistosta ei tässä vaiheessa myöskään rakenneta oletusta siitä, miten Google-konsernin sisäinen laskutus jakaa laskentapalvelujen tuotot eri oikeushenkilöille.
 
-**Mitä lähde osoittaa:** yritystietopalvelut ilmoittavat liikevaihdoksi 574,374 M€, käyttökatteeksi 60,0 % ja henkilöstöksi 120. Kaupunki ilmoittaa kampuksella työskentelevän noin 500 henkilöä.
+**Vertailukelpoisuus:** yrityksen henkilöstölukua verrataan saman rajauksen henkilöstölukuun. Vuoden 2025 ja kesäkuun 2026 lukujen erotusta ei tulkita alihankkijoiden määräksi. Yhtiön talous, kampuksen toiminta ja konsernin asiakasmyynti käsitellään eri tasoina.
 
-**Mitä se ei osoita:** liikevaihto ei ole Suomessa syntyvä nettotulo; kampusluku ei ole yrityksen henkilötyövuosien määrä. Yritystietopalvelut ovat toissijaisia lähteitä, joiden riippumattomuutta toisistaan ei ole varmistettu.
+**Avoin tieto:** Tuiken alkuperäinen tilinpäätös liitetietoineen, konsernin sisäisten liiketoimien merkitys, kampuksen saman vuoden henkilötyövuodet, energia sekä hankintojen kotimaiset arvonlisäosuudet. [Laskelmat](/analyysit/datakeskukset/lahteet/#laskelmat).
 
-**Vertailukelpoisuus:** yrityksen henkilöstölukua verrataan saman rajauksen henkilöstölukuun. Vuoden 2025 ja kesäkuun 2026 lukujen erotusta ei tulkita alihankkijoiden määräksi.
 
-**Avoin tieto:** alkuperäinen tilinpäätös liitetietoineen, kampuksen saman vuoden henkilötyövuodet, energia ja hankintojen arvonlisäosuudet. [Laskelmat](/analyysit/datakeskukset/lahteet/#laskelmat).
+## Miksi juuri nämä verrokit?
 
-## Hepokorpi: HEL16 ei ole koko kampus
+Nebius Mäntsälä, Hepokorpi, Kemi ja Kemi–Tornio eivät ole satunnaisia rinnakkaisia caseja. Jokainen niistä ratkaisee yhden Haminassa esiin nousseen vertailuongelman:
 
-**Tutkimuskysymys:** mitä HEL16:n toiminnasta ja sen ympäristöehdoista tiedetään ennen varmennettua käyttötoteumaa?
+| Kohde | Miksi se on mukana? | Keskeinen avoin tieto |
+|---|---|---|
+| Google / Tuike, Hamina | Toimiva datakeskus näyttää yhtiön, kampuksen ja paikallisen vaikutuksen rajat | Saman vuoden kampuskohtainen energia, työpanos ja kotimainen arvonlisä |
+| Nebius DC Oy / Mäntsälä | Toinen toimiva datakeskus tuo rinnalle vuoden 2025 yhtiö- ja käyttövaiheen havaintoja, kuten WUE:n ja hukkalämmön viennin | Vuoden 2025 mitattu verkkosähkö, saman vuoden kapasiteettiraja ja kotimainen arvonlisä |
+| Microsoft HEL16, Hepokorpi | Tuleva datakeskus näyttää eron suunnitelman, luvan ja toteuman välillä | Käyttöönotto, toteutuneet energia- ja vesivirrat sekä tarkkailu |
+| Metsä Fibre, Kemi | Energiaintensiivinen tehdas testaa, miten oma sähköntuotanto muuttaa vertailua | Toteutunut vuosikohtainen nettoenergia ja samoilla rajauksilla lasketut talousvaikutukset |
+| Outokumpu, Kemi–Tornio | Segmenttiraportointi testaa, miten konsernin sisäiset virrat ja toimipaikkarajat vaikuttavat lukuihin | Suomen toimipaikkojen ja konsernin sisäisten virtojen erittely; erillinen terästuotannon vertailu |
 
-**Lähde ja havaintojakso:** hakemus 9.12.2024, täydennys 27.1.2025 ja päätös 302/2025, 7.10.2025. [D01, D04 ja D08](/analyysit/datakeskukset/lahteet/#D01).
+Taulukon pohjana ovat [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717), [Haminan kaupunki 22.6.2026](https://www.hamina.fi/haminan-datakeskuksen-vaikutukset-tutkimuskohteena-osallistu-sinakin/), [HEL16](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711) sekä [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Metsä Group: Kemin biotuotetehtaan avajaiset, 23.10.2024](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/), [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
 
-**Mitä lähde osoittaa:** lupa koskee HEL16:n varavoimaa ja polttoainevarastointia sekä sisältää melu-, vesi-, riski- ja tarkkailuehtoja. Päätöksen hakemuskuvauksessa aloitusajaksi esitetään marraskuu 2026 (s. 34). Varavoiman noin 161 MW on polttoainetehoa, ei verkkosähkön ottotehoa.
+## Mäntsälä: toinen toimiva datakeskus
 
-**Mitä se ei osoita:** todellista käyttöönottoa, kampuksen keskimääräistä sähkötehoa, kaikkien tulevien rakennusten toteutusta tai vuoden 2026 lainvoimaisuustilannetta.
+Haminan rinnalle tarvitaan vähintään yksi käytössä oleva datakeskus, jotta datakeskusvertailu ei tarkoita vain Googlen yhtiörakenteen vertaamista tehtaisiin. **Nebius DC Oy operoi Mäntsälän datakeskusta**, ja vuoden 2025 yritystiedoista saadaan liikevaihto 28,083 M€, henkilöstö 37, käyttökateprosentti 47,5 % ja liiketulos 2,361 M€. [Proff: Nebius DC Oy](https://www.proff.fi/yrityksen/nebius-dc-oy/m%C3%A4nts%C3%A4l%C3%A4/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2541661-9I0ZDG), [Tekova 16.2.2025](https://view.news.eu.nasdaq.com/view?id=b7983bb492ccbae643124cda643d85133&lang=fi&src=micro).
 
-**Vertailukelpoisuus:** suunnittelu- ja lupatietoja verrataan vastaavan vaiheen tietoihin. Ne eivät ole samaa näyttöä kuin käytössä olevan tehtaan vuosimittaukset.
+Nebius raportoi Mäntsälän vuoden 2025 WUE-luvuksi 0,018 L/kWh IT ja hukkalämmön vienniksi 19,5 GWh. Nämä ovat arvokkaita käyttövaiheen havaintoja, joita HEL16:sta ei vielä ole. [Nebius Sustainability 2025](https://nebius.com/newsroom/nebius-publishes-2025-sustainability-report-outlining-blueprint-for-scaling-responsibly).
 
-**Avoin tieto:** myöhemmät päätösmuutokset, käyttöönotto ja sen jälkeen syntyvät tarkkailutiedot. [Ympäristövaikutukset](/analyysit/datakeskukset/vaikutukset/#ymparisto).
+Samalla Mäntsälä havainnollistaa uuden aikarajan: Nebius kertoo 75 MW kapasiteettilaajennuksen valmistuneen vasta alkuvuonna 2026. Siksi **75 MW ei ole vuoden 2025 talous- tai käyttölukujen automaattinen nimittäjä**. [Nebius 31.3.2026](https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland).
 
-## Kemi: sähköntuotanto kuuluu vertailuun
+Nebius tekee datakeskusten sisäisen vertailun ensimmäistä kertaa mahdolliseksi: Tuike ja Nebius ovat molemmat suomalaisia datakeskusoperaatioihin kytkeytyviä oikeushenkilöitä, mutta niiden liikevaihto-, henkilöstö- ja tulorakenne eroavat voimakkaasti. Tämä kertoo jo ennen yhteiskunnallista tulkintaa, ettei yhtä datakeskusyhtiötä pidä käyttää koko toimialan oletusmallina.
 
-**Tutkimuskysymys:** miten biotuotetehtaan työ ja energiavirrat eroavat datakeskuksen vertailurajasta?
+## Hepokorpi: tuleva keskus ei ole vielä toteutunut keskus
 
-**Lähde ja havaintojakso:** Metsä Fibren kohdesivu, luettu 22.9.2026, sekä Metsä Groupin avaamistiedote 23.10.2024. [S068–S069](/analyysit/datakeskukset/lahteet/#S068).
+Hamina antaa tietoa toiminnassa olevasta datakeskuksesta. Hepokorpi tuo mukaan toisen tilanteen: **mitä voidaan päätellä hankkeesta ennen kuin käyttö on vakiintunut?**
 
-**Mitä lähde osoittaa:** nykyinen kohdesivu ilmoittaa henkilöstöksi 300 ja sähkön omavaraisuudeksi 250 %; vuotuisen tuotannon kuvaukseksi annetaan 2,0 TWh. Vuoden 2024 tiedote ilmoitti tehtaalle noin 250 ja koko tehdasalueelle noin 500 henkilöä.
+HEL16:n hakemus, täydennykset ja ympäristölupa kuvaavat suunniteltua toimintaa ja sen ehtoja. Lupapäätös sisältää muun muassa varavoimaa, polttoainevarastointia, vettä, melua, riskejä ja tarkkailua koskevia määräyksiä. Päätöksen hakemuskuvauksessa aloitusajaksi esitetään marraskuu 2026. [Ympäristölupahakemuksen selostus, 9.12.2024](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711), [Tarkennus ja täydennys, 27.1.2025](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711), [Päätös 302/2025, 7.10.2025](https://ytietopalvelu.lvv.fi/fi-FI/asia/3032711).
 
-**Mitä se ei osoita:** kohdesivun luvut eivät ole tässä luettu tietyn kalenterivuoden mittaussarja. Eri ajankohtien henkilöstöluvut eivät yksin osoita uusien työpaikkojen nettomäärää. Yrityksen vaikutusarviot eivät ole riippumattomasti toistettuja kansantalouslaskelmia.
+Näistä asiakirjoista ei kuitenkaan saada vielä käyttövuoden sähköä, vettä, melua tai henkilöstöä. Esimerkiksi varavoiman noin 161 MW on polttoainetehoa, ei datakeskuksen mitattu verkkosähkön ottoteho.
 
-**Vertailukelpoisuus:** oma sähköntuotanto, oma kulutus, verkkoon myynti ja verkosta otto tarvitaan erikseen. Nettotuottajan kokonaissähköä ei rinnasteta datakeskuksen verkkosähkön ottoon. Tämä tulkinta seuraa ilmoitetusta tuotantorakenteesta.
+Hepokorven tehtävä vertailussa on siksi näyttää, että **suunnitelma, luvan sallima raja, rakennettu kapasiteetti ja toteutunut käyttö ovat neljä eri näyttötasoa**. Käytössä olevan tehtaan vuosimittausta ei verrata suoraan datakeskuksen lupahakemuksen nimellisarvoon.
 
-**Avoin tieto:** valitun vertailuvuoden mitattu energia, työpanos ja tehdaskohtainen arvonlisä. Koko arvoketjun työllisyys ei korvaa tehtaan henkilöstömittaria.
+Avoimeksi jäävät käyttöönotto, myöhemmät päätösmuutokset, toteutuneet energia- ja vesivirrat sekä tarkkailutulokset. [Ympäristövaikutukset](/analyysit/datakeskukset/vaikutukset/#ymparisto-lupa-kertoo-ehdoista-ei-toteutuneesta-vaikutuksesta).
 
-## Kemi–Tornio: segmentti ei ole yksittäinen tehdas
+## Kemi: oma sähköntuotanto muuttaa koko energiavertailun
 
-**Tutkimuskysymys:** mitä Outokummun Ferrochrome-segmentin talousluvut kertovat valmistavan teollisuuden vertailusta?
+Kemin biotuotetehdas tuli mukaan, kun kävi selväksi, ettei energiaintensiivisiä laitoksia voi verrata pelkän “paljonko sähköä käytetään” -kysymyksen avulla.
 
-**Lähde ja havaintojakso:** Outokummun vuosikertomus 2025, painettu s. 170, sekä liiketoiminta-alueen kuvaus. [S070–S071](/analyysit/datakeskukset/lahteet/#S070).
+Metsä Fibren nykyinen kohdekuvaus ilmoittaa henkilöstöksi 300, vuotuisen sähköntuotannon kuvaukseksi 2,0 TWh ja sähkön omavaraisuudeksi 250 %. Vuoden 2024 avaamistiedote ilmoitti tehtaalle noin 250 ja koko tehdasalueelle noin 500 henkilöä. [Metsä Fibre: Kemin biotuotetehtaan kohdekuvaus](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/), [Metsä Group: Kemin biotuotetehtaan avajaiset, 23.10.2024](https://www.metsagroup.com/news-and-publications/news/2024/metsa-group-kemi-bioproduct-mill-inaugurated/).
 
-**Mitä lähde osoittaa:** segmentin vuoden 2025 myynti oli 462 M€, josta ulkoista 217 M€ ja sisäistä 245 M€. Käyttökate oli 137 M€; oikaistu käyttökate 138 M€ on eri tunnusluku. Vuoden lopun henkilöstö oli 454 henkilötyövuotta (FTE). Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon.
+Tämä tekee näkyväksi yhden ratkaisevan eron: tehdas voi olla samaan aikaan suuri energiankäyttäjä ja sähkön nettotuottaja. Datakeskuksen verkkosähkön ottoa ei siksi voi verrata sellutehtaan kokonaissähköntuotantoon tai -kulutukseen yhdellä luvulla.
 
-**Mitä se ei osoita:** 462 M€ ei ole kokonaan konsernin ulkoista myyntiä eikä Suomen nettotulo. Segmentti ei kata kaikkea Tornion ruostumattoman teräksen tuotantoa.
+Tarvitaan erikseen **oma tuotanto, oma kulutus, verkosta otto ja verkkoon vienti**. Vasta niiden jälkeen voidaan muodostaa yhteinen energiatase. Sama pätee työllisyyteen: tehtaan henkilöstö, koko tehdasalueen työjoukko ja koko arvoketjun työvaikutus eivät ole sama mittari.
 
-**Vertailukelpoisuus:** oikeushenkilö, tehdas, liiketoiminta-alue ja konserni erotetaan. Tilinpäätöksen vuoden lopun FTE ei ole suoraan sama mittari kuin vuoden keskimääräinen henkilöluku.
+Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia, työpanos ja tehdaskohtainen arvonlisä samoilla rajauksilla kuin datakeskuksissa.
 
-**Avoin tieto:** yhteinen kohde- ja vuosirajaus Tuiken kanssa sekä sähkö-, arvonlisä- ja omistajatulojen erittely. Omistuksen kansallisuus ei sellaisenaan ratkaise tulovirtojen kohdentumista.
+## Rakennelaskelma: paljonko rahavirtaa näkyy omaa henkilöstöä kohti?
 
-## Yhteismitallisen jatkovertailun tietotarve
+Tuiken ja Outokummun Ferrochrome-segmentin julkisista luvuista voidaan tehdä yksi havainnollinen rakennevertailu. Se ei mittaa tuottavuutta tai yhteiskunnallista hyötyä, vaan sitä, kuinka paljon myyntiä ja käyttökatetta näkyy suhteessa raportoituun omaan henkilöstöön.
+
+Tuiken vuoden 2025 luvut ovat liikevaihto 574,374 M€, noin 344,6 M€:n johdettu käyttökate ja henkilöstö 120. [Proff: Tuike Finland Oy](https://www.proff.fi/yrityksen/tuike-finland-oy/hamina/it-alan-k%C3%A4ytt%C3%B6-ja-tukipalvelut/2206071-7I0ZDG), [Profinder: Tuike Finland Oy](https://b2b.profinder.fi/haku/tuike-finland-oy/22060717).
+
+Outokummun Ferrochrome-segmentin vuoden 2025 myynti oli 462 M€, käyttökate 137 M€ ja vuoden lopun henkilöstö 454 **FTE** eli kokoaikaisiksi työntekijöiksi muunnettuna. Esimerkiksi kaksi puolipäiväistä vastaa yhtä FTE:tä. Tässä kyse on vuoden lopun tilanteesta, ei koko vuoden henkilötyövuosista. Myynnistä 217 M€ oli ulkoista ja 245 M€ konsernin sisäistä. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b).
+
+| Rakenneluku | Tuike Finland Oy | Outokumpu Ferrochrome |
+|---|---:|---:|
+| Myynti / oma henkilöstö tai FTE | noin 4,786 M€/hlö | noin 1,018 M€/FTE |
+| Ulkoinen myynti / FTE | ei eroteltu julkisessa aineistossa | noin 0,478 M€/FTE |
+| Käyttökate / oma henkilöstö tai FTE | noin 2,872 M€/hlö | noin 0,302 M€/FTE |
+| Konsernin sisäisen myynnin osuus | avoin | noin 53,0 % |
+
+Ensimmäinen reaktio voisi olla, että Tuike näyttää moninkertaisesti “tehokkaammalta”. Se olisi liian vahva tulkinta.
+
+Tuiken luku on oikeushenkilön henkilöstömäärä, Outokummun luku liiketoimintasegmentin vuoden lopun FTE. Datakeskuksen fyysinen kampus käyttää lisäksi muiden työnantajien työpanosta, jota Tuiken 120 henkilön luku ei sisällä. Outokummun segmentissä taas yli puolet ilmoitetusta myynnistä on konsernin sisäistä.
+
+Siksi tämä vertailu kertoo ennen kaikkea **tuotanto- ja organisaatiorakenteen erilaisuudesta**: pääoma- ja infrastruktuuri-intensiivisessä toiminnassa suuri rahavirta voi näkyä hyvin pienellä omalla henkilöstöllä. Se ei yksin kerro, kuinka paljon kotimaista arvonlisää, kokonaisuutta palvelevaa työpanosta tai yhteiskunnallista hyötyä syntyy.
+
+Tämä on toinen esimerkki siitä, miksi yhden suhdeluvun korkea arvo ei vielä ole kokonaisarvio.
+
+## Mittari muuttaa vastausta: Kemin sähköesimerkki
+
+Vertailun tarkoitus ei ole löytää yhtä kaavaa, joka automaattisesti kertoo mikä investointi on paras. Sama toiminta voi näyttää hyvin erilaiselta sen mukaan, **mitä kysytään ja mikä suure valitaan nimittäjäksi**.
+
+Metsä Fibre ilmoittaa Kemin biotuotetehtaan vuotuisen sähköntuotannon kuvaukseksi 2,0 TWh ja sähköomavaraisuudeksi 250 %. [Metsä Fibre: Kemin biotuotetehdas](https://www.metsagroup.com/metsafibre/about-metsafibre/pulp-production/kemi-bioproduct-mill/).
+
+Jos 250 % tulkitaan tässä havainnollistuksessa suhteeksi
+
+**oma sähköntuotanto / oma sähkönkulutus = 2,5,**
+
+saadaan johdetuksi omaksi sähkönkulutukseksi noin
+
+**2,0 TWh / 2,5 = 0,8 TWh/v**
+
+ja tuotannon sekä tämän johdetun oman kulutuksen erotukseksi
+
+**2,0 − 0,8 = +1,2 TWh/v.**
+
+Nämä kaksi lukua ovat **johdettu havainnollistus, eivät mitattu verkkotase**. Erityisesti +1,2 TWh/v ei ole tässä aineistossa varmennettu verkkoon syötetty vuosienergia.
+
+Silti laskelma näyttää hyvin, miksi mittarin valinta muuttaa vastausta:
+
+| Laskentatapa | Mitä se kysyy? | Kemi tämän aineiston perusteella | Mitä mittari palkitsee? |
+|---|---|---|---|
+| Oma sähkönkulutus | Kuinka paljon prosessi tarvitsee sähköä? | noin 0,8 TWh/v, johdettu | Pientä fyysistä energiantarvetta |
+| Tuotanto − oma kulutus | Jääkö sähköä tuotannon jälkeen yli? | noin +1,2 TWh/v, johdettu | Omaa sähköntuotantoa |
+| Verkosta otettu MWh | Kuinka paljon kohde kuormittaa sähköjärjestelmää? | **avoin: mitattu verkko-otto puuttuu** | Vähäistä verkosta ottoa |
+| FTE / kokonaiskulutettu MWh | Kuinka paljon työtä syntyy suhteessa prosessin sähköön? | laskettavissa vasta yhteisellä FTE-vuodella | Työvoimaintensiivisyyttä |
+| Arvonlisä / verkosta otettu MWh | Kuinka paljon kotimaista arvoa syntyy suhteessa verkkokuormaan? | ei vielä laskettavissa | Omaa tuotantoa ja korkeaa kotimaista arvonlisää |
+
+Tässä on olennainen mittariraja. Jos verkosta otettu energia lähestyisi nollaa tai kohde olisi vuositasolla nettoviejä, esimerkiksi **arvonlisä / verkosta otettu MWh** voisi kasvaa erittäin suureksi, vaihtaa etumerkkiä tai lakata olemasta järkevästi tulkittava suhdeluku. Se ei tarkoittaisi, että tehdas olisi saanut “äärettömän hyvän” yhteiskunnallisen arvon. Se tarkoittaisi, että valittu mittari ei enää käyttäydy mielekkäästi tässä tapauksessa.
+
+Datakeskuksen kohdalla sama laskentatapa voisi antaa aivan toisen kuvan, koska tarkastelun kannalta keskeinen suure voi olla nimenomaan verkosta otettu sähkö. Haminasta ei tässä auditissa kuitenkaan ole käytössä samalla rajauksella mitattua vuosittaista verkko-ottoa, joten vertailulukua ei täytetä oletuksella.
+
+### Kolme eri kysymystä, kolme eri mahdollista järjestystä
+
+Samaa kohdejoukkoa voidaan perustellusti tarkastella ainakin kolmella tavalla:
+
+1. **Fyysinen energiaintensiteetti:** taloudellinen tai työllisyystuotos suhteessa kaikkeen prosessissa käytettyyn sähköön.
+2. **Sähköjärjestelmäintensiteetti:** taloudellinen tai työllisyystuotos suhteessa verkosta otettuun sähköön.
+3. **Nettotase:** oma sähköntuotanto vähennettynä omalla sähkönkulutuksella.
+
+Ensimmäinen voi tehdä suuren prosessiteollisuuden energiantarpeen näkyväksi. Toinen voi nostaa omaa sähköä tuottavan tehtaan erittäin korkealle. Kolmas voi muuttaa saman tehtaan sähkönkuluttajasta sähköjärjestelmän nettotuottajaksi.
+
+**Jos kohteiden järjestys muuttuu mittarin mukana, se ei ole analyysin epäonnistuminen. Se on analyysin tulos.** Se kertoo, että kysymys “mikä on tehokkain?” on puutteellinen ilman täsmennystä: tehokkain minkä resurssin, vaikutuksen ja laskentarajan suhteen?
+
+Tässä julkaisussa tätä epävarmuutta ei piiloteta yhteen yhdistelmäpistemäärään. Eri mittarit pidetään näkyvinä, niiden oletukset ilmoitetaan ja tulosta tarkastellaan herkkyytenä mittarivalinnalle.
+
+## Kemi–Tornio: konsernin segmentti opettaa saman ongelman kuin Tuike
+
+Outokumpu tuli mukaan, kun auditissa haluttiin verrata datakeskuksen taloudellista rakennetta perinteiseen, energiaintensiiviseen teollisuuteen. Samalla vastaan tuli tuttu ongelma: **mikä organisaatiotaso oikeastaan tuottaa tarkasteltavan luvun?**
+
+Outokummun vuoden 2025 vuosikertomuksessa Ferrochrome-segmentin myynti oli 462 M€, josta ulkoista myyntiä 217 M€ ja konsernin sisäistä 245 M€. Käyttökate oli 137 M€ ja vuoden lopun henkilöstö 454 FTE eli kokoaikaisiksi työntekijöiksi muunnettuna. Toimintakuvaus yhdistää Kemin kaivoksen Tornion ferrokromituotantoon. [Outokumpu: Annual Report 2025, s. 170](https://www.outokumpu.com/-/media/files/investors/annual-reports/annual-report-2025/outokumpu_annual_report_2025_a4.pdf?hash=A9F7D1F6309A51EC70DC676A8907E46B&modified=20260227103807&revision=549bc02d-644c-4edb-b7bc-20b85245380b), [Outokumpu: Ferrochrome-liiketoiminta-alue](https://www.outokumpu.com/fi-fi/about/organization/ferrochrome).
+
+Tässä 462 M€ ei siis ole sama asia kuin ulkopuolisilta asiakkailta saatu 462 M€:n myynti. Hieman yli puolet (245 / 462 ≈ 53 %) ilmoitetusta myynnistä on konsernin sisäistä myyntiä muille konsernin osille. Tämä on vertailulle arvokas havainto juuri siksi, että myös Tuiken kohdalla konsernin sisäisten liiketoimien merkitys on avoin.
+
+Outokumpu näyttää samalla, miksi **oikeushenkilö, tehdas, liiketoimintasegmentti ja konserni** on pidettävä erillään. Ferrochrome-segmentti ei kata kaikkea Tornion ruostumattoman teräksen tuotantoa, eikä vuoden lopun FTE ole suoraan sama asia kuin vuoden keskimääräinen henkilöstömäärä.
+
+Avoimeksi jäävät yhteinen kohde- ja vuosirajaus Tuiken kanssa, toimipaikkakohtainen sähkö ja arvonlisä sekä Suomen ja konsernin sisäisten rahavirtojen tarkempi erittely.
+
+## Mitä vertailusta voidaan tässä vaiheessa päätellä?
+
+Neljän kohteen tärkein yhteinen havainto ei ole vielä se, kumpi toimiala “tuottaa enemmän”, vaan se, **kuinka helposti väärä laskentaraja tuottaa näennäisesti tarkan mutta väärän vertailun**.
+
+Hamina opettaa erottamaan konsernin, yhtiön ja kampuksen. Hepokorpi erottaa suunnitelman toteumasta. Kemi erottaa energiankulutuksen nettotaseesta. Outokumpu erottaa segmentin ulkoisen myynnin konsernin sisäisestä myynnistä.
+
+Siksi lähteiden nykyiset luvut auttavat kuvaamaan kohteita, mutta eivät vielä muodosta yhtä yhteistä tehokkuus- tai nettohyötymittaria.
+
+> **Vertailun rajaus.** Tässä julkaisussa ei muodosteta toimialojen paremmuusjärjestystä. Puuttuvat energia-, arvonlisä-, kustannus- ja vaihtoehtotiedot estävät yhden luotettavan nettohyötyluvun. Valmistavan teollisuuden kohteita ei myöskään ole ympäristöauditoitu yhtä kattavasti kuin HEL16:n lupa-aineistoa.
+
+## Mitä yhteismitallinen jatkovertailu vielä tarvitsee?
 
 | Mittari | Yhteinen määritelmä | Miksi tarvitaan? |
 |---|---|---|
@@ -92,3 +221,5 @@ Lähteet käyttävät yritys-, alue- ja liiketoimintarajoja sekä eri havaintoja
 | Julkistalous | Kohdistettavat tulot ja menot sekä investointien ajallinen käsittely | Verotulo ei yksin ole nettohyöty |
 | Ympäristö | Toteutuneet paikalliset vaikutukset ja yhteinen elinkaariraja | Lupa tai tekniikkakuvaus ei korvaa seurantaa |
 | Vaihtoehto | Toteuttamiskelpoinen vertailutilanne samalle resurssille | Teoreettinen hanke ei todista syrjäytettyä investointia |
+
+Tämä tietotarvelista on samalla Symetran seuraava mittarikerros: vasta kun yhteiset määritelmät ovat saatavissa, voidaan laskea esimerkiksi työ-, vero- tai arvonlisäintensiteettejä ilman että eri organisaatio- ja aikarajat sekoittuvat.
