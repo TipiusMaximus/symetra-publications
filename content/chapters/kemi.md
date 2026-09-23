@@ -8,7 +8,7 @@ Tämä tekee näkyväksi yhden ratkaisevan eron: tehdas voi olla samaan aikaan s
 
 Tarvitaan erikseen **oma tuotanto, oma kulutus, verkosta otto ja verkkoon vienti**. Vasta niiden jälkeen voidaan muodostaa yhteinen energiatase. Sama pätee työllisyyteen: tehtaan henkilöstö, koko tehdasalueen työjoukko ja koko arvoketjun työvaikutus eivät ole sama mittari.
 
-Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia, työpanos ja tehdaskohtainen arvonlisä samoilla rajauksilla kuin datakeskuksissa.
+Avoimeksi jäävät valitun vertailuvuoden mitattu nettoenergia ja toteutunut tehdaskohtainen arvonlisä samoilla rajauksilla kuin datakeskuksissa. Vuoden 2021 aluetaloudellisesta skenaariosta voidaan muodostaa vuoden 2025 toteutuneella tuotannolla noin 142,14 M€:n P/S-arvonlisäproxy, mutta sitä ei käsitellä mitattuna toimipaikkalukuna.
 
 
 Kohdesivun vuosituotantokuvaus ei yksilöi mitattua kalenterivuotta. Näistä pyöristetyistä kuvauksista johdettu [sähköesimerkki](/analyysit/datakeskukset/lahteet/#kemi-sama-sahkolahde-eri-laskentatapa) on laskennan havainnollistus, ei tehtaan toteutunut verkkotase.

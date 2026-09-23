@@ -859,7 +859,7 @@
     "id": "S092",
     "title": "Metsä Group Annual Review 2025",
     "url": "https://www.metsagroup.com/globalassets/metsa-group/documents/investors/financial-reporting/annual-reports/2025/metsa-group-annual-review-2025.pdf",
-    "verification": "Metsä Fibre production-unit table: Kemi 2025 chemical pulp 927 kt, water withdrawal 32.819 Mm3 and wastewater flow 13.931 Mm3. Mill-specific figures are not separately assured; they are covered at business-area/Group level by limited assurance. Checked 22.9.2026."
+    "verification": "Metsä Fibre / Pulp and Sawn Timber 2025 sales 2,578.1 M€, EBITDA 159.4 M€, year-end personnel 1,381 and pulp sales volume 2,893 kt; production-unit table: Kemi chemical pulp 927 kt, employees 281, water withdrawal 32.819 Mm3 and wastewater flow 13.931 Mm3. Mill-specific sustainability figures are not separately assured but are covered at business-area/Group level by limited assurance. Checked 23.9.2026."
   },
   {
     "id": "S093",
@@ -869,6 +869,16 @@
     "publisher": "Nebius",
     "sourceType": "Julkaisijan oma vastuullisuusraportti",
     "publishedAt": "2026-07-30",
+    "reviewScope": []
+  },
+  {
+    "id": "S094",
+    "title": "Ramboll / Kemin kaupunki: Metsä Fibren Kemin biotuotetehtaan aluetaloudelliset vaikutukset",
+    "url": "https://www.kemi.fi/wp-content/uploads/2021/11/Metsa-Fibren-biotuotetehtaan-aluetalousvaikutukset-vaikutukset-28.10.2021.pdf",
+    "verification": "Tarkistettu 23.9.2026: tuotantoskenaario 1,5 Mt sellua/v; arvioitu suora liikevaihto noin 760 M€/v, välituotekäyttö noin 520 M€/v, suora työvoimatarve noin 350 htv ja tehtaan suora arvonlisä noin 230 M€/v. Kyse on ennen käyttöönottoa laaditusta mallista, ei toteutuneesta 2025 talousluvusta.",
+    "publisher": "Kemin kaupunki / Ramboll Finland Oy",
+    "sourceType": "Tilaajan julkaisema aluetaloudellinen selvitys",
+    "publishedAt": "2021-11-02",
     "reviewScope": []
   }
 ]
