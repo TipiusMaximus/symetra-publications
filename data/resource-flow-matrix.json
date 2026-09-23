@@ -11,6 +11,11 @@
       "label": "Metsä Fibre Kemi bioproduct mill",
       "period": "2025 / current-source energy figures where noted",
       "boundary": "Kemi production unit"
+    },
+    "tornio_2024": {
+      "label": "Outokumpu Tornio site",
+      "period": "2024",
+      "boundary": "integrated Tornio production site; environmental-report boundary"
     }
   },
   "water": {
@@ -63,6 +68,42 @@
           "unit": "m3/y",
           "status": "derived_not_consumption",
           "evidence": "EV-KEMI-WATER-007"
+        }
+      }
+    },
+    "tornio_2024": {
+      "in": {
+        "withdrawal": {
+          "value": 20712315,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-TORNIO-WATER-001",
+          "components": {
+            "river_water": {
+              "value": 6977101,
+              "unit": "m3/y",
+              "evidence": "EV-TORNIO-WATER-002"
+            },
+            "seawater": {
+              "value": 13735214,
+              "unit": "m3/y",
+              "evidence": "EV-TORNIO-WATER-003"
+            }
+          }
+        }
+      },
+      "out": {
+        "wastewater_discharge_P3_P7": {
+          "value": 21033049,
+          "unit": "m3/y",
+          "status": "observed",
+          "evidence": "EV-TORNIO-WATER-004"
+        }
+      },
+      "net": {
+        "consumption": {
+          "state": "unknown",
+          "note": "P3+P7 discharge exceeds raw-water withdrawal, so subtraction is not a valid consumptive-use calculation; accounting includes additional water pathways."
         }
       }
     }
@@ -134,6 +175,31 @@
           "state": "unknown"
         }
       }
+    },
+    "tornio_2024": {
+      "in": {
+        "total_consumption": {
+          "value": 2637,
+          "unit": "GWh/y",
+          "status": "observed",
+          "evidence": "EV-TORNIO-ELECTRICITY-002"
+        },
+        "measured_grid_import": {
+          "state": "unknown",
+          "note": "Environmental report provides site electricity use, not the gross grid-import boundary used by the grid-dependence metric."
+        }
+      },
+      "own_production": {
+        "state": "unknown"
+      },
+      "out": {
+        "state": "not_applicable_or_unknown"
+      },
+      "net": {
+        "measured_grid_balance": {
+          "state": "unknown"
+        }
+      }
     }
   },
   "cross_entity_diagnostics": {
@@ -144,6 +210,30 @@
       "unit": "x",
       "status": "derived",
       "interpretation": "Kemi 2025 reported withdrawal divided by Nebius Finland-1 2025 reported withdrawal. Same accounting concept and year; different industrial processes. Descriptive scale difference, not an overall environmental ranking."
+    },
+    "tornio_nebius_water_withdrawal_multiple": {
+      "numerator": "EV-TORNIO-WATER-001",
+      "denominator": "EV-NEB-WATER-002",
+      "value": 14196.241,
+      "unit": "x",
+      "status": "derived_mixed_period",
+      "interpretation": "Tornio 2024 raw-water withdrawal divided by Nebius Finland-1 2025 reported withdrawal. Different years and industrial processes; descriptive scale signal only."
+    },
+    "kemi_tornio_water_withdrawal_multiple": {
+      "numerator": "EV-KEMI-WATER-003",
+      "denominator": "EV-TORNIO-WATER-001",
+      "value": 1.585,
+      "unit": "x",
+      "status": "derived_mixed_period",
+      "interpretation": "Kemi 2025 water withdrawal divided by Tornio 2024 raw-water withdrawal. Similar order of magnitude; source composition differs."
+    },
+    "tornio_nebius_electricity_multiple": {
+      "numerator": "EV-TORNIO-ELECTRICITY-002",
+      "denominator": "EV-NEB-ENERGY-001",
+      "value": 27.046,
+      "unit": "x",
+      "status": "derived_mixed_period_and_evidence",
+      "interpretation": "Observed Tornio 2024 electricity use divided by derived Nebius 2025 electricity use."
     }
   }
 }
