@@ -28,7 +28,7 @@ npm run check
 - `content/*.md`: sivujen ensisijainen sisältö.
 - `content/chapters/*.md`: pääkertomukseen ja kohdennettuihin näkymiin koottavat yhteiset luvut.
 - `content/questions/A01.md`–`A11.md`: tutkimuskysymykset ja koneluettavat metatiedot.
-- `data/sources.json`: 100 verkkolähdettä ja niiden alkuperäketju.
+- `data/sources.json`: 101 verkkolähdettä ja niiden alkuperäketju.
 - `data/documents.json`: HEL16:n kymmenen asiakirjan metadata; ei alkuperäisiä PDF:iä tai henkilökohtaisia polkuja.
 - `data/observations.json`: rajatusti varmennetut havainnot, niiden lähteet ja tulkintarajat.
 - `data/resource-flow-matrix.json`: resurssien in / own production / out / net -rakenne, jossa puuttuvat ja johdetut virrat pidetään erillään.

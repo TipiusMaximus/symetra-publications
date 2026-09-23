@@ -457,6 +457,25 @@
       "resultUnit": "x",
       "boundaryPolicy": "cross_boundary",
       "periodPolicy": "mixed_explicit"
+    },
+    {
+      "id": "kemi_nebius_external_useful_heat_multiple",
+      "label": "Kemi / Nebius external useful heat 2025",
+      "question": "How large was Kemi's reported district-heat transfer from Metsä Fibre relative to Nebius Finland-1's reported heat export in 2025?",
+      "numerator": {
+        "evidence": "EV-KEMI-HEAT-001",
+        "field": "value",
+        "scale": 1
+      },
+      "denominator": {
+        "evidence": "EV-NEB-HEAT-001",
+        "field": "value",
+        "scale": 1
+      },
+      "resultUnit": "x",
+      "boundaryPolicy": "near_match",
+      "periodPolicy": "same",
+      "comparisonGroup": "external_useful_heat_2025"
     }
   ]
 }

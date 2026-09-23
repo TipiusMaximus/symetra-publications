@@ -300,6 +300,88 @@
       "denominator": "EV-HAM-WATER-001",
       "reason": "Tornio raw-water withdrawal includes seawater and river water; Hamina reported operational withdrawal excludes seawater. Actual Hamina seawater throughput is unknown.",
       "permit_context": "EV-HAM-WATER-004"
+    },
+    "kemi_nebius_external_useful_heat_multiple": {
+      "numerator": "EV-KEMI-HEAT-001",
+      "denominator": "EV-NEB-HEAT-001",
+      "value": 2.569,
+      "unit": "x",
+      "status": "derived_same_period_near_match",
+      "interpretation": "Kemi district-heating operator's 2025 purchased heat from Metsä Fibre divided by Nebius Finland-1's 2025 reported heat export. Descriptive transfer-volume comparison, not efficiency."
+    },
+    "hamina_external_useful_heat_actual_comparison": {
+      "state": "blocked",
+      "reason": "Hamina currently has a 40 GWh/y design potential and evidence that operation began at the end of 2025, but no comparable full-year measured external heat delivery in the audit data.",
+      "design_context": "EV-HAM-HEAT-001"
+    },
+    "tornio_external_useful_heat_comparison": {
+      "state": "blocked",
+      "reason": "Tornio's 98 GWh figure is site heat recovery, not established as external useful-heat export; it is a different accounting role from Nebius and Kemi district-heat transfers.",
+      "evidence": "EV-TORNIO-HEAT-001"
+    }
+  },
+  "heat": {
+    "nebius_finland1": {
+      "out": {
+        "useful_heat_export": {
+          "value": 19.5,
+          "unit": "GWh/y",
+          "status": "observed",
+          "evidence": "EV-NEB-HEAT-001",
+          "role": "external useful heat"
+        }
+      }
+    },
+    "kemi": {
+      "out": {
+        "district_heat_transfer": {
+          "value": 50.1,
+          "unit": "GWh/y",
+          "status": "observed",
+          "evidence": "EV-KEMI-HEAT-001",
+          "role": "external useful heat purchased by district-heating operator"
+        }
+      },
+      "context": {
+        "share_of_kemi_district_heat_production": {
+          "value": 29.9,
+          "unit": "percent",
+          "status": "observed",
+          "evidence": "EV-KEMI-HEAT-002"
+        }
+      }
+    },
+    "hamina_2024": {
+      "out": {
+        "actual_district_heat_delivery": {
+          "state": "unknown",
+          "note": "Heat-recovery use began at the end of 2025; no full-year measured delivery figure is in the current audit data."
+        },
+        "design_district_heat_potential": {
+          "value": 40,
+          "unit": "GWh/y",
+          "status": "design_potential",
+          "evidence": "EV-HAM-HEAT-001"
+        }
+      }
+    },
+    "tornio_2024": {
+      "internal": {
+        "recovered_heat": {
+          "value": 98,
+          "unit": "GWh/y",
+          "status": "observed",
+          "evidence": "EV-TORNIO-HEAT-001",
+          "role": "site heat recovery; not established as external heat export"
+        },
+        "purchased_heat": {
+          "value": 277,
+          "unit": "GWh/y",
+          "status": "observed",
+          "evidence": "EV-TORNIO-HEAT-002",
+          "role": "site heat input"
+        }
+      }
     }
   }
 }

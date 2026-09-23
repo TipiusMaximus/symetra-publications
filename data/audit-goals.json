@@ -125,15 +125,19 @@
       "priority": 7,
       "status": "partial",
       "nowKnown": [
-        "Nebius measured 19.5 GWh heat export 2025",
-        "Hamina ~40 GWh/y design potential"
+        "Nebius Mäntsälä measured 19.5 GWh external heat export in 2025",
+        "Kemi district-heating operator reported 50.1 GWh heat purchases in 2025; annual-report context identifies 29.9% of production as purchased energy from Metsä Fibre",
+        "derived Kemi/Nebius 2025 external useful-heat transfer ratio ~2.57x",
+        "Hamina heat recovery began at end of 2025; 40 GWh/y remains design potential, not measured annual delivery",
+        "Tornio reported 98 GWh heat recovery in 2024, but this is site recovery and not yet an external heat-export measure"
       ],
       "missing": [
-        "Hamina measured annual delivered heat",
-        "Kemi useful exported heat same-period figure",
-        "common denominator such as electricity use or site output"
+        "Hamina measured annual delivered district heat for a full operating period",
+        "Tornio external exported heat, if any, separated from internal recovery",
+        "common efficiency denominator if the question changes from absolute useful-heat transfer to recovery efficiency",
+        "heat-pump electricity input when comparing delivered district heat from low-grade datacenter heat"
       ],
-      "next": "Separate design potential from measured export, then normalize."
+      "next": "Use Kemi and Nebius as the first same-year external useful-heat transfer pair. Keep Hamina design-only until a measured operating year is published, and do not compare Tornio internal heat recovery as if it were exported district heat."
     },
     {
       "id": "G-DOMESTIC-VA",

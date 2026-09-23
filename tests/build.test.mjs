@@ -241,4 +241,26 @@ test('Hamina total-water cross-sector Symetry is blocked until seawater actual e
   assert(flow.cross_entity_diagnostics.kemi_hamina_total_water_comparison.reason.includes('different water scopes'));
 });
 
+test('useful heat layer distinguishes external transfer, design and internal recovery',async()=>{
+  const flow=JSON.parse(await readFile(new URL('../data/resource-flow-matrix.json',import.meta.url),'utf8'));
+  assert.equal(flow.heat.nebius_finland1.out.useful_heat_export.value,19.5);
+  assert.equal(flow.heat.kemi.out.district_heat_transfer.value,50.1);
+  assert.equal(flow.heat.hamina_2024.out.actual_district_heat_delivery.state,'unknown');
+  assert.equal(flow.heat.hamina_2024.out.design_district_heat_potential.value,40);
+  assert.equal(flow.heat.tornio_2024.internal.recovered_heat.value,98);
+  assert.equal(flow.cross_entity_diagnostics.hamina_external_useful_heat_actual_comparison.state,'blocked');
+  assert.equal(flow.cross_entity_diagnostics.tornio_external_useful_heat_comparison.state,'blocked');
+});
+
+test('Kemi and Nebius form the first same-year external useful-heat Symetry pair',async()=>{
+  const evidence=(await readFile(new URL('../data/evidence-index.jsonl',import.meta.url),'utf8')).trim().split('\n').map(JSON.parse);
+  const recipes=JSON.parse(await readFile(new URL('../data/denominator-recipes.json',import.meta.url),'utf8'));
+  const x=runDenominatorEngine(evidence,recipes);
+  const r=x.results.find(r=>r.id==='kemi_nebius_external_useful_heat_multiple');
+  assert.equal(r.value,2.569);
+  assert.equal(r.periodPolicy,'same');
+  assert.equal(r.boundaryPolicy,'near_match');
+  assert.equal(r.quality,'direct');
+});
+
 test('global network failure preserves the previous link registry',()=>{assert.equal(shouldReplaceLinkRegistry([]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:null}]),false);assert.equal(shouldReplaceLinkRegistry([{status:null},{status:403}]),true);});
